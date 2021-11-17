@@ -1,0 +1,15 @@
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.exe.config
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.exe
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Guna.UI2.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csprojAssemblyReference.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Form1.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Properties.Resources.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.GenerateResource.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.CoreCompileInputs.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.CopyComplete
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.exe
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Guna.UI.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormRegister.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP.resources

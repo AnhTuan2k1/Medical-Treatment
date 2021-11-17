@@ -1,7 +1,7 @@
 ﻿
 namespace MedicalTreament
 {
-    partial class Form1
+    partial class FormGP
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,14 @@ namespace MedicalTreament
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // FormGP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormGP";
+            this.Text = "FormGP";
             this.ResumeLayout(false);
 
         }
@@ -45,4 +46,3 @@ namespace MedicalTreament
         #endregion
     }
 }
-
