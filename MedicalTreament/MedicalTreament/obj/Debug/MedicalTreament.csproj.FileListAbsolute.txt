@@ -13,3 +13,20 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Medic
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Guna.UI.dll
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormRegister.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.AssemblyReference.cache
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Form1.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacist.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormRegister.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.GenerateResource.cache
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.exe
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.pdb
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.exe.config
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.exe
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\MedicalTreament.pdb
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Properties.Resources.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.CoreCompileInputs.cache
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.CopyComplete
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistDrugStore.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistOverview.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistPayment.resources
