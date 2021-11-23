@@ -67,6 +67,30 @@
     <Compile Include="FormGP.Designer.cs">
       <DependentUpon>FormGP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacist.Designer.cs">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistDrugStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistDrugStore.Designer.cs">
+      <DependentUpon>FormPharmacistDrugStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistOverview.Designer.cs">
+      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistPayment.Designer.cs">
+      <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,22 +105,35 @@
     <EmbeddedResource Include="FormGP.resx">
       <DependentUpon>FormGP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacist.resx">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistDrugStore.resx">
+      <DependentUpon>FormPharmacistDrugStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistOverview.resx">
+      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistPayment.resx">
+      <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -105,6 +142,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pharmacist-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-fill-pharmacist-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_dashboard_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_dashboard_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_paid_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_paid_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_analytics_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_analytics_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_analytics_white_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_store_mall_directory_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_store_mall_directory_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_logout_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_logout_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
