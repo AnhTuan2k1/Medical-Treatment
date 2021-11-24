@@ -40,6 +40,7 @@ namespace MedicalTreament
             this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -200,12 +201,22 @@ namespace MedicalTreament
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(103, 276);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "stt,tên, sđt, trạng thái";
+            // 
             // FormPharmacistOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1034, 653);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.guna2ComboBox1);
@@ -234,5 +245,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btnPayment;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private System.Windows.Forms.Label label4;
     }
 }

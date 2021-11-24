@@ -43,6 +43,7 @@ namespace MedicalTreament
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -130,7 +131,7 @@ namespace MedicalTreament
             this.gunaCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCheckBox1.Location = new System.Drawing.Point(6, 34);
             this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(45, 20);
+            this.gunaCheckBox1.Size = new System.Drawing.Size(51, 23);
             this.gunaCheckBox1.TabIndex = 9;
             this.gunaCheckBox1.Text = "All";
             // 
@@ -266,12 +267,22 @@ namespace MedicalTreament
             this.guna2TextBox1.Size = new System.Drawing.Size(267, 44);
             this.guna2TextBox1.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(85, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(356, 17);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "stt, tên thuốc, nhà sản xuất, ngày hết hạn, đvt, đơn giá.";
+            // 
             // FormPharmacistDrugStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1034, 653);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnPayment);
@@ -306,5 +317,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Button btnPayment;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Label label3;
     }
 }
