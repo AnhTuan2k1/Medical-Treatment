@@ -38,7 +38,7 @@ namespace MedicalTreament
             switch (btn.Name)
             {
                 case "btnDrugStore":
-                    form = new FormPharmacistDrugStore(btn);
+                    form = new FormPharmacistDrugStock(btn);
                     btn.Image = Properties.Resources.baseline_store_mall_directory_white_24dp;
                     break;
 

@@ -27,5 +27,6 @@ namespace MedicalTreament
             btn.FillColor = Color.White;
             btn.ForeColor = Color.Black;
         }
+
     }
 }
