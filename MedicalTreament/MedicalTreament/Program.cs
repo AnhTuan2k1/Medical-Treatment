@@ -18,7 +18,7 @@ namespace MedicalTreament
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGP());
+            Application.Run(new FormPharmacist());
         }
     }
 }
