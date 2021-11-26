@@ -133,6 +133,36 @@ namespace MedicalTreament.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap double_right_48 {
+            get {
+                object obj = ResourceManager.GetObject("double-right-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap drug_64 {
+            get {
+                object obj = ResourceManager.GetObject("drug-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forward_48 {
+            get {
+                object obj = ResourceManager.GetObject("forward-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons_fill_pharmacist_64 {
             get {
                 object obj = ResourceManager.GetObject("icons-fill-pharmacist-64", resourceCulture);
@@ -183,6 +213,16 @@ namespace MedicalTreament.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap outline_search_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("outline_search_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_store_mall_directory_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_store_mall_directory_black_24dp", resourceCulture);
@@ -196,6 +236,16 @@ namespace MedicalTreament.Properties {
         internal static System.Drawing.Bitmap Patient48 {
             get {
                 object obj = ResourceManager.GetObject("Patient48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payment_64 {
+            get {
+                object obj = ResourceManager.GetObject("payment-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
