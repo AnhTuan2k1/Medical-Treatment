@@ -12,9 +12,94 @@ namespace MedicalTreament
 {
     public partial class FormGP : Form
     {
+        private Form activeForm;
+        private Guna.UI2.WinForms.Guna2Button currtentButton;
+
         public FormGP()
         {
             InitializeComponent();
+            btn_closeform.Visible = false;
+        }
+
+
+        private void ActiveButton(object btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currtentButton != btnSender)
+                {
+                    DisableButton();
+                    currtentButton = (Guna.UI2.WinForms.Guna2Button)btnSender;
+                    currtentButton.BackColor = Color.SteelBlue;
+                    currtentButton.ForeColor = Color.Black;
+                    currtentButton.Font = new System.Drawing.Font("Segoe UI", 11.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    btn_closeform.Visible = true;
+                }
+            }
+        }
+
+        private void DisableButton()
+        {
+            foreach (Control previousbtn in panel1.Controls)
+            {
+                if (previousbtn.GetType()== typeof(Guna.UI2.WinForms.Guna2Button))
+                {
+                    previousbtn.BackColor = Color.DarkTurquoise;
+                    previousbtn.ForeColor = Color.White;
+                    previousbtn.Font =  new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                }
+            }
+        }
+
+
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+        
+        if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActiveButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelMain.Controls.Add(childForm);
+            this.panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+
+        private void FormGP_Load(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void gpbtn_patient_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormGP_Patient(), sender);
+        }
+
+        private void gpbtn_prescription_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormGP_Prescription(), sender);
+        }
+
+        private void btn_closeform_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            currtentButton = null;
+            btn_closeform.Visible = false;
         }
     }
 }
