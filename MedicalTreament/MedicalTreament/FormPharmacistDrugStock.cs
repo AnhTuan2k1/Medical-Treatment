@@ -11,10 +11,10 @@ using Guna.UI2.WinForms;
 
 namespace MedicalTreament
 {
-    public partial class FormPharmacistDrugStore : Form
+    public partial class FormPharmacistDrugStock : Form
     {
         Guna2Button btn;
-        public FormPharmacistDrugStore(Guna2Button btn)
+        public FormPharmacistDrugStock(Guna2Button btn)
         {
             InitializeComponent();
             this.btn = btn;
