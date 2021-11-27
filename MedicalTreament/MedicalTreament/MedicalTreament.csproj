@@ -88,6 +88,12 @@
     <Compile Include="FormGP_Prescription_AddPill.Designer.cs">
       <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGP_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Profile.Designer.cs">
+      <DependentUpon>FormGP_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPharmacist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,24 @@
     </Compile>
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist.Designer.cs">
+      <DependentUpon>FormSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis.Designer.cs">
+      <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Patient.Designer.cs">
+      <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -149,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist.resx">
+      <DependentUpon>FormSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Patient.resx">
+      <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -230,6 +260,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\double-right-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-prescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-entry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
