@@ -30,12 +30,25 @@ namespace MedicalTreament
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
+            this.guna2ResizeForm2 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm1;
+        private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm2;
     }
 }
 
