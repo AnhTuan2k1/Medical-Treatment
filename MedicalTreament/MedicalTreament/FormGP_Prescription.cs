@@ -53,7 +53,7 @@ namespace MedicalTreament
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            FormGP_Prescription_AddPill form_add = new FormGP_Prescription_AddPill();
+            FormGP_Prescription_AddPill form_add = new FormGP_Prescription_AddPill(gridview_prescription);
             form_add.label_name.Text = this.gridview_pill.CurrentRow.Cells[1].Value.ToString();
             form_add.Show();
 
@@ -66,7 +66,7 @@ namespace MedicalTreament
             {
                 this.gridview_prescription.Rows.Add(new object[] { name, amount, route });
             }
-            this.gridview_prescription.Rows.Add(new object[] { name, amount, route });
+            
 
         }
 
