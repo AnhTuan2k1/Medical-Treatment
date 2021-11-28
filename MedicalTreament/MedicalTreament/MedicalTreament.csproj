@@ -32,9 +32,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Framwork\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Framwork\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,21 +64,137 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP.Designer.cs">
+      <DependentUpon>FormGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGP_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Patient.Designer.cs">
+      <DependentUpon>FormGP_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGP_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Prescription.Designer.cs">
+      <DependentUpon>FormGP_Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGP_Prescription_AddPill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Prescription_AddPill.Designer.cs">
+      <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGP_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Profile.Designer.cs">
+      <DependentUpon>FormGP_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacist.Designer.cs">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistDrugStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistDrugStock.Designer.cs">
+      <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistOverview.Designer.cs">
+      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacistPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistPayment.Designer.cs">
+      <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist.Designer.cs">
+      <DependentUpon>FormSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis.Designer.cs">
+      <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Patient.Designer.cs">
+      <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP.resx">
+      <DependentUpon>FormGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP_Patient.resx">
+      <DependentUpon>FormGP_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP_Prescription.resx">
+      <DependentUpon>FormGP_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP_Prescription_AddPill.resx">
+      <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacist.resx">
+      <DependentUpon>FormPharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistDrugStock.resx">
+      <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistOverview.resx">
+      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistPayment.resx">
+      <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist.resx">
+      <DependentUpon>FormSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Patient.resx">
+      <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +203,96 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pharmacist-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-fill-pharmacist-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_dashboard_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_dashboard_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_paid_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_paid_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_analytics_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_analytics_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_analytics_white_24dp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_store_mall_directory_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_store_mall_directory_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_logout_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_logout_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_search_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drug-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-right-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-prescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-entry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
