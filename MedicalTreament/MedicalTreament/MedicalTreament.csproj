@@ -100,6 +100,12 @@
     <Compile Include="FormPharmacistDrugStock.Designer.cs">
       <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPharmacistDrugStock_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacistDrugStock_Add.Designer.cs">
+      <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPharmacistOverview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,30 @@
     </Compile>
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretary.Designer.cs">
+      <DependentUpon>FormSecretary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretaryPatientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretaryPatientList.Designer.cs">
+      <DependentUpon>FormSecretaryPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretaryPatientList_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretaryPatientList_Add.Designer.cs">
+      <DependentUpon>FormSecretaryPatientList_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretaryReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretaryReception.Designer.cs">
+      <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,6 +171,9 @@
     <EmbeddedResource Include="FormPharmacistDrugStock.resx">
       <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacistDrugStock_Add.resx">
+      <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacistOverview.resx">
       <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +182,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretary.resx">
+      <DependentUpon>FormSecretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretaryPatientList.resx">
+      <DependentUpon>FormSecretaryPatientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretaryPatientList_Add.resx">
+      <DependentUpon>FormSecretaryPatientList_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretaryReception.resx">
+      <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -230,6 +275,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\double-right-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_receipt_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_receipt_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_groups_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_groups_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception-desk-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

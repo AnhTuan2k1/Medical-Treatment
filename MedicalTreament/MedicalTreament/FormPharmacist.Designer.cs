@@ -163,6 +163,7 @@ namespace MedicalTreament
             // labelName
             // 
             this.labelName.AutoSize = true;
+            this.labelName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelName.Location = new System.Drawing.Point(112, 144);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(45, 17);
@@ -172,6 +173,7 @@ namespace MedicalTreament
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::MedicalTreament.Properties.Resources.icons_fill_pharmacist_64;
+            this.guna2CirclePictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(63, 28);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -218,7 +220,6 @@ namespace MedicalTreament
             this.gunaControlBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
             this.gunaControlBox3.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.IconSize = 15F;
             this.gunaControlBox3.Location = new System.Drawing.Point(887, 0);
             this.gunaControlBox3.Name = "gunaControlBox3";
             this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
@@ -236,7 +237,6 @@ namespace MedicalTreament
             this.gunaControlBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MaximizeBox;
             this.gunaControlBox2.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox2.IconSize = 15F;
             this.gunaControlBox2.Location = new System.Drawing.Point(938, 0);
             this.gunaControlBox2.Name = "gunaControlBox2";
             this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
@@ -253,7 +253,6 @@ namespace MedicalTreament
             this.gunaControlBox1.AnimationSpeed = 0.03F;
             this.gunaControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.IconSize = 15F;
             this.gunaControlBox1.Location = new System.Drawing.Point(989, 0);
             this.gunaControlBox1.Name = "gunaControlBox1";
             this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
@@ -283,6 +282,7 @@ namespace MedicalTreament
             this.Controls.Add(this.PanelContainer);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormPharmacist";
             this.Text = "FormPharmacist";
             this.Load += new System.EventHandler(this.FormPharmacist_Load);

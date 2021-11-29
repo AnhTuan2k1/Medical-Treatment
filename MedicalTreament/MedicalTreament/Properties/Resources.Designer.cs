@@ -103,6 +103,16 @@ namespace MedicalTreament.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_groups_white_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_groups_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_logout_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_logout_white_24dp", resourceCulture);
@@ -116,6 +126,16 @@ namespace MedicalTreament.Properties {
         internal static System.Drawing.Bitmap baseline_paid_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_paid_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_receipt_white_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_receipt_white_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +203,29 @@ namespace MedicalTreament.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nurse_64 {
+            get {
+                object obj = ResourceManager.GetObject("nurse-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_analytics_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_analytics_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_groups_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("outline_groups_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +246,16 @@ namespace MedicalTreament.Properties {
         internal static System.Drawing.Bitmap outline_paid_black_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_paid_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_receipt_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("outline_receipt_black_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +296,16 @@ namespace MedicalTreament.Properties {
         internal static System.Drawing.Bitmap payment_64 {
             get {
                 object obj = ResourceManager.GetObject("payment-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_desk_64 {
+            get {
+                object obj = ResourceManager.GetObject("reception-desk-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
