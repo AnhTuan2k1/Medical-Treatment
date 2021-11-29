@@ -31,8 +31,12 @@ namespace MedicalTreament
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPatients = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReception = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.labelName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
@@ -41,13 +45,9 @@ namespace MedicalTreament
             this.PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPatients = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReception = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -66,6 +66,72 @@ namespace MedicalTreament
             this.guna2Panel1.Size = new System.Drawing.Size(266, 653);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.CheckedState.Parent = this.btnLogout;
+            this.btnLogout.CustomImages.Parent = this.btnLogout;
+            this.btnLogout.FillColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_logout_white_24dp;
+            this.btnLogout.HoverState.Parent = this.btnLogout;
+            this.btnLogout.Image = global::MedicalTreament.Properties.Resources.outline_logout_black_24dp;
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnLogout.Location = new System.Drawing.Point(23, 331);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
+            this.btnLogout.Size = new System.Drawing.Size(228, 57);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btn_click);
+            // 
+            // btnPatients
+            // 
+            this.btnPatients.CheckedState.Parent = this.btnPatients;
+            this.btnPatients.CustomImages.Parent = this.btnPatients;
+            this.btnPatients.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btnPatients.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatients.ForeColor = System.Drawing.Color.White;
+            this.btnPatients.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btnPatients.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnPatients.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_groups_white_24dp;
+            this.btnPatients.HoverState.Parent = this.btnPatients;
+            this.btnPatients.Image = global::MedicalTreament.Properties.Resources.baseline_groups_white_24dp;
+            this.btnPatients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnPatients.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPatients.Location = new System.Drawing.Point(23, 205);
+            this.btnPatients.Name = "btnPatients";
+            this.btnPatients.ShadowDecoration.Parent = this.btnPatients;
+            this.btnPatients.Size = new System.Drawing.Size(228, 57);
+            this.btnPatients.TabIndex = 4;
+            this.btnPatients.Text = "Patients";
+            this.btnPatients.Click += new System.EventHandler(this.btn_click);
+            // 
+            // btnReception
+            // 
+            this.btnReception.CheckedState.Parent = this.btnReception;
+            this.btnReception.CustomImages.Parent = this.btnReception;
+            this.btnReception.FillColor = System.Drawing.Color.White;
+            this.btnReception.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReception.ForeColor = System.Drawing.Color.Black;
+            this.btnReception.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.btnReception.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnReception.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_receipt_white_24dp;
+            this.btnReception.HoverState.Parent = this.btnReception;
+            this.btnReception.Image = global::MedicalTreament.Properties.Resources.outline_receipt_black_24dp;
+            this.btnReception.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReception.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReception.Location = new System.Drawing.Point(23, 268);
+            this.btnReception.Name = "btnReception";
+            this.btnReception.ShadowDecoration.Parent = this.btnReception;
+            this.btnReception.Size = new System.Drawing.Size(228, 57);
+            this.btnReception.TabIndex = 3;
+            this.btnReception.Text = "Reception";
+            this.btnReception.Click += new System.EventHandler(this.btn_click);
+            // 
             // guna2Separator1
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(23, 164);
@@ -82,6 +148,19 @@ namespace MedicalTreament
             this.labelName.Size = new System.Drawing.Size(45, 17);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Name";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::MedicalTreament.Properties.Resources.nurse_64;
+            this.guna2CirclePictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(63, 28);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 113);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -176,85 +255,6 @@ namespace MedicalTreament
             // 
             this.guna2DragControl1.TargetControl = this.guna2Panel2;
             // 
-            // btnLogout
-            // 
-            this.btnLogout.CheckedState.Parent = this.btnLogout;
-            this.btnLogout.CustomImages.Parent = this.btnLogout;
-            this.btnLogout.FillColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btnLogout.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_logout_white_24dp;
-            this.btnLogout.HoverState.Parent = this.btnLogout;
-            this.btnLogout.Image = global::MedicalTreament.Properties.Resources.outline_logout_black_24dp;
-            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLogout.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogout.Location = new System.Drawing.Point(23, 331);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
-            this.btnLogout.Size = new System.Drawing.Size(228, 57);
-            this.btnLogout.TabIndex = 5;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.Click += new System.EventHandler(this.btn_click);
-            // 
-            // btnPatients
-            // 
-            this.btnPatients.CheckedState.Parent = this.btnPatients;
-            this.btnPatients.CustomImages.Parent = this.btnPatients;
-            this.btnPatients.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btnPatients.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPatients.ForeColor = System.Drawing.Color.White;
-            this.btnPatients.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btnPatients.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnPatients.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_groups_white_24dp;
-            this.btnPatients.HoverState.Parent = this.btnPatients;
-            this.btnPatients.Image = global::MedicalTreament.Properties.Resources.baseline_groups_white_24dp;
-            this.btnPatients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPatients.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPatients.Location = new System.Drawing.Point(23, 205);
-            this.btnPatients.Name = "btnPatients";
-            this.btnPatients.ShadowDecoration.Parent = this.btnPatients;
-            this.btnPatients.Size = new System.Drawing.Size(228, 57);
-            this.btnPatients.TabIndex = 4;
-            this.btnPatients.Text = "Patients";
-            this.btnPatients.Click += new System.EventHandler(this.btn_click);
-            // 
-            // btnReception
-            // 
-            this.btnReception.CheckedState.Parent = this.btnReception;
-            this.btnReception.CustomImages.Parent = this.btnReception;
-            this.btnReception.FillColor = System.Drawing.Color.White;
-            this.btnReception.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReception.ForeColor = System.Drawing.Color.Black;
-            this.btnReception.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.btnReception.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnReception.HoverState.Image = global::MedicalTreament.Properties.Resources.baseline_receipt_white_24dp;
-            this.btnReception.HoverState.Parent = this.btnReception;
-            this.btnReception.Image = global::MedicalTreament.Properties.Resources.outline_receipt_black_24dp;
-            this.btnReception.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReception.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnReception.Location = new System.Drawing.Point(23, 268);
-            this.btnReception.Name = "btnReception";
-            this.btnReception.ShadowDecoration.Parent = this.btnReception;
-            this.btnReception.Size = new System.Drawing.Size(228, 57);
-            this.btnReception.TabIndex = 3;
-            this.btnReception.Text = "Reception";
-            this.btnReception.Click += new System.EventHandler(this.btn_click);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::MedicalTreament.Properties.Resources.nurse_64;
-            this.guna2CirclePictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(63, 28);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 113);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
             // FormSecretary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,12 +265,13 @@ namespace MedicalTreament
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSecretary";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSecretary";
             this.Load += new System.EventHandler(this.FormSecretary_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

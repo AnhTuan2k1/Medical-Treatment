@@ -31,13 +31,8 @@ namespace MedicalTreament
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDrugStore = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
-            this.btnOverview = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.labelName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
@@ -46,9 +41,14 @@ namespace MedicalTreament
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.PanelContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.btnDrugStore = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
+            this.btnOverview = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -67,6 +67,116 @@ namespace MedicalTreament
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(266, 700);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(23, 164);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(228, 15);
+            this.guna2Separator1.TabIndex = 2;
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelName.Location = new System.Drawing.Point(112, 144);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(45, 17);
+            this.labelName.TabIndex = 1;
+            this.labelName.Text = "Name";
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.guna2Panel2;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.gunaSeparator1);
+            this.guna2Panel2.Controls.Add(this.gunaControlBox3);
+            this.guna2Panel2.Controls.Add(this.gunaControlBox2);
+            this.guna2Panel2.Controls.Add(this.gunaControlBox1);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.guna2Panel2.Location = new System.Drawing.Point(266, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(1034, 48);
+            this.guna2Panel2.TabIndex = 2;
+            // 
+            // gunaSeparator1
+            // 
+            this.gunaSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gunaSeparator1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(0, 38);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(1034, 10);
+            this.gunaSeparator1.TabIndex = 0;
+            // 
+            // gunaControlBox3
+            // 
+            this.gunaControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox3.AnimationSpeed = 0.03F;
+            this.gunaControlBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox3.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox3.IconSize = 15F;
+            this.gunaControlBox3.Location = new System.Drawing.Point(887, 0);
+            this.gunaControlBox3.Name = "gunaControlBox3";
+            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox3.Size = new System.Drawing.Size(45, 41);
+            this.gunaControlBox3.TabIndex = 3;
+            // 
+            // gunaControlBox2
+            // 
+            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox2.AnimationSpeed = 0.03F;
+            this.gunaControlBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MaximizeBox;
+            this.gunaControlBox2.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox2.IconSize = 15F;
+            this.gunaControlBox2.Location = new System.Drawing.Point(938, 0);
+            this.gunaControlBox2.Name = "gunaControlBox2";
+            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox2.Size = new System.Drawing.Size(45, 41);
+            this.gunaControlBox2.TabIndex = 3;
+            // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(989, 0);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(45, 41);
+            this.gunaControlBox1.TabIndex = 0;
+            // 
+            // PanelContainer
+            // 
+            this.PanelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.PanelContainer.Location = new System.Drawing.Point(266, 47);
+            this.PanelContainer.Name = "PanelContainer";
+            this.PanelContainer.ShadowDecoration.Parent = this.PanelContainer;
+            this.PanelContainer.Size = new System.Drawing.Size(1034, 653);
+            this.PanelContainer.TabIndex = 1;
             // 
             // btnDrugStore
             // 
@@ -153,23 +263,6 @@ namespace MedicalTreament
             this.btnOverview.Text = "Overview";
             this.btnOverview.Click += new System.EventHandler(this.btn_Click);
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(23, 164);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(228, 15);
-            this.guna2Separator1.TabIndex = 2;
-            // 
-            // labelName
-            // 
-            this.labelName.AutoSize = true;
-            this.labelName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelName.Location = new System.Drawing.Point(112, 144);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(45, 17);
-            this.labelName.TabIndex = 1;
-            this.labelName.Text = "Name";
-            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::MedicalTreament.Properties.Resources.icons_fill_pharmacist_64;
@@ -183,96 +276,6 @@ namespace MedicalTreament
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.guna2Panel2;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.gunaSeparator1);
-            this.guna2Panel2.Controls.Add(this.gunaControlBox3);
-            this.guna2Panel2.Controls.Add(this.gunaControlBox2);
-            this.guna2Panel2.Controls.Add(this.gunaControlBox1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(266, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1034, 48);
-            this.guna2Panel2.TabIndex = 2;
-            // 
-            // gunaSeparator1
-            // 
-            this.gunaSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gunaSeparator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator1.Location = new System.Drawing.Point(0, 38);
-            this.gunaSeparator1.Name = "gunaSeparator1";
-            this.gunaSeparator1.Size = new System.Drawing.Size(1034, 10);
-            this.gunaSeparator1.TabIndex = 0;
-            // 
-            // gunaControlBox3
-            // 
-            this.gunaControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox3.AnimationSpeed = 0.03F;
-            this.gunaControlBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox3.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.Location = new System.Drawing.Point(887, 0);
-            this.gunaControlBox3.Name = "gunaControlBox3";
-            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.Size = new System.Drawing.Size(45, 41);
-            this.gunaControlBox3.TabIndex = 3;
-            // 
-            // gunaControlBox2
-            // 
-            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox2.AnimationSpeed = 0.03F;
-            this.gunaControlBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MaximizeBox;
-            this.gunaControlBox2.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox2.Location = new System.Drawing.Point(938, 0);
-            this.gunaControlBox2.Name = "gunaControlBox2";
-            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox2.Size = new System.Drawing.Size(45, 41);
-            this.gunaControlBox2.TabIndex = 3;
-            // 
-            // gunaControlBox1
-            // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Location = new System.Drawing.Point(989, 0);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(45, 41);
-            this.gunaControlBox1.TabIndex = 0;
-            // 
-            // PanelContainer
-            // 
-            this.PanelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.PanelContainer.Location = new System.Drawing.Point(266, 47);
-            this.PanelContainer.Name = "PanelContainer";
-            this.PanelContainer.ShadowDecoration.Parent = this.PanelContainer;
-            this.PanelContainer.Size = new System.Drawing.Size(1034, 653);
-            this.PanelContainer.TabIndex = 1;
-            // 
             // FormPharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,14 +285,14 @@ namespace MedicalTreament
             this.Controls.Add(this.PanelContainer);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormPharmacist";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPharmacist";
             this.Load += new System.EventHandler(this.FormPharmacist_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
