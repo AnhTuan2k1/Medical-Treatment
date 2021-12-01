@@ -35,3 +35,4 @@ D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.c
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csproj.CopyComplete
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.exe
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.pdb
+D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.csprojAssemblyReference.cache

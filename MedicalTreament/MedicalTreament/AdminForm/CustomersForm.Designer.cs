@@ -47,14 +47,19 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.dtgvAllCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.dtgvCustomersByTime = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ttkTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btRefreshDown = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btRefreshUp = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -63,11 +68,6 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAllCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCustomersByTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -212,6 +212,10 @@
             // 
             // dtgvAllCustomers
             // 
+            this.dtgvAllCustomers.AllowUserToAddRows = false;
+            this.dtgvAllCustomers.AllowUserToDeleteRows = false;
+            this.dtgvAllCustomers.AllowUserToResizeColumns = false;
+            this.dtgvAllCustomers.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgvAllCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvAllCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -276,16 +280,6 @@
             this.dtgvAllCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvAllCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(7, 507);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(159, 28);
-            this.gunaLabel7.TabIndex = 41;
-            this.gunaLabel7.Text = "Visitors History";
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -324,8 +318,22 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.Location = new System.Drawing.Point(7, 507);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(159, 28);
+            this.gunaLabel7.TabIndex = 41;
+            this.gunaLabel7.Text = "Visitors History";
+            // 
             // dtgvCustomersByTime
             // 
+            this.dtgvCustomersByTime.AllowUserToAddRows = false;
+            this.dtgvCustomersByTime.AllowUserToDeleteRows = false;
+            this.dtgvCustomersByTime.AllowUserToResizeColumns = false;
+            this.dtgvCustomersByTime.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.dtgvCustomersByTime.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvCustomersByTime.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -388,6 +396,38 @@
             this.dtgvCustomersByTime.ThemeStyle.RowsStyle.Height = 24;
             this.dtgvCustomersByTime.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvCustomersByTime.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column7.HeaderText = "No.";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 80;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Name";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Check In Time";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Check Out Time";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Paid";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
             // 
             // ttkTime
             // 
@@ -511,38 +551,6 @@
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 12;
             this.guna2PictureBox5.TabStop = false;
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column7.HeaderText = "No.";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 80;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Name";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Check In Time";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Check Out Time";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Paid";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
             // 
             // CustomersForm
             // 
