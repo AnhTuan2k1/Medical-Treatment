@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MedicalTreament
+namespace MedicalTreament.AdminForm
 {
-    public partial class AdminForm : Form
+    public partial class StorageForm : Form
     {
-        public AdminForm()
+        public StorageForm()
         {
             InitializeComponent();
-            guna2DataGridView1.AutoResizeColumns();
         }
     }
 }

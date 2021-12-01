@@ -15,7 +15,7 @@ namespace MedicalTreament
         public LoginForm()
         {
             InitializeComponent();
-            txtPassword.PasswordChar = '*';
+            txbPassword.PasswordChar = '*';
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -26,9 +26,9 @@ namespace MedicalTreament
 
         private void gunaLabel2_Click(object sender, EventArgs e)
         {
-            txtUsername.Clear();
-            txtPassword.Clear();
-            txtUsername.Focus();
+            txbUsername.Clear();
+            txbPassword.Clear();
+            txbUsername.Focus();
         }
 
         private void gunaLabel3_Click(object sender, EventArgs e)
