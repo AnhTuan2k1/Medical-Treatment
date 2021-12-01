@@ -203,6 +203,10 @@
             // 
             // dtgvEmployee
             // 
+            this.dtgvEmployee.AllowUserToAddRows = false;
+            this.dtgvEmployee.AllowUserToDeleteRows = false;
+            this.dtgvEmployee.AllowUserToResizeColumns = false;
+            this.dtgvEmployee.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgvEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
