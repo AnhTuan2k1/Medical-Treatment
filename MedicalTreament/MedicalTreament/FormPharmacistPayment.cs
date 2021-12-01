@@ -28,5 +28,9 @@ namespace MedicalTreament
             btn.ForeColor = Color.Black;
         }
 
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            new FormPharmacist_Bill().ShowDialog();
+        }
     }
 }

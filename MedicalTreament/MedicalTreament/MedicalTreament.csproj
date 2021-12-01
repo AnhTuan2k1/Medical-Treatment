@@ -46,6 +46,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -129,6 +130,12 @@
     </Compile>
     <Compile Include="FormPharmacistPayment.Designer.cs">
       <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacist_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacist_Bill.Designer.cs">
+      <DependentUpon>FormPharmacist_Bill.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
@@ -218,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacistPayment.resx">
       <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacist_Bill.resx">
+      <DependentUpon>FormPharmacist_Bill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>

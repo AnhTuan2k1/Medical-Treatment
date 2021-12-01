@@ -98,7 +98,7 @@ namespace MedicalTreament
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(149, 38);
+            this.guna2TextBox1.Size = new System.Drawing.Size(241, 38);
             this.guna2TextBox1.TabIndex = 11;
             // 
             // btnPayment
@@ -119,6 +119,7 @@ namespace MedicalTreament
             this.btnPayment.Size = new System.Drawing.Size(145, 45);
             this.btnPayment.TabIndex = 14;
             this.btnPayment.Text = "Pay";
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // guna2Button1
             // 

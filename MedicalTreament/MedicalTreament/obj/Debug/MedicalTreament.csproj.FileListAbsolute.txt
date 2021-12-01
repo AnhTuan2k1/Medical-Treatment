@@ -49,3 +49,4 @@ D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Tre
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormSpecialist_Patient.resources
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.LoginForm.resources
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistPatient.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacist_Bill.resources
