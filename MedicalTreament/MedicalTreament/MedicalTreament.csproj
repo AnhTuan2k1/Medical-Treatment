@@ -107,40 +107,52 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP.Designer.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Diagnosis.Designer.cs">
+      <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist\FormSpecialist_Price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist\FormSpecialist_Price.Designer.cs">
+      <DependentUpon>FormSpecialist_Price.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGP\FormGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP\FormGP.Designer.cs">
       <DependentUpon>FormGP.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP_Diagnosis.cs">
+    <Compile Include="FormGP\FormGP_Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP_Diagnosis.Designer.cs">
+    <Compile Include="FormGP\FormGP_Diagnosis.Designer.cs">
       <DependentUpon>FormGP_Diagnosis.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP_Patient.cs">
+    <Compile Include="FormGP\FormGP_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP_Patient.Designer.cs">
+    <Compile Include="FormGP\FormGP_Patient.Designer.cs">
       <DependentUpon>FormGP_Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP_Prescription.cs">
+    <Compile Include="FormGP\FormGP_Prescription.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP_Prescription.Designer.cs">
+    <Compile Include="FormGP\FormGP_Prescription.Designer.cs">
       <DependentUpon>FormGP_Prescription.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP_Prescription_AddPill.cs">
+    <Compile Include="FormGP\FormGP_Prescription_AddPill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP_Prescription_AddPill.Designer.cs">
+    <Compile Include="FormGP\FormGP_Prescription_AddPill.Designer.cs">
       <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
     </Compile>
-    <Compile Include="GPForm\FormGP_Profile.cs">
+    <Compile Include="FormGP\FormGP_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GPForm\FormGP_Profile.Designer.cs">
+    <Compile Include="FormGP\FormGP_Profile.Designer.cs">
       <DependentUpon>FormGP_Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPharmacist.cs">
@@ -203,28 +215,16 @@
     <Compile Include="FormSecretaryReception.Designer.cs">
       <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSpecialist.cs">
+    <Compile Include="FormSpecialist\FormSpecialist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSpecialist.Designer.cs">
+    <Compile Include="FormSpecialist\FormSpecialist.Designer.cs">
       <DependentUpon>FormSpecialist.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSpecialist_Diagnosis_Endoscopy.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSpecialist_Diagnosis_Endoscopy.Designer.cs">
-      <DependentUpon>FormSpecialist_Diagnosis_Endoscopy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSpecialist_Diagnosis_Ultrasound.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSpecialist_Diagnosis_Ultrasound.Designer.cs">
-      <DependentUpon>FormSpecialist_Diagnosis_Ultrasound.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSpecialist_Patient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSpecialist_Patient.Designer.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Patient.Designer.cs">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -259,19 +259,25 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GPForm\FormGP.resx">
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist_Diagnosis.resx">
+      <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist_Price.resx">
+      <DependentUpon>FormSpecialist_Price.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP\FormGP.resx">
       <DependentUpon>FormGP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GPForm\FormGP_Diagnosis.resx">
+    <EmbeddedResource Include="FormGP\FormGP_Diagnosis.resx">
       <DependentUpon>FormGP_Diagnosis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GPForm\FormGP_Patient.resx">
+    <EmbeddedResource Include="FormGP\FormGP_Patient.resx">
       <DependentUpon>FormGP_Patient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GPForm\FormGP_Prescription.resx">
+    <EmbeddedResource Include="FormGP\FormGP_Prescription.resx">
       <DependentUpon>FormGP_Prescription.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GPForm\FormGP_Prescription_AddPill.resx">
+    <EmbeddedResource Include="FormGP\FormGP_Prescription_AddPill.resx">
       <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacist.resx">
@@ -304,16 +310,10 @@
     <EmbeddedResource Include="FormSecretaryReception.resx">
       <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist.resx">
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist.resx">
       <DependentUpon>FormSpecialist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist_Diagnosis_Endoscopy.resx">
-      <DependentUpon>FormSpecialist_Diagnosis_Endoscopy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist_Diagnosis_Ultrasound.resx">
-      <DependentUpon>FormSpecialist_Diagnosis_Ultrasound.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist_Patient.resx">
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist_Patient.resx">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
