@@ -32,21 +32,21 @@ namespace MedicalTreament
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP));
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gpbtn_diagnosis = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gpbtn_account = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.gpbtn_prescription = new Guna.UI2.WinForms.Guna2Button();
+            this.gpbtn_patient = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_closeform = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btn_closeform = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.gpbtn_diagnosis = new Guna.UI2.WinForms.Guna2Button();
-            this.gpbtn_account = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.gpbtn_prescription = new Guna.UI2.WinForms.Guna2Button();
-            this.gpbtn_patient = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +65,28 @@ namespace MedicalTreament
             this.panel1.ShadowDecoration.Parent = this.panel1;
             this.panel1.Size = new System.Drawing.Size(232, 738);
             this.panel1.TabIndex = 0;
+            // 
+            // gpbtn_diagnosis
+            // 
+            this.gpbtn_diagnosis.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gpbtn_diagnosis.CheckedState.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.CustomImages.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.FillColor = System.Drawing.Color.Transparent;
+            this.gpbtn_diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbtn_diagnosis.ForeColor = System.Drawing.Color.White;
+            this.gpbtn_diagnosis.HoverState.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_diagnosis.Image")));
+            this.gpbtn_diagnosis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gpbtn_diagnosis.ImageOffset = new System.Drawing.Point(10, 0);
+            this.gpbtn_diagnosis.ImageSize = new System.Drawing.Size(30, 30);
+            this.gpbtn_diagnosis.Location = new System.Drawing.Point(0, 202);
+            this.gpbtn_diagnosis.Name = "gpbtn_diagnosis";
+            this.gpbtn_diagnosis.ShadowDecoration.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.Size = new System.Drawing.Size(232, 61);
+            this.gpbtn_diagnosis.TabIndex = 5;
+            this.gpbtn_diagnosis.Text = "Diagnosis";
+            this.gpbtn_diagnosis.TextOffset = new System.Drawing.Point(5, 0);
+            this.gpbtn_diagnosis.Click += new System.EventHandler(this.gpbtn_diagnosis_Click);
             // 
             // guna2Panel2
             // 
@@ -96,117 +118,6 @@ namespace MedicalTreament
             this.gunaLabel1.Size = new System.Drawing.Size(78, 28);
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Dr. Thai";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_closeform);
-            this.panel2.Controls.Add(this.guna2ControlBox3);
-            this.panel2.Controls.Add(this.guna2ControlBox2);
-            this.panel2.Controls.Add(this.guna2ControlBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(232, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.ShadowDecoration.Parent = this.panel2;
-            this.panel2.Size = new System.Drawing.Size(881, 64);
-            this.panel2.TabIndex = 1;
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(789, 0);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox3.TabIndex = 2;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(747, 0);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 1;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(821, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 29);
-            this.guna2ControlBox1.TabIndex = 0;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.panel2;
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.Transparent;
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(232, 64);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.ShadowDecoration.Parent = this.panelMain;
-            this.panelMain.Size = new System.Drawing.Size(881, 674);
-            this.panelMain.TabIndex = 2;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 8;
-            // 
-            // btn_closeform
-            // 
-            this.btn_closeform.CheckedState.Parent = this.btn_closeform;
-            this.btn_closeform.CustomImages.Parent = this.btn_closeform;
-            this.btn_closeform.FillColor = System.Drawing.Color.Transparent;
-            this.btn_closeform.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_closeform.ForeColor = System.Drawing.Color.White;
-            this.btn_closeform.HoverState.Parent = this.btn_closeform;
-            this.btn_closeform.Image = ((System.Drawing.Image)(resources.GetObject("btn_closeform.Image")));
-            this.btn_closeform.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_closeform.Location = new System.Drawing.Point(6, 8);
-            this.btn_closeform.Name = "btn_closeform";
-            this.btn_closeform.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_closeform.ShadowDecoration.Parent = this.btn_closeform;
-            this.btn_closeform.Size = new System.Drawing.Size(50, 50);
-            this.btn_closeform.TabIndex = 0;
-            this.btn_closeform.Click += new System.EventHandler(this.btn_closeform_Click);
-            // 
-            // gpbtn_diagnosis
-            // 
-            this.gpbtn_diagnosis.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.gpbtn_diagnosis.CheckedState.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.CustomImages.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.FillColor = System.Drawing.Color.Transparent;
-            this.gpbtn_diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbtn_diagnosis.ForeColor = System.Drawing.Color.White;
-            this.gpbtn_diagnosis.HoverState.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_diagnosis.Image")));
-            this.gpbtn_diagnosis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gpbtn_diagnosis.ImageOffset = new System.Drawing.Point(10, 0);
-            this.gpbtn_diagnosis.ImageSize = new System.Drawing.Size(30, 30);
-            this.gpbtn_diagnosis.Location = new System.Drawing.Point(0, 202);
-            this.gpbtn_diagnosis.Name = "gpbtn_diagnosis";
-            this.gpbtn_diagnosis.ShadowDecoration.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.Size = new System.Drawing.Size(232, 61);
-            this.gpbtn_diagnosis.TabIndex = 5;
-            this.gpbtn_diagnosis.Text = "Diagnosis";
-            this.gpbtn_diagnosis.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gpbtn_account
             // 
@@ -269,6 +180,96 @@ namespace MedicalTreament
             this.gpbtn_patient.TabIndex = 0;
             this.gpbtn_patient.Text = "Patient";
             this.gpbtn_patient.Click += new System.EventHandler(this.gpbtn_patient_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_closeform);
+            this.panel2.Controls.Add(this.guna2ControlBox3);
+            this.panel2.Controls.Add(this.guna2ControlBox2);
+            this.panel2.Controls.Add(this.guna2ControlBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(232, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.ShadowDecoration.Parent = this.panel2;
+            this.panel2.Size = new System.Drawing.Size(881, 64);
+            this.panel2.TabIndex = 1;
+            // 
+            // btn_closeform
+            // 
+            this.btn_closeform.CheckedState.Parent = this.btn_closeform;
+            this.btn_closeform.CustomImages.Parent = this.btn_closeform;
+            this.btn_closeform.FillColor = System.Drawing.Color.Transparent;
+            this.btn_closeform.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_closeform.ForeColor = System.Drawing.Color.White;
+            this.btn_closeform.HoverState.Parent = this.btn_closeform;
+            this.btn_closeform.Image = ((System.Drawing.Image)(resources.GetObject("btn_closeform.Image")));
+            this.btn_closeform.ImageSize = new System.Drawing.Size(35, 35);
+            this.btn_closeform.Location = new System.Drawing.Point(6, 8);
+            this.btn_closeform.Name = "btn_closeform";
+            this.btn_closeform.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_closeform.ShadowDecoration.Parent = this.btn_closeform;
+            this.btn_closeform.Size = new System.Drawing.Size(50, 50);
+            this.btn_closeform.TabIndex = 0;
+            this.btn_closeform.Click += new System.EventHandler(this.btn_closeform_Click);
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(789, 0);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox3.TabIndex = 2;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(747, 0);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 1;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(821, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 29);
+            this.guna2ControlBox1.TabIndex = 0;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.panel2;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(232, 64);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.ShadowDecoration.Parent = this.panelMain;
+            this.panelMain.Size = new System.Drawing.Size(881, 674);
+            this.panelMain.TabIndex = 2;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 8;
             // 
             // FormGP
             // 

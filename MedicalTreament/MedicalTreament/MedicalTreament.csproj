@@ -76,6 +76,12 @@
     <Compile Include="FormGP.Designer.cs">
       <DependentUpon>FormGP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGP_Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Diagnosis.Designer.cs">
+      <DependentUpon>FormGP_Diagnosis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGP_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,11 +172,17 @@
     <Compile Include="FormSpecialist.Designer.cs">
       <DependentUpon>FormSpecialist.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSpecialist_Diagnosis.cs">
+    <Compile Include="FormSpecialist_Diagnosis_Endoscopy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSpecialist_Diagnosis.Designer.cs">
-      <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
+    <Compile Include="FormSpecialist_Diagnosis_Endoscopy.Designer.cs">
+      <DependentUpon>FormSpecialist_Diagnosis_Endoscopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis_Ultrasound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Diagnosis_Ultrasound.Designer.cs">
+      <DependentUpon>FormSpecialist_Diagnosis_Ultrasound.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSpecialist_Patient.cs">
       <SubType>Form</SubType>
@@ -194,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGP.resx">
       <DependentUpon>FormGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP_Diagnosis.resx">
+      <DependentUpon>FormGP_Diagnosis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGP_Patient.resx">
       <DependentUpon>FormGP_Patient.cs</DependentUpon>
@@ -236,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist.resx">
       <DependentUpon>FormSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Diagnosis_Endoscopy.resx">
+      <DependentUpon>FormSpecialist_Diagnosis_Endoscopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Diagnosis_Ultrasound.resx">
+      <DependentUpon>FormSpecialist_Diagnosis_Ultrasound.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist_Patient.resx">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>

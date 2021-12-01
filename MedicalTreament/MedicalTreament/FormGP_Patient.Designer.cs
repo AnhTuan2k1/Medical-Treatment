@@ -30,62 +30,19 @@ namespace MedicalTreament
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Patient));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_add = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btn_remove = new Guna.UI2.WinForms.Guna2CircleButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Patient));
             this.gridview_patient = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridview_patient)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_add
-            // 
-            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add.CheckedState.Parent = this.btn_add;
-            this.btn_add.CustomImages.Parent = this.btn_add;
-            this.btn_add.FillColor = System.Drawing.Color.LimeGreen;
-            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.HoverState.Parent = this.btn_add;
-            this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
-            this.btn_add.ImageOffset = new System.Drawing.Point(1, 1);
-            this.btn_add.ImageSize = new System.Drawing.Size(28, 28);
-            this.btn_add.Location = new System.Drawing.Point(755, 13);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(45, 45);
-            this.btn_add.TabIndex = 7;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
-            // 
-            // btn_remove
-            // 
-            this.btn_remove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_remove.CheckedState.Parent = this.btn_remove;
-            this.btn_remove.CustomImages.Parent = this.btn_remove;
-            this.btn_remove.FillColor = System.Drawing.Color.Salmon;
-            this.btn_remove.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_remove.ForeColor = System.Drawing.Color.White;
-            this.btn_remove.HoverState.Parent = this.btn_remove;
-            this.btn_remove.Image = ((System.Drawing.Image)(resources.GetObject("btn_remove.Image")));
-            this.btn_remove.ImageOffset = new System.Drawing.Point(1, 1);
-            this.btn_remove.ImageSize = new System.Drawing.Size(28, 28);
-            this.btn_remove.Location = new System.Drawing.Point(806, 13);
-            this.btn_remove.Name = "btn_remove";
-            this.btn_remove.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_remove.ShadowDecoration.Parent = this.btn_remove;
-            this.btn_remove.Size = new System.Drawing.Size(45, 45);
-            this.btn_remove.TabIndex = 6;
-            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
             // gridview_patient
             // 
@@ -98,7 +55,6 @@ namespace MedicalTreament
             this.gridview_patient.BackgroundColor = System.Drawing.Color.White;
             this.gridview_patient.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_patient.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gridview_patient.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -111,8 +67,7 @@ namespace MedicalTreament
             this.gridview_patient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3,
-            this.Column4});
+            this.Column3});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -145,7 +100,7 @@ namespace MedicalTreament
             this.gridview_patient.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gridview_patient.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_patient.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gridview_patient.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridview_patient.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.gridview_patient.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gridview_patient.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gridview_patient.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
@@ -159,35 +114,10 @@ namespace MedicalTreament
             this.gridview_patient.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_patient.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Column1
+            // guna2Elipse1
             // 
-            this.Column1.FillWeight = 66.00918F;
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 192.5134F;
-            this.Column2.HeaderText = "Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 71.11977F;
-            this.Column3.HeaderText = "Diagnosis";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 70.35754F;
-            this.Column4.HeaderText = "Prescription";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2Elipse1.BorderRadius = 9;
+            this.guna2Elipse1.TargetControl = this.gridview_patient;
             // 
             // gppatienttextbox_search
             // 
@@ -218,18 +148,32 @@ namespace MedicalTreament
             this.gppatienttextbox_search.TabIndex = 4;
             this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // guna2Elipse1
+            // Column1
             // 
-            this.guna2Elipse1.BorderRadius = 9;
-            this.guna2Elipse1.TargetControl = this.gridview_patient;
+            this.Column1.FillWeight = 50F;
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 85F;
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 225F;
+            this.Column3.HeaderText = "Diagnosis";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
             // 
             // FormGP_Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 627);
-            this.Controls.Add(this.btn_add);
-            this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.gridview_patient);
             this.Controls.Add(this.gppatienttextbox_search);
             this.Name = "FormGP_Patient";
@@ -241,15 +185,11 @@ namespace MedicalTreament
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton btn_add;
-        private Guna.UI2.WinForms.Guna2CircleButton btn_remove;
         private Guna.UI2.WinForms.Guna2DataGridView gridview_patient;
+        private Guna.UI2.WinForms.Guna2TextBox gppatienttextbox_search;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private Guna.UI2.WinForms.Guna2TextBox gppatienttextbox_search;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

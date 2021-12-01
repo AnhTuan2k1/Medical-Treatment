@@ -92,7 +92,7 @@ namespace MedicalTreament
 
         private void spbtn_diagnosis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Diagnosis(), sender);
+            OpenChildForm(new FormSpecialist_Diagnosis_Endoscopy(), sender);
         }
     }
 }
