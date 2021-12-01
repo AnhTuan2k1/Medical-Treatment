@@ -12,6 +12,7 @@ namespace MedicalTreament
 {
     public partial class FormPharmacist_Bill : Form
     {
+        Bitmap bmp;
         public FormPharmacist_Bill()
         {
             InitializeComponent();
@@ -21,5 +22,26 @@ namespace MedicalTreament
         {
             this.Close();
         }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPayPrint_Click(object sender, EventArgs e)
+        {
+            btnPay_Click(sender, e);
+            Graphics g = guna2Panel1.CreateGraphics();
+            bmp = new Bitmap(guna2Panel1.Size.Width, guna2Panel1.Size.Height, g);
+            Graphics mg = Graphics.FromImage(bmp);
+            mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, guna2Panel1.Size);
+            printPreviewDialog1.ShowDialog();           
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bmp, 150, 0);
+        }
+
     }
 }
