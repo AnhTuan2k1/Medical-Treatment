@@ -59,13 +59,12 @@ namespace MedicalTreament
 
 
             string name = this.gridview_pill.CurrentRow.Cells[1].Value.ToString(); ;
-            string amount = form_add.textbox_amount.Text;
-            string route = form_add.textbox_route.Text;
+            //string amount = form_add.textbox_amount.Text;
 
-            if (name != "" && amount != "" && route != "")
-            {
-                this.gridview_prescription.Rows.Add(new object[] { name, amount, route });
-            }
+            //if (name != "" && amount != "")
+            //{
+            //    this.gridview_prescription.Rows.Add(new object[] { name, amount});
+            //}
             
 
         }

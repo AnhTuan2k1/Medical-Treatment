@@ -28,16 +28,16 @@ public partial class FormGP_Prescription_AddPill : Form
 
     private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            //if (textbox_amount.Text == "" || textbox_route.Text == "")
-            //{
+            if (textbox_amount.Text == "")
+            {
 
-            //}
-            //else
-            //{
-                
+            }
+            else
+            {
+
                 this.FGPP.Rows.Add(new object[] { label_name.Text, textbox_amount.Text });
                 this.Close();
-            //}
+            }
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)

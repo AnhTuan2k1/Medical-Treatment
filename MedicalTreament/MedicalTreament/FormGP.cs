@@ -101,5 +101,10 @@ namespace MedicalTreament
             currtentButton = null;
             btn_closeform.Visible = false;
         }
+
+        private void gpbtn_diagnosis_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormGP_Diagnosis(), sender);
+        }
     }
 }

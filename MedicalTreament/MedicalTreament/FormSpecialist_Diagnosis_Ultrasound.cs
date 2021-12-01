@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-    public partial class FormSpecialist_Diagnosis : Form
+    public partial class FormSpecialist_Diagnosis_Ultrasound : Form
     {
-        public FormSpecialist_Diagnosis()
+        public FormSpecialist_Diagnosis_Ultrasound()
         {
             InitializeComponent();
         }
