@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-    public partial class FormSpecialist_Price : Form
+    public partial class FormSpecialist_Diagnosis_Ultrasound : Form
     {
-        public FormSpecialist_Price()
+        public FormSpecialist_Diagnosis_Ultrasound()
         {
             InitializeComponent();
-        }
-
-        private void FormSpecialist_Price_Load(object sender, EventArgs e)
-        {
-            guna2DataGridView1.Rows.Add(new object[]
-    {
-                "Eyes", "500k"
-    });
         }
     }
 }

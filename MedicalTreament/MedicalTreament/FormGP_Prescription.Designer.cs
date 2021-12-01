@@ -47,7 +47,6 @@ namespace MedicalTreament
             this.btn_remove = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label_date = new Guna.UI.WinForms.GunaLabel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_pill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_prescription)).BeginInit();
             this.SuspendLayout();
@@ -291,26 +290,11 @@ namespace MedicalTreament
             this.label_date.Size = new System.Drawing.Size(0, 25);
             this.label_date.TabIndex = 10;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(671, 538);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 11;
-            this.guna2Button1.Text = "OK";
-            // 
             // FormGP_Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 627);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label_date);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_remove);
@@ -340,6 +324,5 @@ namespace MedicalTreament
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
