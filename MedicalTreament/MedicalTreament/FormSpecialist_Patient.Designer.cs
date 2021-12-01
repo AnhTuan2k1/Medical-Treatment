@@ -43,9 +43,10 @@ namespace MedicalTreament
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gridview_sp_patient = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -201,7 +202,8 @@ namespace MedicalTreament
             this.gridview_sp_patient.ColumnHeadersHeight = 27;
             this.gridview_sp_patient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2});
+            this.Column2,
+            this.Column3});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -254,22 +256,6 @@ namespace MedicalTreament
             this.gridview_sp_patient.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_sp_patient.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 40F;
-            this.Column1.HeaderText = "Number";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 160F;
-            this.Column2.HeaderText = "Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.AutoRoundedCorners = true;
@@ -286,6 +272,29 @@ namespace MedicalTreament
             this.guna2Button1.Size = new System.Drawing.Size(236, 45);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Examination List";
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 40F;
+            this.Column1.HeaderText = "Number";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 160F;
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Price";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // FormSpecialist_Patient
             // 
@@ -322,5 +331,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2DataGridView gridview_sp_patient;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
