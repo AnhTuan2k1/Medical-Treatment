@@ -118,11 +118,11 @@
     <Compile Include="FormPharmacistDrugStock_Add.Designer.cs">
       <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacistOverview.cs">
+    <Compile Include="FormPharmacistPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacistOverview.Designer.cs">
-      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    <Compile Include="FormPharmacistPatient.Designer.cs">
+      <DependentUpon>FormPharmacistPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPharmacistPayment.cs">
       <SubType>Form</SubType>
@@ -213,8 +213,8 @@
     <EmbeddedResource Include="FormPharmacistDrugStock_Add.resx">
       <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacistOverview.resx">
-      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    <EmbeddedResource Include="FormPharmacistPatient.resx">
+      <DependentUpon>FormPharmacistPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacistPayment.resx">
       <DependentUpon>FormPharmacistPayment.cs</DependentUpon>

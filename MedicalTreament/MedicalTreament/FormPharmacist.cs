@@ -23,7 +23,7 @@ namespace MedicalTreament
             guna2ShadowForm1.SetShadowForm(this);
 
             // open form FormPharmacistOverview fist
-            FormPharmacistOverview overview = new FormPharmacistOverview(btnOverview)
+            FormPharmacistPatient overview = new FormPharmacistPatient(btnPatients)
             { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
             PanelContainer.Controls.Add(overview);
@@ -42,8 +42,8 @@ namespace MedicalTreament
                     btn.Image = Properties.Resources.baseline_store_mall_directory_white_24dp;
                     break;
 
-                case "btnOverview":
-                    form = new FormPharmacistOverview(btn);
+                case "btnPatients":
+                    form = new FormPharmacistPatient(btn);
                     btn.Image = Properties.Resources.baseline_dashboard_white_24dp;
                     break;
 
@@ -52,7 +52,7 @@ namespace MedicalTreament
                     btn.Image = Properties.Resources.baseline_paid_white_24dp;
                     break;
                 case "btnLogout":
-                    
+
                     break;
  
                 default:

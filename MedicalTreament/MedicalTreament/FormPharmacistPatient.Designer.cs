@@ -1,7 +1,7 @@
 ﻿
 namespace MedicalTreament
 {
-    partial class FormPharmacistOverview
+    partial class FormPharmacistPatient
     {
         /// <summary>
         /// Required designer variable.
