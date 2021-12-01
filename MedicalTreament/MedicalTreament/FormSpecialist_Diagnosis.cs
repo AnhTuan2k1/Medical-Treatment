@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-    public partial class FormSpecialist_Diagnosis_Endoscopy : Form
+    public partial class FormSpecialist_Diagnosis : Form
     {
-        public FormSpecialist_Diagnosis_Endoscopy()
+
+        private Form form;
+        public FormSpecialist_Diagnosis()
         {
             InitializeComponent();
         }
+
+ 
     }
 }
