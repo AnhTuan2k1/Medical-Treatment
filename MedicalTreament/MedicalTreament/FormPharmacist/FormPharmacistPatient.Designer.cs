@@ -37,7 +37,7 @@ namespace MedicalTreament
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -108,24 +108,25 @@ namespace MedicalTreament
             this.guna2ComboBox1.Size = new System.Drawing.Size(234, 36);
             this.guna2ComboBox1.TabIndex = 6;
             // 
-            // btnPayment
+            // btnPay
             // 
-            this.btnPayment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPayment.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnPayment.BorderRadius = 5;
-            this.btnPayment.BorderThickness = 1;
-            this.btnPayment.CheckedState.Parent = this.btnPayment;
-            this.btnPayment.CustomImages.Parent = this.btnPayment;
-            this.btnPayment.FillColor = System.Drawing.Color.Transparent;
-            this.btnPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnPayment.HoverState.Parent = this.btnPayment;
-            this.btnPayment.Location = new System.Drawing.Point(857, 596);
-            this.btnPayment.Name = "btnPayment";
-            this.btnPayment.ShadowDecoration.Parent = this.btnPayment;
-            this.btnPayment.Size = new System.Drawing.Size(145, 45);
-            this.btnPayment.TabIndex = 7;
-            this.btnPayment.Text = "Pay";
+            this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnPay.BorderRadius = 5;
+            this.btnPay.BorderThickness = 1;
+            this.btnPay.CheckedState.Parent = this.btnPay;
+            this.btnPay.CustomImages.Parent = this.btnPay;
+            this.btnPay.FillColor = System.Drawing.Color.Transparent;
+            this.btnPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnPay.HoverState.Parent = this.btnPay;
+            this.btnPay.Location = new System.Drawing.Point(857, 596);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.ShadowDecoration.Parent = this.btnPay;
+            this.btnPay.Size = new System.Drawing.Size(145, 45);
+            this.btnPay.TabIndex = 7;
+            this.btnPay.Text = "Pay";
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // guna2DataGridView1
             // 
@@ -210,7 +211,7 @@ namespace MedicalTreament
             this.label4.TabIndex = 9;
             this.label4.Text = "stt,tên, sđt, trạng thái";
             // 
-            // FormPharmacistOverview
+            // FormPharmacistPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +219,7 @@ namespace MedicalTreament
             this.ClientSize = new System.Drawing.Size(1034, 653);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.btnPayment);
+            this.Controls.Add(this.btnPay);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -226,7 +227,7 @@ namespace MedicalTreament
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormPharmacistOverview";
+            this.Name = "FormPharmacistPatient";
             this.Text = "FormPharmacistOverview";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormPharmacistOverview_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
@@ -243,7 +244,7 @@ namespace MedicalTreament
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2Button btnPayment;
+        private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label4;
     }

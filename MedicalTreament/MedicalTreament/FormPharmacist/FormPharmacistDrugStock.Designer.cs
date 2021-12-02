@@ -34,16 +34,16 @@ namespace MedicalTreament
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.btnNew = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
+            this.gunaRadioButton2 = new Guna.UI.WinForms.GunaRadioButton();
+            this.gunaRadioButton3 = new Guna.UI.WinForms.GunaRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -121,57 +121,17 @@ namespace MedicalTreament
             this.label1.TabIndex = 6;
             this.label1.Text = "Drugs Stock";
             // 
-            // gunaCheckBox1
-            // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Checked = true;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox1.Location = new System.Drawing.Point(6, 34);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(51, 23);
-            this.gunaCheckBox1.TabIndex = 9;
-            this.gunaCheckBox1.Text = "All";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.gunaCheckBox3);
-            this.groupBox1.Controls.Add(this.gunaCheckBox2);
-            this.groupBox1.Controls.Add(this.gunaCheckBox1);
+            this.groupBox1.Controls.Add(this.gunaRadioButton3);
+            this.groupBox1.Controls.Add(this.gunaRadioButton2);
+            this.groupBox1.Controls.Add(this.gunaRadioButton1);
             this.groupBox1.Location = new System.Drawing.Point(297, 95);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(483, 75);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "View";
-            // 
-            // gunaCheckBox3
-            // 
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox3.Location = new System.Drawing.Point(224, 34);
-            this.gunaCheckBox3.Name = "gunaCheckBox3";
-            this.gunaCheckBox3.Size = new System.Drawing.Size(166, 23);
-            this.gunaCheckBox3.TabIndex = 11;
-            this.gunaCheckBox3.Text = "Drug out of Stock";
-            // 
-            // gunaCheckBox2
-            // 
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox2.Location = new System.Drawing.Point(76, 34);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(134, 23);
-            this.gunaCheckBox2.TabIndex = 10;
-            this.gunaCheckBox2.Text = "Expired Drug";
             // 
             // btnDelete
             // 
@@ -191,6 +151,7 @@ namespace MedicalTreament
             this.btnDelete.Size = new System.Drawing.Size(122, 45);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -210,6 +171,7 @@ namespace MedicalTreament
             this.btnEdit.Size = new System.Drawing.Size(122, 45);
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnNew
             // 
@@ -277,6 +239,46 @@ namespace MedicalTreament
             this.guna2TextBox1.Size = new System.Drawing.Size(267, 44);
             this.guna2TextBox1.TabIndex = 4;
             // 
+            // gunaRadioButton1
+            // 
+            this.gunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton1.Checked = true;
+            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton1.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaRadioButton1.Location = new System.Drawing.Point(20, 31);
+            this.gunaRadioButton1.Name = "gunaRadioButton1";
+            this.gunaRadioButton1.Size = new System.Drawing.Size(45, 20);
+            this.gunaRadioButton1.TabIndex = 12;
+            this.gunaRadioButton1.Text = "All";
+            // 
+            // gunaRadioButton2
+            // 
+            this.gunaRadioButton2.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton2.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton2.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaRadioButton2.Location = new System.Drawing.Point(241, 31);
+            this.gunaRadioButton2.Name = "gunaRadioButton2";
+            this.gunaRadioButton2.Size = new System.Drawing.Size(133, 20);
+            this.gunaRadioButton2.TabIndex = 13;
+            this.gunaRadioButton2.Text = "Drug out of Stock";
+            // 
+            // gunaRadioButton3
+            // 
+            this.gunaRadioButton3.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton3.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaRadioButton3.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaRadioButton3.Location = new System.Drawing.Point(99, 31);
+            this.gunaRadioButton3.Name = "gunaRadioButton3";
+            this.gunaRadioButton3.Size = new System.Drawing.Size(108, 20);
+            this.gunaRadioButton3.TabIndex = 14;
+            this.gunaRadioButton3.Text = "Expired Drug";
+            // 
             // FormPharmacistDrugStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,13 +313,13 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2Button btnNew;
         private System.Windows.Forms.Label label3;
+        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton3;
+        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton2;
+        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton1;
     }
 }

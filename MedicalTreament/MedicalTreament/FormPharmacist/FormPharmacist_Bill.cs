@@ -43,5 +43,9 @@ namespace MedicalTreament
             e.Graphics.DrawImage(bmp, 150, 0);
         }
 
+        private void FormPharmacist_Bill_Load(object sender, EventArgs e)
+        {
+            guna2ShadowForm1.SetShadowForm(this);
+        }
     }
 }
