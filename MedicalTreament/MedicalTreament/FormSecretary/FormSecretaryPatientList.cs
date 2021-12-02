@@ -32,5 +32,20 @@ namespace MedicalTreament
             FormSecretaryPatientList_Add formAddPatient = new FormSecretaryPatientList_Add();
             formAddPatient.ShowDialog();
         }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

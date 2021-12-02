@@ -11,20 +11,25 @@ using Guna.UI2.WinForms;
 
 namespace MedicalTreament
 {
-    public partial class FormPharmacistOverview : Form
+    public partial class FormSecretaryReception : Form
     {
         Guna2Button btn;
-        public FormPharmacistOverview(Guna2Button btn)
+        public FormSecretaryReception(Guna2Button button)
         {
             InitializeComponent();
-            this.btn = btn;
+            btn = button;
         }
 
-        private void FormPharmacistOverview_FormClosed(object sender, FormClosedEventArgs e)
+        private void FormSecretaryReception_FormClosed(object sender, FormClosedEventArgs e)
         {
-            btn.Image = Properties.Resources.baseline_dashboard_black_24dp;
+            btn.Image = Properties.Resources.outline_receipt_black_24dp;
             btn.FillColor = Color.White;
             btn.ForeColor = Color.Black;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -141,13 +141,13 @@ namespace MedicalTreament
             // 
             // labelName
             // 
-            this.labelName.AutoSize = true;
             this.labelName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelName.Location = new System.Drawing.Point(112, 144);
+            this.labelName.Location = new System.Drawing.Point(23, 144);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(45, 17);
+            this.labelName.Size = new System.Drawing.Size(228, 17);
             this.labelName.TabIndex = 1;
-            this.labelName.Text = "Name";
+            this.labelName.Text = "Secretary";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2CirclePictureBox1
             // 
@@ -269,7 +269,6 @@ namespace MedicalTreament
             this.Text = "FormSecretary";
             this.Load += new System.EventHandler(this.FormSecretary_Load);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);

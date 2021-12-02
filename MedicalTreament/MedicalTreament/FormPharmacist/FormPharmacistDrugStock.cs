@@ -32,5 +32,15 @@ namespace MedicalTreament
             FormPharmacistDrugStock_Add formAddDrug = new FormPharmacistDrugStock_Add();
             formAddDrug.ShowDialog();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

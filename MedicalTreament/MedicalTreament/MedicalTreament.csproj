@@ -46,6 +46,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -155,35 +156,41 @@
     <Compile Include="FormGP\FormGP_Profile.Designer.cs">
       <DependentUpon>FormGP_Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacist.cs">
+    <Compile Include="FormPharmacist\FormPharmacist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacist.Designer.cs">
+    <Compile Include="FormPharmacist\FormPharmacist.Designer.cs">
       <DependentUpon>FormPharmacist.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacistDrugStock.cs">
+    <Compile Include="FormPharmacist\FormPharmacistDrugStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacistDrugStock.Designer.cs">
+    <Compile Include="FormPharmacist\FormPharmacistDrugStock.Designer.cs">
       <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacistDrugStock_Add.cs">
+    <Compile Include="FormPharmacist\FormPharmacistDrugStock_Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacistDrugStock_Add.Designer.cs">
+    <Compile Include="FormPharmacist\FormPharmacistDrugStock_Add.Designer.cs">
       <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacistOverview.cs">
+    <Compile Include="FormPharmacist\FormPharmacistPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacistOverview.Designer.cs">
-      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    <Compile Include="FormPharmacist\FormPharmacistPatient.Designer.cs">
+      <DependentUpon>FormPharmacistPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPharmacistPayment.cs">
+    <Compile Include="FormPharmacist\FormPharmacistPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPharmacistPayment.Designer.cs">
+    <Compile Include="FormPharmacist\FormPharmacistPayment.Designer.cs">
       <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPharmacist\FormPharmacist_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacist\FormPharmacist_Bill.Designer.cs">
+      <DependentUpon>FormPharmacist_Bill.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
@@ -191,28 +198,28 @@
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSecretary.cs">
+    <Compile Include="FormSecretary\FormSecretary.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSecretary.Designer.cs">
+    <Compile Include="FormSecretary\FormSecretary.Designer.cs">
       <DependentUpon>FormSecretary.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSecretaryPatientList.cs">
+    <Compile Include="FormSecretary\FormSecretaryPatientList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSecretaryPatientList.Designer.cs">
+    <Compile Include="FormSecretary\FormSecretaryPatientList.Designer.cs">
       <DependentUpon>FormSecretaryPatientList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSecretaryPatientList_Add.cs">
+    <Compile Include="FormSecretary\FormSecretaryPatientList_Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSecretaryPatientList_Add.Designer.cs">
+    <Compile Include="FormSecretary\FormSecretaryPatientList_Add.Designer.cs">
       <DependentUpon>FormSecretaryPatientList_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSecretaryReception.cs">
+    <Compile Include="FormSecretary\FormSecretaryReception.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSecretaryReception.Designer.cs">
+    <Compile Include="FormSecretary\FormSecretaryReception.Designer.cs">
       <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSpecialist\FormSpecialist.cs">
@@ -280,34 +287,37 @@
     <EmbeddedResource Include="FormGP\FormGP_Prescription_AddPill.resx">
       <DependentUpon>FormGP_Prescription_AddPill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacist.resx">
+    <EmbeddedResource Include="FormPharmacist\FormPharmacist.resx">
       <DependentUpon>FormPharmacist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacistDrugStock.resx">
+    <EmbeddedResource Include="FormPharmacist\FormPharmacistDrugStock.resx">
       <DependentUpon>FormPharmacistDrugStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacistDrugStock_Add.resx">
+    <EmbeddedResource Include="FormPharmacist\FormPharmacistDrugStock_Add.resx">
       <DependentUpon>FormPharmacistDrugStock_Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacistOverview.resx">
-      <DependentUpon>FormPharmacistOverview.cs</DependentUpon>
+    <EmbeddedResource Include="FormPharmacist\FormPharmacistPatient.resx">
+      <DependentUpon>FormPharmacistPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPharmacistPayment.resx">
+    <EmbeddedResource Include="FormPharmacist\FormPharmacistPayment.resx">
       <DependentUpon>FormPharmacistPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacist\FormPharmacist_Bill.resx">
+      <DependentUpon>FormPharmacist_Bill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecretary.resx">
+    <EmbeddedResource Include="FormSecretary\FormSecretary.resx">
       <DependentUpon>FormSecretary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecretaryPatientList.resx">
+    <EmbeddedResource Include="FormSecretary\FormSecretaryPatientList.resx">
       <DependentUpon>FormSecretaryPatientList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecretaryPatientList_Add.resx">
+    <EmbeddedResource Include="FormSecretary\FormSecretaryPatientList_Add.resx">
       <DependentUpon>FormSecretaryPatientList_Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSecretaryReception.resx">
+    <EmbeddedResource Include="FormSecretary\FormSecretaryReception.resx">
       <DependentUpon>FormSecretaryReception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist.resx">
@@ -418,8 +428,6 @@
   <ItemGroup>
     <None Include="Resources\reception-desk-64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pharmacist\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
