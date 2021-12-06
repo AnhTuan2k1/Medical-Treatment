@@ -9,3 +9,4 @@ D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Tre
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CopyComplete
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.dll
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.pdb
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.AssemblyReference.cache
