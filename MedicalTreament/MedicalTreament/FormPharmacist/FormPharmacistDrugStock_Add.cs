@@ -31,5 +31,6 @@ namespace MedicalTreament
         {
             this.Close();
         }
+
     }
 }

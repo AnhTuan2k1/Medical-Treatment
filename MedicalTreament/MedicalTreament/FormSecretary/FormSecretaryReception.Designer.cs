@@ -47,6 +47,8 @@ namespace MedicalTreament
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -350,6 +352,8 @@ namespace MedicalTreament
             this.guna2GroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GroupBox3.Controls.Add(this.txtPrice);
+            this.guna2GroupBox3.Controls.Add(this.gunaLabel1);
             this.guna2GroupBox3.Controls.Add(this.groupBox2);
             this.guna2GroupBox3.Controls.Add(this.guna2ComboBox3);
             this.guna2GroupBox3.Controls.Add(this.guna2ComboBox4);
@@ -367,6 +371,44 @@ namespace MedicalTreament
             this.guna2GroupBox3.Size = new System.Drawing.Size(986, 302);
             this.guna2GroupBox3.TabIndex = 17;
             this.guna2GroupBox3.Text = "Examination Information";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.DefaultText = "500000";
+            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.DisabledState.Parent = this.txtPrice;
+            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.FocusedState.Parent = this.txtPrice;
+            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.HoverState.Parent = this.txtPrice;
+            this.txtPrice.Location = new System.Drawing.Point(239, 51);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PlaceholderText = "";
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.SelectionStart = 6;
+            this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
+            this.txtPrice.Size = new System.Drawing.Size(185, 35);
+            this.txtPrice.TabIndex = 23;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel1.Location = new System.Drawing.Point(181, 57);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(51, 23);
+            this.gunaLabel1.TabIndex = 22;
+            this.gunaLabel1.Text = "Price:";
             // 
             // groupBox2
             // 
@@ -461,7 +503,7 @@ namespace MedicalTreament
             this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
             this.guna2DateTimePicker2.Size = new System.Drawing.Size(239, 32);
             this.guna2DateTimePicker2.TabIndex = 17;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 11, 28, 21, 59, 54, 553);
+            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 12, 5, 10, 12, 26, 0);
             // 
             // gunaLabel11
             // 
@@ -575,5 +617,7 @@ namespace MedicalTreament
         private Guna.UI.WinForms.GunaLabel gunaLabel14;
         private Guna.UI.WinForms.GunaLabel gunaLabel15;
         private Guna.UI.WinForms.GunaLabel gunaLabel16;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrice;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

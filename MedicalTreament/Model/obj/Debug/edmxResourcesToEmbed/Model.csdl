@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MedicalTreatmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MedicalTreatmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="MedicalTreatmentModel.Account" />
+    <EntitySet Name="DiagnoseResults" EntityType="MedicalTreatmentModel.DiagnoseResult" />
+    <EntitySet Name="Drugs" EntityType="MedicalTreatmentModel.Drug" />
+    <EntitySet Name="Employees" EntityType="MedicalTreatmentModel.Employee" />
+    <EntitySet Name="ExaminationForms" EntityType="MedicalTreatmentModel.ExaminationForm" />
+    <EntitySet Name="GPdrugDetails" EntityType="MedicalTreatmentModel.GPdrugDetail" />
+    <EntitySet Name="Invoices" EntityType="MedicalTreatmentModel.Invoice" />
+    <EntitySet Name="Patients" EntityType="MedicalTreatmentModel.Patient" />
+    <EntitySet Name="PaySalaries" EntityType="MedicalTreatmentModel.PaySalary" />
+    <EntitySet Name="Prescriptions" EntityType="MedicalTreatmentModel.Prescription" />
+    <EntitySet Name="SpecialistExaminations" EntityType="MedicalTreatmentModel.SpecialistExamination" />
+    <EntitySet Name="SpecialistExaminationRequests" EntityType="MedicalTreatmentModel.SpecialistExaminationRequest" />
+    <EntitySet Name="SpecialistExaminationResults" EntityType="MedicalTreatmentModel.SpecialistExaminationResult" />
+    <EntitySet Name="sysdiagrams" EntityType="MedicalTreatmentModel.sysdiagram" />
+    <EntitySet Name="DrugInvoiceDetails" EntityType="MedicalTreatmentModel.DrugInvoiceDetail" />
+    <EntitySet Name="ExaminationInvoiceDetails" EntityType="MedicalTreatmentModel.ExaminationInvoiceDetail" />
+    <AssociationSet Name="FK__Account__Employe__01142BA1" Association="MedicalTreatmentModel.FK__Account__Employe__01142BA1">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiagnoseR__Exami__5441852A" Association="MedicalTreatmentModel.FK__DiagnoseR__Exami__5441852A">
+      <End Role="ExaminationForm" EntitySet="ExaminationForms" />
+      <End Role="DiagnoseResult" EntitySet="DiagnoseResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiagnoseR__Patie__5535A963" Association="MedicalTreatmentModel.FK__DiagnoseR__Patie__5535A963">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="DiagnoseResult" EntitySet="DiagnoseResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiagnoseRe__GPID__5629CD9C" Association="MedicalTreatmentModel.FK__DiagnoseRe__GPID__5629CD9C">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="DiagnoseResult" EntitySet="DiagnoseResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DrugInvoi__DrugI__68487DD7" Association="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7">
+      <End Role="Drug" EntitySet="Drugs" />
+      <End Role="DrugInvoiceDetail" EntitySet="DrugInvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examinati__Secre__45F365D3" Association="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="ExaminationForm" EntitySet="ExaminationForms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GPdrugDeta__GPID__5EBF139D" Association="MedicalTreatmentModel.FK__GPdrugDeta__GPID__5EBF139D">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="GPdrugDetail" EntitySet="GPdrugDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Invoice__Pharmac__628FA481" Association="MedicalTreatmentModel.FK__Invoice__Pharmac__628FA481">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PaySalary__Emplo__3C69FB99" Association="MedicalTreatmentModel.FK__PaySalary__Emplo__3C69FB99">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="PaySalary" EntitySet="PaySalaries" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prescripti__GPID__59FA5E80" Association="MedicalTreatmentModel.FK__Prescripti__GPID__59FA5E80">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Prescription" EntitySet="Prescriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialis__Speci__5165187F" Association="MedicalTreatmentModel.FK__Specialis__Speci__5165187F">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="SpecialistExaminationResult" EntitySet="SpecialistExaminationResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialist__GPID__4CA06362" Association="MedicalTreatmentModel.FK__Specialist__GPID__4CA06362">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="SpecialistExaminationRequest" EntitySet="SpecialistExaminationRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examinati__Patie__44FF419A" Association="MedicalTreatmentModel.FK__Examinati__Patie__44FF419A">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="ExaminationForm" EntitySet="ExaminationForms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GPdrugDet__Patie__5DCAEF64" Association="MedicalTreatmentModel.FK__GPdrugDet__Patie__5DCAEF64">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="GPdrugDetail" EntitySet="GPdrugDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GPdrugDet__Presc__5CD6CB2B" Association="MedicalTreatmentModel.FK__GPdrugDet__Presc__5CD6CB2B">
+      <End Role="Prescription" EntitySet="Prescriptions" />
+      <End Role="GPdrugDetail" EntitySet="GPdrugDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DrugInvoi__Invoi__6754599E" Association="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="DrugInvoiceDetail" EntitySet="DrugInvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examinati__Invoi__6477ECF3" Association="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Invoice__Patient__619B8048" Association="MedicalTreatmentModel.FK__Invoice__Patient__619B8048">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Prescript__Patie__59063A47" Association="MedicalTreatmentModel.FK__Prescript__Patie__59063A47">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="Prescription" EntitySet="Prescriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialis__Patie__4BAC3F29" Association="MedicalTreatmentModel.FK__Specialis__Patie__4BAC3F29">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="SpecialistExaminationRequest" EntitySet="SpecialistExaminationRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialis__Patie__5070F446" Association="MedicalTreatmentModel.FK__Specialis__Patie__5070F446">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="SpecialistExaminationResult" EntitySet="SpecialistExaminationResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examinati__Speci__656C112C" Association="MedicalTreatmentModel.FK__Examinati__Speci__656C112C">
+      <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
+      <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialis__Speci__4AB81AF0" Association="MedicalTreatmentModel.FK__Specialis__Speci__4AB81AF0">
+      <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
+      <End Role="SpecialistExaminationRequest" EntitySet="SpecialistExaminationRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Specialis__Speci__4F7CD00D" Association="MedicalTreatmentModel.FK__Specialis__Speci__4F7CD00D">
+      <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
+      <End Role="SpecialistExaminationResult" EntitySet="SpecialistExaminationResults" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Account__Employe__01142BA1" FromRole="Account" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="DiagnoseResult">
+    <Key>
+      <PropertyRef Name="DiagnoseResultID" />
+    </Key>
+    <Property Name="DiagnoseResultID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Result" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Direction" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ExaminationFormID" Type="Int32" Nullable="false" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="GPID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ExaminationForm" Relationship="MedicalTreatmentModel.FK__DiagnoseR__Exami__5441852A" FromRole="DiagnoseResult" ToRole="ExaminationForm" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__DiagnoseR__Patie__5535A963" FromRole="DiagnoseResult" ToRole="Patient" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__DiagnoseRe__GPID__5629CD9C" FromRole="DiagnoseResult" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Drug">
+    <Key>
+      <PropertyRef Name="DrugID" />
+    </Key>
+    <Property Name="DrugID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Producer" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ExprirationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ImportDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="DrugInvoiceDetails" Relationship="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7" FromRole="Drug" ToRole="DrugInvoiceDetail" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Position" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Accounts" Relationship="MedicalTreatmentModel.FK__Account__Employe__01142BA1" FromRole="Employee" ToRole="Account" />
+    <NavigationProperty Name="DiagnoseResults" Relationship="MedicalTreatmentModel.FK__DiagnoseRe__GPID__5629CD9C" FromRole="Employee" ToRole="DiagnoseResult" />
+    <NavigationProperty Name="ExaminationForms" Relationship="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3" FromRole="Employee" ToRole="ExaminationForm" />
+    <NavigationProperty Name="GPdrugDetails" Relationship="MedicalTreatmentModel.FK__GPdrugDeta__GPID__5EBF139D" FromRole="Employee" ToRole="GPdrugDetail" />
+    <NavigationProperty Name="Invoices" Relationship="MedicalTreatmentModel.FK__Invoice__Pharmac__628FA481" FromRole="Employee" ToRole="Invoice" />
+    <NavigationProperty Name="PaySalaries" Relationship="MedicalTreatmentModel.FK__PaySalary__Emplo__3C69FB99" FromRole="Employee" ToRole="PaySalary" />
+    <NavigationProperty Name="Prescriptions" Relationship="MedicalTreatmentModel.FK__Prescripti__GPID__59FA5E80" FromRole="Employee" ToRole="Prescription" />
+    <NavigationProperty Name="SpecialistExaminationResults" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__5165187F" FromRole="Employee" ToRole="SpecialistExaminationResult" />
+    <NavigationProperty Name="SpecialistExaminationRequests" Relationship="MedicalTreatmentModel.FK__Specialist__GPID__4CA06362" FromRole="Employee" ToRole="SpecialistExaminationRequest" />
+  </EntityType>
+  <EntityType Name="ExaminationForm">
+    <Key>
+      <PropertyRef Name="ExaminationFormID" />
+    </Key>
+    <Property Name="ExaminationFormID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ordinal" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Reason" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="SecretaryID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DiagnoseResults" Relationship="MedicalTreatmentModel.FK__DiagnoseR__Exami__5441852A" FromRole="ExaminationForm" ToRole="DiagnoseResult" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3" FromRole="ExaminationForm" ToRole="Employee" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Examinati__Patie__44FF419A" FromRole="ExaminationForm" ToRole="Patient" />
+  </EntityType>
+  <EntityType Name="GPdrugDetail">
+    <Key>
+      <PropertyRef Name="GPdrugID" />
+    </Key>
+    <Property Name="GPdrugID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="PrescriptionID" Type="Int32" Nullable="false" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="GPID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__GPdrugDeta__GPID__5EBF139D" FromRole="GPdrugDetail" ToRole="Employee" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Patie__5DCAEF64" FromRole="GPdrugDetail" ToRole="Patient" />
+    <NavigationProperty Name="Prescription" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Presc__5CD6CB2B" FromRole="GPdrugDetail" ToRole="Prescription" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="PharmacistID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Invoice__Pharmac__628FA481" FromRole="Invoice" ToRole="Employee" />
+    <NavigationProperty Name="DrugInvoiceDetails" Relationship="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E" FromRole="Invoice" ToRole="DrugInvoiceDetail" />
+    <NavigationProperty Name="ExaminationInvoiceDetails" Relationship="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3" FromRole="Invoice" ToRole="ExaminationInvoiceDetail" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Invoice__Patient__619B8048" FromRole="Invoice" ToRole="Patient" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="PatientID" />
+    </Key>
+    <Property Name="PatientID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HealthInsuarance" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="Nation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WorkPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DiagnoseResults" Relationship="MedicalTreatmentModel.FK__DiagnoseR__Patie__5535A963" FromRole="Patient" ToRole="DiagnoseResult" />
+    <NavigationProperty Name="ExaminationForms" Relationship="MedicalTreatmentModel.FK__Examinati__Patie__44FF419A" FromRole="Patient" ToRole="ExaminationForm" />
+    <NavigationProperty Name="GPdrugDetails" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Patie__5DCAEF64" FromRole="Patient" ToRole="GPdrugDetail" />
+    <NavigationProperty Name="Invoices" Relationship="MedicalTreatmentModel.FK__Invoice__Patient__619B8048" FromRole="Patient" ToRole="Invoice" />
+    <NavigationProperty Name="Prescriptions" Relationship="MedicalTreatmentModel.FK__Prescript__Patie__59063A47" FromRole="Patient" ToRole="Prescription" />
+    <NavigationProperty Name="SpecialistExaminationRequests" Relationship="MedicalTreatmentModel.FK__Specialis__Patie__4BAC3F29" FromRole="Patient" ToRole="SpecialistExaminationRequest" />
+    <NavigationProperty Name="SpecialistExaminationResults" Relationship="MedicalTreatmentModel.FK__Specialis__Patie__5070F446" FromRole="Patient" ToRole="SpecialistExaminationResult" />
+  </EntityType>
+  <EntityType Name="PaySalary">
+    <Key>
+      <PropertyRef Name="PaySalaryID" />
+    </Key>
+    <Property Name="PaySalaryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__PaySalary__Emplo__3C69FB99" FromRole="PaySalary" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Prescription">
+    <Key>
+      <PropertyRef Name="PrescriptionID" />
+    </Key>
+    <Property Name="PrescriptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DoctorDirection" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="GPID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Prescripti__GPID__59FA5E80" FromRole="Prescription" ToRole="Employee" />
+    <NavigationProperty Name="GPdrugDetails" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Presc__5CD6CB2B" FromRole="Prescription" ToRole="GPdrugDetail" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Prescript__Patie__59063A47" FromRole="Prescription" ToRole="Patient" />
+  </EntityType>
+  <EntityType Name="SpecialistExamination">
+    <Key>
+      <PropertyRef Name="SpecialExaminationID" />
+    </Key>
+    <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="ExaminationInvoiceDetails" Relationship="MedicalTreatmentModel.FK__Examinati__Speci__656C112C" FromRole="SpecialistExamination" ToRole="ExaminationInvoiceDetail" />
+    <NavigationProperty Name="SpecialistExaminationRequests" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__4AB81AF0" FromRole="SpecialistExamination" ToRole="SpecialistExaminationRequest" />
+    <NavigationProperty Name="SpecialistExaminationResults" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__4F7CD00D" FromRole="SpecialistExamination" ToRole="SpecialistExaminationResult" />
+  </EntityType>
+  <EntityType Name="SpecialistExaminationRequest">
+    <Key>
+      <PropertyRef Name="SErequestID" />
+    </Key>
+    <Property Name="SErequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="GPID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Specialist__GPID__4CA06362" FromRole="SpecialistExaminationRequest" ToRole="Employee" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Specialis__Patie__4BAC3F29" FromRole="SpecialistExaminationRequest" ToRole="Patient" />
+    <NavigationProperty Name="SpecialistExamination" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__4AB81AF0" FromRole="SpecialistExaminationRequest" ToRole="SpecialistExamination" />
+  </EntityType>
+  <EntityType Name="SpecialistExaminationResult">
+    <Key>
+      <PropertyRef Name="SEresultID" />
+    </Key>
+    <Property Name="SEresultID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Result" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Conclusion" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" />
+    <Property Name="PatientID" Type="Int32" Nullable="false" />
+    <Property Name="SpecialistID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__5165187F" FromRole="SpecialistExaminationResult" ToRole="Employee" />
+    <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Specialis__Patie__5070F446" FromRole="SpecialistExaminationResult" ToRole="Patient" />
+    <NavigationProperty Name="SpecialistExamination" Relationship="MedicalTreatmentModel.FK__Specialis__Speci__4F7CD00D" FromRole="SpecialistExaminationResult" ToRole="SpecialistExamination" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="DrugInvoiceDetail">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="DrugID" />
+    </Key>
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+    <Property Name="DrugID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Drug" Relationship="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7" FromRole="DrugInvoiceDetail" ToRole="Drug" />
+    <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E" FromRole="DrugInvoiceDetail" ToRole="Invoice" />
+  </EntityType>
+  <EntityType Name="ExaminationInvoiceDetail">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="SpecialExaminationID" />
+    </Key>
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+    <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3" FromRole="ExaminationInvoiceDetail" ToRole="Invoice" />
+    <NavigationProperty Name="SpecialistExamination" Relationship="MedicalTreatmentModel.FK__Examinati__Speci__656C112C" FromRole="ExaminationInvoiceDetail" ToRole="SpecialistExamination" />
+  </EntityType>
+  <Association Name="FK__Account__Employe__01142BA1">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.Account" Role="Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiagnoseR__Exami__5441852A">
+    <End Type="MedicalTreatmentModel.ExaminationForm" Role="ExaminationForm" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.DiagnoseResult" Role="DiagnoseResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExaminationForm">
+        <PropertyRef Name="ExaminationFormID" />
+      </Principal>
+      <Dependent Role="DiagnoseResult">
+        <PropertyRef Name="ExaminationFormID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiagnoseR__Patie__5535A963">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.DiagnoseResult" Role="DiagnoseResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="DiagnoseResult">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiagnoseRe__GPID__5629CD9C">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.DiagnoseResult" Role="DiagnoseResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="DiagnoseResult">
+        <PropertyRef Name="GPID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DrugInvoi__DrugI__68487DD7">
+    <End Type="MedicalTreatmentModel.Drug" Role="Drug" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.DrugInvoiceDetail" Role="DrugInvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drug">
+        <PropertyRef Name="DrugID" />
+      </Principal>
+      <Dependent Role="DrugInvoiceDetail">
+        <PropertyRef Name="DrugID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examinati__Secre__45F365D3">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.ExaminationForm" Role="ExaminationForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="ExaminationForm">
+        <PropertyRef Name="SecretaryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GPdrugDeta__GPID__5EBF139D">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.GPdrugDetail" Role="GPdrugDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="GPdrugDetail">
+        <PropertyRef Name="GPID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Invoice__Pharmac__628FA481">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="PharmacistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PaySalary__Emplo__3C69FB99">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.PaySalary" Role="PaySalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="PaySalary">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prescripti__GPID__59FA5E80">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.Prescription" Role="Prescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Prescription">
+        <PropertyRef Name="GPID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialis__Speci__5165187F">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationResult" Role="SpecialistExaminationResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationResult">
+        <PropertyRef Name="SpecialistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialist__GPID__4CA06362">
+    <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationRequest" Role="SpecialistExaminationRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationRequest">
+        <PropertyRef Name="GPID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examinati__Patie__44FF419A">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.ExaminationForm" Role="ExaminationForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="ExaminationForm">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GPdrugDet__Patie__5DCAEF64">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.GPdrugDetail" Role="GPdrugDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="GPdrugDetail">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GPdrugDet__Presc__5CD6CB2B">
+    <End Type="MedicalTreatmentModel.Prescription" Role="Prescription" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.GPdrugDetail" Role="GPdrugDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prescription">
+        <PropertyRef Name="PrescriptionID" />
+      </Principal>
+      <Dependent Role="GPdrugDetail">
+        <PropertyRef Name="PrescriptionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DrugInvoi__Invoi__6754599E">
+    <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.DrugInvoiceDetail" Role="DrugInvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceID" />
+      </Principal>
+      <Dependent Role="DrugInvoiceDetail">
+        <PropertyRef Name="InvoiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examinati__Invoi__6477ECF3">
+    <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceID" />
+      </Principal>
+      <Dependent Role="ExaminationInvoiceDetail">
+        <PropertyRef Name="InvoiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Invoice__Patient__619B8048">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Prescript__Patie__59063A47">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.Prescription" Role="Prescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Prescription">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialis__Patie__4BAC3F29">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationRequest" Role="SpecialistExaminationRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationRequest">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialis__Patie__5070F446">
+    <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationResult" Role="SpecialistExaminationResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationResult">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examinati__Speci__656C112C">
+    <End Type="MedicalTreatmentModel.SpecialistExamination" Role="SpecialistExamination" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialistExamination">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Principal>
+      <Dependent Role="ExaminationInvoiceDetail">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialis__Speci__4AB81AF0">
+    <End Type="MedicalTreatmentModel.SpecialistExamination" Role="SpecialistExamination" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationRequest" Role="SpecialistExaminationRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialistExamination">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationRequest">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Specialis__Speci__4F7CD00D">
+    <End Type="MedicalTreatmentModel.SpecialistExamination" Role="SpecialistExamination" Multiplicity="1" />
+    <End Type="MedicalTreatmentModel.SpecialistExaminationResult" Role="SpecialistExaminationResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialistExamination">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Principal>
+      <Dependent Role="SpecialistExaminationResult">
+        <PropertyRef Name="SpecialExaminationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
