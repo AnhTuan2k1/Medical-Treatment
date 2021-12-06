@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MedicalTreatmentModelStoreContainer" CdmEntityContainer="MedicalTreatmentEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiagnoseResults">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.DiagnoseResult">
+        <MappingFragment StoreEntitySet="DiagnoseResult">
+          <ScalarProperty Name="GPID" ColumnName="GPID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="ExaminationFormID" ColumnName="ExaminationFormID" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DiagnoseResultID" ColumnName="DiagnoseResultID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drugs">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Drug">
+        <MappingFragment StoreEntitySet="Drug">
+          <ScalarProperty Name="ImportDate" ColumnName="ImportDate" />
+          <ScalarProperty Name="ExprirationDate" ColumnName="ExprirationDate" />
+          <ScalarProperty Name="Producer" ColumnName="Producer" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DrugID" ColumnName="DrugID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExaminationForms">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.ExaminationForm">
+        <MappingFragment StoreEntitySet="ExaminationForm">
+          <ScalarProperty Name="SecretaryID" ColumnName="SecretaryID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Ordinal" ColumnName="Ordinal" />
+          <ScalarProperty Name="ExaminationFormID" ColumnName="ExaminationFormID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPdrugDetails">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.GPdrugDetail">
+        <MappingFragment StoreEntitySet="GPdrugDetail">
+          <ScalarProperty Name="GPID" ColumnName="GPID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="PrescriptionID" ColumnName="PrescriptionID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="GPdrugID" ColumnName="GPdrugID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="PharmacistID" ColumnName="PharmacistID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Patient">
+        <MappingFragment StoreEntitySet="Patient">
+          <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="HealthInsuarance" ColumnName="HealthInsuarance" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaySalaries">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.PaySalary">
+        <MappingFragment StoreEntitySet="PaySalary">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PaySalaryID" ColumnName="PaySalaryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prescriptions">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.Prescription">
+        <MappingFragment StoreEntitySet="Prescription">
+          <ScalarProperty Name="GPID" ColumnName="GPID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="DoctorDirection" ColumnName="DoctorDirection" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PrescriptionID" ColumnName="PrescriptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialistExaminations">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.SpecialistExamination">
+        <MappingFragment StoreEntitySet="SpecialistExamination">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialistExaminationRequests">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.SpecialistExaminationRequest">
+        <MappingFragment StoreEntitySet="SpecialistExaminationRequest">
+          <ScalarProperty Name="GPID" ColumnName="GPID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SErequestID" ColumnName="SErequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialistExaminationResults">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.SpecialistExaminationResult">
+        <MappingFragment StoreEntitySet="SpecialistExaminationResult">
+          <ScalarProperty Name="SpecialistID" ColumnName="SpecialistID" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
+          <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SEresultID" ColumnName="SEresultID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DrugInvoiceDetails">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.DrugInvoiceDetail">
+        <MappingFragment StoreEntitySet="DrugInvoiceDetail">
+          <ScalarProperty Name="DrugID" ColumnName="DrugID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExaminationInvoiceDetails">
+      <EntityTypeMapping TypeName="MedicalTreatmentModel.ExaminationInvoiceDetail">
+        <MappingFragment StoreEntitySet="ExaminationInvoiceDetail">
+          <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
