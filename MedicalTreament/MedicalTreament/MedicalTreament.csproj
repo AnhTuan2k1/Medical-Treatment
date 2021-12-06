@@ -437,7 +437,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{231e763f-b7c9-469c-8557-0a327add1bbe}</Project>
+      <Project>{349cd6c6-c18e-46ae-b397-4b641c5503fd}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>

@@ -8,16 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using BusinessLayer;
 
 namespace MedicalTreament
 {
     public partial class FormSecretaryPatientList : Form
     {
+        BUS_Patient bus_patient;
         Guna2Button btn;
+
+
         public FormSecretaryPatientList(Guna2Button btn)
         {
             InitializeComponent();
             this.btn = btn;
+            bus_patient = new BUS_Patient();
+        }
+
+        private void ShowPatients()
+        {
+            guna2DataGridViewPatients.DataSource = null;
+            bus_patient.GetPatients(guna2DataGridViewPatients);
         }
 
         private void FormSecretaryPatientList_FormClosed(object sender, FormClosedEventArgs e)
@@ -46,6 +57,11 @@ namespace MedicalTreament
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormSecretaryPatientList_Load(object sender, EventArgs e)
+        {
+            ShowPatients();
         }
     }
 }
