@@ -151,8 +151,47 @@ create table DrugInvoiceDetail
 --insert into Employee(Name, Position, Salary, Email) values ('Reyan Jain', 'pharmacist', 2000000, 'reyanjain@gmail.com') 
 --insert into Employee(Name, Position, Salary, Email) values ('Sonia Bush', 'secretary', 1000000, 'sonia@gmail.com')  
 
---insert into Account(Username, Password, type, EmployeeID) values ('admin0', '0', 'admin', 0) 
+--insert into OAccount(Username, Password, type, EmployeeID) values ('admin0', '0', 'admin', 0) 
 --insert into Account(Username, Password, type, EmployeeID) values ('pharmacist1', '1', 'pharmacist', 2) 
 --insert into Account(Username, Password, type, EmployeeID) values ('pharmacist1', '1', 'pharmacist', 1)
 insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
 values ('Sanu Roy', '0938527419', '', 'SV4576584594234', 'female', '22/6/2002', 'Viet Nam', '')
+
+
+
+
+-- Drug--------------------------------------------------------------------------------------------------------------
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00001','Acetaminophen','effervescent','650 mg','1100','2000','Actamin','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00002','afatinib','oral tablet','30 mg','500','3000','Gilotrif','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00003','Molnupiravir','oral tablet','500 mg','600','8000','Merck','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00004','Paracetamol','oral tablet','500 mg','900','8000','Tylenol','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00005','Dexamethasone','oral tablet','0.5mg','900','7000','Decadron','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00006','Methylprednisolone','oral tablet','16mg','400','8000','Medrol','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00007','Rivaroxaban','oral tablet','10mg','550','8000','Xarelto','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00008','Apixaban','oral tablet','2.5 mg','660','7500','Eliquis','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00009','Dabigatran','oral capsule','110 mg','470','6000','Pradaxa','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00010','Ibuprofen','oral capsule','200 mg','830','3000','Advil','1/12/2025','1/12/2021')
+
+insert into Drug(DrugID, Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('00011','Cephalexin','oral capsule','250 mg','530','2000','Keflex','1/12/2025','1/12/2021')
+
+-------------------------------------------------------------------------------------------------------------------
