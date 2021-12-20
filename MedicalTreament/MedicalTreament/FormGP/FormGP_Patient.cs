@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,47 +13,25 @@ namespace MedicalTreament
 {
     public partial class FormGP_Patient : Form
     {
+        BUS_Patient bus_Patient;
         public FormGP_Patient()
         {
             InitializeComponent();
+            bus_Patient = new BUS_Patient();
         }
 
         private void FormGP_Patient_Load(object sender, EventArgs e)
         {
-            //gridview_patient.Rows.Add(4);
-            //gridview_patient.Rows[0].Cells[0].Value = "001";
-            //gridview_patient.Rows[0].Cells[1].Value = "Lil Bi";
-            //gridview_patient.Rows[0].Cells[2].Value = "Yes";
-            //gridview_patient.Rows[0].Cells[3].Value = "Yes";
-
-            //gridview_patient.Rows[1].Cells[0].Value = "002";
-            //gridview_patient.Rows[1].Cells[1].Value = "Wan Vu";
-            //gridview_patient.Rows[1].Cells[2].Value = "Yes";
-            //gridview_patient.Rows[1].Cells[3].Value = "Yes";
-
-            //gridview_patient.Rows[2].Cells[0].Value = "003";
-            //gridview_patient.Rows[2].Cells[1].Value = "Chuan Pi";
-            //gridview_patient.Rows[2].Cells[2].Value = "No";
-            //gridview_patient.Rows[2].Cells[3].Value = "Yes";
-
-            //gridview_patient.Rows[3].Cells[0].Value = "004";
-            //gridview_patient.Rows[3].Cells[1].Value = "Lil Po";
-            //gridview_patient.Rows[3].Cells[2].Value = "No";
-
-            gridview_patient.Rows.Add(new object[]
-            {
-                "005", "Alaba", "Eyes"
-            });
-
-            gridview_patient.Rows.Add(new object[]
-           {
-                "001", "AlabaTrap", "Heart, Brain"
-           });
-
-            gridview_patient.Rows.Add(new object[]
-           {
-                "002", "madagaska", "No"
-           });
+            bus_Patient.ShowPatients(gridview_patient);
+            gridview_patient.Columns["Phone"].Visible = false;
+            gridview_patient.Columns["Address"].Visible = false;
+            gridview_patient.Columns["HealthInsuarance"].Visible = false;
+            gridview_patient.Columns["Gender"].Visible = false;
+            gridview_patient.Columns["DateOfBirth"].Visible = false;
+            gridview_patient.Columns["Nation"].Visible = false;
+            gridview_patient.Columns["WorkPlace"].Visible = false;
+            gridview_patient.Columns[0].Width = 100;
+        
         }
 
         private void btn_add_Click(object sender, EventArgs e)

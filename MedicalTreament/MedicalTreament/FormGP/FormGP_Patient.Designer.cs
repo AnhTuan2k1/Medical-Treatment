@@ -38,13 +38,16 @@ namespace MedicalTreament
             this.gridview_patient = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_patient)).BeginInit();
             this.SuspendLayout();
             // 
             // gridview_patient
             // 
+            this.gridview_patient.AllowUserToAddRows = false;
+            this.gridview_patient.AllowUserToDeleteRows = false;
+            this.gridview_patient.AllowUserToOrderColumns = true;
+            this.gridview_patient.AllowUserToResizeColumns = false;
+            this.gridview_patient.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gridview_patient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridview_patient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -64,9 +67,6 @@ namespace MedicalTreament
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridview_patient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridview_patient.ColumnHeadersHeight = 30;
-            this.gridview_patient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -147,20 +147,6 @@ namespace MedicalTreament
             this.gppatienttextbox_search.TabIndex = 4;
             this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 50F;
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 85F;
-            this.Column2.HeaderText = "Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
             // FormGP_Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,7 +166,5 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2DataGridView gridview_patient;
         private Guna.UI2.WinForms.Guna2TextBox gppatienttextbox_search;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
