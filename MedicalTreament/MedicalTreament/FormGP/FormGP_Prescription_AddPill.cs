@@ -46,6 +46,24 @@ public partial class FormGP_Prescription_AddPill : Form
             this.Close();
         }
 
+        private void label_ttname_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label_ttamount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormGP_Prescription_AddPill_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textbox_amount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

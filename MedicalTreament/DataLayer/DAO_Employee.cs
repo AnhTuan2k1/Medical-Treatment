@@ -26,6 +26,9 @@ namespace DataLayer
         }
 
 
+
+
+
         public dynamic GetGP()
         {
             var list = from GP in db.Set<Employee>()
@@ -40,6 +43,25 @@ namespace DataLayer
                        };
 
             return list.ToList();
+        }
+        public void AddGP(string name, string phone, DateTime birth, string gender = "",
+       string address = "", string healthInsurance = "", string nation = "", string workplace = "")
+        {
+            Patient patient = new Patient()
+            {
+                Name = name,
+                Phone = phone,
+                DateOfBirth = birth.Date,
+                Gender = gender,
+                Address = address,
+                HealthInsuarance = healthInsurance,
+                Nation = nation,
+                WorkPlace = workplace
+            };
+
+            db.Patients.Add(patient);
+            db.SaveChanges();
+
         }
     }
 }

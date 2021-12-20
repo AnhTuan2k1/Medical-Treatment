@@ -241,6 +241,12 @@
     <Compile Include="FormSpecialist\FormSpecialist_Patient.Designer.cs">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSpecialist_Price_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Price_Add.Designer.cs">
+      <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Patient.resx">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Price_Add.resx">
+      <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
