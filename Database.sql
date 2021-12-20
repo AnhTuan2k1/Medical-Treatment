@@ -157,11 +157,7 @@ create table DrugInvoiceDetail
 insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
 values ('Sanu Roy', '0938527419', '', 'SV4576584594234', 'female', '22/6/2002', 'Viet Nam', '')
 
-insert into Employee(Name, Position, Salary, Email) values ('Sonia Bush', 'secretary', 1000000, 'sonia@gmail.com')  
-insert into Account(Username, Password, type, EmployeeID) values ('ama', '123', 'secretary', 1)
 
-insert into Employee(Name, Position, Salary, Email) values ('Reyan Jain', 'pharmacist', 2000000, 'reyanjain@gmail.com') 
-insert into Account(Username, Password, type, EmployeeID) values ('ama', '123', 'pharmacist', 1)
 
 
 -- Drug--------------------------------------------------------------------------------------------------------------
@@ -171,63 +167,60 @@ values ('Acetaminophen','effervescent','650 mg','1100','2000','Actamin','1/12/20
 insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Afatinib','oral tablet','30 mg','500','3000','Gilotrif','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Molnupiravir','oral tablet','500 mg','600','8000','Merck','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Paracetamol','oral tablet','500 mg','900','8000','Tylenol','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Dexamethasone','oral tablet','0.5mg','900','7000','Decadron','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Methylprednisolone','oral tablet','16mg','400','8000','Medrol','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Rivaroxaban','oral tablet','10mg','550','8000','Xarelto','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Apixaban','oral tablet','2.5 mg','660','7500','Eliquis','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Dabigatran','oral capsule','110 mg','470','6000','Pradaxa','1/12/2025','1/12/2021')
 
 insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Ibuprofen','oral capsule','200 mg','830','3000','Advil','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Cephalexin','oral capsule','250 mg','530','2000','Keflex','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Trazodone','oral tablet','100 mg','580','2000','Desyrel','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Methadone','oral tablet','150 mg','1800','400','Dolophine','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Lisinopril','oral tablet','10 mg','770','1500','Prinivil','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Omeprazole','oral delayed release tablet','20 mg','2000','600','FIRST Omeprazole','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Mesalamine','oral delayed release capsule','400 mg','1200','1500','Apriso','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Felodipine','oral tablet','10 mg','1500','700','Plendil','1/12/2025','1/12/2021')
 
 insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Flutamide','oral capsule','125 mg','1130','1000','Eulexin','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Flurazepam','oral capsule','15 mg','350','1400','Dalmane','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Osimertinib','oral tablet','40 mg','700','2300','Tagrisso','1/12/2025','1/12/2021')
 
-insert into Drug( Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
 values ('Oxandrolone','oral tablet','10 mg','1700','3100','Oxandrin','1/12/2025','1/12/2021')
 -------------------------------------------------------------------------------------------------------------------
-
-insert into SpecialistExamination(Name, Price) 
-values ('','')
