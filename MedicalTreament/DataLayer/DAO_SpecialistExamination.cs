@@ -37,17 +37,35 @@ namespace DataLayer
             db.SaveChanges();
         }
 
+        public void Remove(int id)
+        {
+            SpecialistExamination specialistExamination = db.SpecialistExaminations.Find(id);
+            db.SpecialistExaminations.Remove(specialistExamination);
+            db.SaveChanges();
+        }
+
         public dynamic GetListSpecialistExamination()
         {
             var list = from specialistExamination in db.Set<SpecialistExamination>()
                        orderby specialistExamination.SpecialExaminationID
                        select new
                        {
+                           specialistExamination.SpecialExaminationID,
                            specialistExamination.Name,
                            specialistExamination.Price
                        };
 
             return list.ToList();
+        }
+
+        public void Edit(int id,string name, string price)
+        {
+            decimal d = decimal.Parse(price);
+            SpecialistExamination specialistExamination = db.SpecialistExaminations.Find(id);
+            specialistExamination.Name = name;
+            specialistExamination.Price = d;
+
+            db.SaveChanges();
         }
     }
 }

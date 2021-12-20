@@ -11,15 +11,23 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-    public partial class FormSpecialist_Price_Add : Form
+    public partial class FormSpecialist_Price_Edit : Form
     {
+        int SpecialistExaminationid;
         BUS_SpecialistExamination bUS_SpecialistExamination;
         DataGridView dgv;
-        public FormSpecialist_Price_Add(DataGridView data)
+        public FormSpecialist_Price_Edit(DataGridView data, int id)
         {
             InitializeComponent();
+            this.SpecialistExaminationid = id;
             this.dgv = data;
             bUS_SpecialistExamination = new BUS_SpecialistExamination();
+        }
+
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
@@ -37,11 +45,11 @@ namespace MedicalTreament
         public void CheckDecimal(string a)
         {
             decimal b;
-            if (Decimal.TryParse(a, out b ))
+            if (Decimal.TryParse(a, out b))
             {
-                if (bUS_SpecialistExamination.Add(txtName.Text, txtPrice.Text))
+                if (bUS_SpecialistExamination.Edit(SpecialistExaminationid,txtName.Text, txtPrice.Text))
                 {
-                    MessageBox.Show("Add Special Examination successfully");
+                    MessageBox.Show("Edit Special Examination successfully");
                     txtName.Text = "";
                     txtPrice.Text = "";
                     bUS_SpecialistExamination.ShowSpecialistExamination(dgv);
@@ -54,13 +62,5 @@ namespace MedicalTreament
             }
         }
 
-        private void guna2CircleButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-
- 
     }
 }

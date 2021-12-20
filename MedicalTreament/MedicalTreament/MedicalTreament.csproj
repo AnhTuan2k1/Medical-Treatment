@@ -247,6 +247,12 @@
     <Compile Include="FormSpecialist_Price_Add.Designer.cs">
       <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSpecialist_Price_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpecialist_Price_Edit.Designer.cs">
+      <DependentUpon>FormSpecialist_Price_Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist_Price_Add.resx">
       <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpecialist_Price_Edit.resx">
+      <DependentUpon>FormSpecialist_Price_Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -449,6 +458,12 @@
       <Project>{349cd6c6-c18e-46ae-b397-4b641c5503fd}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
