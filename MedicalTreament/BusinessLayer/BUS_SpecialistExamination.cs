@@ -29,12 +29,41 @@ namespace BusinessLayer
                 return false;
                 throw;
             }
-           
+
+        }
+        public bool Remove(int id)
+        {
+            try
+            {
+                daoSpecialistExamination.Remove(id);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
         }
 
         public void ShowSpecialistExamination(DataGridView dgv)
         {
             dgv.DataSource = daoSpecialistExamination.GetListSpecialistExamination();
+        }
+
+        public bool Edit(int id,string name, string price)
+        {
+            {
+                try
+                {
+                    daoSpecialistExamination.Edit(id,name, price);
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    throw;
+                }
+            }
         }
     }
 }

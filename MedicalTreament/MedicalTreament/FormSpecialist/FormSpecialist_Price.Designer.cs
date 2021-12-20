@@ -34,6 +34,7 @@ namespace MedicalTreament
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpecialist_Price));
             this.gridSpecialistExamination = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btn_edit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_add = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_remove = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridSpecialistExamination)).BeginInit();
@@ -101,6 +102,26 @@ namespace MedicalTreament
             this.gridSpecialistExamination.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridSpecialistExamination.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // btn_edit
+            // 
+            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_edit.CheckedState.Parent = this.btn_edit;
+            this.btn_edit.CustomImages.Parent = this.btn_edit;
+            this.btn_edit.FillColor = System.Drawing.Color.Gold;
+            this.btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.HoverState.Parent = this.btn_edit;
+            this.btn_edit.Image = global::MedicalTreament.Properties.Resources.edit;
+            this.btn_edit.ImageOffset = new System.Drawing.Point(1, 1);
+            this.btn_edit.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_edit.Location = new System.Drawing.Point(743, 12);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_edit.ShadowDecoration.Parent = this.btn_edit;
+            this.btn_edit.Size = new System.Drawing.Size(45, 45);
+            this.btn_edit.TabIndex = 12;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
             // btn_add
             // 
             this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -113,7 +134,7 @@ namespace MedicalTreament
             this.btn_add.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.Image")));
             this.btn_add.ImageOffset = new System.Drawing.Point(1, 1);
             this.btn_add.ImageSize = new System.Drawing.Size(28, 28);
-            this.btn_add.Location = new System.Drawing.Point(692, 12);
+            this.btn_add.Location = new System.Drawing.Point(641, 12);
             this.btn_add.Name = "btn_add";
             this.btn_add.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_add.ShadowDecoration.Parent = this.btn_add;
@@ -133,7 +154,7 @@ namespace MedicalTreament
             this.btn_remove.Image = ((System.Drawing.Image)(resources.GetObject("btn_remove.Image")));
             this.btn_remove.ImageOffset = new System.Drawing.Point(1, 1);
             this.btn_remove.ImageSize = new System.Drawing.Size(28, 28);
-            this.btn_remove.Location = new System.Drawing.Point(743, 12);
+            this.btn_remove.Location = new System.Drawing.Point(692, 12);
             this.btn_remove.Name = "btn_remove";
             this.btn_remove.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_remove.ShadowDecoration.Parent = this.btn_remove;
@@ -146,6 +167,7 @@ namespace MedicalTreament
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.gridSpecialistExamination);
@@ -162,5 +184,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2DataGridView gridSpecialistExamination;
         private Guna.UI2.WinForms.Guna2CircleButton btn_add;
         private Guna.UI2.WinForms.Guna2CircleButton btn_remove;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_edit;
     }
 }
