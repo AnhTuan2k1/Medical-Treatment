@@ -16,3 +16,21 @@ D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Tre
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.exe
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.exe.config
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.exe
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.exe
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.exe.config
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.dll.config
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.Properties.Resources.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.GenerateResource.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.exe
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.pdb
