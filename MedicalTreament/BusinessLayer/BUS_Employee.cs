@@ -10,16 +10,16 @@ namespace BusinessLayer
 {
     public class BUS_Employee
     {
-        DAO_Employee daoPatient;
+        DAO_Employee daoEmployee;
 
         public BUS_Employee()
         {
-            daoPatient = DAO_Employee.getInstance();
+            daoEmployee = DAO_Employee.getInstance();
         }
 
         public void ShowGP(ComboBox combo)
         {
-            combo.DataSource = daoPatient.GetGP();
+            combo.DataSource = daoEmployee.GetGP();
         }
 
     }
