@@ -47,18 +47,18 @@ namespace MedicalTreament
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtExaminationDate = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboGPid = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboGPname = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel16 = new Guna.UI.WinForms.GunaLabel();
-            this.txtExaminationDate = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox3.SuspendLayout();
@@ -314,7 +314,7 @@ namespace MedicalTreament
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
             this.btnAdd.Size = new System.Drawing.Size(122, 45);
             this.btnAdd.TabIndex = 16;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Reception";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // guna2GroupBox3
@@ -326,8 +326,8 @@ namespace MedicalTreament
             this.guna2GroupBox3.Controls.Add(this.txtPrice);
             this.guna2GroupBox3.Controls.Add(this.gunaLabel1);
             this.guna2GroupBox3.Controls.Add(this.groupBox2);
-            this.guna2GroupBox3.Controls.Add(this.guna2ComboBox3);
-            this.guna2GroupBox3.Controls.Add(this.guna2ComboBox4);
+            this.guna2GroupBox3.Controls.Add(this.comboGPid);
+            this.guna2GroupBox3.Controls.Add(this.comboGPname);
             this.guna2GroupBox3.Controls.Add(this.gunaLabel11);
             this.guna2GroupBox3.Controls.Add(this.gunaLabel13);
             this.guna2GroupBox3.Controls.Add(this.gunaLabel14);
@@ -341,6 +341,32 @@ namespace MedicalTreament
             this.guna2GroupBox3.Size = new System.Drawing.Size(986, 302);
             this.guna2GroupBox3.TabIndex = 17;
             this.guna2GroupBox3.Text = "Examination Information";
+            // 
+            // txtExaminationDate
+            // 
+            this.txtExaminationDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtExaminationDate.DefaultText = "";
+            this.txtExaminationDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtExaminationDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtExaminationDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtExaminationDate.DisabledState.Parent = this.txtExaminationDate;
+            this.txtExaminationDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtExaminationDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtExaminationDate.FocusedState.Parent = this.txtExaminationDate;
+            this.txtExaminationDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExaminationDate.ForeColor = System.Drawing.Color.Black;
+            this.txtExaminationDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtExaminationDate.HoverState.Parent = this.txtExaminationDate;
+            this.txtExaminationDate.Location = new System.Drawing.Point(173, 99);
+            this.txtExaminationDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtExaminationDate.Name = "txtExaminationDate";
+            this.txtExaminationDate.PasswordChar = '\0';
+            this.txtExaminationDate.PlaceholderText = "";
+            this.txtExaminationDate.ReadOnly = true;
+            this.txtExaminationDate.SelectedText = "";
+            this.txtExaminationDate.ShadowDecoration.Parent = this.txtExaminationDate;
+            this.txtExaminationDate.Size = new System.Drawing.Size(251, 35);
+            this.txtExaminationDate.TabIndex = 24;
             // 
             // txtPrice
             // 
@@ -420,43 +446,43 @@ namespace MedicalTreament
             this.guna2TextBox6.Size = new System.Drawing.Size(925, 112);
             this.guna2TextBox6.TabIndex = 10;
             // 
-            // guna2ComboBox3
+            // comboGPid
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.FormattingEnabled = true;
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(695, 50);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(253, 36);
-            this.guna2ComboBox3.TabIndex = 19;
+            this.comboGPid.BackColor = System.Drawing.Color.Transparent;
+            this.comboGPid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboGPid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboGPid.FocusedColor = System.Drawing.Color.Empty;
+            this.comboGPid.FocusedState.Parent = this.comboGPid;
+            this.comboGPid.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboGPid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboGPid.FormattingEnabled = true;
+            this.comboGPid.HoverState.Parent = this.comboGPid;
+            this.comboGPid.ItemHeight = 30;
+            this.comboGPid.ItemsAppearance.Parent = this.comboGPid;
+            this.comboGPid.Location = new System.Drawing.Point(695, 99);
+            this.comboGPid.Name = "comboGPid";
+            this.comboGPid.ShadowDecoration.Parent = this.comboGPid;
+            this.comboGPid.Size = new System.Drawing.Size(253, 36);
+            this.comboGPid.TabIndex = 19;
             // 
-            // guna2ComboBox4
+            // comboGPname
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.FormattingEnabled = true;
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(695, 99);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(253, 36);
-            this.guna2ComboBox4.TabIndex = 18;
+            this.comboGPname.BackColor = System.Drawing.Color.Transparent;
+            this.comboGPname.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboGPname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboGPname.FocusedColor = System.Drawing.Color.Empty;
+            this.comboGPname.FocusedState.Parent = this.comboGPname;
+            this.comboGPname.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboGPname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboGPname.FormattingEnabled = true;
+            this.comboGPname.HoverState.Parent = this.comboGPname;
+            this.comboGPname.ItemHeight = 30;
+            this.comboGPname.ItemsAppearance.Parent = this.comboGPname;
+            this.comboGPname.Location = new System.Drawing.Point(695, 50);
+            this.comboGPname.Name = "comboGPname";
+            this.comboGPname.ShadowDecoration.Parent = this.comboGPname;
+            this.comboGPname.Size = new System.Drawing.Size(253, 36);
+            this.comboGPname.TabIndex = 18;
             // 
             // gunaLabel11
             // 
@@ -474,7 +500,7 @@ namespace MedicalTreament
             this.gunaLabel13.AutoSize = true;
             this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel13.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel13.Location = new System.Drawing.Point(463, 57);
+            this.gunaLabel13.Location = new System.Drawing.Point(463, 106);
             this.gunaLabel13.Name = "gunaLabel13";
             this.gunaLabel13.Size = new System.Drawing.Size(214, 23);
             this.gunaLabel13.TabIndex = 15;
@@ -485,7 +511,7 @@ namespace MedicalTreament
             this.gunaLabel14.AutoSize = true;
             this.gunaLabel14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel14.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel14.Location = new System.Drawing.Point(482, 106);
+            this.gunaLabel14.Location = new System.Drawing.Point(479, 61);
             this.gunaLabel14.Name = "gunaLabel14";
             this.gunaLabel14.Size = new System.Drawing.Size(195, 23);
             this.gunaLabel14.TabIndex = 14;
@@ -513,31 +539,6 @@ namespace MedicalTreament
             this.gunaLabel16.Size = new System.Drawing.Size(28, 23);
             this.gunaLabel16.TabIndex = 12;
             this.gunaLabel16.Text = "00";
-            // 
-            // txtExaminationDate
-            // 
-            this.txtExaminationDate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtExaminationDate.DefaultText = "";
-            this.txtExaminationDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtExaminationDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtExaminationDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtExaminationDate.DisabledState.Parent = this.txtExaminationDate;
-            this.txtExaminationDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtExaminationDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtExaminationDate.FocusedState.Parent = this.txtExaminationDate;
-            this.txtExaminationDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExaminationDate.ForeColor = System.Drawing.Color.Black;
-            this.txtExaminationDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtExaminationDate.HoverState.Parent = this.txtExaminationDate;
-            this.txtExaminationDate.Location = new System.Drawing.Point(173, 99);
-            this.txtExaminationDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtExaminationDate.Name = "txtExaminationDate";
-            this.txtExaminationDate.PasswordChar = '\0';
-            this.txtExaminationDate.PlaceholderText = "";
-            this.txtExaminationDate.SelectedText = "";
-            this.txtExaminationDate.ShadowDecoration.Parent = this.txtExaminationDate;
-            this.txtExaminationDate.Size = new System.Drawing.Size(267, 35);
-            this.txtExaminationDate.TabIndex = 24;
             // 
             // FormSecretaryReception
             // 
@@ -586,8 +587,8 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
+        private Guna.UI2.WinForms.Guna2ComboBox comboGPid;
+        private Guna.UI2.WinForms.Guna2ComboBox comboGPname;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
         private Guna.UI.WinForms.GunaLabel gunaLabel13;
         private Guna.UI.WinForms.GunaLabel gunaLabel14;

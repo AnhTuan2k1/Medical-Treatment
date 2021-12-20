@@ -16,11 +16,13 @@ namespace MedicalTreament
     {
         Guna2Button btn;
         BUS_Patient bus_patient;
+        BUS_Employee bus_employee;
         public FormSecretaryReception(Guna2Button button)
         {
             InitializeComponent();
             btn = button;
             bus_patient = new BUS_Patient();
+            bus_employee = new BUS_Employee();
         }
 
         private void FormSecretaryReception_FormClosed(object sender, FormClosedEventArgs e)
@@ -46,9 +48,14 @@ namespace MedicalTreament
 
             bus_patient.ShowPatients(ComboBoxPatientName);
             bus_patient.ShowPatients(ComboBoxPatientID);
+            bus_employee.ShowGP(comboGPname);
+            bus_employee.ShowGP(comboGPid);
 
             ComboBoxPatientName.DisplayMember = "Name";
             ComboBoxPatientID.DisplayMember = "PatientID";
+            comboGPname.DisplayMember = "Name";
+            comboGPid.DisplayMember = "EmployeeID";
+
             ClearPatientInformation();
         }
 
@@ -56,6 +63,8 @@ namespace MedicalTreament
         {
             ComboBoxPatientID.Text = "";
             ComboBoxPatientName.Text = "";
+            comboGPid.Text = "";
+            comboGPname.Text = "";
             txtDateOfBirth.Text = "";
             txtPhone.Text = "";
             txtHealthInsuarance.Text = "";
