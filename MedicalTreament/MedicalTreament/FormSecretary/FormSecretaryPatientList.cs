@@ -25,10 +25,9 @@ namespace MedicalTreament
             bus_patient = new BUS_Patient();
         }
 
-        private void ShowPatients()
+        private void FormSecretaryPatientList_Shown(object sender, EventArgs e)
         {
-            guna2DataGridViewPatients.DataSource = null;
-            bus_patient.GetPatients(guna2DataGridViewPatients);
+            ShowPatients();
         }
 
         private void FormSecretaryPatientList_FormClosed(object sender, FormClosedEventArgs e)
@@ -38,20 +37,46 @@ namespace MedicalTreament
             btn.ForeColor = Color.Black;
         }
 
+        private void ShowPatients()
+        {
+            dgvPatients.DataSource = null;
+            bus_patient.ShowPatients(dgvPatients);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+
         private void btn_New_Click(object sender, EventArgs e)
         {
-            FormSecretaryPatientList_Add formAddPatient = new FormSecretaryPatientList_Add();
+            FormSecretaryPatientList_Add formAddPatient = new FormSecretaryPatientList_Add(dgvPatients);
             formAddPatient.ShowDialog();
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-
+            DataGridViewRow row = dgvPatients.SelectedRows[0];
+            FormSecretaryPatientList_Add formAddPatient = new FormSecretaryPatientList_Add(dgvPatients, row);
+            formAddPatient.ShowDialog();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-
+            int patientID = Convert.ToInt32(dgvPatients.SelectedRows[0].Cells["PatientID"].Value.ToString());
+            string name = dgvPatients.SelectedRows[0].Cells["Name"].Value.ToString();
+            string caption = "Do you want to delete " + name + ", id = " + patientID.ToString();
+            
+            DialogResult result = MessageBox.Show(caption, "Delete patient", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                if (bus_patient.DeletePatient(patientID)) // delete patient
+                {
+                    bus_patient.ShowPatients(dgvPatients); // update datagirdview if delete successufully.
+                }
+            }   
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -59,9 +84,19 @@ namespace MedicalTreament
 
         }
 
-        private void FormSecretaryPatientList_Load(object sender, EventArgs e)
+        private void editPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowPatients();
+            btn_Edit_Click(sender, e);
+        }
+
+        private void deletePatientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btn_Delete_Click(sender, e);
+        }
+
+        private void receptionPatientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

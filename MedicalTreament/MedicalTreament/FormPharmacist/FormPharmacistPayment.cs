@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 using Guna.UI2.WinForms;
 
 namespace MedicalTreament
@@ -14,10 +15,12 @@ namespace MedicalTreament
     public partial class FormPharmacistPayment : Form
     {
         Guna2Button btn;
+        BUS_Patient bus_patient;
         public FormPharmacistPayment(Guna2Button btn)
         {
             InitializeComponent();
             this.btn = btn;
+            bus_patient = new BUS_Patient();
         }
 
         private void FormPharmacistPayment_FormClosed(object sender, FormClosedEventArgs e)
@@ -46,6 +49,11 @@ namespace MedicalTreament
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormPharmacistPayment_Load(object sender, EventArgs e)
+        {
+            bus_patient.ShowUnPayPatients(ComboBoxParientName);
         }
     }
 }
