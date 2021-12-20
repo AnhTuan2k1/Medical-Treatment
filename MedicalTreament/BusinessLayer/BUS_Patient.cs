@@ -30,8 +30,6 @@ namespace BusinessLayer
         public void ShowUnPayPatients(ComboBox combo)
         {
             combo.DataSource = daoPatient.GetUnPayPatients();
-            combo.DisplayMember = "PatientID";
-            combo.ValueMember = "PatientName";
         }
 
         public bool AddPatient(string name, string phone, DateTime birth, string gender = "",

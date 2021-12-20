@@ -241,7 +241,7 @@ namespace MedicalTreament
             this.DateTimePickerBirth.Size = new System.Drawing.Size(240, 35);
             this.DateTimePickerBirth.TabIndex = 87;
             this.DateTimePickerBirth.TabStop = false;
-            this.DateTimePickerBirth.Value = new System.DateTime(2021, 11, 28, 21, 59, 54, 553);
+            this.DateTimePickerBirth.Value = new System.DateTime(1999, 1, 1, 0, 0, 0, 0);
             // 
             // txtWorkPlace
             // 
