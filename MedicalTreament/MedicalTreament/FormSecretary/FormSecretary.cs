@@ -13,9 +13,11 @@ namespace MedicalTreament
 {
     public partial class FormSecretary : Form
     {
-        public FormSecretary()
+        int secretaryID;
+        public FormSecretary(int SecretaryID)
         {
             InitializeComponent();
+            secretaryID = SecretaryID;
         }
 
         private void FormSecretary_Load(object sender, EventArgs e)

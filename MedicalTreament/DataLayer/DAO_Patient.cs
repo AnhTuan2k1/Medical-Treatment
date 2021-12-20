@@ -50,7 +50,7 @@ namespace DataLayer
             var list = from form in db.Set<ExaminationForm>()
                        join patient in db.Set<Patient>()
                        on form.PatientID equals patient.PatientID
-                       select new { PatientID = form.PatientID, PatientName = patient.Name};
+                       select new { PatientID = form.PatientID, PatientName = patient.Name };
 
             return list.ToList();
         }
