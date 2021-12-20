@@ -157,6 +157,26 @@ create table DrugInvoiceDetail
 insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
 values ('Sanu Roy', '0938527419', '', 'SV4576584594234', 'female', '22/6/2002', 'Viet Nam', '')
 
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values  ('Nguyen Van Anh', '0938527419', 'Linh Son, Anh Son, Nghe An', 'SV4576584594234', 'male', '22/6/1995', 'Viet Nam', 'Vinamilk')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values  ('Nguyen Van Quan', '0902005009', 'Linh Son, Anh Son, Nghe An', 'SV4578044336559', 'male', '24/10/1991', 'Viet Nam', 'Vietcombank')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values 	('Nguyen Thi Mai', '0902010368', 'Yen Bac, Ha Nam', 'SV4576139951385', 'female', '05/01/1993', 'Viet Nam', 'Nestle Viet Nam')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values  ('Nguyen Van Duyet', '0902111306', 'Do Linh, Quang Tri', 'SV4572815062012', 'male', '12/03/1995', 'Viet Nam', 'Viettel')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values 	('Bui Thi Thuy', '0902143388', 'Do Linh, Quang Tri', 'SV4574805982222', 'female', '03/04/1996', 'Viet Nam', 'Abbott Laboratories GmbH')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values 	('Nguyen Van Phuc', '0902184149', 'An Long, Phu Giao, Binh Duong', 'SV4575196142822', 'male', '06/03/1992', 'Viet Nam', 'TH Group')
+
+insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
+values ('Bui Quang Binh', '0902228822', 'Ha Tinh', 'SV4578405285965', 'male', '23/09/1990', 'Viet Nam', 'Suntory PepsiCo Viet Nam')
 
 
 
