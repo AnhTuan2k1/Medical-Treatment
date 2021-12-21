@@ -34,8 +34,8 @@ namespace MedicalTreament
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.ComboBoxPatientID = new System.Windows.Forms.ComboBox();
             this.ComboBoxPatientName = new System.Windows.Forms.ComboBox();
-            this.txtHealthInsuarance = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.txtHealthInsuarance = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.txtDateOfBirth = new Guna.UI2.WinForms.Guna2TextBox();
@@ -121,6 +121,7 @@ namespace MedicalTreament
             this.ComboBoxPatientID.Size = new System.Drawing.Size(311, 31);
             this.ComboBoxPatientID.TabIndex = 23;
             this.ComboBoxPatientID.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientID_SelectedIndexChanged);
+            this.ComboBoxPatientID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComboBoxPatientID_KeyPress);
             // 
             // ComboBoxPatientName
             // 
@@ -131,6 +132,17 @@ namespace MedicalTreament
             this.ComboBoxPatientName.Size = new System.Drawing.Size(311, 31);
             this.ComboBoxPatientName.TabIndex = 22;
             this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
+            // 
+            // gunaLabel10
+            // 
+            this.gunaLabel10.AutoSize = true;
+            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel10.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel10.Location = new System.Drawing.Point(519, 155);
+            this.gunaLabel10.Name = "gunaLabel10";
+            this.gunaLabel10.Size = new System.Drawing.Size(147, 23);
+            this.gunaLabel10.TabIndex = 15;
+            this.gunaLabel10.Text = "HealthInsuarance:";
             // 
             // txtHealthInsuarance
             // 
@@ -157,17 +169,6 @@ namespace MedicalTreament
             this.txtHealthInsuarance.ShadowDecoration.Parent = this.txtHealthInsuarance;
             this.txtHealthInsuarance.Size = new System.Drawing.Size(267, 35);
             this.txtHealthInsuarance.TabIndex = 16;
-            // 
-            // gunaLabel10
-            // 
-            this.gunaLabel10.AutoSize = true;
-            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel10.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel10.Location = new System.Drawing.Point(519, 155);
-            this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(147, 23);
-            this.gunaLabel10.TabIndex = 15;
-            this.gunaLabel10.Text = "HealthInsuarance:";
             // 
             // txtPhone
             // 
@@ -373,7 +374,7 @@ namespace MedicalTreament
             // txtPrice
             // 
             this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrice.DefaultText = "500000";
+            this.txtPrice.DefaultText = "20000";
             this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -391,7 +392,7 @@ namespace MedicalTreament
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "";
             this.txtPrice.SelectedText = "";
-            this.txtPrice.SelectionStart = 6;
+            this.txtPrice.SelectionStart = 5;
             this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
             this.txtPrice.Size = new System.Drawing.Size(185, 35);
             this.txtPrice.TabIndex = 23;
@@ -424,7 +425,7 @@ namespace MedicalTreament
             // txtReason
             // 
             this.txtReason.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtReason.DefaultText = "";
+            this.txtReason.DefaultText = "Kham suc khoe dinh ky";
             this.txtReason.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtReason.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtReason.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -444,6 +445,7 @@ namespace MedicalTreament
             this.txtReason.PasswordChar = '\0';
             this.txtReason.PlaceholderText = "";
             this.txtReason.SelectedText = "";
+            this.txtReason.SelectionStart = 21;
             this.txtReason.ShadowDecoration.Parent = this.txtReason;
             this.txtReason.Size = new System.Drawing.Size(925, 112);
             this.txtReason.TabIndex = 10;
@@ -466,6 +468,7 @@ namespace MedicalTreament
             this.comboGPid.ShadowDecoration.Parent = this.comboGPid;
             this.comboGPid.Size = new System.Drawing.Size(253, 36);
             this.comboGPid.TabIndex = 19;
+            this.comboGPid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboGPid_KeyPress);
             // 
             // comboGPname
             // 

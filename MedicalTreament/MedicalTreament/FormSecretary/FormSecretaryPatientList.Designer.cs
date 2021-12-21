@@ -42,9 +42,10 @@ namespace MedicalTreament
             this.btn_New = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_reload = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatients)).BeginInit();
             this.ContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -151,26 +152,26 @@ namespace MedicalTreament
             this.ContextMenuStrip.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ContextMenuStrip.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.ContextMenuStrip.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.ContextMenuStrip.Size = new System.Drawing.Size(211, 104);
+            this.ContextMenuStrip.Size = new System.Drawing.Size(179, 76);
             // 
             // editPatientToolStripMenuItem
             // 
             this.editPatientToolStripMenuItem.Name = "editPatientToolStripMenuItem";
-            this.editPatientToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editPatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
             this.editPatientToolStripMenuItem.Text = "Edit Patient";
             this.editPatientToolStripMenuItem.Click += new System.EventHandler(this.editPatientToolStripMenuItem_Click);
             // 
             // deletePatientToolStripMenuItem
             // 
             this.deletePatientToolStripMenuItem.Name = "deletePatientToolStripMenuItem";
-            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
             this.deletePatientToolStripMenuItem.Text = "Delete Patient";
             this.deletePatientToolStripMenuItem.Click += new System.EventHandler(this.deletePatientToolStripMenuItem_Click);
             // 
             // receptionPatientToolStripMenuItem
             // 
             this.receptionPatientToolStripMenuItem.Name = "receptionPatientToolStripMenuItem";
-            this.receptionPatientToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.receptionPatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
             this.receptionPatientToolStripMenuItem.Text = "Receive Patient";
             this.receptionPatientToolStripMenuItem.Click += new System.EventHandler(this.receptionPatientToolStripMenuItem_Click);
             // 
@@ -234,43 +235,6 @@ namespace MedicalTreament
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::MedicalTreament.Properties.Resources.Patient48;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(72, 48);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 9;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BorderRadius = 15;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.IconLeft = global::MedicalTreament.Properties.Resources.outline_search_black_24dp;
-            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.guna2TextBox2.Location = new System.Drawing.Point(29, 87);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "Type Name of ID Patient";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(267, 44);
-            this.guna2TextBox2.TabIndex = 18;
-            // 
             // btnSearch
             // 
             this.btnSearch.BorderRadius = 10;
@@ -287,14 +251,73 @@ namespace MedicalTreament
             this.btnSearch.Text = "Search";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // btn_reload
+            // 
+            this.btn_reload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reload.CheckedState.Parent = this.btn_reload;
+            this.btn_reload.CustomImages.Parent = this.btn_reload;
+            this.btn_reload.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_reload.ForeColor = System.Drawing.Color.White;
+            this.btn_reload.HoverState.Parent = this.btn_reload;
+            this.btn_reload.Image = global::MedicalTreament.Properties.Resources.outline_sync_white_24dp;
+            this.btn_reload.ImageOffset = new System.Drawing.Point(1, 1);
+            this.btn_reload.ImageSize = new System.Drawing.Size(28, 28);
+            this.btn_reload.Location = new System.Drawing.Point(943, 87);
+            this.btn_reload.Name = "btn_reload";
+            this.btn_reload.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_reload.ShadowDecoration.Parent = this.btn_reload;
+            this.btn_reload.Size = new System.Drawing.Size(63, 57);
+            this.btn_reload.TabIndex = 20;
+            this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BorderRadius = 15;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.Parent = this.txtSearch;
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedState.Parent = this.txtSearch;
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.IconLeft = global::MedicalTreament.Properties.Resources.outline_search_black_24dp;
+            this.txtSearch.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtSearch.Location = new System.Drawing.Point(29, 87);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Type Patient Name";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            this.txtSearch.Size = new System.Drawing.Size(267, 44);
+            this.txtSearch.TabIndex = 18;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::MedicalTreament.Properties.Resources.Patient48;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(72, 48);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 9;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // FormSecretaryPatientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1034, 653);
+            this.Controls.Add(this.btn_reload);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btn_New);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Delete);
@@ -322,11 +345,12 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Button btn_New;
         private Guna.UI2.WinForms.Guna2Button btn_Edit;
         private Guna.UI2.WinForms.Guna2Button btn_Delete;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI.WinForms.GunaContextMenuStrip ContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem editPatientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deletePatientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem receptionPatientToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_reload;
     }
 }

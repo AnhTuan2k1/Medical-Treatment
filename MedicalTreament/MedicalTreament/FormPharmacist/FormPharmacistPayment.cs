@@ -16,6 +16,7 @@ namespace MedicalTreament
     {
         Guna2Button btn;
         BUS_Patient bus_patient;
+        BUS_ExaminationForm bus_examform;
         public FormPharmacistPayment(Guna2Button btn)
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace MedicalTreament
 
         private void FormPharmacistPayment_Load(object sender, EventArgs e)
         {
-            bus_patient.ShowUnPayPatients(ComboBoxParientName);
+            bus_examform.ShowUnPayPatients(ComboBoxParientName);
         }
     }
 }

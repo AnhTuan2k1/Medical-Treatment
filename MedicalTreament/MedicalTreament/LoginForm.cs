@@ -37,7 +37,7 @@ namespace MedicalTreament
                     {
                         if (employeeType.ToLower() == "secretary")
                         {
-                            new FormSecretary(employeeID).Show();
+                            new FormSecretary(employeeID, this).Show();
                             this.Hide();
                         }
 

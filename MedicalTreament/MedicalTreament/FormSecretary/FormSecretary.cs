@@ -14,10 +14,12 @@ namespace MedicalTreament
     public partial class FormSecretary : Form
     {
         int secretaryID;
-        public FormSecretary(int SecretaryID)
+        Form parent;
+        public FormSecretary(int SecretaryID, Form parent)
         {
             InitializeComponent();
             secretaryID = SecretaryID;
+            this.parent = parent;
         }
 
         private void FormSecretary_Load(object sender, EventArgs e)
@@ -49,7 +51,8 @@ namespace MedicalTreament
                     break;
 
                 case "btnLogout":
-
+                    this.Close();
+                    this.parent.Show();
                     break;
 
                 default:

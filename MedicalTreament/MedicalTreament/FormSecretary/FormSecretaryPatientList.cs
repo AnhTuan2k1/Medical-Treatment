@@ -81,7 +81,7 @@ namespace MedicalTreament
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            bus_patient.ShowPatients(dgvPatients ,txtSearch.Text);
         }
 
         private void editPatientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,6 +97,19 @@ namespace MedicalTreament
         private void receptionPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                bus_patient.ShowPatients(dgvPatients, txtSearch.Text);
+            }
+        }
+
+        private void btn_reload_Click(object sender, EventArgs e)
+        {
+            bus_patient.ShowPatients(dgvPatients);
         }
     }
 }

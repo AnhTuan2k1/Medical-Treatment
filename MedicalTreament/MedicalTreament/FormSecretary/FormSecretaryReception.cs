@@ -27,7 +27,7 @@ namespace MedicalTreament
             bus_patient = new BUS_Patient();
             bus_employee = new BUS_Employee();
             bus_ExForm = new BUS_ExaminationForm();
-            lbNo.Text = bus_ExForm.CountExFormToday().ToString();
+            lbNo.Text = (bus_ExForm.CountExFormToday() + 1).ToString();
         }
 
         private void FormSecretaryReception_FormClosed(object sender, FormClosedEventArgs e)
@@ -39,11 +39,19 @@ namespace MedicalTreament
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            
             if(CheckInput())
             {
                 int ordinal = Convert.ToInt32(lbNo.Text);
                 int patientid = Convert.ToInt32(ComboBoxPatientID.Text);
                 decimal price = Convert.ToDecimal(txtPrice.Text);
+
+                if(bus_ExForm.IsExaminatinate(patientid))
+                {
+                    MessageBox.Show("Patient is examinated today!");
+                    return;
+                }
+
                 if(bus_ExForm.Add(ordinal, patientid, secretaryID, price, txtReason.Text))
                 {
                     MessageBox.Show("reception patient successfully");
@@ -51,11 +59,6 @@ namespace MedicalTreament
                     ClearPatientInformation();
                 }
             }
-        }
-
-        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         private void FormSecretaryReception_Load(object sender, EventArgs e)
@@ -175,5 +178,19 @@ namespace MedicalTreament
             return true;
         }
 
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void ComboBoxPatientID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void comboGPid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }
