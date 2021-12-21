@@ -1,7 +1,7 @@
 ﻿
 namespace MedicalTreament
 {
-    partial class FormGP_Prescription_AddPill
+    partial class FormGP_Prescription_EditPill
     {
         /// <summary>
         /// Required designer variable.
@@ -29,68 +29,18 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Prescription_AddPill));
-            this.label_ttname = new System.Windows.Forms.Label();
-            this.label_ttamount = new System.Windows.Forms.Label();
-            this.textbox_amount = new Guna.UI2.WinForms.Guna2TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Prescription_EditPill));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.label_name = new Guna.UI.WinForms.GunaLabel();
+            this.textbox_amount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label_ttamount = new System.Windows.Forms.Label();
+            this.label_ttname = new System.Windows.Forms.Label();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label_ttname
-            // 
-            this.label_ttname.AutoSize = true;
-            this.label_ttname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ttname.Location = new System.Drawing.Point(115, 107);
-            this.label_ttname.Name = "label_ttname";
-            this.label_ttname.Size = new System.Drawing.Size(69, 20);
-            this.label_ttname.TabIndex = 0;
-            this.label_ttname.Text = "Name: ";
-
-            // 
-            // label_ttamount
-            // 
-            this.label_ttamount.AutoSize = true;
-            this.label_ttamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ttamount.Location = new System.Drawing.Point(115, 167);
-            this.label_ttamount.Name = "label_ttamount";
-            this.label_ttamount.Size = new System.Drawing.Size(84, 20);
-            this.label_ttamount.TabIndex = 1;
-            this.label_ttamount.Text = "Amount: ";
-
-            // 
-            // textbox_amount
-            // 
-            this.textbox_amount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textbox_amount.DefaultText = "";
-            this.textbox_amount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textbox_amount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textbox_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textbox_amount.DisabledState.Parent = this.textbox_amount;
-            this.textbox_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textbox_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textbox_amount.FocusedState.Parent = this.textbox_amount;
-            this.textbox_amount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_amount.ForeColor = System.Drawing.Color.Black;
-            this.textbox_amount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textbox_amount.HoverState.Parent = this.textbox_amount;
-            this.textbox_amount.Location = new System.Drawing.Point(206, 167);
-            this.textbox_amount.Margin = new System.Windows.Forms.Padding(4);
-            this.textbox_amount.Name = "textbox_amount";
-            this.textbox_amount.PasswordChar = '\0';
-            this.textbox_amount.PlaceholderText = "";
-            this.textbox_amount.SelectedText = "";
-            this.textbox_amount.ShadowDecoration.Parent = this.textbox_amount;
-            this.textbox_amount.Size = new System.Drawing.Size(222, 30);
-            this.textbox_amount.TabIndex = 3;
-     
             // 
             // guna2Panel1
             // 
@@ -101,7 +51,7 @@ namespace MedicalTreament
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(470, 45);
-            this.guna2Panel1.TabIndex = 8;
+            this.guna2Panel1.TabIndex = 9;
             // 
             // guna2ControlBox2
             // 
@@ -130,20 +80,60 @@ namespace MedicalTreament
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 0;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.guna2Panel1;
-            // 
             // label_name
             // 
             this.label_name.AutoSize = true;
             this.label_name.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_name.Location = new System.Drawing.Point(202, 107);
+            this.label_name.Location = new System.Drawing.Point(202, 105);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(96, 23);
-            this.label_name.TabIndex = 4;
+            this.label_name.TabIndex = 13;
             this.label_name.Text = "gunaLabel1";
-  
+            // 
+            // textbox_amount
+            // 
+            this.textbox_amount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textbox_amount.DefaultText = "";
+            this.textbox_amount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textbox_amount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textbox_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textbox_amount.DisabledState.Parent = this.textbox_amount;
+            this.textbox_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textbox_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textbox_amount.FocusedState.Parent = this.textbox_amount;
+            this.textbox_amount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_amount.ForeColor = System.Drawing.Color.Black;
+            this.textbox_amount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textbox_amount.HoverState.Parent = this.textbox_amount;
+            this.textbox_amount.Location = new System.Drawing.Point(206, 165);
+            this.textbox_amount.Margin = new System.Windows.Forms.Padding(4);
+            this.textbox_amount.Name = "textbox_amount";
+            this.textbox_amount.PasswordChar = '\0';
+            this.textbox_amount.PlaceholderText = "";
+            this.textbox_amount.SelectedText = "";
+            this.textbox_amount.ShadowDecoration.Parent = this.textbox_amount;
+            this.textbox_amount.Size = new System.Drawing.Size(222, 30);
+            this.textbox_amount.TabIndex = 12;
+            // 
+            // label_ttamount
+            // 
+            this.label_ttamount.AutoSize = true;
+            this.label_ttamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ttamount.Location = new System.Drawing.Point(115, 165);
+            this.label_ttamount.Name = "label_ttamount";
+            this.label_ttamount.Size = new System.Drawing.Size(84, 20);
+            this.label_ttamount.TabIndex = 11;
+            this.label_ttamount.Text = "Amount: ";
+            // 
+            // label_ttname
+            // 
+            this.label_ttname.AutoSize = true;
+            this.label_ttname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ttname.Location = new System.Drawing.Point(115, 105);
+            this.label_ttname.Name = "label_ttname";
+            this.label_ttname.Size = new System.Drawing.Size(69, 20);
+            this.label_ttname.TabIndex = 10;
+            this.label_ttname.Text = "Name: ";
             // 
             // guna2CircleButton2
             // 
@@ -155,12 +145,12 @@ namespace MedicalTreament
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(311, 227);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(311, 225);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Size = new System.Drawing.Size(52, 52);
-            this.guna2CircleButton2.TabIndex = 7;
+            this.guna2CircleButton2.TabIndex = 15;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // guna2CircleButton1
@@ -173,31 +163,31 @@ namespace MedicalTreament
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(206, 227);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(206, 225);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Size = new System.Drawing.Size(52, 52);
-            this.guna2CircleButton1.TabIndex = 6;
+            this.guna2CircleButton1.TabIndex = 14;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
-            // FormGP_Prescription_AddPill
+            // FormGP_Prescription_EditPill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(470, 310);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.textbox_amount);
             this.Controls.Add(this.label_ttamount);
             this.Controls.Add(this.label_ttname);
+            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormGP_Prescription_AddPill";
+            this.Name = "FormGP_Prescription_EditPill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormGP_Prescription_AddPill";
+            this.Text = "FormGP_Prescription_EditPill";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,15 +196,14 @@ namespace MedicalTreament
 
         #endregion
 
-        private System.Windows.Forms.Label label_ttname;
-        private System.Windows.Forms.Label label_ttamount;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
-        public Guna.UI2.WinForms.Guna2TextBox textbox_amount;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         public Guna.UI.WinForms.GunaLabel label_name;
+        public Guna.UI2.WinForms.Guna2TextBox textbox_amount;
+        private System.Windows.Forms.Label label_ttamount;
+        private System.Windows.Forms.Label label_ttname;
     }
 }
