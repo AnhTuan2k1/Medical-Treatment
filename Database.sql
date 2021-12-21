@@ -64,8 +64,12 @@ create table ExaminationForm
 	Reason nvarchar(1000),
 	State nvarchar(20) default 'inGP',
 	PatientID int not null foreign key references Patient(PatientID),
-	SecretaryID int not null foreign key references Employee(EmployeeID)
+	SecretaryID int not null foreign key references Employee(EmployeeID),
+	Price money default 50000
 )
+
+--chay them dong nay.
+--alter table ExaminationForm add Price money default 50000
 
 create table SpecialistExamination
 (
