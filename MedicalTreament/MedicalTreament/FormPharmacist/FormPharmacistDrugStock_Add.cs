@@ -28,6 +28,7 @@ namespace MedicalTreament
             else
             {
                 btnAdd.Enabled = false;
+                this.Text = "FormPharmacistDrugStock_Edit";
                 SetInput();
             }
         }
@@ -78,21 +79,25 @@ namespace MedicalTreament
             if (txtName.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Name");
+                txtName.Focus();
                 return false;
             }
             else if (txtPrice.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Price");
+                txtPrice.Focus();
                 return false;
             }
             else if (txtQuantity.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Quantity");
+                txtQuantity.Focus();
                 return false;
             }
             else if (txtUnit.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Unit");
+                txtUnit.Focus();
                 return false;
             }
             else if(DateTime.Compare(DateTimePicker.Value, DateTime.Now) < 0)

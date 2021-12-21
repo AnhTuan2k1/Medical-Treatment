@@ -27,6 +27,7 @@ namespace Model
         public string State { get; set; }
         public int PatientID { get; set; }
         public int SecretaryID { get; set; }
+        public Nullable<decimal> Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DiagnoseResult> DiagnoseResults { get; set; }

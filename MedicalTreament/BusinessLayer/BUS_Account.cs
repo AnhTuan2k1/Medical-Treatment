@@ -32,7 +32,6 @@ namespace BusinessLayer
             {
                 MessageBox.Show(ee.Message/* + "\nCan't find account"*/);
                 return false;
-                throw;
             }
             
         }
@@ -47,9 +46,7 @@ namespace BusinessLayer
             }
             catch (Exception)
             {
-
                 return false;
-                throw;
             }            
         }
     }

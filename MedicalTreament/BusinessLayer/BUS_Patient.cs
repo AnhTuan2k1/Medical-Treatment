@@ -44,7 +44,6 @@ namespace BusinessLayer
             catch (Exception)
             {
                 return false;
-                throw;
             }   
 
         }
@@ -62,9 +61,7 @@ namespace BusinessLayer
             }
             catch (Exception)
             {
-
                 return false;
-                throw;
             }
 
         }
@@ -80,10 +77,21 @@ namespace BusinessLayer
             }
             catch (Exception)
             {
-
                 return false;
-                throw;
             }
+        }
+
+        public bool CheckPatient(string name, int id, string phone)
+        {
+            try
+            {
+                return daoPatient.CheckPatient(name, id, phone);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
     }
 }

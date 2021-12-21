@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="MedicalTreatmentModelStoreContainer" CdmEntityContainer="MedicalTreatmentEntities">
+  <EntityContainerMapping StorageEntityContainer="StoreContainer" CdmEntityContainer="MedicalTreatmentEntities">
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="MedicalTreatmentModel.Account">
         <MappingFragment StoreEntitySet="Account">
@@ -54,6 +54,7 @@
     <EntitySetMapping Name="ExaminationForms">
       <EntityTypeMapping TypeName="MedicalTreatmentModel.ExaminationForm">
         <MappingFragment StoreEntitySet="ExaminationForm">
+          <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="SecretaryID" ColumnName="SecretaryID" />
           <ScalarProperty Name="PatientID" ColumnName="PatientID" />
           <ScalarProperty Name="State" ColumnName="State" />
