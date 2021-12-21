@@ -28,6 +28,7 @@ namespace MedicalTreament
             else
             {
                 btnAdd.Enabled = false;
+                this.Text = "FormSecretaryPatientList_Edit";
                 SetInput();
             }
         }
@@ -84,11 +85,13 @@ namespace MedicalTreament
             if(txtPatientName.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Name");
+                txtPatientName.Focus();
                 return false;
             }
             else if (txtPhone.Text.Length == 0)
             {
                 MessageBox.Show("Please enter Phone");
+                txtPhone.Focus();
                 return false;
             }
 

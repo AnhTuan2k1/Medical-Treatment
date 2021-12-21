@@ -39,7 +39,7 @@ namespace MedicalTreament
             switch (btn.Name)
             {
                 case "btnReception":
-                    form = new FormSecretaryReception(btn);
+                    form = new FormSecretaryReception(btn, secretaryID);
                     btn.Image = Properties.Resources.baseline_receipt_white_24dp;
                     break;
 

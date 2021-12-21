@@ -17,9 +17,19 @@ namespace BusinessLayer
             daoDrug = DAO_Drug.getInstance();
         }
 
-        public void Add(string Name, decimal price, string producer, int quantity, string type, string unit, DateTime date)
+        public bool Add(string Name, decimal price, string producer, int quantity, string type, string unit, DateTime date)
         {
-            daoDrug.Add(Name, price, producer, quantity, type, unit, date);
+            try
+            {
+                daoDrug.Add(Name, price, producer, quantity, type, unit, date);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+           
         }
 
         public void ShowDrugs(DataGridView dgv)
@@ -40,7 +50,6 @@ namespace BusinessLayer
             catch (Exception)
             {
                 return false;
-                throw;
             }          
 
         }
@@ -55,9 +64,7 @@ namespace BusinessLayer
             }
             catch (Exception)
             {
-
                 return false;
-                throw;
             }
         }
     }

@@ -17,12 +17,17 @@ namespace MedicalTreament
         Guna2Button btn;
         BUS_Patient bus_patient;
         BUS_Employee bus_employee;
-        public FormSecretaryReception(Guna2Button button)
+        BUS_ExaminationForm bus_ExForm;
+        int secretaryID;
+        public FormSecretaryReception(Guna2Button button, int idScretary)
         {
             InitializeComponent();
             btn = button;
+            secretaryID = idScretary;
             bus_patient = new BUS_Patient();
             bus_employee = new BUS_Employee();
+            bus_ExForm = new BUS_ExaminationForm();
+            lbNo.Text = bus_ExForm.CountExFormToday().ToString();
         }
 
         private void FormSecretaryReception_FormClosed(object sender, FormClosedEventArgs e)
@@ -34,7 +39,18 @@ namespace MedicalTreament
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            if(CheckInput())
+            {
+                int ordinal = Convert.ToInt32(lbNo.Text);
+                int patientid = Convert.ToInt32(ComboBoxPatientID.Text);
+                decimal price = Convert.ToDecimal(txtPrice.Text);
+                if(bus_ExForm.Add(ordinal, patientid, secretaryID, price, txtReason.Text))
+                {
+                    MessageBox.Show("reception patient successfully");
+                    txtReason.Text = "";
+                    ClearPatientInformation();
+                }
+            }
         }
 
         private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -125,5 +141,39 @@ namespace MedicalTreament
                 RadioBtnFemale.Checked = true;
             }
         }
+
+        bool CheckInput()
+        {
+            if(ComboBoxPatientID.Text.Length == 0)
+            {
+                MessageBox.Show("Enter patient ID, please!");
+                ComboBoxPatientID.Focus();
+                return false;
+            }
+
+            if(ComboBoxPatientName.Text.Length == 0)
+            {
+                MessageBox.Show("Enter patient name, please!");
+                ComboBoxPatientName.Focus();
+                return false;
+            }
+
+            if (txtPhone.Text.Length == 0)
+            {
+                MessageBox.Show("Enter phone number, please!");
+                txtPhone.Focus();
+                return false;
+            }
+
+            if (!bus_patient.CheckPatient(ComboBoxPatientName.Text, Convert.ToInt32(ComboBoxPatientID.Text), txtPhone.Text))
+            {               
+                ComboBoxPatientName.Focus();
+                MessageBox.Show("Can't find patient");
+                return false;
+            }
+
+            return true;
+        }
+
     }
 }

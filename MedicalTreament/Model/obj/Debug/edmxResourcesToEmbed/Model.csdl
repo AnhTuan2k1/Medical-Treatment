@@ -185,6 +185,7 @@
     <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="PatientID" Type="Int32" Nullable="false" />
     <Property Name="SecretaryID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
     <NavigationProperty Name="DiagnoseResults" Relationship="MedicalTreatmentModel.FK__DiagnoseR__Exami__5441852A" FromRole="ExaminationForm" ToRole="DiagnoseResult" />
     <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3" FromRole="ExaminationForm" ToRole="Employee" />
     <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Examinati__Patie__44FF419A" FromRole="ExaminationForm" ToRole="Patient" />

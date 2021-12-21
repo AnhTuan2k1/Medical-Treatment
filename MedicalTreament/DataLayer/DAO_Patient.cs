@@ -25,6 +25,12 @@ namespace DataLayer
             return instance;
         }
 
+        public int GetPatientID(string name, string phone)
+        {
+            Patient patient = db.Patients.Where(p => p.Name == name && p.Phone == phone).Single();
+            return patient.PatientID;
+        }
+
         public dynamic GetPatients()
         {
             var list = from patient in db.Set<Patient>()
@@ -44,6 +50,32 @@ namespace DataLayer
 
             return list.ToList();
         }
+
+        ///// <summary>
+        ///// get patients are not examinated today
+        ///// </summary>
+        ///// <returns></returns>
+        //public dynamic GetPatientsNot()
+        //{
+        //    var list = from patient in db.Set<Patient>()
+        //               join exam in db.Set<ExaminationForm>()
+        //               on patient.PatientID equals exam.PatientID
+        //               where DateTime.Compare(exam.Date, DateTime.Now) > 0
+        //               select new
+        //               {
+        //                   patient.PatientID,
+        //                   patient.Name,
+        //                   patient.HealthInsuarance,
+        //                   patient.Phone,
+        //                   patient.Gender,
+        //                   patient.DateOfBirth,
+        //                   patient.Address,
+        //                   patient.Nation,
+        //                   patient.WorkPlace
+        //               };
+
+        //    return list.ToList();
+        //}
 
         public dynamic GetUnPayPatients()
         {
@@ -73,6 +105,12 @@ namespace DataLayer
             db.Patients.Add(patient);
             db.SaveChanges();
 
+        }
+
+        public bool CheckPatient(string name, int id, string phone)
+        {
+            Patient patient = db.Patients.Where(p => p.Name == name && p.Phone == phone && p.PatientID == id).Single();
+            return true;
         }
 
         public void EditPatient(int PatientID, string name, string phone, DateTime birth, string gender,
