@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,38 +14,29 @@ namespace MedicalTreament
     public partial class FormGP_Prescription : Form
     {
 
-
+        BUS_Drug bus_Drug;
         String currentDay = DateTime.Now.ToShortDateString();
 
         public FormGP_Prescription()
         {
             InitializeComponent();
+            bus_Drug = new BUS_Drug();
         }
 
 
         private void FormGP_Prescription_Load(object sender, EventArgs e)
         {
-            gridview_pill.Rows.Add(new object[]
-            {
-                "01", "Alaba"
-            }
-            );
-            gridview_pill.Rows.Add(new object[]
-           {
-                "02", "Paracetamol"
-           }
-           );
-            gridview_pill.Rows.Add(new object[]
-           {
-                "03", "Ayahuasca"
-           }
-           );
-            gridview_pill.Rows.Add(new object[]
-           {
-                "04", "Methamphetamine"
-           }
-           );
 
+            bus_Drug.ShowDrugs(gridview_pill);
+            gridview_pill.Columns["DrugID"].Visible = false;
+            gridview_pill.Columns["Type"].Visible = false;
+            gridview_pill.Columns["Price"].Visible = false;
+            gridview_pill.Columns["Quantity"].Visible = false;
+            gridview_pill.Columns["Producer"].Visible = false;
+            gridview_pill.Columns["ExprirationDate"].Visible = false;
+            //gridview_pill.Columns[0].Width = 100;
+            //gridview_pill.Columns["ImportDate"].Visible = false;
+            //
             label_date.Text = " Prescription date: " + currentDay;
         }
 
@@ -76,5 +68,22 @@ namespace MedicalTreament
                 gridview_prescription.Rows.RemoveAt(item.Index);
             }
         }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+           
+            if (gridview_prescription.Rows.Count == 0)
+            {
+                MessageBox.Show("Choose pill to edit!");
+            }
+            else
+            {
+                FormGP_Prescription_EditPill form_edit = new FormGP_Prescription_EditPill(gridview_prescription);
+                form_edit.label_name.Text = this.gridview_prescription.CurrentRow.Cells[0].Value.ToString();
+                form_edit.textbox_amount.Text = this.gridview_prescription.CurrentRow.Cells[1].Value.ToString();
+                form_edit.Show();
+            } 
+        }
+
     }
 }

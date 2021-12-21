@@ -10,3 +10,15 @@ D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Tre
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.dll
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.pdb
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.dll.config
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.xml
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.dll
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.pdb

@@ -45,6 +45,11 @@ namespace BusinessLayer
             }
         }
 
+        public void ShowSpecialistExamination(ComboBox comboBoxSEname)
+        {
+            comboBoxSEname.DataSource = daoSpecialistExamination.GetListSpecialistExamination();
+        }
+
         public void ShowSpecialistExamination(DataGridView dgv)
         {
             dgv.DataSource = daoSpecialistExamination.GetListSpecialistExamination();

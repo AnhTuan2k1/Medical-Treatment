@@ -115,6 +115,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGP_Prescription_EditPill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGP_Prescription_EditPill.Designer.cs">
+      <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSpecialist\FormSpecialist_Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,16 +247,16 @@
     <Compile Include="FormSpecialist\FormSpecialist_Patient.Designer.cs">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSpecialist_Price_Add.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Price_Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSpecialist_Price_Add.Designer.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Price_Add.Designer.cs">
       <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSpecialist_Price_Edit.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Price_Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSpecialist_Price_Edit.Designer.cs">
+    <Compile Include="FormSpecialist\FormSpecialist_Price_Edit.Designer.cs">
       <DependentUpon>FormSpecialist_Price_Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGP_Prescription_EditPill.resx">
+      <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Diagnosis.resx">
       <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
@@ -345,10 +354,10 @@
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Patient.resx">
       <DependentUpon>FormSpecialist_Patient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist_Price_Add.resx">
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist_Price_Add.resx">
       <DependentUpon>FormSpecialist_Price_Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSpecialist_Price_Edit.resx">
+    <EmbeddedResource Include="FormSpecialist\FormSpecialist_Price_Edit.resx">
       <DependentUpon>FormSpecialist_Price_Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
