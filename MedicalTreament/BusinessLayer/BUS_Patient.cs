@@ -22,15 +22,16 @@ namespace BusinessLayer
             dgv.DataSource = daoPatient.GetPatients();
         }
 
+        public void ShowPatients(DataGridView dgv, string namePatient)
+        {
+            dgv.DataSource = daoPatient.GetPatients(namePatient);
+        }
+
         public void ShowPatients(ComboBox combo)
         {
             combo.DataSource = daoPatient.GetPatients();
         }
 
-        public void ShowUnPayPatients(ComboBox combo)
-        {
-            combo.DataSource = daoPatient.GetUnPayPatients();
-        }
 
         public bool AddPatient(string name, string phone, DateTime birth, string gender = "",
             string address = "", string healthInsurance = "", string nation = "", string workplace = "")

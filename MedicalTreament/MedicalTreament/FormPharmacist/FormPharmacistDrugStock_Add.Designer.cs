@@ -155,6 +155,7 @@ namespace MedicalTreament
             this.txtQuantity.ShadowDecoration.Parent = this.txtQuantity;
             this.txtQuantity.Size = new System.Drawing.Size(381, 35);
             this.txtQuantity.TabIndex = 5;
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // gunaLabel11
             // 
@@ -191,6 +192,7 @@ namespace MedicalTreament
             this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
             this.txtPrice.Size = new System.Drawing.Size(381, 35);
             this.txtPrice.TabIndex = 4;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // gunaLabel12
             // 

@@ -31,10 +31,29 @@ namespace DataLayer
             return patient.PatientID;
         }
 
+        public object GetPatients(string namePatient)
+        {
+            var list = from patient in db.Set<Patient>()
+                       where patient.Name.Contains(namePatient)
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+
         public dynamic GetPatients()
         {
             var list = from patient in db.Set<Patient>()
-                       orderby patient.Name
                        select new
                        {
                            patient.PatientID,
@@ -47,42 +66,6 @@ namespace DataLayer
                            patient.Nation,
                            patient.WorkPlace                         
                        };
-
-            return list.ToList();
-        }
-
-        ///// <summary>
-        ///// get patients are not examinated today
-        ///// </summary>
-        ///// <returns></returns>
-        //public dynamic GetPatientsNot()
-        //{
-        //    var list = from patient in db.Set<Patient>()
-        //               join exam in db.Set<ExaminationForm>()
-        //               on patient.PatientID equals exam.PatientID
-        //               where DateTime.Compare(exam.Date, DateTime.Now) > 0
-        //               select new
-        //               {
-        //                   patient.PatientID,
-        //                   patient.Name,
-        //                   patient.HealthInsuarance,
-        //                   patient.Phone,
-        //                   patient.Gender,
-        //                   patient.DateOfBirth,
-        //                   patient.Address,
-        //                   patient.Nation,
-        //                   patient.WorkPlace
-        //               };
-
-        //    return list.ToList();
-        //}
-
-        public dynamic GetUnPayPatients()
-        {
-            var list = from form in db.Set<ExaminationForm>()
-                       join patient in db.Set<Patient>()
-                       on form.PatientID equals patient.PatientID
-                       select new { PatientID = form.PatientID, PatientName = patient.Name };
 
             return list.ToList();
         }

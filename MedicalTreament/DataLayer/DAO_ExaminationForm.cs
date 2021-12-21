@@ -28,10 +28,34 @@ namespace DataLayer
         public int CountExFormToday()
         {
             var list = from examination in db.Set<ExaminationForm>()
-                       where DateTime.Compare(examination.Date, DateTime.Now) == 0
+                       where examination.Date.Day == DateTime.Now.Day 
+                       && examination.Date.Month == DateTime.Now.Month
+
                        select new { examination };
 
             return list.Count();
+        }
+
+        public bool IsExaminatinate(int patientID)
+        {
+            var list = from examination in db.Set<ExaminationForm>()
+                       where examination.Date.Day == DateTime.Now.Day
+                       && examination.Date.Month == DateTime.Now.Month
+                       && examination.PatientID == patientID
+                       select new { examination };
+
+            if (list.Count() == 0) return false;
+            else return true;
+        }
+
+        public dynamic GetUnPayPatients()
+        {
+            var list = from form in db.Set<ExaminationForm>()
+                       join patient in db.Set<Patient>()
+                       on form.PatientID equals patient.PatientID
+                       select new { PatientID = form.PatientID, PatientName = patient.Name };
+
+            return list.ToList();
         }
 
         public void Add(int ordinal, int patientID, int secretaryID, decimal price, string reason = "")
@@ -51,8 +75,6 @@ namespace DataLayer
             db.SaveChanges();
 
         }
-
-
 
     }
 }

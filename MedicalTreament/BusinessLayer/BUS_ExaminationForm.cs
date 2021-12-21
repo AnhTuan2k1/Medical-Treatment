@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DataLayer;
 
 namespace BusinessLayer
@@ -26,6 +27,26 @@ namespace BusinessLayer
             {
                 return 0;
             } 
+        }
+
+        public bool IsExaminatinate(int patientID)
+        {
+            try
+            {
+                if (daoExaminationForm.IsExaminatinate(patientID))
+                    return true;
+                else return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
+        }
+
+        public void ShowUnPayPatients(ComboBox combo)
+        {
+            combo.DataSource = daoExaminationForm.GetUnPayPatients();
         }
 
         public bool Add(int ordinal, int patientid, int secretaryID, decimal price, string reason = "")
