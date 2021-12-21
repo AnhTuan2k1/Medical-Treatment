@@ -10,38 +10,22 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-
-
-
-
-public partial class FormGP_Prescription_AddPill : Form
+    public partial class FormGP_Prescription_EditPill : Form
     {
-
-
-        Guna.UI2.WinForms.Guna2DataGridView FGPP;
-        public FormGP_Prescription_AddPill(Guna.UI2.WinForms.Guna2DataGridView data)
+        Guna.UI2.WinForms.Guna2DataGridView dgv;
+        public FormGP_Prescription_EditPill(Guna.UI2.WinForms.Guna2DataGridView data)
         {
             InitializeComponent();
-            this.FGPP = data;
+            this.dgv = data;
         }
 
-
-    private void guna2CircleButton1_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            if (textbox_amount.Text == "")
-            {
-                MessageBox.Show("Empty!");
-            }
-            else
-            {
-                CheckDecimal(textbox_amount.Text);
-                
-            }
+            CheckDecimal(textbox_amount.Text);
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
-
             this.Close();
         }
 
@@ -50,7 +34,7 @@ public partial class FormGP_Prescription_AddPill : Form
             decimal b;
             if (Decimal.TryParse(a, out b))
             {
-                this.FGPP.Rows.Add(new object[] { label_name.Text, textbox_amount.Text });
+                this.dgv.CurrentRow.Cells[1].Value = textbox_amount.Text;
 
                 this.Close();
             }
@@ -60,6 +44,5 @@ public partial class FormGP_Prescription_AddPill : Form
                 textbox_amount.Text = "";
             }
         }
-
     }
 }

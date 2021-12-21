@@ -67,6 +67,7 @@ namespace MedicalTreament
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridview_patient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridview_patient.ColumnHeadersHeight = 30;
+            this.gridview_patient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -81,6 +82,7 @@ namespace MedicalTreament
             this.gridview_patient.Name = "gridview_patient";
             this.gridview_patient.RowHeadersVisible = false;
             this.gridview_patient.RowHeadersWidth = 51;
+            this.gridview_patient.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.gridview_patient.RowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -102,7 +104,7 @@ namespace MedicalTreament
             this.gridview_patient.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.gridview_patient.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gridview_patient.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gridview_patient.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gridview_patient.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridview_patient.ThemeStyle.HeaderStyle.Height = 30;
             this.gridview_patient.ThemeStyle.ReadOnly = false;
             this.gridview_patient.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;

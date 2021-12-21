@@ -282,6 +282,7 @@ namespace MedicalTreament
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGP";
             this.Load += new System.EventHandler(this.FormGP_Load);
             this.panel1.ResumeLayout(false);
