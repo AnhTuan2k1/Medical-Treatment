@@ -14,11 +14,14 @@ namespace MedicalTreament
     {
         private Form activeForm;
         private Guna.UI2.WinForms.Guna2Button currtentButton;
-
-        public FormGP()
+        int gpID;
+        Form parent;
+        public FormGP(int id, Form parent)
         {
             InitializeComponent();
             btn_closeform.Visible = false;
+            this.gpID = id;
+            this.parent = parent;
         }
 
 
@@ -78,12 +81,7 @@ namespace MedicalTreament
 
         private void gpbtn_patient_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormGP_Patient(), sender);
-        }
-
-        private void gpbtn_prescription_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormGP_Prescription(), sender);
+            OpenChildForm(new FormGP_Patient(gpID), sender);
         }
 
         private void btn_closeform_Click(object sender, EventArgs e)
@@ -104,7 +102,13 @@ namespace MedicalTreament
 
         private void gpbtn_diagnosis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormGP_Diagnosis(), sender);
+            OpenChildForm(new FormGP_Diagnosis(gpID), sender);
+        }
+
+        private void gpbtn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.parent.Show();
         }
     }
 }

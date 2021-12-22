@@ -70,6 +70,30 @@ namespace DataLayer
             return list.ToList();
         }
 
+        public dynamic GetPatients_GP()
+        {
+            var list = from form in db.Set<ExaminationForm>()
+                       join patient in db.Set<Patient>()
+                       on form.PatientID equals patient.PatientID where form.State.Equals("inGP")
+                       select new 
+                       {
+                           //PatientID = form.PatientID, 
+                           // PatientName = patient.Name 
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+
+
         public void AddPatient(string name, string phone, DateTime birth, string gender = "",
             string address = "", string healthInsurance = "", string nation = "", string workplace = "")
         {

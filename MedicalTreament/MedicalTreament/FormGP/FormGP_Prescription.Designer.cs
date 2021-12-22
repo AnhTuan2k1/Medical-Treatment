@@ -47,6 +47,8 @@ namespace MedicalTreament
             this.btn_remove = new Guna.UI2.WinForms.Guna2CircleButton();
             this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_edit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_pill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_prescription)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +98,7 @@ namespace MedicalTreament
             this.gridview_pill.RowTemplate.Height = 25;
             this.gridview_pill.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridview_pill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_pill.Size = new System.Drawing.Size(310, 500);
+            this.gridview_pill.Size = new System.Drawing.Size(310, 508);
             this.gridview_pill.TabIndex = 6;
             this.gridview_pill.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_pill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -161,7 +163,7 @@ namespace MedicalTreament
             this.gridview_prescription.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridview_prescription.EnableHeadersVisualStyles = false;
             this.gridview_prescription.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridview_prescription.Location = new System.Drawing.Point(344, 74);
+            this.gridview_prescription.Location = new System.Drawing.Point(343, 74);
             this.gridview_prescription.MultiSelect = false;
             this.gridview_prescription.Name = "gridview_prescription";
             this.gridview_prescription.ReadOnly = true;
@@ -172,7 +174,7 @@ namespace MedicalTreament
             this.gridview_prescription.RowTemplate.Height = 25;
             this.gridview_prescription.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridview_prescription.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_prescription.Size = new System.Drawing.Size(507, 432);
+            this.gridview_prescription.Size = new System.Drawing.Size(507, 508);
             this.gridview_prescription.TabIndex = 7;
             this.gridview_prescription.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_prescription.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -218,10 +220,11 @@ namespace MedicalTreament
             this.label_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_date.AutoSize = true;
             this.label_date.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_date.Location = new System.Drawing.Point(317, 513);
+            this.label_date.Location = new System.Drawing.Point(338, 543);
             this.label_date.Name = "label_date";
             this.label_date.Size = new System.Drawing.Size(0, 25);
             this.label_date.TabIndex = 10;
+            this.label_date.Visible = false;
             // 
             // guna2Button1
             // 
@@ -231,12 +234,13 @@ namespace MedicalTreament
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(671, 538);
+            this.guna2Button1.Location = new System.Drawing.Point(670, 689);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "OK";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btn_add
             // 
@@ -327,11 +331,51 @@ namespace MedicalTreament
             this.btn_edit.TabIndex = 13;
             this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(121, 589);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox1.Multiline = true;
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(729, 93);
+            this.guna2TextBox1.TabIndex = 14;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(12, 590);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(102, 20);
+            this.gunaLabel1.TabIndex = 15;
+            this.gunaLabel1.Text = "Pill Instruction";
+            // 
             // FormGP_Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 627);
+            this.ClientSize = new System.Drawing.Size(863, 767);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label_date);
@@ -363,5 +407,7 @@ namespace MedicalTreament
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CircleButton btn_edit;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

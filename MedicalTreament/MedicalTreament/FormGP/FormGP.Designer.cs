@@ -37,7 +37,6 @@ namespace MedicalTreament
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gpbtn_account = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.gpbtn_prescription = new Guna.UI2.WinForms.Guna2Button();
             this.gpbtn_patient = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_closeform = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -47,6 +46,7 @@ namespace MedicalTreament
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.gpbtn_Logout = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,9 +55,9 @@ namespace MedicalTreament
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.gpbtn_Logout);
             this.panel1.Controls.Add(this.gpbtn_diagnosis);
             this.panel1.Controls.Add(this.guna2Panel2);
-            this.panel1.Controls.Add(this.gpbtn_prescription);
             this.panel1.Controls.Add(this.gpbtn_patient);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -137,28 +137,6 @@ namespace MedicalTreament
             this.gpbtn_account.Size = new System.Drawing.Size(43, 42);
             this.gpbtn_account.TabIndex = 2;
             // 
-            // gpbtn_prescription
-            // 
-            this.gpbtn_prescription.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.gpbtn_prescription.CheckedState.Parent = this.gpbtn_prescription;
-            this.gpbtn_prescription.CustomImages.Parent = this.gpbtn_prescription;
-            this.gpbtn_prescription.FillColor = System.Drawing.Color.Transparent;
-            this.gpbtn_prescription.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbtn_prescription.ForeColor = System.Drawing.Color.White;
-            this.gpbtn_prescription.HoverState.Parent = this.gpbtn_prescription;
-            this.gpbtn_prescription.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_prescription.Image")));
-            this.gpbtn_prescription.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gpbtn_prescription.ImageOffset = new System.Drawing.Point(10, 0);
-            this.gpbtn_prescription.ImageSize = new System.Drawing.Size(30, 30);
-            this.gpbtn_prescription.Location = new System.Drawing.Point(0, 269);
-            this.gpbtn_prescription.Name = "gpbtn_prescription";
-            this.gpbtn_prescription.ShadowDecoration.Parent = this.gpbtn_prescription;
-            this.gpbtn_prescription.Size = new System.Drawing.Size(232, 61);
-            this.gpbtn_prescription.TabIndex = 2;
-            this.gpbtn_prescription.Text = "Prescription";
-            this.gpbtn_prescription.TextOffset = new System.Drawing.Point(5, 0);
-            this.gpbtn_prescription.Click += new System.EventHandler(this.gpbtn_prescription_Click);
-            // 
             // gpbtn_patient
             // 
             this.gpbtn_patient.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -191,7 +169,7 @@ namespace MedicalTreament
             this.panel2.Location = new System.Drawing.Point(232, 0);
             this.panel2.Name = "panel2";
             this.panel2.ShadowDecoration.Parent = this.panel2;
-            this.panel2.Size = new System.Drawing.Size(881, 64);
+            this.panel2.Size = new System.Drawing.Size(913, 64);
             this.panel2.TabIndex = 1;
             // 
             // btn_closeform
@@ -220,7 +198,7 @@ namespace MedicalTreament
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(789, 0);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(821, 0);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
@@ -234,7 +212,7 @@ namespace MedicalTreament
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(747, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(779, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
@@ -247,7 +225,7 @@ namespace MedicalTreament
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(821, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(853, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(60, 29);
@@ -264,19 +242,41 @@ namespace MedicalTreament
             this.panelMain.Location = new System.Drawing.Point(232, 64);
             this.panelMain.Name = "panelMain";
             this.panelMain.ShadowDecoration.Parent = this.panelMain;
-            this.panelMain.Size = new System.Drawing.Size(881, 674);
+            this.panelMain.Size = new System.Drawing.Size(913, 674);
             this.panelMain.TabIndex = 2;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 8;
             // 
+            // gpbtn_Logout
+            // 
+            this.gpbtn_Logout.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gpbtn_Logout.CheckedState.Parent = this.gpbtn_Logout;
+            this.gpbtn_Logout.CustomImages.Parent = this.gpbtn_Logout;
+            this.gpbtn_Logout.FillColor = System.Drawing.Color.Transparent;
+            this.gpbtn_Logout.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbtn_Logout.ForeColor = System.Drawing.Color.White;
+            this.gpbtn_Logout.HoverState.Parent = this.gpbtn_Logout;
+            this.gpbtn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_Logout.Image")));
+            this.gpbtn_Logout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gpbtn_Logout.ImageOffset = new System.Drawing.Point(10, 0);
+            this.gpbtn_Logout.ImageSize = new System.Drawing.Size(30, 30);
+            this.gpbtn_Logout.Location = new System.Drawing.Point(0, 269);
+            this.gpbtn_Logout.Name = "gpbtn_Logout";
+            this.gpbtn_Logout.ShadowDecoration.Parent = this.gpbtn_Logout;
+            this.gpbtn_Logout.Size = new System.Drawing.Size(232, 61);
+            this.gpbtn_Logout.TabIndex = 6;
+            this.gpbtn_Logout.Text = "Logout";
+            this.gpbtn_Logout.TextOffset = new System.Drawing.Point(5, 0);
+            this.gpbtn_Logout.Click += new System.EventHandler(this.gpbtn_Logout_Click);
+            // 
             // FormGP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1113, 738);
+            this.ClientSize = new System.Drawing.Size(1145, 738);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -299,7 +299,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Panel panel2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2Button gpbtn_prescription;
         private Guna.UI2.WinForms.Guna2Button gpbtn_patient;
         private Guna.UI2.WinForms.Guna2CircleButton gpbtn_account;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
@@ -311,5 +310,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CircleButton btn_closeform;
         private Guna.UI2.WinForms.Guna2Button gpbtn_diagnosis;
+        private Guna.UI2.WinForms.Guna2Button gpbtn_Logout;
     }
 }

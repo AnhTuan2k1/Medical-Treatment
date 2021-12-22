@@ -27,11 +27,24 @@ namespace BusinessLayer
             dgv.DataSource = daoPatient.GetPatients(namePatient);
         }
 
+        public int GetPatientID(string name, string phone)
+        {
+            int id = daoPatient.GetPatientID(name, phone);
+            return id;
+        }
+
         public void ShowPatients(ComboBox combo)
         {
             combo.DataSource = daoPatient.GetPatients();
         }
-
+        public void ShowPatients_GP(DataGridView dgv)
+        {
+            dgv.DataSource = daoPatient.GetPatients_GP();
+        }
+        public void ShowPatients_GP(ComboBox cbb)
+        {
+            cbb.DataSource = daoPatient.GetPatients_GP();
+        }
 
         public bool AddPatient(string name, string phone, DateTime birth, string gender = "",
             string address = "", string healthInsurance = "", string nation = "", string workplace = "")

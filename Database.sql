@@ -158,6 +158,16 @@ create table DrugInvoiceDetail
 --insert into OAccount(Username, Password, type, EmployeeID) values ('admin0', '0', 'admin', 0) 
 --insert into Account(Username, Password, type, EmployeeID) values ('pharmacist1', '1', 'pharmacist', 2) 
 --insert into Account(Username, Password, type, EmployeeID) values ('pharmacist1', '1', 'pharmacist', 1)
+
+insert into Employee(Name, Position, Salary, Email) values ('Thai', 'gp', 1000000, 'soni@gmail.com') 
+
+insert into Account(Username, Password, type, EmployeeID) values ('gpaaa', '123', 'gp', 9)
+
+insert into Employee(Name, Position, Salary, Email) values ('Trang', 'specialist', 1000000, 'soni@gmail.com') 
+
+insert into Account(Username, Password, type, EmployeeID) values ('specialistaaa', '123', 'specialist', 10)
+
+
 insert into Patient(Name, Phone, Address, HealthInsuarance, Gender, DateOfBirth, Nation, WorkPlace) 
 values ('Sanu Roy', '0938527419', '', 'SV4576584594234', 'female', '22/6/2002', 'Viet Nam', '')
 

@@ -26,7 +26,6 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Busin
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.exe.config
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.pdb
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.dll.config
-C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.Properties.Resources.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.GenerateResource.cache
