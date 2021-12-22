@@ -35,12 +35,23 @@ namespace MedicalTreament
                 {
                     if (bus_Acount.Get(pass, username, ref employeeID, ref employeeType))
                     {
-                        if (employeeType.ToLower() == "secretary")
-                        {
-                            new FormSecretary(employeeID, this).Show();
-                            this.Hide();
-                        }
 
+                        switch(employeeType.ToLower())
+                        {
+                            case "secretary":
+                                new FormSecretary(employeeID, this).Show();
+                                this.Hide();
+                                break;
+                            case "gp":
+                                new FormGP(employeeID,this).Show();
+                                this.Hide();
+                                break;
+                            case "specialist":
+                                new FormSpecialist(employeeID, this).Show();
+                                this.Hide();
+                                break;
+
+                        }                 
                     }
                 }
                 

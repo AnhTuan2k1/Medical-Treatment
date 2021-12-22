@@ -76,8 +76,6 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Medic
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Model.dll
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\BusinessLayer.pdb
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\BusinessLayer.exe.config
-C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\EntityFramework.xml
-C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\DataLayer.pdb
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\DataLayer.exe.config
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Model.pdb

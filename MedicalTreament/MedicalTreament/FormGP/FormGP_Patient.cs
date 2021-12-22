@@ -14,15 +14,17 @@ namespace MedicalTreament
     public partial class FormGP_Patient : Form
     {
         BUS_Patient bus_Patient;
-        public FormGP_Patient()
+        int idGP;
+        public FormGP_Patient(int id)
         {
             InitializeComponent();
             bus_Patient = new BUS_Patient();
+            this.idGP = id;
         }
 
         private void FormGP_Patient_Load(object sender, EventArgs e)
         {
-            bus_Patient.ShowPatients(gridview_patient);
+            bus_Patient.ShowPatients_GP(gridview_patient);
             gridview_patient.Columns["Phone"].Visible = false;
             gridview_patient.Columns["Address"].Visible = false;
             gridview_patient.Columns["HealthInsuarance"].Visible = false;

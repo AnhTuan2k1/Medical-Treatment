@@ -14,12 +14,14 @@ namespace MedicalTreament
     {
         private Form activeForm;
         private Guna.UI2.WinForms.Guna2Button currtentButton;
-
-
-        public FormSpecialist()
+        int specialistID;
+        Form parent;
+        public FormSpecialist(int id, Form parent)
         {
             InitializeComponent();
             btn_closeform.Visible = false;
+            this.specialistID = id;
+            this.parent = parent;
         }
 
         private void ActiveButton(object btnSender)
@@ -51,7 +53,7 @@ namespace MedicalTreament
             }
         }
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        private void OpenChildForm(Form childForm, object btnSender, int id)
         {
 
             if (activeForm != null)
@@ -87,17 +89,17 @@ namespace MedicalTreament
 
         private void spbtn_patient_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Patient(),sender);
+            OpenChildForm(new FormSpecialist_Patient(),sender, specialistID);
         }
 
         private void spbtn_diagnosis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Diagnosis(), sender);
+            OpenChildForm(new FormSpecialist_Diagnosis(), sender, specialistID);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Price(), sender);
+            OpenChildForm(new FormSpecialist_Price(), sender, specialistID);
         }
     }
 }

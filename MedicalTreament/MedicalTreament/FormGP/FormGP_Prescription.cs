@@ -13,14 +13,18 @@ namespace MedicalTreament
 {
     public partial class FormGP_Prescription : Form
     {
-
+        int idGP;
+        int idPatient;
+        BUS_Prescription bus_Prescription;
         BUS_Drug bus_Drug;
         String currentDay = DateTime.Now.ToShortDateString();
 
-        public FormGP_Prescription()
+        public FormGP_Prescription(int idGP, int idPatient)
         {
             InitializeComponent();
             bus_Drug = new BUS_Drug();
+            this.idGP = idGP;
+            this.idPatient = idPatient;
         }
 
 
@@ -85,5 +89,10 @@ namespace MedicalTreament
             } 
         }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+            //bus_Prescription.AddPrescription()
+        }
     }
 }

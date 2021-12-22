@@ -62,5 +62,10 @@ namespace BusinessLayer
             }
             
         }
+        public string GetReason(int PatientID)
+        {
+            string reason = daoExaminationForm.GetReason(PatientID);
+            return reason;
+        }
     }
 }

@@ -58,6 +58,12 @@ namespace DataLayer
             return list.ToList();
         }
 
+        public string GetReason(int patientID)
+        {
+            ExaminationForm examinationForm = db.ExaminationForms.Find(patientID);
+            return examinationForm.Reason;
+        }
+
         public void Add(int ordinal, int patientID, int secretaryID, decimal price, string reason = "")
         {
             ExaminationForm examination = new ExaminationForm()
