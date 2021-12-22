@@ -25,6 +25,7 @@ namespace MedicalTreament
             bus_Drug = new BUS_Drug();
             this.idGP = idGP;
             this.idPatient = idPatient;
+            bus_Prescription = new BUS_Prescription();
         }
 
 
@@ -89,10 +90,12 @@ namespace MedicalTreament
             } 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_CreatePrescription_Click(object sender, EventArgs e)
         {
-
-            //bus_Prescription.AddPrescription()
+            if(bus_Prescription.AddPrescription(txtInstruction.Text, idPatient, idGP ))
+            {
+                MessageBox.Show("Add Prescription successfully!");
+            }
         }
     }
 }

@@ -480,5 +480,8 @@
   <ItemGroup>
     <None Include="Resources\outline_sync_white_24dp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

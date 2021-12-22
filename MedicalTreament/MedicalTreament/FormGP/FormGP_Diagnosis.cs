@@ -63,6 +63,10 @@ namespace MedicalTreament
         {
             ComboBoxPatientName.ValueMember = "Phone";
             txtPhone.Text = ComboBoxPatientName.SelectedValue.ToString();
+
+            ComboBoxPatientName.ValueMember = "PatientID";
+           // txtReason.Text = bus_ExForm.GetReason(Convert.ToInt32(ComboBoxPatientName.SelectedValue.ToString()));
+
         }
     }
 }

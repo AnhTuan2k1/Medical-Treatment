@@ -15,5 +15,20 @@ namespace BusinessLayer
         {
             dao_Prescription = DAO_Prescription.getInstance();
         }
+
+        public bool AddPrescription(string txtInstruction, int idPatient, int idGP)
+        {
+
+            try
+            {
+                dao_Prescription.AddPrescription(txtInstruction, idPatient, idGP);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
     }
 }
