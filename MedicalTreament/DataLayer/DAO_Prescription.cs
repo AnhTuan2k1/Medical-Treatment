@@ -25,5 +25,17 @@ namespace DataLayer
             return instance;
         }
 
+        public void AddPrescription(string txtInstruction, int idPatient, int idGP)
+        {
+            Prescription prescription = new Prescription()
+            {
+                Date = DateTime.Now,
+                DoctorDirection = txtInstruction,
+                PatientID = idPatient,
+                GPID = idGP
+            };
+            db.Prescriptions.Add(prescription);
+            db.SaveChanges();
+        }
     }
 }

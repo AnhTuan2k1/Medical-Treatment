@@ -56,6 +56,7 @@
     <Compile Include="DAO_Drug.cs" />
     <Compile Include="DAO_Employee.cs" />
     <Compile Include="DAO_ExaminationForm.cs" />
+    <Compile Include="DAO_GPdrugDetail.cs" />
     <Compile Include="DAO_Patient.cs" />
     <Compile Include="DAO_Prescription.cs" />
     <Compile Include="DAO_SpecialistExamination.cs" />

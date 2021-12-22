@@ -32,21 +32,21 @@ namespace MedicalTreament
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP));
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gpbtn_diagnosis = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gpbtn_account = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.gpbtn_patient = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_closeform = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btn_closeform = new Guna.UI2.WinForms.Guna2CircleButton();
             this.gpbtn_Logout = new Guna.UI2.WinForms.Guna2Button();
+            this.gpbtn_diagnosis = new Guna.UI2.WinForms.Guna2Button();
+            this.gpbtn_account = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.gpbtn_patient = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,28 +65,6 @@ namespace MedicalTreament
             this.panel1.ShadowDecoration.Parent = this.panel1;
             this.panel1.Size = new System.Drawing.Size(232, 738);
             this.panel1.TabIndex = 0;
-            // 
-            // gpbtn_diagnosis
-            // 
-            this.gpbtn_diagnosis.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.gpbtn_diagnosis.CheckedState.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.CustomImages.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.FillColor = System.Drawing.Color.Transparent;
-            this.gpbtn_diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbtn_diagnosis.ForeColor = System.Drawing.Color.White;
-            this.gpbtn_diagnosis.HoverState.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_diagnosis.Image")));
-            this.gpbtn_diagnosis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gpbtn_diagnosis.ImageOffset = new System.Drawing.Point(10, 0);
-            this.gpbtn_diagnosis.ImageSize = new System.Drawing.Size(30, 30);
-            this.gpbtn_diagnosis.Location = new System.Drawing.Point(0, 202);
-            this.gpbtn_diagnosis.Name = "gpbtn_diagnosis";
-            this.gpbtn_diagnosis.ShadowDecoration.Parent = this.gpbtn_diagnosis;
-            this.gpbtn_diagnosis.Size = new System.Drawing.Size(232, 61);
-            this.gpbtn_diagnosis.TabIndex = 5;
-            this.gpbtn_diagnosis.Text = "Diagnosis";
-            this.gpbtn_diagnosis.TextOffset = new System.Drawing.Point(5, 0);
-            this.gpbtn_diagnosis.Click += new System.EventHandler(this.gpbtn_diagnosis_Click);
             // 
             // guna2Panel2
             // 
@@ -119,46 +97,6 @@ namespace MedicalTreament
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Dr. Thai";
             // 
-            // gpbtn_account
-            // 
-            this.gpbtn_account.CheckedState.Parent = this.gpbtn_account;
-            this.gpbtn_account.CustomImages.Parent = this.gpbtn_account;
-            this.gpbtn_account.FillColor = System.Drawing.Color.DarkGray;
-            this.gpbtn_account.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gpbtn_account.ForeColor = System.Drawing.Color.White;
-            this.gpbtn_account.HoverState.Parent = this.gpbtn_account;
-            this.gpbtn_account.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_account.Image")));
-            this.gpbtn_account.ImageOffset = new System.Drawing.Point(1, 0);
-            this.gpbtn_account.ImageSize = new System.Drawing.Size(22, 20);
-            this.gpbtn_account.Location = new System.Drawing.Point(30, 22);
-            this.gpbtn_account.Name = "gpbtn_account";
-            this.gpbtn_account.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.gpbtn_account.ShadowDecoration.Parent = this.gpbtn_account;
-            this.gpbtn_account.Size = new System.Drawing.Size(43, 42);
-            this.gpbtn_account.TabIndex = 2;
-            // 
-            // gpbtn_patient
-            // 
-            this.gpbtn_patient.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.gpbtn_patient.CheckedState.Parent = this.gpbtn_patient;
-            this.gpbtn_patient.CustomImages.Parent = this.gpbtn_patient;
-            this.gpbtn_patient.FillColor = System.Drawing.Color.Transparent;
-            this.gpbtn_patient.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbtn_patient.ForeColor = System.Drawing.Color.White;
-            this.gpbtn_patient.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gpbtn_patient.HoverState.Parent = this.gpbtn_patient;
-            this.gpbtn_patient.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_patient.Image")));
-            this.gpbtn_patient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gpbtn_patient.ImageOffset = new System.Drawing.Point(10, 0);
-            this.gpbtn_patient.ImageSize = new System.Drawing.Size(30, 30);
-            this.gpbtn_patient.Location = new System.Drawing.Point(0, 135);
-            this.gpbtn_patient.Name = "gpbtn_patient";
-            this.gpbtn_patient.ShadowDecoration.Parent = this.gpbtn_patient;
-            this.gpbtn_patient.Size = new System.Drawing.Size(232, 61);
-            this.gpbtn_patient.TabIndex = 0;
-            this.gpbtn_patient.Text = "Patient";
-            this.gpbtn_patient.Click += new System.EventHandler(this.gpbtn_patient_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_closeform);
@@ -171,24 +109,6 @@ namespace MedicalTreament
             this.panel2.ShadowDecoration.Parent = this.panel2;
             this.panel2.Size = new System.Drawing.Size(913, 64);
             this.panel2.TabIndex = 1;
-            // 
-            // btn_closeform
-            // 
-            this.btn_closeform.CheckedState.Parent = this.btn_closeform;
-            this.btn_closeform.CustomImages.Parent = this.btn_closeform;
-            this.btn_closeform.FillColor = System.Drawing.Color.Transparent;
-            this.btn_closeform.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_closeform.ForeColor = System.Drawing.Color.White;
-            this.btn_closeform.HoverState.Parent = this.btn_closeform;
-            this.btn_closeform.Image = ((System.Drawing.Image)(resources.GetObject("btn_closeform.Image")));
-            this.btn_closeform.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_closeform.Location = new System.Drawing.Point(6, 8);
-            this.btn_closeform.Name = "btn_closeform";
-            this.btn_closeform.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_closeform.ShadowDecoration.Parent = this.btn_closeform;
-            this.btn_closeform.Size = new System.Drawing.Size(50, 50);
-            this.btn_closeform.TabIndex = 0;
-            this.btn_closeform.Click += new System.EventHandler(this.btn_closeform_Click);
             // 
             // guna2ControlBox3
             // 
@@ -249,6 +169,24 @@ namespace MedicalTreament
             // 
             this.guna2Elipse1.BorderRadius = 8;
             // 
+            // btn_closeform
+            // 
+            this.btn_closeform.CheckedState.Parent = this.btn_closeform;
+            this.btn_closeform.CustomImages.Parent = this.btn_closeform;
+            this.btn_closeform.FillColor = System.Drawing.Color.Transparent;
+            this.btn_closeform.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_closeform.ForeColor = System.Drawing.Color.White;
+            this.btn_closeform.HoverState.Parent = this.btn_closeform;
+            this.btn_closeform.Image = ((System.Drawing.Image)(resources.GetObject("btn_closeform.Image")));
+            this.btn_closeform.ImageSize = new System.Drawing.Size(35, 35);
+            this.btn_closeform.Location = new System.Drawing.Point(6, 8);
+            this.btn_closeform.Name = "btn_closeform";
+            this.btn_closeform.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_closeform.ShadowDecoration.Parent = this.btn_closeform;
+            this.btn_closeform.Size = new System.Drawing.Size(50, 50);
+            this.btn_closeform.TabIndex = 0;
+            this.btn_closeform.Click += new System.EventHandler(this.btn_closeform_Click);
+            // 
             // gpbtn_Logout
             // 
             this.gpbtn_Logout.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -258,7 +196,7 @@ namespace MedicalTreament
             this.gpbtn_Logout.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpbtn_Logout.ForeColor = System.Drawing.Color.White;
             this.gpbtn_Logout.HoverState.Parent = this.gpbtn_Logout;
-            this.gpbtn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_Logout.Image")));
+            this.gpbtn_Logout.Image = global::MedicalTreament.Properties.Resources.logout;
             this.gpbtn_Logout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gpbtn_Logout.ImageOffset = new System.Drawing.Point(10, 0);
             this.gpbtn_Logout.ImageSize = new System.Drawing.Size(30, 30);
@@ -270,6 +208,68 @@ namespace MedicalTreament
             this.gpbtn_Logout.Text = "Logout";
             this.gpbtn_Logout.TextOffset = new System.Drawing.Point(5, 0);
             this.gpbtn_Logout.Click += new System.EventHandler(this.gpbtn_Logout_Click);
+            // 
+            // gpbtn_diagnosis
+            // 
+            this.gpbtn_diagnosis.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gpbtn_diagnosis.CheckedState.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.CustomImages.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.FillColor = System.Drawing.Color.Transparent;
+            this.gpbtn_diagnosis.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbtn_diagnosis.ForeColor = System.Drawing.Color.White;
+            this.gpbtn_diagnosis.HoverState.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_diagnosis.Image")));
+            this.gpbtn_diagnosis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gpbtn_diagnosis.ImageOffset = new System.Drawing.Point(10, 0);
+            this.gpbtn_diagnosis.ImageSize = new System.Drawing.Size(30, 30);
+            this.gpbtn_diagnosis.Location = new System.Drawing.Point(0, 202);
+            this.gpbtn_diagnosis.Name = "gpbtn_diagnosis";
+            this.gpbtn_diagnosis.ShadowDecoration.Parent = this.gpbtn_diagnosis;
+            this.gpbtn_diagnosis.Size = new System.Drawing.Size(232, 61);
+            this.gpbtn_diagnosis.TabIndex = 5;
+            this.gpbtn_diagnosis.Text = "Diagnosis";
+            this.gpbtn_diagnosis.TextOffset = new System.Drawing.Point(5, 0);
+            this.gpbtn_diagnosis.Click += new System.EventHandler(this.gpbtn_diagnosis_Click);
+            // 
+            // gpbtn_account
+            // 
+            this.gpbtn_account.CheckedState.Parent = this.gpbtn_account;
+            this.gpbtn_account.CustomImages.Parent = this.gpbtn_account;
+            this.gpbtn_account.FillColor = System.Drawing.Color.DarkGray;
+            this.gpbtn_account.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gpbtn_account.ForeColor = System.Drawing.Color.White;
+            this.gpbtn_account.HoverState.Parent = this.gpbtn_account;
+            this.gpbtn_account.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_account.Image")));
+            this.gpbtn_account.ImageOffset = new System.Drawing.Point(1, 0);
+            this.gpbtn_account.ImageSize = new System.Drawing.Size(22, 20);
+            this.gpbtn_account.Location = new System.Drawing.Point(30, 22);
+            this.gpbtn_account.Name = "gpbtn_account";
+            this.gpbtn_account.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.gpbtn_account.ShadowDecoration.Parent = this.gpbtn_account;
+            this.gpbtn_account.Size = new System.Drawing.Size(43, 42);
+            this.gpbtn_account.TabIndex = 2;
+            // 
+            // gpbtn_patient
+            // 
+            this.gpbtn_patient.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.gpbtn_patient.CheckedState.Parent = this.gpbtn_patient;
+            this.gpbtn_patient.CustomImages.Parent = this.gpbtn_patient;
+            this.gpbtn_patient.FillColor = System.Drawing.Color.Transparent;
+            this.gpbtn_patient.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbtn_patient.ForeColor = System.Drawing.Color.White;
+            this.gpbtn_patient.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gpbtn_patient.HoverState.Parent = this.gpbtn_patient;
+            this.gpbtn_patient.Image = ((System.Drawing.Image)(resources.GetObject("gpbtn_patient.Image")));
+            this.gpbtn_patient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gpbtn_patient.ImageOffset = new System.Drawing.Point(10, 0);
+            this.gpbtn_patient.ImageSize = new System.Drawing.Size(30, 30);
+            this.gpbtn_patient.Location = new System.Drawing.Point(0, 135);
+            this.gpbtn_patient.Name = "gpbtn_patient";
+            this.gpbtn_patient.ShadowDecoration.Parent = this.gpbtn_patient;
+            this.gpbtn_patient.Size = new System.Drawing.Size(232, 61);
+            this.gpbtn_patient.TabIndex = 0;
+            this.gpbtn_patient.Text = "Patient";
+            this.gpbtn_patient.Click += new System.EventHandler(this.gpbtn_patient_Click);
             // 
             // FormGP
             // 
