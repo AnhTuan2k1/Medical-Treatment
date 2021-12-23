@@ -13,9 +13,14 @@ namespace MedicalTreament
 {
     public partial class FormPharmacist : Form
     {
-        public FormPharmacist()
+        int parmacistID;
+        Form parent;
+
+        public FormPharmacist(int employeeID, Form form)
         {
             InitializeComponent();
+            parmacistID = employeeID;
+            parent = form;
         }
 
         private void FormPharmacist_Load(object sender, EventArgs e)
@@ -52,7 +57,8 @@ namespace MedicalTreament
                     btn.Image = Properties.Resources.baseline_paid_white_24dp;
                     break;
                 case "btnLogout":
-
+                    parent.Show();
+                    this.Close();
                     break;
  
                 default:

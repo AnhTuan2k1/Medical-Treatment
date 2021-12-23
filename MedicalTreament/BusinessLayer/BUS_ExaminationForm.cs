@@ -44,9 +44,14 @@ namespace BusinessLayer
             
         }
 
-        public void ShowUnPayPatients(ComboBox combo)
+        public void ShowUnPayPatients(DataGridView dgv)
         {
-            combo.DataSource = daoExaminationForm.GetUnPayPatients();
+            dgv.DataSource = daoExaminationForm.GetUnPayPatients();
+        }
+
+        public void GetPatientsAt(DataGridView dgv, string place = "inGP")
+        {
+            dgv.DataSource = daoExaminationForm.GetPatientsAt(place);
         }
 
         public bool Add(int ordinal, int patientid, int secretaryID, decimal price, string reason = "")

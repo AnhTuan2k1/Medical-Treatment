@@ -50,7 +50,10 @@ namespace MedicalTreament
                                 new FormSpecialist(employeeID, this).Show();
                                 this.Hide();
                                 break;
-
+                            case "pharmacist":
+                                new FormPharmacist(employeeID, this).Show();
+                                this.Hide();
+                                break;
                         }                 
                     }
                 }
