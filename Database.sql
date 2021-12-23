@@ -122,10 +122,14 @@ create table GPdrugDetail
 (
 	GPdrugID int identity primary key,
 	Quantity int,
+	NameDrug nvarchar(30),
 	PrescriptionID int not null foreign key references Prescription(PrescriptionID),
 	PatientID int not null foreign key references Patient(PatientID),
 	GPID int not null foreign key references Employee(EmployeeID)
 )
+
+--chay them dong nay nua.
+--alter table GPdrugDetail add NameDrug nvarchar(30)
 
 create table Invoice
 (

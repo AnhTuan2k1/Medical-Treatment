@@ -95,6 +95,7 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <Property Name="PrescriptionID" Type="int" Nullable="false" />
           <Property Name="PatientID" Type="int" Nullable="false" />
           <Property Name="GPID" Type="int" Nullable="false" />
+          <Property Name="NameDrug" Type="nvarchar" MaxLength="30" />
         </EntityType>
         <EntityType Name="Invoice">
           <Key>
@@ -796,6 +797,7 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <Property Name="PrescriptionID" Type="Int32" Nullable="false" />
           <Property Name="PatientID" Type="Int32" Nullable="false" />
           <Property Name="GPID" Type="Int32" Nullable="false" />
+          <Property Name="NameDrug" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__GPdrugDeta__GPID__5EBF139D" FromRole="GPdrugDetail" ToRole="Employee" />
           <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Patie__5DCAEF64" FromRole="GPdrugDetail" ToRole="Patient" />
           <NavigationProperty Name="Prescription" Relationship="MedicalTreatmentModel.FK__GPdrugDet__Presc__5CD6CB2B" FromRole="GPdrugDetail" ToRole="Prescription" />
@@ -1290,6 +1292,7 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <EntitySetMapping Name="GPdrugDetails">
             <EntityTypeMapping TypeName="MedicalTreatmentModel.GPdrugDetail">
               <MappingFragment StoreEntitySet="GPdrugDetail">
+                <ScalarProperty Name="NameDrug" ColumnName="NameDrug" />
                 <ScalarProperty Name="GPID" ColumnName="GPID" />
                 <ScalarProperty Name="PatientID" ColumnName="PatientID" />
                 <ScalarProperty Name="PrescriptionID" ColumnName="PrescriptionID" />
