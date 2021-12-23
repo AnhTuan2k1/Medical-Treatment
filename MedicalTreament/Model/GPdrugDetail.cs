@@ -19,6 +19,7 @@ namespace Model
         public int PrescriptionID { get; set; }
         public int PatientID { get; set; }
         public int GPID { get; set; }
+        public string NameDrug { get; set; }
     
         public virtual Employee Employee { get; set; }
         public virtual Patient Patient { get; set; }
