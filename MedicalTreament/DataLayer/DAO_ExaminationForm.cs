@@ -53,7 +53,33 @@ namespace DataLayer
             var list = from form in db.Set<ExaminationForm>()
                        join patient in db.Set<Patient>()
                        on form.PatientID equals patient.PatientID
-                       select new { PatientID = form.PatientID, PatientName = patient.Name };
+                       where !form.State.ToLower().Contains("paid")
+                       select new {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           form.State
+                       };
+
+            return list.ToList();
+        }
+
+        public dynamic GetPatientsAt(string place = "inGP")
+        {
+            var list = from form in db.Set<ExaminationForm>()
+                       join patient in db.Set<Patient>()
+                       on form.PatientID equals patient.PatientID
+                       where form.State.Contains(place)
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender
+                       };
 
             return list.ToList();
         }

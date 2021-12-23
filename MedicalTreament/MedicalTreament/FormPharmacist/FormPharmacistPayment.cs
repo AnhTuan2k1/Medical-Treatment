@@ -22,6 +22,7 @@ namespace MedicalTreament
             InitializeComponent();
             this.btn = btn;
             bus_patient = new BUS_Patient();
+            bus_examform = new BUS_ExaminationForm();
         }
 
         private void FormPharmacistPayment_FormClosed(object sender, FormClosedEventArgs e)
@@ -54,7 +55,7 @@ namespace MedicalTreament
 
         private void FormPharmacistPayment_Load(object sender, EventArgs e)
         {
-            bus_examform.ShowUnPayPatients(ComboBoxParientName);
+            //bus_examform.ShowUnPayPatients(dgv);
         }
     }
 }
