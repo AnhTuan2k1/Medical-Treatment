@@ -29,6 +29,7 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,13 +37,17 @@ namespace MedicalTreament
             this.label1 = new System.Windows.Forms.Label();
             this.labelNumberPatient = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.dgv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.payToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_reload = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -75,38 +80,6 @@ namespace MedicalTreament
             this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Patients";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(202, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Sort by:";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Name"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(282, 78);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(234, 36);
-            this.guna2ComboBox1.TabIndex = 6;
             // 
             // btnPay
             // 
@@ -183,6 +156,7 @@ namespace MedicalTreament
             this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidth = 51;
+            this.dgv.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
             this.dgv.RowTemplate.DividerHeight = 2;
             this.dgv.RowTemplate.Height = 36;
             this.dgv.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -212,16 +186,95 @@ namespace MedicalTreament
             this.dgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.payToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 28);
+            // 
+            // payToolStripMenuItem
+            // 
+            this.payToolStripMenuItem.Name = "payToolStripMenuItem";
+            this.payToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.payToolStripMenuItem.Text = "Pay";
+            this.payToolStripMenuItem.Click += new System.EventHandler(this.payToolStripMenuItem_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BorderRadius = 10;
+            this.btnSearch.CheckedState.Parent = this.btnSearch;
+            this.btnSearch.CustomImages.Parent = this.btnSearch;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.HoverState.Parent = this.btnSearch;
+            this.btnSearch.Location = new System.Drawing.Point(435, 78);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
+            this.btnSearch.Size = new System.Drawing.Size(138, 44);
+            this.btnSearch.TabIndex = 21;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BorderRadius = 15;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.Parent = this.txtSearch;
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedState.Parent = this.txtSearch;
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.IconLeft = global::MedicalTreament.Properties.Resources.outline_search_black_24dp;
+            this.txtSearch.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtSearch.Location = new System.Drawing.Point(161, 78);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Type Patient Name";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            this.txtSearch.Size = new System.Drawing.Size(267, 44);
+            this.txtSearch.TabIndex = 20;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
+            // 
+            // btn_reload
+            // 
+            this.btn_reload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reload.CheckedState.Parent = this.btn_reload;
+            this.btn_reload.CustomImages.Parent = this.btn_reload;
+            this.btn_reload.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_reload.ForeColor = System.Drawing.Color.White;
+            this.btn_reload.HoverState.Parent = this.btn_reload;
+            this.btn_reload.Image = global::MedicalTreament.Properties.Resources.outline_sync_white_24dp;
+            this.btn_reload.ImageOffset = new System.Drawing.Point(1, 1);
+            this.btn_reload.ImageSize = new System.Drawing.Size(28, 28);
+            this.btn_reload.Location = new System.Drawing.Point(928, 72);
+            this.btn_reload.Name = "btn_reload";
+            this.btn_reload.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_reload.ShadowDecoration.Parent = this.btn_reload;
+            this.btn_reload.Size = new System.Drawing.Size(63, 57);
+            this.btn_reload.TabIndex = 22;
+            this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
+            // 
             // FormPharmacistPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1034, 653);
+            this.Controls.Add(this.btn_reload);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.btnPay);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelNumberPatient);
             this.Controls.Add(this.guna2PictureBox1);
@@ -233,6 +286,7 @@ namespace MedicalTreament
             this.Load += new System.EventHandler(this.FormPharmacistPatient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,9 +297,12 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label labelNumberPatient;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2DataGridView dgv;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem payToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button btnSearch;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_reload;
     }
 }

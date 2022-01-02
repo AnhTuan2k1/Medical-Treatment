@@ -95,6 +95,39 @@ namespace DataLayer
             return list.ToList();
 
         }
+
+        public object GetDrug(string nameDrug, string option = "all")
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Name.Contains(nameDrug)
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            switch (option.ToLower())
+            {
+                case "all":
+                    return list.ToList();
+
+                case "expired":
+                    return list.Where(drug => drug.ExprirationDate < DateTime.Now).ToList();
+
+                case "soldout":
+                    return list.Where(drug => drug.Quantity <= 0).ToList();
+
+                default:
+                    return list.ToList();
+            }
+        }
+
         public int GetLength()
         {
             var list = from drug in db.Set<Drug>()
@@ -103,6 +136,7 @@ namespace DataLayer
             int lenght = list.ToList().Count;
             return lenght;
         }
+
         public object GetNewestDrug()
         {
             var list = from drug in db.Set<Drug>()
@@ -121,6 +155,27 @@ namespace DataLayer
 
             return list.ToList();
         }
+
+        public object GetExpiredDrugs()
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.ExprirationDate < DateTime.Now
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
+
+        }
+
         public object GetOralTablet()
         {
             var list = from drug in db.Set<Drug>()
@@ -138,7 +193,29 @@ namespace DataLayer
                        };
 
             return list.ToList();
+
         }
+
+        public object GetSoldOutDrugs()
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Quantity == 0
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
+
+        }
+
         public object GetEffervescent()
         {
             var list = from drug in db.Set<Drug>()
@@ -157,6 +234,7 @@ namespace DataLayer
 
             return list.ToList();
         }
+
         public object GetImport()
         {
             var list = from drug in db.Set<Drug>()
@@ -170,6 +248,7 @@ namespace DataLayer
 
             return list.ToList();
         }
+
         public object GetExport()
         {
             var list = from druginvoicedetail in db.Set<DrugInvoiceDetail>()
@@ -186,6 +265,7 @@ namespace DataLayer
                        };
             return list.ToList();
         }
+
         public dynamic GetSearchDrug(string search)
         {
             var list = from drug in db.Set<Drug>()

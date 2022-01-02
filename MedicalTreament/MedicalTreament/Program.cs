@@ -20,7 +20,7 @@ namespace MedicalTreament
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormSpecialist(10,new LoginForm()));
             //Application.Run(new FormGP(9,new LoginForm()));
-            Application.Run(new LoginForm());
+            Application.Run(new Admin());
         }
     }
 }

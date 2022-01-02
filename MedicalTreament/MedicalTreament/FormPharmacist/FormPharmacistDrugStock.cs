@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
+using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
 
 namespace MedicalTreament
@@ -68,10 +69,87 @@ namespace MedicalTreament
         {
             bus_drug.ShowDrugs(dgv);
             dgv.Columns["DrugID"].Width = (int)(dgv.Width * 0.1);
-            dgv.Columns["Name"].Width = (int)(dgv.Width * 0.12);
-            dgv.Columns["Producer"].Width = (int)(dgv.Width * 0.15);
+            dgv.Columns["Name"].Width = (int)(dgv.Width * 0.15);
+            dgv.Columns["Producer"].Width = (int)(dgv.Width * 0.12);
 
             dgv.Columns["Quantity"].Visible = false;
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            bus_drug.ShowDrugs(dgv, txtSearch.Text, ViewOption());
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                bus_drug.ShowDrugs(dgv, txtSearch.Text, ViewOption());
+            }
+        }
+
+        private void gunaRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioExpired.Checked)
+            {
+                bus_drug.ShowExpiredDrugs(dgv);
+            }
+            else if (radioSoldOut.Checked)
+            {
+                bus_drug.ShowSoldOutDrugs(dgv);
+            }
+            else if (radioAll.Checked)
+            {
+                bus_drug.ShowDrugs(dgv);
+            }
+
+        }
+
+        string ViewOption()
+        {
+            if (radioExpired.Checked)
+            {
+                return "expired";
+            }
+            else if (radioSoldOut.Checked)
+            {
+                return "soldout";
+            }
+            else
+            {
+                return "all";
+            }
+        }
+
+        /// <summary>
+        /// true if expried, else false
+        /// </summary>
+        /// <param name="expired"></param>
+        /// <returns></returns>
+        bool isExpired(DateTime expired)
+        {
+            if (expired.Year > DateTime.Now.Year)
+            {
+                return false;
+            }
+            else if (expired.Year == DateTime.Now.Year)
+            {
+                if (expired.Month > DateTime.Now.Month)
+                {
+                    return false;
+                }
+                else if (expired.Month == DateTime.Now.Month)
+                {
+                    if (expired.Day > DateTime.Now.Day)
+                    {
+                        return false;
+                    }
+                    else return true;
+                }
+                else return true;
+            }
+            else return true;
 
         }
     }

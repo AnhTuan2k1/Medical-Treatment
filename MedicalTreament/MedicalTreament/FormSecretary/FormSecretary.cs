@@ -26,7 +26,7 @@ namespace MedicalTreament
         {
             guna2ShadowForm1.SetShadowForm(this);
 
-            FormSecretaryPatientList overview = new FormSecretaryPatientList(btnPatients)
+            FormSecretaryPatientList overview = new FormSecretaryPatientList(btnPatients, this)
             { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
             PanelContainer.Controls.Add(overview);
@@ -46,7 +46,7 @@ namespace MedicalTreament
                     break;
 
                 case "btnPatients":
-                    form = new FormSecretaryPatientList(btn);
+                    form = new FormSecretaryPatientList(btn, this);
                     btn.Image = Properties.Resources.baseline_groups_white_24dp;
                     break;
 
@@ -60,6 +60,14 @@ namespace MedicalTreament
             }
 
             btn_click_change(form, btn);
+        }
+
+        public void OpenReception(string patientID)
+        {
+            Form form = new FormSecretaryReception(btnReception, secretaryID, patientID);
+            btnReception.Image = Properties.Resources.baseline_receipt_white_24dp;
+
+            btn_click_change(form, btnReception);
         }
 
         private void btn_click_change(Form form, Guna2Button btn)

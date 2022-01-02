@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
+using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
 
 namespace MedicalTreament
@@ -19,7 +20,8 @@ namespace MedicalTreament
         BUS_Employee bus_employee;
         BUS_ExaminationForm bus_ExForm;
         int secretaryID;
-        public FormSecretaryReception(Guna2Button button, int idScretary)
+        string patientID;
+        public FormSecretaryReception(Guna2Button button, int idScretary, string patientID = "")
         {
             InitializeComponent();
             btn = button;
@@ -28,6 +30,7 @@ namespace MedicalTreament
             bus_employee = new BUS_Employee();
             bus_ExForm = new BUS_ExaminationForm();
             lbNo.Text = (bus_ExForm.CountExFormToday() + 1).ToString();
+            this.patientID = patientID;
         }
 
         private void FormSecretaryReception_FormClosed(object sender, FormClosedEventArgs e)
@@ -76,19 +79,7 @@ namespace MedicalTreament
             comboGPid.DisplayMember = "EmployeeID";
 
             ClearPatientInformation();
-        }
-
-        void ClearPatientInformation()
-        {
-            ComboBoxPatientID.Text = "";
-            ComboBoxPatientName.Text = "";
-            comboGPid.Text = "";
-            comboGPname.Text = "";
-            txtDateOfBirth.Text = "";
-            txtPhone.Text = "";
-            txtHealthInsuarance.Text = "";
-            RadioBtnFemale.Checked = false;
-            RadioBtnMale.Checked = false;
+            if (patientID != "") LoadPatientInfor(patientID);
         }
 
         private void ComboBoxPatientName_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,6 +136,34 @@ namespace MedicalTreament
             }
         }
 
+        private void LoadPatientInfor(string patientID)
+        {
+            for (int i = 0; i < ComboBoxPatientID.Items.Count; i++)
+            {
+                string x = ComboBoxPatientID.Items[i].ToString();
+                x = x.Split(',')[0].Split('=')[1].Trim();
+                if (x == patientID)
+                {
+                    if (i == 0) { ComboBoxPatientID.SelectedIndex = 1; }
+                    ComboBoxPatientID.SelectedIndex = i;
+                    
+                }
+            } 
+        }
+
+        void ClearPatientInformation()
+        {
+            ComboBoxPatientID.Text = "";
+            ComboBoxPatientName.Text = "";
+            comboGPid.Text = "";
+            comboGPname.Text = "";
+            txtDateOfBirth.Text = "";
+            txtPhone.Text = "";
+            txtHealthInsuarance.Text = "";
+            RadioBtnFemale.Checked = false;
+            RadioBtnMale.Checked = false;
+        }
+
         bool CheckInput()
         {
             if(ComboBoxPatientID.Text.Length == 0)
@@ -192,5 +211,6 @@ namespace MedicalTreament
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
+
     }
 }
