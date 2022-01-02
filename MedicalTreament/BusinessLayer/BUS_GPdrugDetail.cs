@@ -16,5 +16,17 @@ namespace BusinessLayer
             dao_GPdrugDetail = DAO_GPdrugDetail.getInstance();
         }
 
+        public bool Adddrugdetail(string drugName, int drugQuantity, int prescriptionID, int idPatient, int idGP)
+        {
+            try
+            {
+                dao_GPdrugDetail.Adddrugdetail(drugName, drugQuantity, prescriptionID, idPatient, idGP);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

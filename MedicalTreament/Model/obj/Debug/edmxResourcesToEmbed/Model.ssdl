@@ -90,6 +90,7 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
     <Property Name="PrescriptionID" Type="int" Nullable="false" />
     <Property Name="PatientID" Type="int" Nullable="false" />
     <Property Name="GPID" Type="int" Nullable="false" />
+    <Property Name="NameDrug" Type="nvarchar" MaxLength="30" />
   </EntityType>
   <EntityType Name="Invoice">
     <Key>

@@ -28,7 +28,7 @@ public partial class FormGP_Prescription_AddPill : Form
 
     private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            if (textbox_amount.Text == "")
+            if (textbox_amount.Text == "" || txt_name.Text == "")
             {
                 MessageBox.Show("Empty!");
             }
@@ -50,7 +50,7 @@ public partial class FormGP_Prescription_AddPill : Form
             decimal b;
             if (Decimal.TryParse(a, out b))
             {
-                this.FGPP.Rows.Add(new object[] { label_name.Text, textbox_amount.Text });
+                this.FGPP.Rows.Add(new object[] { txt_name.Text, textbox_amount.Text });
 
                 this.Close();
             }

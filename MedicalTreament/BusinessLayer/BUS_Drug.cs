@@ -67,5 +67,14 @@ namespace BusinessLayer
                 return false;
             }
         }
+
+
+
+        public int GetDrugID(string name)
+        {
+            int id = daoDrug.GetDrugID(name);
+            return id;
+        }
+
     }
 }
