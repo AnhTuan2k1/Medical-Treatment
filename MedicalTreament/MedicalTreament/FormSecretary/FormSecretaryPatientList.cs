@@ -16,13 +16,14 @@ namespace MedicalTreament
     {
         BUS_Patient bus_patient;
         Guna2Button btn;
+        FormSecretary container;
 
-
-        public FormSecretaryPatientList(Guna2Button btn)
+        public FormSecretaryPatientList(Guna2Button btn, FormSecretary container)
         {
             InitializeComponent();
             this.btn = btn;
             bus_patient = new BUS_Patient();
+            this.container = container;
         }
 
         private void FormSecretaryPatientList_Shown(object sender, EventArgs e)
@@ -96,7 +97,7 @@ namespace MedicalTreament
 
         private void receptionPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            container.OpenReception(dgvPatients.SelectedRows[0].Cells["PatientID"].Value.ToString());
         }
 
         private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
@@ -111,5 +112,6 @@ namespace MedicalTreament
         {
             bus_patient.ShowPatients(dgvPatients);
         }
+
     }
 }

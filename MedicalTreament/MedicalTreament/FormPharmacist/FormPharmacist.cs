@@ -28,7 +28,7 @@ namespace MedicalTreament
             guna2ShadowForm1.SetShadowForm(this);
 
             // open form FormPharmacistOverview fist
-            FormPharmacistPatient overview = new FormPharmacistPatient(btnPatients)
+            FormPharmacistPatient overview = new FormPharmacistPatient(btnPatients, this)
             { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
             PanelContainer.Controls.Add(overview);
@@ -48,12 +48,12 @@ namespace MedicalTreament
                     break;
 
                 case "btnPatients":
-                    form = new FormPharmacistPatient(btn);
+                    form = new FormPharmacistPatient(btn , this);
                     btn.Image = Properties.Resources.baseline_dashboard_white_24dp;
                     break;
 
                 case "btnPayment":
-                    form = new FormPharmacistPayment(btn);
+                    form = new FormPharmacistPayment(btn, parmacistID);
                     btn.Image = Properties.Resources.baseline_paid_white_24dp;
                     break;
                 case "btnLogout":
@@ -68,6 +68,15 @@ namespace MedicalTreament
             btn_click_change(form, btn);
 
         }
+
+        public void OpenPayment(string patientID)
+        {
+            Form form = new FormPharmacistPayment(btnPayment, parmacistID, patientID);
+            btnPayment.Image = Properties.Resources.baseline_paid_white_24dp;
+
+            btn_click_change(form, btnPayment);
+        }
+
         private void btn_click_change (Form form, Guna2Button btn)
         {
             if (form == null) return;

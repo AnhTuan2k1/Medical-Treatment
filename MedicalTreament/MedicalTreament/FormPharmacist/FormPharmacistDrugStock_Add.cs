@@ -100,11 +100,11 @@ namespace MedicalTreament
                 txtUnit.Focus();
                 return false;
             }
-            else if(DateTime.Compare(DateTimePicker.Value, DateTime.Now) < 0)
-            {
-                MessageBox.Show("Please enter Expiration Date");
-                return false;
-            }
+            //else if(DateTime.Compare(DateTimePicker.Value, DateTime.Now) < 0)
+            //{
+            //    MessageBox.Show("Please enter Expiration Date");
+            //    return false;
+            //}
 
             return true;
         }

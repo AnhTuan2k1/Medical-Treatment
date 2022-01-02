@@ -37,6 +37,21 @@ namespace BusinessLayer
             dgv.DataSource = daoDrug.GetDrug();
         }
 
+        public void ShowDrugs(DataGridView dgv, string nameDrug, string option = "all")
+        {
+            dgv.DataSource = daoDrug.GetDrug(nameDrug, option);
+        }
+
+        public void ShowExpiredDrugs(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetExpiredDrugs();
+        }
+
+        public void ShowSoldOutDrugs(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetSoldOutDrugs();
+        }
+
         public bool EditDrug(int id, string name, string producer, DateTime ExprirationDate, 
             string unit, decimal price, int quantity, string type)
         {

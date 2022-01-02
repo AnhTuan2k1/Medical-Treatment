@@ -57,6 +57,28 @@ namespace DataLayer
                        select new {
                            patient.PatientID,
                            patient.Name,
+                           patient.DateOfBirth,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           form.State
+                       };
+
+            return list.ToList();
+        }
+
+        public dynamic GetUnPayPatients(string namePatient)
+        {
+            var list = from form in db.Set<ExaminationForm>()
+                       join patient in db.Set<Patient>()
+                       on form.PatientID equals patient.PatientID
+                       where !form.State.ToLower().Contains("paid")
+                       && patient.Name.Contains(namePatient)
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.DateOfBirth,
                            patient.HealthInsuarance,
                            patient.Phone,
                            patient.Gender,
@@ -76,6 +98,7 @@ namespace DataLayer
                        {
                            patient.PatientID,
                            patient.Name,
+                           patient.DateOfBirth,
                            patient.HealthInsuarance,
                            patient.Phone,
                            patient.Gender

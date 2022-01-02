@@ -68,6 +68,7 @@
     <EntitySetMapping Name="GPdrugDetails">
       <EntityTypeMapping TypeName="MedicalTreatmentModel.GPdrugDetail">
         <MappingFragment StoreEntitySet="GPdrugDetail">
+          <ScalarProperty Name="NameDrug" ColumnName="NameDrug" />
           <ScalarProperty Name="GPID" ColumnName="GPID" />
           <ScalarProperty Name="PatientID" ColumnName="PatientID" />
           <ScalarProperty Name="PrescriptionID" ColumnName="PrescriptionID" />
