@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MedicalTreament
 {
-    public partial class DashboardForm : Form
+    public partial class Admin : Form
     {
-        public DashboardForm()
+        public Admin()
         {
             InitializeComponent();
         }

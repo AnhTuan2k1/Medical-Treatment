@@ -113,7 +113,7 @@ namespace MedicalTreament
             this.textbox_amount.SelectedText = "";
             this.textbox_amount.ShadowDecoration.Parent = this.textbox_amount;
             this.textbox_amount.Size = new System.Drawing.Size(222, 30);
-            this.textbox_amount.TabIndex = 12;
+            this.textbox_amount.TabIndex = 1;
             // 
             // label_ttamount
             // 
@@ -138,6 +138,7 @@ namespace MedicalTreament
             // guna2CircleButton2
             // 
             this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -150,12 +151,13 @@ namespace MedicalTreament
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Size = new System.Drawing.Size(52, 52);
-            this.guna2CircleButton2.TabIndex = 15;
+            this.guna2CircleButton2.TabIndex = 3;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // guna2CircleButton1
             // 
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -168,7 +170,7 @@ namespace MedicalTreament
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Size = new System.Drawing.Size(52, 52);
-            this.guna2CircleButton1.TabIndex = 14;
+            this.guna2CircleButton1.TabIndex = 2;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // FormGP_Prescription_EditPill

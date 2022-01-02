@@ -85,6 +85,10 @@
     <Compile Include="AdminForm\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminForm\EditEmployee.cs" />
+    <Compile Include="AdminForm\EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm\EmployeesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,10 +119,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGP_Prescription_EditPill.cs">
+    <Compile Include="FormGP\FormGP_Prescription_EditPill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGP_Prescription_EditPill.Designer.cs">
+    <Compile Include="FormGP\FormGP_Prescription_EditPill.Designer.cs">
       <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSpecialist\FormSpecialist_Diagnosis.cs">
@@ -276,6 +280,9 @@
     <EmbeddedResource Include="AdminForm\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\EmployeesForm.resx">
       <DependentUpon>EmployeesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,7 +298,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGP_Prescription_EditPill.resx">
+    <EmbeddedResource Include="FormGP\FormGP_Prescription_EditPill.resx">
       <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Diagnosis.resx">

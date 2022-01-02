@@ -16,6 +16,7 @@ namespace MedicalTreament
         int idGP;
         int idPatient;
         BUS_Prescription bus_Prescription;
+        BUS_GPdrugDetail bus_GPdrugDetail;
         BUS_Drug bus_Drug;
         String currentDay = DateTime.Now.ToShortDateString();
 
@@ -26,6 +27,8 @@ namespace MedicalTreament
             this.idGP = idGP;
             this.idPatient = idPatient;
             bus_Prescription = new BUS_Prescription();
+            bus_Drug = new BUS_Drug();
+            bus_GPdrugDetail = new BUS_GPdrugDetail();
         }
 
 
@@ -39,6 +42,7 @@ namespace MedicalTreament
             gridview_pill.Columns["Quantity"].Visible = false;
             gridview_pill.Columns["Producer"].Visible = false;
             gridview_pill.Columns["ExprirationDate"].Visible = false;
+            gridview_pill.AllowUserToOrderColumns = true;
             //gridview_pill.Columns[0].Width = 100;
             //gridview_pill.Columns["ImportDate"].Visible = false;
             //
@@ -50,12 +54,18 @@ namespace MedicalTreament
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            FormGP_Prescription_AddPill form_add = new FormGP_Prescription_AddPill(gridview_prescription);
-            form_add.label_name.Text = this.gridview_pill.CurrentRow.Cells[1].Value.ToString();
-            form_add.Show();
+            if (gridview_pill.SelectedRows.Count < 0)
+            {
 
+            }
+            else
+            {
+                FormGP_Prescription_AddPill form_add = new FormGP_Prescription_AddPill(gridview_prescription);
+                form_add.txt_name.Text = this.gridview_pill.CurrentRow.Cells[1].Value.ToString();
+                form_add.Show();
 
-            string name = this.gridview_pill.CurrentRow.Cells[1].Value.ToString(); ;
+            }
+            //string name = this.gridview_pill.CurrentRow.Cells[1].Value.ToString(); ;
             //string amount = form_add.textbox_amount.Text;
 
             //if (name != "" && amount != "")
@@ -68,9 +78,23 @@ namespace MedicalTreament
 
         private void btn_remove_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow item in this.gridview_prescription.SelectedRows)
+            if (gridview_prescription.Rows.Count == 0)
             {
-                gridview_prescription.Rows.RemoveAt(item.Index);
+                MessageBox.Show("No pill to delete!");
+            }
+            else
+            {
+                string name = gridview_prescription.SelectedRows[0].Cells[0].Value.ToString();
+                string caption = "Do you want to delete " + name + " ?";
+
+                DialogResult result = MessageBox.Show(caption, "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    foreach (DataGridViewRow item in this.gridview_prescription.SelectedRows)
+                    {
+                        gridview_prescription.Rows.RemoveAt(item.Index);
+                    }
+                }
             }
         }
 
@@ -79,7 +103,7 @@ namespace MedicalTreament
            
             if (gridview_prescription.Rows.Count == 0)
             {
-                MessageBox.Show("Choose pill to edit!");
+                MessageBox.Show("No pill to edit!");
             }
             else
             {
@@ -92,9 +116,35 @@ namespace MedicalTreament
 
         private void btn_CreatePrescription_Click(object sender, EventArgs e)
         {
-            if(bus_Prescription.AddPrescription(txtInstruction.Text, idPatient, idGP ))
+            if(gridview_prescription.Rows.Count ==0)
             {
-                MessageBox.Show("Add Prescription successfully!");
+                MessageBox.Show("Add some pill..");
+            }
+            else
+            {
+                if (bus_Prescription.AddPrescription(txtInstruction.Text, idPatient, idGP))
+                {
+                 
+                    foreach (DataGridViewRow row in gridview_prescription.Rows)
+                    {
+                        string drugName = row.Cells[0].Value.ToString();
+                        int drugQuantity = Int32.Parse(row.Cells[1].Value.ToString());
+                        int prescriptionID = bus_Prescription.GetPrescriptionID(idGP, idPatient);
+                        if (bus_GPdrugDetail.Adddrugdetail(drugName, drugQuantity, prescriptionID, idPatient, idGP))
+                        {
+                            
+                        }
+                    }
+
+                    DialogResult result = MessageBox.Show("Add Prescription successfully!", "Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    if (result == DialogResult.OK)
+                    {
+                        txtInstruction.Text = "";
+                        gridview_prescription.Rows.Clear();
+                        this.Close();
+                    }    
+                   
+                }
             }
         }
     }

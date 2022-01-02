@@ -7,48 +7,132 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 
 namespace MedicalTreament.AdminForm
 {
     public partial class EmployeesForm : Form
     {
+        BUS_Employee bUS_Employee;
+        BUS_Account bUS_Account;
         public EmployeesForm()
         {
             InitializeComponent();
+            bUS_Employee = new BUS_Employee();
+            bUS_Account = new BUS_Account();
         }
-
-        private void txbSearch_Click(object sender, EventArgs e)
+        private void ShowEmployee()
         {
-            
+            dtgvEmployee.DataSource = null;
+            bUS_Employee.ShowEmployee(dtgvEmployee);
+            dtgvEmployee.Columns["EmployeeID"].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[1].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[2].Width = (int)(dtgvEmployee.Width * 0.15);
         }
-
+        private int ShowLength()
+        {
+            return bUS_Employee.ShowLength();
+        }
+        private void ShowNewestEmployee()
+        {
+            dtgvEmployee.DataSource = null;
+            bUS_Employee.ShowNewestEmployee(dtgvEmployee);
+            dtgvEmployee.Columns["EmployeeID"].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[1].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[2].Width = (int)(dtgvEmployee.Width * 0.15);
+        }
+        private void ShowSalaryOver()
+        {
+            dtgvEmployee.DataSource = null;
+            bUS_Employee.ShowSalaryOver(dtgvEmployee);
+            dtgvEmployee.Columns["EmployeeID"].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[1].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[2].Width = (int)(dtgvEmployee.Width * 0.15);
+        }
+        private void ShowSalaryUnder()
+        {
+            dtgvEmployee.DataSource = null;
+            bUS_Employee.ShowSalryUnder(dtgvEmployee);
+            dtgvEmployee.Columns["EmployeeID"].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[1].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[2].Width = (int)(dtgvEmployee.Width * 0.15);
+        }
+        private void ShowSearchEmployee(string search)
+        {
+            dtgvEmployee.DataSource = null;
+            bUS_Employee.ShowSearchEmployee(dtgvEmployee,search);
+            dtgvEmployee.Columns["EmployeeID"].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[1].Width = (int)(dtgvEmployee.Width * 0.12);
+            dtgvEmployee.Columns[2].Width = (int)(dtgvEmployee.Width * 0.15);
+        }
         private void EmployeesForm_Load(object sender, EventArgs e)
         {
-            dtgvEmployee.Rows.Add(3);
-            dtgvEmployee.Rows[0].Cells[0].Value = "1";
-            dtgvEmployee.Rows[0].Cells[1].Value = "Em Tân";
-            dtgvEmployee.Rows[0].Cells[2].Value = "General Doctor";
-            dtgvEmployee.Rows[0].Cells[3].Value = "123456789";
-            dtgvEmployee.Rows[0].Cells[4].Value = "manhtan12327@gmai.com";
-            dtgvEmployee.Rows[0].Cells[5].Value = "20.000.000";
-            dtgvEmployee.Rows[1].Cells[0].Value = "2";
-            dtgvEmployee.Rows[1].Cells[1].Value = "Em Thái";
-            dtgvEmployee.Rows[1].Cells[2].Value = "Pharmarcist";
-            dtgvEmployee.Rows[1].Cells[3].Value = "123456789";
-            dtgvEmployee.Rows[1].Cells[4].Value = "manhtan12327@gmai.com";
-            dtgvEmployee.Rows[1].Cells[5].Value = "20.000.000";
-            dtgvEmployee.Rows[2].Cells[0].Value = "3";
-            dtgvEmployee.Rows[2].Cells[1].Value = "Em Tuấn";
-            dtgvEmployee.Rows[2].Cells[2].Value = "Specialist";
-            dtgvEmployee.Rows[2].Cells[3].Value = "123456789";
-            dtgvEmployee.Rows[2].Cells[4].Value = "manhtan12327@gmai.com";
-            dtgvEmployee.Rows[2].Cells[5].Value = "20.000.000";
+            ShowEmployee();
+            lbEmployees.Text = ShowLength().ToString();
         }
         //When Click Add Employees Button
         private void btAdd_Click(object sender, EventArgs e)
         {
-            NewEmployees newEmployees = new NewEmployees();
+            NewEmployees newEmployees = new NewEmployees(dtgvEmployee);
             newEmployees.Show();
         }
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dtgvEmployee.SelectedRows[0];
+            EditEmployee editEmployee = new EditEmployee(dtgvEmployee,row);
+            editEmployee.Show();
+        }
+        private void btDelete_Click(object sender, EventArgs e)
+        {
+            int employeeID = Convert.ToInt32(dtgvEmployee.SelectedRows[0].Cells["EmployeeID"].Value.ToString());
+            string name = dtgvEmployee.SelectedRows[0].Cells["Name"].Value.ToString();
+            string caption = "Do you want to delete " + name + ", id = " + employeeID.ToString();
+
+            DialogResult result = MessageBox.Show(caption, "Delete patient", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                if (bUS_Account.DeleteAccount(employeeID)) // delete 
+                {
+                    bUS_Employee.DeleteEmployee(employeeID);
+                    bUS_Employee.ShowEmployee(dtgvEmployee); // update datagirdview if delete successufully.
+                }
+            }
+        }
+
+        private void cbbSortby_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbSortby.SelectedIndex == 0)
+            {
+                ShowEmployee();
+            }
+            else
+            {
+                ShowNewestEmployee();
+            }
+        }
+
+        private void cbbFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbFilter.SelectedIndex == 0)
+            {
+                ShowSalaryOver();
+            }
+            else
+            {
+                ShowSalaryUnder();
+            }
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            ShowSearchEmployee(txbSearch.Text.ToString());
+        }
+
+        private void btRefreshEmployee_Click(object sender, EventArgs e)
+        {
+            ShowEmployee();
+        }
     }
-}
+}   
+    
+

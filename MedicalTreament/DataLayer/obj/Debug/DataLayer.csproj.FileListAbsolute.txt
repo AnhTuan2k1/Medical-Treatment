@@ -28,3 +28,20 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataL
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.exe
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\DataLayer.exe.config
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\DataLayer.exe
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\DataLayer.pdb
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.dll
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.pdb
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.dll.config
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.xml
+D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.Properties.Resources.resources
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.exe
+D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.pdb

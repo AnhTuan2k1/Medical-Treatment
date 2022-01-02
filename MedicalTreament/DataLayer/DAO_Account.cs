@@ -42,5 +42,61 @@ namespace DataLayer
             employeeType = account.type;
       
         }
+        public dynamic GetAccount()
+        {
+            var list = from accounts in db.Set<Account>()
+                       orderby accounts.AccountID
+                       select new
+                       {
+                           accounts.AccountID,
+                           accounts.Username,
+                           accounts.Password,
+                           accounts.type,
+                           accounts.EmployeeID
+                       };
+
+            return list.ToList();
+        }
+
+        public void AddAccount(string username, string password, string type, int employeeid)
+        {
+            Account account = new Account()
+            {
+                Username = username,
+                Password = password,
+                type = type,
+                EmployeeID = employeeid
+            };
+
+            db.Accounts.Add(account);
+            db.SaveChanges();
+
+        }
+        public void EditAccount(int accountid, string username, string password, string type, int employeeid)
+        {
+            Account account = db.Accounts.Find(accountid);
+            account.Username = username;
+            account.Password = password;
+            account.type = type;
+            account.EmployeeID = employeeid;
+
+            db.SaveChanges();
+        }
+        public void DeleteAccount(int accountid)
+        {
+            Account account = db.Accounts.Find(accountid);
+            db.Accounts.Remove(account);
+            db.SaveChanges();
+        }
+        public string GetAccUsername(int employeeid)
+        {
+            Account account = db.Accounts.Where(ac => ac.EmployeeID == employeeid).Single();
+            return account.Username;
+        }
+        public string GetAccPassword(int employeeid)
+        {
+            Account account = db.Accounts.Where(ac => ac.EmployeeID == employeeid).Single();
+            return account.Password;
+        }
     }
 }

@@ -260,5 +260,13 @@ insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, I
 values ('Osimertinib','oral tablet','40 mg','700','2300','Tagrisso','1/12/2025','1/12/2021')
 
 insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
-values ('Oxandrolone','oral tablet','10 mg','1700','3100','Oxandrin','1/12/2025','1/12/2021')
+values ('Inbrija','inhalation capsule','42 mg','400','2200','Inbrija','1/12/2025','1/12/2021')
+
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('Isotretinoin','oral capsule','10 mg','2490','570','Absorica','1/12/2025','1/12/2021')
+
+insert into Drug(Name, Type, Unit, Price, Quantity, Producer, ExprirationDate, ImportDate )
+values ('Isoniazid','oral syrup','50 mg/5 mL','4230','800','Nydrazid','1/12/2025','1/12/2021')
+
+
 -------------------------------------------------------------------------------------------------------------------

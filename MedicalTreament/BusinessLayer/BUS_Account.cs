@@ -49,5 +49,58 @@ namespace BusinessLayer
                 return false;
             }            
         }
+        public bool AddAccount(string username, string password, string type, int employeeid)
+        {
+
+            try
+            {
+                daoAccount.AddAccount(username, password, type, employeeid);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+
+        }
+        public bool EditAccount(int accountid, string username, string password, string type, int employeeid)
+        {
+
+            try
+            {
+                daoAccount.EditAccount(accountid, username, password, type, employeeid);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+        public bool DeleteAccount(int accountid)
+        {
+
+            try
+            {
+                daoAccount.DeleteAccount(accountid);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public string GetAccUsername(int employeeid)
+        {
+            string username = daoAccount.GetAccUsername(employeeid);
+            return username;
+        }
+        public string GetAccPassword(int employeeid)
+        {
+            string password = daoAccount.GetAccPassword(employeeid);
+            return password;
+        }
     }
 }

@@ -101,5 +101,11 @@ namespace MedicalTreament
         {
             OpenChildForm(new FormSpecialist_Price(), sender, specialistID);
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.parent.Show();
+        }
     }
 }

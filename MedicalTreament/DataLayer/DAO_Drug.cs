@@ -71,6 +71,12 @@ namespace DataLayer
             db.SaveChanges();
         }
 
+        public int GetDrugID(string name)
+        {
+            Drug drug = db.Drugs.Where(d => d.Name == name).Single();
+            return drug.DrugID;
+        }
+
         public object GetDrug()
         {
             var list = from drug in db.Set<Drug>()
@@ -113,7 +119,7 @@ namespace DataLayer
 
                 case "expired":
                     return list.Where(drug => drug.ExprirationDate < DateTime.Now).ToList();
-                    
+
                 case "soldout":
                     return list.Where(drug => drug.Quantity <= 0).ToList();
 
@@ -122,10 +128,58 @@ namespace DataLayer
             }
         }
 
+        public int GetLength()
+        {
+            var list = from drug in db.Set<Drug>()
+                       select new
+                       { };
+            int lenght = list.ToList().Count;
+            return lenght;
+        }
+
+        public object GetNewestDrug()
+        {
+            var list = from drug in db.Set<Drug>()
+                       orderby drug.DrugID descending
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
+        }
+
         public object GetExpiredDrugs()
         {
             var list = from drug in db.Set<Drug>()
                        where drug.ExprirationDate < DateTime.Now
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
+
+        }
+
+        public object GetOralTablet()
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Type == "oral tablet"
                        select new
                        {
                            drug.DrugID,
@@ -160,6 +214,75 @@ namespace DataLayer
 
             return list.ToList();
 
+        }
+
+        public object GetEffervescent()
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Type == "effervescent"
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
+        }
+
+        public object GetImport()
+        {
+            var list = from drug in db.Set<Drug>()
+                       select new
+                       {
+                           drug.Name,
+                           drug.Producer,
+                           drug.Quantity,
+                           drug.ImportDate
+                       };
+
+            return list.ToList();
+        }
+
+        public object GetExport()
+        {
+            var list = from druginvoicedetail in db.Set<DrugInvoiceDetail>()
+                       join drug in db.Set<Drug>()
+                       on druginvoicedetail.DrugID equals drug.DrugID
+                       join invoice in db.Set<Invoice>()
+                       on druginvoicedetail.InvoiceID equals invoice.InvoiceID
+                       select new
+                       {
+                           drug.Name,
+                           drug.Producer,
+                           druginvoicedetail.Quantity,
+                           invoice.Date
+                       };
+            return list.ToList();
+        }
+
+        public dynamic GetSearchDrug(string search)
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Name.Contains(search)
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Producer,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity,
+                           drug.Type
+                       };
+
+            return list.ToList();
         }
     }
 }

@@ -107,5 +107,29 @@ namespace BusinessLayer
             }
             
         }
+        public void ShowNewstPatients(DataGridView dgv)
+        {
+            dgv.DataSource = daoPatient.GetNewestPatients();
+        }
+        public void ShowMalePatients(DataGridView dgv, string gender)
+        {
+            dgv.DataSource = daoPatient.GetMalePatients(gender);
+        }
+        public void ShowFemalePatients(DataGridView dgv, string gender)
+        {
+            dgv.DataSource = daoPatient.GetFemalePatients(gender);
+        }
+        public void SearchPatients(DataGridView dgv, string search)
+        {
+            dgv.DataSource = daoPatient.SearchPatients(search);
+        }
+        public int GetLength()
+        {
+            return daoPatient.GetLength();
+        }
+        public void ShowPatientInvoice(DataGridView dgv)
+        {
+            dgv.DataSource = daoPatient.GetPatientInvoice();
+        }
     }
 }
