@@ -28,3 +28,5 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataL
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.exe
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.SqlServer.xml

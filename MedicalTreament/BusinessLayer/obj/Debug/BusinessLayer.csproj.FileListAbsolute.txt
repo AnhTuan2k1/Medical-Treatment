@@ -33,3 +33,4 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Busin
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.exe
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.xml

@@ -90,7 +90,7 @@ namespace MedicalTreament
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(286, 199);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(270, 195);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
@@ -108,7 +108,7 @@ namespace MedicalTreament
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(181, 199);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(165, 195);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
@@ -120,7 +120,7 @@ namespace MedicalTreament
             // 
             this.label_ttamount.AutoSize = true;
             this.label_ttamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ttamount.Location = new System.Drawing.Point(90, 139);
+            this.label_ttamount.Location = new System.Drawing.Point(74, 135);
             this.label_ttamount.Name = "label_ttamount";
             this.label_ttamount.Size = new System.Drawing.Size(65, 20);
             this.label_ttamount.TabIndex = 14;
@@ -130,7 +130,7 @@ namespace MedicalTreament
             // 
             this.label_ttname.AutoSize = true;
             this.label_ttname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ttname.Location = new System.Drawing.Point(90, 79);
+            this.label_ttname.Location = new System.Drawing.Point(74, 75);
             this.label_ttname.Name = "label_ttname";
             this.label_ttname.Size = new System.Drawing.Size(69, 20);
             this.label_ttname.TabIndex = 13;
@@ -151,7 +151,7 @@ namespace MedicalTreament
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(181, 79);
+            this.txtName.Location = new System.Drawing.Point(165, 75);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -176,7 +176,7 @@ namespace MedicalTreament
             this.txtPrice.ForeColor = System.Drawing.Color.Black;
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.HoverState.Parent = this.txtPrice;
-            this.txtPrice.Location = new System.Drawing.Point(181, 139);
+            this.txtPrice.Location = new System.Drawing.Point(165, 135);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';

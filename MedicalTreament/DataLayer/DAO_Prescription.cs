@@ -37,5 +37,11 @@ namespace DataLayer
             db.Prescriptions.Add(prescription);
             db.SaveChanges();
         }
+
+        public int GetPrescriptionID(int idGP, int idPatient)
+        {
+            Prescription prescription = db.Prescriptions.Where(p => p.GPID == idGP && p.PatientID == idPatient).Single();
+            return prescription.PrescriptionID;
+        }
     }
 }

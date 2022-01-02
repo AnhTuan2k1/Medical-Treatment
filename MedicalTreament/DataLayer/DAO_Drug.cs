@@ -71,6 +71,12 @@ namespace DataLayer
             db.SaveChanges();
         }
 
+        public int GetDrugID(string name)
+        {
+            Drug drug = db.Drugs.Where(d => d.Name == name).Single();
+            return drug.DrugID;
+        }
+
         public object GetDrug()
         {
             var list = from drug in db.Set<Drug>()

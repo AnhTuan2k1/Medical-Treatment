@@ -33,9 +33,7 @@ namespace MedicalTreament
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDirection = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.comboBoxSEname = new System.Windows.Forms.ComboBox();
@@ -56,38 +54,11 @@ namespace MedicalTreament
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(185, 648);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Multiline = true;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(648, 83);
-            this.guna2TextBox1.TabIndex = 2;
-            // 
             // txtDirection
             // 
             this.txtDirection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDirection.BorderColor = System.Drawing.Color.DimGray;
             this.txtDirection.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDirection.DefaultText = "";
             this.txtDirection.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -101,8 +72,8 @@ namespace MedicalTreament
             this.txtDirection.ForeColor = System.Drawing.Color.Black;
             this.txtDirection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDirection.HoverState.Parent = this.txtDirection;
-            this.txtDirection.Location = new System.Drawing.Point(185, 739);
-            this.txtDirection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDirection.Location = new System.Drawing.Point(185, 726);
+            this.txtDirection.Margin = new System.Windows.Forms.Padding(4);
             this.txtDirection.Multiline = true;
             this.txtDirection.Name = "txtDirection";
             this.txtDirection.PasswordChar = '\0';
@@ -110,17 +81,7 @@ namespace MedicalTreament
             this.txtDirection.SelectedText = "";
             this.txtDirection.ShadowDecoration.Parent = this.txtDirection;
             this.txtDirection.Size = new System.Drawing.Size(648, 142);
-            this.txtDirection.TabIndex = 3;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.gunaLabel1.Location = new System.Drawing.Point(37, 657);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(75, 20);
-            this.gunaLabel1.TabIndex = 4;
-            this.gunaLabel1.Text = "Kết luận:";
+            this.txtDirection.TabIndex = 6;
             // 
             // gunaLabel2
             // 
@@ -128,7 +89,7 @@ namespace MedicalTreament
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.gunaLabel2.Location = new System.Drawing.Point(37, 750);
+            this.gunaLabel2.Location = new System.Drawing.Point(37, 726);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
             this.gunaLabel2.TabIndex = 5;
@@ -139,7 +100,7 @@ namespace MedicalTreament
             this.guna2CircleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2CircleButton2.FillColor = System.Drawing.Color.Aquamarine;
             this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
@@ -148,6 +109,7 @@ namespace MedicalTreament
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(35, 35);
             this.guna2CircleButton2.Location = new System.Drawing.Point(747, 888);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
+            this.guna2CircleButton2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Size = new System.Drawing.Size(86, 81);
@@ -164,7 +126,7 @@ namespace MedicalTreament
             this.comboBoxSEname.Location = new System.Drawing.Point(185, 311);
             this.comboBoxSEname.Name = "comboBoxSEname";
             this.comboBoxSEname.Size = new System.Drawing.Size(312, 31);
-            this.comboBoxSEname.TabIndex = 41;
+            this.comboBoxSEname.TabIndex = 4;
             // 
             // guna2Button1
             // 
@@ -198,6 +160,7 @@ namespace MedicalTreament
             // 
             this.txtReason.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReason.BorderColor = System.Drawing.Color.DimGray;
             this.txtReason.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtReason.DefaultText = "";
             this.txtReason.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -212,7 +175,7 @@ namespace MedicalTreament
             this.txtReason.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtReason.HoverState.Parent = this.txtReason;
             this.txtReason.Location = new System.Drawing.Point(185, 197);
-            this.txtReason.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReason.Margin = new System.Windows.Forms.Padding(4);
             this.txtReason.Multiline = true;
             this.txtReason.Name = "txtReason";
             this.txtReason.PasswordChar = '\0';
@@ -220,7 +183,7 @@ namespace MedicalTreament
             this.txtReason.SelectedText = "";
             this.txtReason.ShadowDecoration.Parent = this.txtReason;
             this.txtReason.Size = new System.Drawing.Size(648, 81);
-            this.txtReason.TabIndex = 38;
+            this.txtReason.TabIndex = 3;
             // 
             // label1
             // 
@@ -309,6 +272,7 @@ namespace MedicalTreament
             this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txtPhone.BorderColor = System.Drawing.Color.DimGray;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -323,7 +287,7 @@ namespace MedicalTreament
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.HoverState.Parent = this.txtPhone;
             this.txtPhone.Location = new System.Drawing.Point(185, 145);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
@@ -336,16 +300,17 @@ namespace MedicalTreament
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.gunaLabel3.Location = new System.Drawing.Point(37, 551);
+            this.gunaLabel3.Location = new System.Drawing.Point(37, 578);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(138, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(132, 20);
             this.gunaLabel3.TabIndex = 44;
-            this.gunaLabel3.Text = "Diagnose Result:";
+            this.gunaLabel3.Text = "Diagnose result:\r\n";
             // 
             // guna2TextBox2
             // 
             this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.DimGray;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -359,8 +324,8 @@ namespace MedicalTreament
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(185, 541);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(185, 578);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox2.Multiline = true;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -368,7 +333,7 @@ namespace MedicalTreament
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(648, 99);
-            this.guna2TextBox2.TabIndex = 43;
+            this.guna2TextBox2.TabIndex = 5;
             // 
             // guna2DataGridView1
             // 
@@ -407,7 +372,7 @@ namespace MedicalTreament
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(648, 172);
-            this.guna2DataGridView1.TabIndex = 45;
+            this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -464,9 +429,7 @@ namespace MedicalTreament
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txtDirection);
-            this.Controls.Add(this.guna2TextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGP_Diagnosis";
             this.Text = "FormGP_Diagnosis";
@@ -478,9 +441,7 @@ namespace MedicalTreament
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtDirection;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private System.Windows.Forms.ComboBox comboBoxSEname;

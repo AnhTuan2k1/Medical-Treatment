@@ -24,5 +24,19 @@ namespace DataLayer
             }
             return instance;
         }
+
+        public void Adddrugdetail(string drugName, int drugQuantity, int prescriptionID, int idPatient, int idGP)
+        {
+            GPdrugDetail drugDetail = new GPdrugDetail()
+            {
+                Quantity = drugQuantity,
+                PrescriptionID = prescriptionID,
+                PatientID = idPatient,
+                GPID = idGP,
+                NameDrug = drugName
+            };
+            db.GPdrugDetails.Add(drugDetail);
+            db.SaveChanges();
+        }
     }
 }
