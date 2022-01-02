@@ -67,14 +67,38 @@ namespace BusinessLayer
                 return false;
             }
         }
-
-
-
         public int GetDrugID(string name)
         {
             int id = daoDrug.GetDrugID(name);
             return id;
         }
-
+        public void ShowImport(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetImport();
+        }
+        public void ShowExport(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetExport();
+        }
+        public void ShowNewestDrug(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetNewestDrug();
+        }
+        public void ShowOralTablet(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetOralTablet();
+        }
+        public void ShowEffervescent(DataGridView dgv)
+        {
+            dgv.DataSource = daoDrug.GetEffervescent();
+        }
+        public void ShowSeachDrug(DataGridView dgv, string search)
+        {
+            dgv.DataSource = daoDrug.GetSearchDrug(search);
+        }
+        public int ShowLength()
+        {
+            return daoDrug.GetLength();
+        }
     }
 }

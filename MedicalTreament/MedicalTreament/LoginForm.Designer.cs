@@ -89,6 +89,7 @@
             this.btLogin.TabIndex = 6;
             this.btLogin.Text = "LOG IN";
             this.btLogin.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btLogin_KeyDown);
             // 
             // lbClear
             // 

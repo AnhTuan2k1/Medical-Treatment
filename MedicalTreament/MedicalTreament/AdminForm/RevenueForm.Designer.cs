@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RevenueForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
@@ -49,34 +52,28 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ttkRevenue = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.chartSalesByCate = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.cbbYear = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.chartInVsOut = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dtgvVenevue = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dtgvIncome = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.dtgvDrugPayment = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dtgvEmployeePayment = new Guna.UI2.WinForms.Guna2DataGridView();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.btRemove = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btAdd = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSalesByCate)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartInVsOut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvVenevue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvIncome)).BeginInit();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDrugPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployeePayment)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2PictureBox5
@@ -142,46 +139,31 @@
             // 
             // chartRevenue
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend5);
             this.chartRevenue.Location = new System.Drawing.Point(3, 45);
             this.chartRevenue.Name = "chartRevenue";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartRevenue.Series.Add(series1);
-            this.chartRevenue.Size = new System.Drawing.Size(676, 307);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Revenue";
+            this.chartRevenue.Series.Add(series5);
+            this.chartRevenue.Size = new System.Drawing.Size(704, 307);
             this.chartRevenue.TabIndex = 33;
             this.chartRevenue.Text = "chart1";
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.ttkRevenue);
+            this.guna2Panel1.Controls.Add(this.cbbYear);
             this.guna2Panel1.Controls.Add(this.gunaLabel1);
             this.guna2Panel1.Controls.Add(this.chartRevenue);
             this.guna2Panel1.Location = new System.Drawing.Point(9, 82);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(682, 355);
+            this.guna2Panel1.Size = new System.Drawing.Size(707, 355);
             this.guna2Panel1.TabIndex = 34;
-            // 
-            // ttkRevenue
-            // 
-            this.ttkRevenue.CheckedState.Parent = this.ttkRevenue;
-            this.ttkRevenue.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ttkRevenue.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.ttkRevenue.HoverState.Parent = this.ttkRevenue;
-            this.ttkRevenue.Location = new System.Drawing.Point(444, 12);
-            this.ttkRevenue.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.ttkRevenue.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.ttkRevenue.Name = "ttkRevenue";
-            this.ttkRevenue.ShadowDecoration.Parent = this.ttkRevenue;
-            this.ttkRevenue.Size = new System.Drawing.Size(235, 20);
-            this.ttkRevenue.TabIndex = 35;
-            this.ttkRevenue.Value = new System.DateTime(2021, 12, 1, 17, 34, 3, 64);
             // 
             // gunaLabel1
             // 
@@ -193,53 +175,45 @@
             this.gunaLabel1.TabIndex = 34;
             this.gunaLabel1.Text = "Revenue Chat";
             // 
-            // chartSalesByCate
+            // cbbYear
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSalesByCate.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartSalesByCate.Legends.Add(legend2);
-            this.chartSalesByCate.Location = new System.Drawing.Point(3, 35);
-            this.chartSalesByCate.Name = "chartSalesByCate";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartSalesByCate.Series.Add(series2);
-            this.chartSalesByCate.Size = new System.Drawing.Size(372, 128);
-            this.chartSalesByCate.TabIndex = 35;
-            this.chartSalesByCate.Text = "chart2";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.Controls.Add(this.gunaLabel4);
-            this.guna2Panel2.Controls.Add(this.chartSalesByCate);
-            this.guna2Panel2.Location = new System.Drawing.Point(697, 82);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(378, 170);
-            this.guna2Panel2.TabIndex = 36;
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(3, 12);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(144, 20);
-            this.gunaLabel4.TabIndex = 38;
-            this.gunaLabel4.Text = "Sales By Categories";
+            this.cbbYear.BackColor = System.Drawing.Color.Transparent;
+            this.cbbYear.BorderThickness = 0;
+            this.cbbYear.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbYear.FocusedColor = System.Drawing.Color.Empty;
+            this.cbbYear.FocusedState.Parent = this.cbbYear;
+            this.cbbYear.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbYear.ForeColor = System.Drawing.Color.Black;
+            this.cbbYear.FormattingEnabled = true;
+            this.cbbYear.HoverState.Parent = this.cbbYear;
+            this.cbbYear.ItemHeight = 30;
+            this.cbbYear.Items.AddRange(new object[] {
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"});
+            this.cbbYear.ItemsAppearance.Parent = this.cbbYear;
+            this.cbbYear.Location = new System.Drawing.Point(547, 12);
+            this.cbbYear.Name = "cbbYear";
+            this.cbbYear.ShadowDecoration.Parent = this.cbbYear;
+            this.cbbYear.Size = new System.Drawing.Size(140, 36);
+            this.cbbYear.TabIndex = 35;
+            this.cbbYear.SelectedIndexChanged += new System.EventHandler(this.cbbYear_SelectedIndexChanged);
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.White;
             this.guna2Panel3.Controls.Add(this.gunaLabel5);
             this.guna2Panel3.Controls.Add(this.chartInVsOut);
-            this.guna2Panel3.Location = new System.Drawing.Point(697, 267);
+            this.guna2Panel3.Location = new System.Drawing.Point(722, 82);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(378, 170);
+            this.guna2Panel3.Size = new System.Drawing.Size(353, 355);
             this.guna2Panel3.TabIndex = 37;
             // 
             // gunaLabel5
@@ -254,102 +228,244 @@
             // 
             // chartInVsOut
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartInVsOut.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartInVsOut.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            this.chartInVsOut.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartInVsOut.Legends.Add(legend6);
             this.chartInVsOut.Location = new System.Drawing.Point(3, 31);
             this.chartInVsOut.Name = "chartInVsOut";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartInVsOut.Series.Add(series3);
-            this.chartInVsOut.Size = new System.Drawing.Size(372, 136);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series6.Legend = "Legend1";
+            series6.Name = "InVsOut";
+            this.chartInVsOut.Series.Add(series6);
+            this.chartInVsOut.Size = new System.Drawing.Size(346, 321);
             this.chartInVsOut.TabIndex = 35;
             this.chartInVsOut.Text = "chart3";
             // 
-            // dtgvVenevue
+            // dtgvIncome
             // 
-            this.dtgvVenevue.AllowUserToAddRows = false;
-            this.dtgvVenevue.AllowUserToDeleteRows = false;
-            this.dtgvVenevue.AllowUserToResizeColumns = false;
-            this.dtgvVenevue.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvVenevue.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvVenevue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvVenevue.BackgroundColor = System.Drawing.Color.White;
-            this.dtgvVenevue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvVenevue.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgvVenevue.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvVenevue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvVenevue.ColumnHeadersHeight = 27;
-            this.dtgvVenevue.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvVenevue.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvVenevue.EnableHeadersVisualStyles = false;
-            this.dtgvVenevue.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvVenevue.Location = new System.Drawing.Point(0, 46);
-            this.dtgvVenevue.Name = "dtgvVenevue";
-            this.dtgvVenevue.RowHeadersVisible = false;
-            this.dtgvVenevue.RowHeadersWidth = 51;
-            this.dtgvVenevue.RowTemplate.Height = 24;
-            this.dtgvVenevue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvVenevue.Size = new System.Drawing.Size(1066, 238);
-            this.dtgvVenevue.TabIndex = 38;
-            this.dtgvVenevue.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgvVenevue.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgvVenevue.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgvVenevue.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgvVenevue.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgvVenevue.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgvVenevue.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgvVenevue.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgvVenevue.ThemeStyle.HeaderStyle.Height = 27;
-            this.dtgvVenevue.ThemeStyle.ReadOnly = false;
-            this.dtgvVenevue.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgvVenevue.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgvVenevue.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtgvVenevue.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dtgvVenevue.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgvVenevue.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgvVenevue.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvIncome.AllowUserToAddRows = false;
+            this.dtgvIncome.AllowUserToDeleteRows = false;
+            this.dtgvIncome.AllowUserToResizeColumns = false;
+            this.dtgvIncome.AllowUserToResizeRows = false;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.dtgvIncome.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            this.dtgvIncome.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvIncome.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvIncome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvIncome.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvIncome.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvIncome.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.dtgvIncome.ColumnHeadersHeight = 27;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvIncome.DefaultCellStyle = dataGridViewCellStyle21;
+            this.dtgvIncome.EnableHeadersVisualStyles = false;
+            this.dtgvIncome.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvIncome.Location = new System.Drawing.Point(3, 33);
+            this.dtgvIncome.Name = "dtgvIncome";
+            this.dtgvIncome.RowHeadersVisible = false;
+            this.dtgvIncome.RowHeadersWidth = 51;
+            this.dtgvIncome.RowTemplate.Height = 24;
+            this.dtgvIncome.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvIncome.Size = new System.Drawing.Size(349, 251);
+            this.dtgvIncome.TabIndex = 38;
+            this.dtgvIncome.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgvIncome.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvIncome.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvIncome.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvIncome.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvIncome.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvIncome.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvIncome.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvIncome.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvIncome.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvIncome.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvIncome.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvIncome.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvIncome.ThemeStyle.HeaderStyle.Height = 27;
+            this.dtgvIncome.ThemeStyle.ReadOnly = false;
+            this.dtgvIncome.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvIncome.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvIncome.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvIncome.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvIncome.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgvIncome.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvIncome.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.White;
-            this.guna2Panel4.Controls.Add(this.btAdd);
-            this.guna2Panel4.Controls.Add(this.btRemove);
+            this.guna2Panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Panel4.Controls.Add(this.gunaLabel7);
+            this.guna2Panel4.Controls.Add(this.gunaLabel4);
+            this.guna2Panel4.Controls.Add(this.dtgvDrugPayment);
+            this.guna2Panel4.Controls.Add(this.dtgvEmployeePayment);
             this.guna2Panel4.Controls.Add(this.gunaLabel6);
-            this.guna2Panel4.Controls.Add(this.dtgvVenevue);
+            this.guna2Panel4.Controls.Add(this.dtgvIncome);
             this.guna2Panel4.Location = new System.Drawing.Point(9, 443);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(1066, 287);
             this.guna2Panel4.TabIndex = 39;
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.Location = new System.Drawing.Point(709, 10);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(89, 20);
+            this.gunaLabel7.TabIndex = 43;
+            this.gunaLabel7.Text = "Drug Detail";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(354, 10);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(188, 20);
+            this.gunaLabel4.TabIndex = 42;
+            this.gunaLabel4.Text = "Employee Payment Detail";
+            // 
+            // dtgvDrugPayment
+            // 
+            this.dtgvDrugPayment.AllowUserToAddRows = false;
+            this.dtgvDrugPayment.AllowUserToDeleteRows = false;
+            this.dtgvDrugPayment.AllowUserToResizeColumns = false;
+            this.dtgvDrugPayment.AllowUserToResizeRows = false;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            this.dtgvDrugPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDrugPayment.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvDrugPayment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvDrugPayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvDrugPayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            this.dtgvDrugPayment.ColumnHeadersHeight = 27;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvDrugPayment.DefaultCellStyle = dataGridViewCellStyle24;
+            this.dtgvDrugPayment.EnableHeadersVisualStyles = false;
+            this.dtgvDrugPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvDrugPayment.Location = new System.Drawing.Point(713, 33);
+            this.dtgvDrugPayment.Name = "dtgvDrugPayment";
+            this.dtgvDrugPayment.RowHeadersVisible = false;
+            this.dtgvDrugPayment.RowHeadersWidth = 51;
+            this.dtgvDrugPayment.RowTemplate.Height = 24;
+            this.dtgvDrugPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvDrugPayment.Size = new System.Drawing.Size(349, 251);
+            this.dtgvDrugPayment.TabIndex = 41;
+            this.dtgvDrugPayment.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgvDrugPayment.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvDrugPayment.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvDrugPayment.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvDrugPayment.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvDrugPayment.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvDrugPayment.ThemeStyle.HeaderStyle.Height = 27;
+            this.dtgvDrugPayment.ThemeStyle.ReadOnly = false;
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvDrugPayment.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dtgvEmployeePayment
+            // 
+            this.dtgvEmployeePayment.AllowUserToAddRows = false;
+            this.dtgvEmployeePayment.AllowUserToDeleteRows = false;
+            this.dtgvEmployeePayment.AllowUserToResizeColumns = false;
+            this.dtgvEmployeePayment.AllowUserToResizeRows = false;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.dtgvEmployeePayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvEmployeePayment.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvEmployeePayment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvEmployeePayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvEmployeePayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            this.dtgvEmployeePayment.ColumnHeadersHeight = 27;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvEmployeePayment.DefaultCellStyle = dataGridViewCellStyle27;
+            this.dtgvEmployeePayment.EnableHeadersVisualStyles = false;
+            this.dtgvEmployeePayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvEmployeePayment.Location = new System.Drawing.Point(358, 33);
+            this.dtgvEmployeePayment.Name = "dtgvEmployeePayment";
+            this.dtgvEmployeePayment.RowHeadersVisible = false;
+            this.dtgvEmployeePayment.RowHeadersWidth = 51;
+            this.dtgvEmployeePayment.RowTemplate.Height = 24;
+            this.dtgvEmployeePayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvEmployeePayment.Size = new System.Drawing.Size(349, 251);
+            this.dtgvEmployeePayment.TabIndex = 40;
+            this.dtgvEmployeePayment.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgvEmployeePayment.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgvEmployeePayment.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgvEmployeePayment.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgvEmployeePayment.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgvEmployeePayment.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgvEmployeePayment.ThemeStyle.HeaderStyle.Height = 27;
+            this.dtgvEmployeePayment.ThemeStyle.ReadOnly = false;
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgvEmployeePayment.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // gunaLabel6
             // 
@@ -357,75 +473,9 @@
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.Location = new System.Drawing.Point(13, 10);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(124, 20);
+            this.gunaLabel6.Size = new System.Drawing.Size(106, 20);
             this.gunaLabel6.TabIndex = 39;
-            this.gunaLabel6.Text = "Cash Flow Detail";
-            // 
-            // btRemove
-            // 
-            this.btRemove.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-            this.btRemove.CheckedState.Parent = this.btRemove;
-            this.btRemove.CustomImages.Parent = this.btRemove;
-            this.btRemove.FillColor = System.Drawing.Color.White;
-            this.btRemove.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btRemove.ForeColor = System.Drawing.Color.White;
-            this.btRemove.HoverState.Parent = this.btRemove;
-            this.btRemove.Image = ((System.Drawing.Image)(resources.GetObject("btRemove.Image")));
-            this.btRemove.Location = new System.Drawing.Point(1033, 10);
-            this.btRemove.Name = "btRemove";
-            this.btRemove.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btRemove.ShadowDecoration.Parent = this.btRemove;
-            this.btRemove.Size = new System.Drawing.Size(30, 30);
-            this.btRemove.TabIndex = 51;
-            // 
-            // btAdd
-            // 
-            this.btAdd.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-            this.btAdd.CheckedState.Parent = this.btAdd;
-            this.btAdd.CustomImages.Parent = this.btAdd;
-            this.btAdd.FillColor = System.Drawing.Color.White;
-            this.btAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btAdd.ForeColor = System.Drawing.Color.White;
-            this.btAdd.HoverState.Parent = this.btAdd;
-            this.btAdd.Image = ((System.Drawing.Image)(resources.GetObject("btAdd.Image")));
-            this.btAdd.Location = new System.Drawing.Point(997, 10);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btAdd.ShadowDecoration.Parent = this.btAdd;
-            this.btAdd.Size = new System.Drawing.Size(30, 30);
-            this.btAdd.TabIndex = 52;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column1.HeaderText = "No.";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 80;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Type";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Amount Of Money";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Time";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Note";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
+            this.gunaLabel6.Text = "Income Detail";
             // 
             // RevenueForm
             // 
@@ -434,7 +484,6 @@
             this.ClientSize = new System.Drawing.Size(1090, 742);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.gunaLabel3);
@@ -445,20 +494,20 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RevenueForm";
             this.Text = "RevenueForm";
+            this.Load += new System.EventHandler(this.RevenueForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSalesByCate)).EndInit();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartInVsOut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvVenevue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvIncome)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDrugPayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployeePayment)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,22 +524,16 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker ttkRevenue;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSalesByCate;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartInVsOut;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgvVenevue;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvIncome;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI2.WinForms.Guna2CircleButton btAdd;
-        private Guna.UI2.WinForms.Guna2CircleButton btRemove;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvDrugPayment;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgvEmployeePayment;
+        private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbYear;
     }
 }
