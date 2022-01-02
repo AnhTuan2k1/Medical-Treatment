@@ -85,6 +85,10 @@
     <Compile Include="AdminForm\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminForm\EditEmployee.cs" />
+    <Compile Include="AdminForm\EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm\EmployeesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\EmployeesForm.resx">
       <DependentUpon>EmployeesForm.cs</DependentUpon>

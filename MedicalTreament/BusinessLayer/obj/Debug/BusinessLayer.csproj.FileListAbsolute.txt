@@ -34,3 +34,21 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Busin
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.exe
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.pdb
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.exe.config
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.exe
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.exe
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.dll
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.dll
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.pdb
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\DataLayer.exe.config
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.pdb
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\Model.dll.config
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.Properties.Resources.resources
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.GenerateResource.cache
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.exe
+D:\Medical-Treatment\MedicalTreament\BusinessLayer\obj\Debug\BusinessLayer.pdb

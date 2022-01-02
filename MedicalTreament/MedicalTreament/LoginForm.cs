@@ -38,6 +38,10 @@ namespace MedicalTreament
 
                         switch(employeeType.ToLower())
                         {
+                            case "admin":
+                                new Admin().Show();
+                                this.Hide();
+                                break;
                             case "secretary":
                                 new FormSecretary(employeeID, this).Show();
                                 this.Hide();
@@ -56,10 +60,8 @@ namespace MedicalTreament
                                 break;
                         }                 
                     }
-                }
-                
+                }              
             }
-
         }
 
         private void gunaLabel2_Click(object sender, EventArgs e)
@@ -88,6 +90,52 @@ namespace MedicalTreament
             }
 
             return true;
+        }
+
+        private void btLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (CheckInput())
+                {
+                    string pass = txbPassword.Text;
+                    string username = txbUsername.Text;
+
+                    int employeeID = -1;
+                    string employeeType = "";
+
+                    if (bus_Acount.checkAccount(pass, username))
+                    {
+                        if (bus_Acount.Get(pass, username, ref employeeID, ref employeeType))
+                        {
+
+                            switch (employeeType.ToLower())
+                            {
+                                case "admin":
+                                    new Admin().Show();
+                                    this.Hide();
+                                    break;
+                                case "secretary":
+                                    new FormSecretary(employeeID, this).Show();
+                                    this.Hide();
+                                    break;
+                                case "gp":
+                                    new FormGP(employeeID, this).Show();
+                                    this.Hide();
+                                    break;
+                                case "specialist":
+                                    new FormSpecialist(employeeID, this).Show();
+                                    this.Hide();
+                                    break;
+                                case "pharmacist":
+                                    new FormPharmacist(employeeID, this).Show();
+                                    this.Hide();
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

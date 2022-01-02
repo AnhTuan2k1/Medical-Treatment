@@ -142,5 +142,106 @@ namespace DataLayer
             db.Patients.Remove(patient);
             db.SaveChanges();
         }
+        public dynamic GetNewestPatients()
+        {
+            var list = from patient in db.Set<Patient>()
+                       orderby patient.PatientID descending
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+        public object GetMalePatients(string gender)
+        {
+            var list = from patient in db.Set<Patient>()
+                       where patient.Gender == gender
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+        public object SearchPatients(string search)
+        {
+            var list = from patient in db.Set<Patient>()
+                       where patient.Name.Contains(search)
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+        public object GetFemalePatients(string gender)
+        {
+            var list = from patient in db.Set<Patient>()
+                       where patient.Gender == gender
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
+                       };
+
+            return list.ToList();
+        }
+        public int GetLength()
+        {
+            var list = from patient in db.Set<Patient>()
+                       select new
+                       { };
+            int length = list.ToList().Count;
+            return length;
+        }
+
+        public dynamic GetPatientInvoice()
+        {
+            var list = from patient in db.Set<Patient>()
+                       join precription in db.Set<Prescription>()
+                       on patient.PatientID equals precription.PatientID
+                       orderby precription.Date descending
+                       select new
+                       {
+                           patient.Name,
+                           precription.PatientID,
+                           patient.HealthInsuarance,
+                           precription.Date
+                       };
+
+            return list.ToList();
+        }
     }
 }

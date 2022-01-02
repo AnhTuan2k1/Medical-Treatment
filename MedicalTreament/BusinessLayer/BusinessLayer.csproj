@@ -51,6 +51,7 @@
     <Compile Include="BUS_Employee.cs" />
     <Compile Include="BUS_ExaminationForm.cs" />
     <Compile Include="BUS_GPdrugDetail.cs" />
+    <Compile Include="BUS_Invoice.cs" />
     <Compile Include="BUS_Patient.cs" />
     <Compile Include="BUS_Prescription.cs" />
     <Compile Include="BUS_SpecialistExamination.cs" />

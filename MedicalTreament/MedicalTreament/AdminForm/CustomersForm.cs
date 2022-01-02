@@ -7,54 +7,132 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
 
 namespace MedicalTreament.AdminForm
 {
     public partial class CustomersForm : Form
     {
+        BUS_Patient bUS_Patient;
         public CustomersForm()
         {
             InitializeComponent();
+            bUS_Patient = new BUS_Patient();
         }
 
+        private void ShowPatients()
+        {
+            dgvPatients.DataSource = null;
+            bUS_Patient.ShowPatients(dgvPatients);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+        private void ShowNewestPatients()
+        {
+            dgvPatients.DataSource = null;
+            bUS_Patient.ShowNewstPatients(dgvPatients);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+        private void ShowMalePatients(string gender)
+        {
+            dgvPatients.DataSource = null;
+            bUS_Patient.ShowMalePatients(dgvPatients,gender);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+        private void ShowFemalePatients(string gender)
+        {
+            dgvPatients.DataSource = null;
+            bUS_Patient.ShowFemalePatients(dgvPatients, gender);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+        private void ShowSearchPatients(string search)
+        {
+            dgvPatients.DataSource = null;
+            bUS_Patient.SearchPatients(dgvPatients, search);
+            dgvPatients.Columns["PatientID"].Width = (int)(dgvPatients.Width * 0.1);
+            dgvPatients.Columns[1].Width = (int)(dgvPatients.Width * 0.12);
+            dgvPatients.Columns[2].Width = (int)(dgvPatients.Width * 0.15);
+
+            dgvPatients.Columns["Address"].Visible = false;
+            dgvPatients.Columns["Nation"].Visible = false;
+            dgvPatients.Columns["WorkPlace"].Visible = false;
+        }
+        private void ShowPatientInvoice()
+        {
+            dtgvCustomersByTime.DataSource = null;
+            bUS_Patient.ShowPatientInvoice(dtgvCustomersByTime);
+            dtgvCustomersByTime.Columns["PatientID"].Width = (int)(dtgvCustomersByTime.Width * 0.1);
+        }
+        private int ShowLength()
+        {
+            return bUS_Patient.GetLength();
+        }
         private void CustomersForm_Load(object sender, EventArgs e)
         {
-            dtgvAllCustomers.Rows.Add(3);
-            dtgvAllCustomers.Rows[0].Cells[0].Value = "1";
-            dtgvAllCustomers.Rows[0].Cells[1].Value = "Em Tân";
-            dtgvAllCustomers.Rows[0].Cells[2].Value = "123456789";
-            dtgvAllCustomers.Rows[0].Cells[3].Value = "123456789";
-            dtgvAllCustomers.Rows[0].Cells[4].Value = "3";
-            dtgvAllCustomers.Rows[0].Cells[5].Value = "20.000.000";
-            dtgvAllCustomers.Rows[1].Cells[0].Value = "2";
-            dtgvAllCustomers.Rows[1].Cells[1].Value = "Em Tân";
-            dtgvAllCustomers.Rows[1].Cells[2].Value = "123456789";
-            dtgvAllCustomers.Rows[1].Cells[3].Value = "123456789";
-            dtgvAllCustomers.Rows[1].Cells[4].Value = "3";
-            dtgvAllCustomers.Rows[1].Cells[5].Value = "20.000.000"; 
-            dtgvAllCustomers.Rows[2].Cells[0].Value = "3";
-            dtgvAllCustomers.Rows[2].Cells[1].Value = "Em Tân";
-            dtgvAllCustomers.Rows[2].Cells[2].Value = "123456789";
-            dtgvAllCustomers.Rows[2].Cells[3].Value = "123456789";
-            dtgvAllCustomers.Rows[2].Cells[4].Value = "3";
-            dtgvAllCustomers.Rows[2].Cells[5].Value = "20.000.000";
+            ShowPatients();
+            ShowPatientInvoice();
+            lbCustomers.Text = ShowLength().ToString();
+        }
+        private void cbbSortby_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbSortby.SelectedIndex == 0)
+            {
+                ShowPatients();
+            }
+            else
+            {
+                ShowNewestPatients();              
+            }
+        }
 
-            dtgvCustomersByTime.Rows.Add(3);
-            dtgvCustomersByTime.Rows[0].Cells[0].Value = "1";
-            dtgvCustomersByTime.Rows[0].Cells[1].Value = "Em Tân";
-            dtgvCustomersByTime.Rows[0].Cells[2].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[0].Cells[3].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[0].Cells[4].Value = "3.000.000";
-            dtgvCustomersByTime.Rows[1].Cells[0].Value = "2";
-            dtgvCustomersByTime.Rows[1].Cells[1].Value = "Em Tân";
-            dtgvCustomersByTime.Rows[1].Cells[2].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[1].Cells[3].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[1].Cells[4].Value = "3.000.000";
-            dtgvCustomersByTime.Rows[2].Cells[0].Value = "3";
-            dtgvCustomersByTime.Rows[2].Cells[1].Value = "Em Tân";
-            dtgvCustomersByTime.Rows[2].Cells[2].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[2].Cells[3].Value = "01/01/1010";
-            dtgvCustomersByTime.Rows[2].Cells[4].Value = "3.000.000";
+        private void cbbFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbFilter.SelectedIndex == 0)
+            {
+                ShowMalePatients(cbbFilter.Text.ToLower());
+            }
+            else
+            {
+                ShowFemalePatients(cbbFilter.Text.ToLower());
+            }
+        }
+
+        private void btRefreshAllCustomer_Click(object sender, EventArgs e)
+        {
+            ShowPatients();
+        }
+
+        private void btRefreshVisitorHistory_Click(object sender, EventArgs e)
+        {
+            ShowPatientInvoice();
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            ShowSearchPatients(txbSearch.Text.ToString());
         }
     }
 }
