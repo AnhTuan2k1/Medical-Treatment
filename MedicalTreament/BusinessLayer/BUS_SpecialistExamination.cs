@@ -70,5 +70,11 @@ namespace BusinessLayer
                 }
             }
         }
+
+        public int GetID(string a)
+        {
+            int id = daoSpecialistExamination.GetID(a);
+            return id;
+        }
     }
 }
