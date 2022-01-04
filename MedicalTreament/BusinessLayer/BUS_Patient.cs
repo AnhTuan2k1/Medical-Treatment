@@ -33,6 +33,12 @@ namespace BusinessLayer
             return id;
         }
 
+        public int GetPatientIDByName(string name)
+        {
+            int id = daoPatient.GetPatientIDByName(name);
+            return id;
+        }
+
         public void ShowPatients(ComboBox combo)
         {
             combo.DataSource = daoPatient.GetPatients();
@@ -60,6 +66,11 @@ namespace BusinessLayer
                 return false;
             }   
 
+        }
+
+        public void SearchPatients_GP(DataGridView dgv, string text)
+        {
+            dgv.DataSource = daoPatient.SearchPatients_GP(text);
         }
 
         public bool EditPatient(int PatientID, string name, string phone, DateTime birth, string gender,

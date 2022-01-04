@@ -67,5 +67,11 @@ namespace DataLayer
 
             db.SaveChanges();
         }
+
+        public int GetID(string a)
+        {
+            SpecialistExamination se = db.SpecialistExaminations.Where(s => s.Name == a).Single();
+            return se.SpecialExaminationID;
+        }
     }
 }

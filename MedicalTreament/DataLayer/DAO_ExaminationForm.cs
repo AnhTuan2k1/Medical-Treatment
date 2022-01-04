@@ -109,7 +109,7 @@ namespace DataLayer
 
         public string GetReason(int patientID)
         {
-            ExaminationForm examinationForm = db.ExaminationForms.Find(patientID);
+            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID).Single();
             return examinationForm.Reason;
         }
 

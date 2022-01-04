@@ -54,6 +54,7 @@ namespace MedicalTreament
         {
             gridSpecialistExamination.DataSource = null;
             bus_SpecialistExamination.ShowSpecialistExamination(gridSpecialistExamination);
+            gridSpecialistExamination.Columns["SpecialExaminationID"].Visible = false;
         }
 
         private void btn_edit_Click(object sender, EventArgs e)

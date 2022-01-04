@@ -134,6 +134,7 @@ namespace MedicalTreament
             this.gppatienttextbox_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.gppatienttextbox_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gppatienttextbox_search.FocusedState.Parent = this.gppatienttextbox_search;
+            this.gppatienttextbox_search.ForeColor = System.Drawing.Color.Black;
             this.gppatienttextbox_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.gppatienttextbox_search.HoverState.Parent = this.gppatienttextbox_search;
             this.gppatienttextbox_search.IconLeft = ((System.Drawing.Image)(resources.GetObject("gppatienttextbox_search.IconLeft")));
@@ -142,12 +143,14 @@ namespace MedicalTreament
             this.gppatienttextbox_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gppatienttextbox_search.Name = "gppatienttextbox_search";
             this.gppatienttextbox_search.PasswordChar = '\0';
-            this.gppatienttextbox_search.PlaceholderText = "Search....";
+            this.gppatienttextbox_search.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gppatienttextbox_search.PlaceholderText = "Search patient by name";
             this.gppatienttextbox_search.SelectedText = "";
             this.gppatienttextbox_search.ShadowDecoration.Parent = this.gppatienttextbox_search;
             this.gppatienttextbox_search.Size = new System.Drawing.Size(283, 44);
             this.gppatienttextbox_search.TabIndex = 4;
             this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
+            this.gppatienttextbox_search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gppatienttextbox_search_KeyPress);
             // 
             // FormGP_Patient
             // 
