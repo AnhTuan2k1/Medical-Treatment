@@ -15,10 +15,12 @@ namespace MedicalTreament
     public partial class FormSpecialist_Price : Form
     {
         BUS_SpecialistExamination bus_SpecialistExamination;
-        public FormSpecialist_Price()
+        int idSP;
+        public FormSpecialist_Price(int id)
         {
             InitializeComponent();
             bus_SpecialistExamination = new BUS_SpecialistExamination();
+            this.idSP = id;
         }
 
         private void FormSpecialist_Price_Load(object sender, EventArgs e)

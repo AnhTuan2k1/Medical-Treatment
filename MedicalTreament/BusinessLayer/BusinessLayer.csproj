@@ -57,6 +57,7 @@
     <Compile Include="BUS_Prescription.cs" />
     <Compile Include="BUS_SpecialistExamination.cs" />
     <Compile Include="BUS_SpecialistExaminationRequest.cs" />
+    <Compile Include="BUS_SpecialistExaminationResult.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

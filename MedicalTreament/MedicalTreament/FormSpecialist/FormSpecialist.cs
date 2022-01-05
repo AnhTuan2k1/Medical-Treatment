@@ -94,12 +94,12 @@ namespace MedicalTreament
 
         private void spbtn_diagnosis_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Diagnosis(), sender, specialistID);
+            OpenChildForm(new FormSpecialist_Diagnosis(specialistID), sender, specialistID);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSpecialist_Price(), sender, specialistID);
+            OpenChildForm(new FormSpecialist_Price(specialistID), sender, specialistID);
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
