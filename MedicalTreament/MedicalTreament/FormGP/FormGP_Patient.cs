@@ -45,5 +45,13 @@ namespace MedicalTreament
         {
 
         }
+
+        private void gppatienttextbox_search_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                bus_Patient.SearchPatients_GP(gridview_patient, gppatienttextbox_search.Text);
+            }
+        }
     }
 }

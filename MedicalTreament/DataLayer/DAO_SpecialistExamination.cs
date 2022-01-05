@@ -58,6 +58,14 @@ namespace DataLayer
             return list.ToList();
         }
 
+        //public object GetListSpecialistExamination_SP()
+        //{
+        //    var list = from se in db.Set<SpecialistExamination>()
+        //               join serequest in db.Set<SpecialistExaminationRequest>()
+        //               on se.SpecialExaminationID equals serequest.SpecialExaminationID
+        //               where se.Patient
+        //}
+
         public void Edit(int id,string name, string price)
         {
             decimal d = decimal.Parse(price);
@@ -66,6 +74,12 @@ namespace DataLayer
             specialistExamination.Price = d;
 
             db.SaveChanges();
+        }
+
+        public int GetID(string a)
+        {
+            SpecialistExamination se = db.SpecialistExaminations.Where(s => s.Name == a).Single();
+            return se.SpecialExaminationID;
         }
     }
 }

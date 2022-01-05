@@ -88,6 +88,12 @@ namespace DataLayer
             return list.ToList();
         }
 
+        public int GetId(int idPatient)
+        {
+            ExaminationForm exForm = db.ExaminationForms.Where(e => e.PatientID == idPatient).Single();
+            return exForm.ExaminationFormID;
+        }
+
         public dynamic GetPatientsAt(string place = "inGP")
         {
             var list = from form in db.Set<ExaminationForm>()
@@ -109,7 +115,7 @@ namespace DataLayer
 
         public string GetReason(int patientID)
         {
-            ExaminationForm examinationForm = db.ExaminationForms.Find(patientID);
+            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID).Single();
             return examinationForm.Reason;
         }
 

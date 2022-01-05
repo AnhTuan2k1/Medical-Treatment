@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO_Account.cs" />
+    <Compile Include="DAO_DiagnoseResult.cs" />
     <Compile Include="DAO_Drug.cs" />
     <Compile Include="DAO_Employee.cs" />
     <Compile Include="DAO_ExaminationForm.cs" />
@@ -61,6 +62,8 @@
     <Compile Include="DAO_Patient.cs" />
     <Compile Include="DAO_Prescription.cs" />
     <Compile Include="DAO_SpecialistExamination.cs" />
+    <Compile Include="DAO_SpecialistExaminationRequest.cs" />
+    <Compile Include="DAO_SpecialistExaminationResult.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

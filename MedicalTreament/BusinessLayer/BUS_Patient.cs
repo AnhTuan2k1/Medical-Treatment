@@ -27,9 +27,17 @@ namespace BusinessLayer
             dgv.DataSource = daoPatient.GetPatients(namePatient);
         }
 
+
+
         public int GetPatientID(string name, string phone)
         {
             int id = daoPatient.GetPatientID(name, phone);
+            return id;
+        }
+
+        public int GetPatientIDByName(string name)
+        {
+            int id = daoPatient.GetPatientIDByName(name);
             return id;
         }
 
@@ -46,6 +54,11 @@ namespace BusinessLayer
             cbb.DataSource = daoPatient.GetPatients_GP();
         }
 
+        public void ShowPatients_SP(ComboBox cbb)
+        {
+            cbb.DataSource = daoPatient.GetPatients_SP();
+        }
+
         public bool AddPatient(string name, string phone, DateTime birth, string gender = "",
             string address = "", string healthInsurance = "", string nation = "", string workplace = "")
         {
@@ -60,6 +73,11 @@ namespace BusinessLayer
                 return false;
             }   
 
+        }
+
+        public void SearchPatients_GP(DataGridView dgv, string text)
+        {
+            dgv.DataSource = daoPatient.SearchPatients_GP(text);
         }
 
         public bool EditPatient(int PatientID, string name, string phone, DateTime birth, string gender,

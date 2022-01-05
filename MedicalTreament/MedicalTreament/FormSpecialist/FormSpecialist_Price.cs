@@ -15,10 +15,12 @@ namespace MedicalTreament
     public partial class FormSpecialist_Price : Form
     {
         BUS_SpecialistExamination bus_SpecialistExamination;
-        public FormSpecialist_Price()
+        int idSP;
+        public FormSpecialist_Price(int id)
         {
             InitializeComponent();
             bus_SpecialistExamination = new BUS_SpecialistExamination();
+            this.idSP = id;
         }
 
         private void FormSpecialist_Price_Load(object sender, EventArgs e)
@@ -54,6 +56,7 @@ namespace MedicalTreament
         {
             gridSpecialistExamination.DataSource = null;
             bus_SpecialistExamination.ShowSpecialistExamination(gridSpecialistExamination);
+            gridSpecialistExamination.Columns["SpecialExaminationID"].Visible = false;
         }
 
         private void btn_edit_Click(object sender, EventArgs e)

@@ -50,6 +50,11 @@ namespace BusinessLayer
             comboBoxSEname.DataSource = daoSpecialistExamination.GetListSpecialistExamination();
         }
 
+        //public void ShowSpecialistExamination_SP(ComboBox ccb)
+        //{
+        //    ccb.DataSource = daoSpecialistExamination.GetListSpecialistExamination_SP();
+        //}
+
         public void ShowSpecialistExamination(DataGridView dgv)
         {
             dgv.DataSource = daoSpecialistExamination.GetListSpecialistExamination();
@@ -69,6 +74,12 @@ namespace BusinessLayer
                     throw;
                 }
             }
+        }
+
+        public int GetID(string a)
+        {
+            int id = daoSpecialistExamination.GetID(a);
+            return id;
         }
     }
 }

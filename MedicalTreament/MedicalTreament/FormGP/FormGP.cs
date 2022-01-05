@@ -110,5 +110,11 @@ namespace MedicalTreament
             this.Close();
             this.parent.Show();
         }
+
+        private void gpbtn_account_Click(object sender, EventArgs e)
+        {
+            FormGP_Profile profileForm = new FormGP_Profile();
+            profileForm.Show();
+        }
     }
 }

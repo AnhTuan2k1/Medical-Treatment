@@ -21,6 +21,7 @@ namespace MedicalTreament
             //Application.Run(new FormSpecialist(10,new LoginForm()));
             //Application.Run(new FormGP(9,new LoginForm()));
             Application.Run(new LoginForm());
+
         }
     }
 }

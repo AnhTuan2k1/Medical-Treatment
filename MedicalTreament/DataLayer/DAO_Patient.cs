@@ -51,6 +51,14 @@ namespace DataLayer
             return list.ToList();
         }
 
+  
+
+        public int GetPatientIDByName(string name)
+        {
+            Patient patient = db.Patients.Where(p => p.Name == name).Single();
+            return patient.PatientID;
+        }
+
         public dynamic GetPatients()
         {
             var list = from patient in db.Set<Patient>()
@@ -65,6 +73,28 @@ namespace DataLayer
                            patient.Address,
                            patient.Nation,
                            patient.WorkPlace                         
+                       };
+
+            return list.ToList();
+        }
+
+        public object SearchPatients_GP(string text)
+        {
+            var list = from form in db.Set<ExaminationForm>()
+                       join patient in db.Set<Patient>()
+                       on form.PatientID equals patient.PatientID
+                       where form.State.Equals("inGP") && patient.Name.Contains(text)
+                       select new
+                       {
+                           patient.PatientID,
+                           patient.Name,
+                           patient.HealthInsuarance,
+                           patient.Phone,
+                           patient.Gender,
+                           patient.DateOfBirth,
+                           patient.Address,
+                           patient.Nation,
+                           patient.WorkPlace
                        };
 
             return list.ToList();
@@ -89,6 +119,24 @@ namespace DataLayer
                            patient.Nation,
                            patient.WorkPlace
                        };
+
+            return list.ToList();
+        }
+
+        public dynamic GetPatients_SP()
+        {
+            var list = from patient in db.Set<Patient>()
+                       join request in db.Set<SpecialistExaminationRequest>()
+                       on patient.PatientID equals request.PatientID
+                       group patient by patient.Name into g
+                       select new
+                       {
+                           
+                          // PatientID = g.Key,
+                           Name = g.Key,
+                           count = g.Count()                       
+                       };
+
 
             return list.ToList();
         }
