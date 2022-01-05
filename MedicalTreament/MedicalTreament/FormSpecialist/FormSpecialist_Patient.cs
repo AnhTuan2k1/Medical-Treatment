@@ -21,22 +21,22 @@ namespace MedicalTreament
 
         private void FormSpecialist_Patient_Load(object sender, EventArgs e)
         {
-            gridview_sp_patient.Rows.Add(new object[]
-            {
-                "001", "madagaska"
-            });
-            gridview_sp_patient.Rows.Add(new object[]
-            {
-                "002", "madara"
-            });
-            gridview_sp_patient.Rows.Add(new object[]
-            {
-                "003", "shasuce"
-            });
-            gridview_sp_patient.Rows.Add(new object[]
-            {
-                "004", "kkxi"
-            });
+            //gridview_sp_patient.Rows.Add(new object[]
+            //{
+            //    "001", "madagaska"
+            //});
+            //gridview_sp_patient.Rows.Add(new object[]
+            //{
+            //    "002", "madara"
+            //});
+            //gridview_sp_patient.Rows.Add(new object[]
+            //{
+            //    "003", "shasuce"
+            //});
+            //gridview_sp_patient.Rows.Add(new object[]
+            //{
+            //    "004", "kkxi"
+            //});
 
 
         }

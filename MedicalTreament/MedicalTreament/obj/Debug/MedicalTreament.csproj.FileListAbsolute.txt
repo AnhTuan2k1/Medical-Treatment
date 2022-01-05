@@ -164,3 +164,4 @@ D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Tre
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.EditEmployee.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Admin.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.EditEmployee.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP_Profile.resources
