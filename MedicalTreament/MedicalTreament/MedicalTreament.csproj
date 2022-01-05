@@ -127,6 +127,12 @@
     <Compile Include="FormGP\FormGP_Prescription_EditPill.Designer.cs">
       <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPharmacist\FormPharmacistAddDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPharmacist\FormPharmacistAddDrug.Designer.cs">
+      <DependentUpon>FormPharmacistAddDrug.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSpecialist\FormSpecialist_Diagnosis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGP\FormGP_Prescription_EditPill.resx">
       <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPharmacist\FormPharmacistAddDrug.resx">
+      <DependentUpon>FormPharmacistAddDrug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Diagnosis.resx">
       <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>

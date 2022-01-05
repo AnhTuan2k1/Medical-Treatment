@@ -30,9 +30,9 @@ namespace MedicalTreament
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPharmacist_Bill));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,20 +45,20 @@ namespace MedicalTreament
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbBillid = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lbPatientID = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbPhonePatient = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbPatientName = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbAddressPatient = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,20 +84,20 @@ namespace MedicalTreament
             this.guna2Panel1.Controls.Add(this.guna2DataGridView1);
             this.guna2Panel1.Controls.Add(this.textBox1);
             this.guna2Panel1.Controls.Add(this.label17);
-            this.guna2Panel1.Controls.Add(this.label18);
+            this.guna2Panel1.Controls.Add(this.lbBillid);
             this.guna2Panel1.Controls.Add(this.label19);
-            this.guna2Panel1.Controls.Add(this.label20);
+            this.guna2Panel1.Controls.Add(this.lbPatientID);
             this.guna2Panel1.Controls.Add(this.label15);
-            this.guna2Panel1.Controls.Add(this.label16);
+            this.guna2Panel1.Controls.Add(this.lbPhonePatient);
             this.guna2Panel1.Controls.Add(this.label12);
-            this.guna2Panel1.Controls.Add(this.label14);
+            this.guna2Panel1.Controls.Add(this.lbPatientName);
             this.guna2Panel1.Controls.Add(this.label13);
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.label7);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.label4);
+            this.guna2Panel1.Controls.Add(this.lbAddressPatient);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.label2);
@@ -131,21 +131,21 @@ namespace MedicalTreament
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 27;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -153,14 +153,14 @@ namespace MedicalTreament
             this.UnitPrice,
             this.Quantity,
             this.Total});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(50, 392);
@@ -250,15 +250,15 @@ namespace MedicalTreament
             this.label17.TabIndex = 22;
             this.label17.Text = "Bill Id:";
             // 
-            // label18
+            // lbBillid
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(451, 210);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(139, 18);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "Phone: 0123479279";
+            this.lbBillid.AutoSize = true;
+            this.lbBillid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBillid.Location = new System.Drawing.Point(451, 210);
+            this.lbBillid.Name = "lbBillid";
+            this.lbBillid.Size = new System.Drawing.Size(16, 18);
+            this.lbBillid.TabIndex = 21;
+            this.lbBillid.Text = "6";
             // 
             // label19
             // 
@@ -271,15 +271,15 @@ namespace MedicalTreament
             this.label19.TabIndex = 20;
             this.label19.Text = "Patient Id:";
             // 
-            // label20
+            // lbPatientID
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(477, 183);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 18);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "tuan";
+            this.lbPatientID.AutoSize = true;
+            this.lbPatientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPatientID.Location = new System.Drawing.Point(477, 183);
+            this.lbPatientID.Name = "lbPatientID";
+            this.lbPatientID.Size = new System.Drawing.Size(36, 18);
+            this.lbPatientID.TabIndex = 19;
+            this.lbPatientID.Text = "tuan";
             // 
             // label15
             // 
@@ -292,15 +292,15 @@ namespace MedicalTreament
             this.label15.TabIndex = 18;
             this.label15.Text = "Phone:";
             // 
-            // label16
+            // lbPhonePatient
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(107, 210);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(139, 18);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Phone: 0123479279";
+            this.lbPhonePatient.AutoSize = true;
+            this.lbPhonePatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhonePatient.Location = new System.Drawing.Point(107, 210);
+            this.lbPhonePatient.Name = "lbPhonePatient";
+            this.lbPhonePatient.Size = new System.Drawing.Size(139, 18);
+            this.lbPhonePatient.TabIndex = 17;
+            this.lbPhonePatient.Text = "Phone: 0123479279";
             // 
             // label12
             // 
@@ -313,15 +313,15 @@ namespace MedicalTreament
             this.label12.TabIndex = 16;
             this.label12.Text = "Patient Name:";
             // 
-            // label14
+            // lbPatientName
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(154, 183);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(36, 18);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "tuan";
+            this.lbPatientName.AutoSize = true;
+            this.lbPatientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPatientName.Location = new System.Drawing.Point(154, 183);
+            this.lbPatientName.Name = "lbPatientName";
+            this.lbPatientName.Size = new System.Drawing.Size(36, 18);
+            this.lbPatientName.TabIndex = 15;
+            this.lbPatientName.Text = "tuan";
             // 
             // label13
             // 
@@ -386,15 +386,15 @@ namespace MedicalTreament
             this.label6.TabIndex = 8;
             this.label6.Text = "Address:";
             // 
-            // label4
+            // lbAddressPatient
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(119, 235);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Phone: 0123479279";
+            this.lbAddressPatient.AutoSize = true;
+            this.lbAddressPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAddressPatient.Location = new System.Drawing.Point(119, 235);
+            this.lbAddressPatient.Name = "lbAddressPatient";
+            this.lbAddressPatient.Size = new System.Drawing.Size(139, 18);
+            this.lbAddressPatient.TabIndex = 7;
+            this.lbAddressPatient.Text = "Phone: 0123479279";
             // 
             // label3
             // 
@@ -544,20 +544,20 @@ namespace MedicalTreament
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbBillid;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbPatientID;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbPhonePatient;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbPatientName;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbAddressPatient;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;

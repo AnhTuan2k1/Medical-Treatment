@@ -163,3 +163,4 @@ D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.c
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Admin.resources
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.Admin.resources
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.EditEmployee.resources
+D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistAddDrug.resources

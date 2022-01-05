@@ -42,6 +42,7 @@ namespace MedicalTreament
             bus_exam.ShowUnPayPatients(dgv);
             dgv.Columns["HealthInsuarance"].Width = (int)(dgv.Width * 0.22);
 
+            dgv.Columns["DateOfBirth"].Visible = false;
             labelNumberPatient.Text = dgv.RowCount.ToString();
         }
 

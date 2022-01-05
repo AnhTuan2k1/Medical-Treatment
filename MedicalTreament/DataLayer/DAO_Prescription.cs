@@ -43,5 +43,17 @@ namespace DataLayer
             Prescription prescription = db.Prescriptions.Where(p => p.GPID == idGP && p.PatientID == idPatient).Single();
             return prescription.PrescriptionID;
         }
+
+        public int GetPrescriptionID(int idPatient)
+        {
+            Prescription prescription = db.Prescriptions.Where(p => 
+            p.Date.Day == DateTime.Now.Day
+            && p.Date.Month == DateTime.Now.Month
+            && p.Date.Year == DateTime.Now.Year
+            && p.PatientID == idPatient)
+                .Single();
+
+            return prescription.PrescriptionID;
+        }
     }
 }

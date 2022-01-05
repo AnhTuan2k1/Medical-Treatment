@@ -38,5 +38,18 @@ namespace DataLayer
             db.GPdrugDetails.Add(drugDetail);
             db.SaveChanges();
         }
+
+        public dynamic GetDrugs(int prescriptionID)
+        {
+            var list = from drugs in db.Set<GPdrugDetail>()
+                       where drugs.PrescriptionID == prescriptionID
+                       select new
+                       {
+                           drugs.NameDrug,
+                           drugs.Quantity
+                       };
+
+            return list.ToList();
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BusinessLayer
 {
@@ -27,6 +28,11 @@ namespace BusinessLayer
             {
                 return false;
             }
+        }
+
+        public void ShowDrugs(DataGridView dgv, int prescription)
+        {
+            dgv.DataSource = dao_GPdrugDetail.GetDrugs(prescription);
         }
     }
 }
