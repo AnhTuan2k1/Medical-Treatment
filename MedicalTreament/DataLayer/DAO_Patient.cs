@@ -51,6 +51,8 @@ namespace DataLayer
             return list.ToList();
         }
 
+  
+
         public int GetPatientIDByName(string name)
         {
             Patient patient = db.Patients.Where(p => p.Name == name).Single();
@@ -117,6 +119,24 @@ namespace DataLayer
                            patient.Nation,
                            patient.WorkPlace
                        };
+
+            return list.ToList();
+        }
+
+        public dynamic GetPatients_SP()
+        {
+            var list = from patient in db.Set<Patient>()
+                       join request in db.Set<SpecialistExaminationRequest>()
+                       on patient.PatientID equals request.PatientID
+                       group patient by patient.Name into g
+                       select new
+                       {
+                           
+                          // PatientID = g.Key,
+                           Name = g.Key,
+                           count = g.Count()                       
+                       };
+
 
             return list.ToList();
         }

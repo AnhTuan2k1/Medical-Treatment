@@ -144,5 +144,15 @@ namespace MedicalTreament
             }
         }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
+            int idSE = bUS_SpecialistExamination.GetID(comboBoxSEname.Text);
+
+            if (bUS_SErequest.Delete(idPatient,idSE))
+            {
+                bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+            }
+        }
     }
 }

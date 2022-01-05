@@ -34,5 +34,24 @@ namespace BusinessLayer
         {
             dgv.DataSource = dao_SpecialistExaminationRequest.ShowSErequest(idPatient);
         }
+
+        public bool Delete(int idPatient, int idSE)
+        {
+            try
+            {
+                dao_SpecialistExaminationRequest.Delete(idPatient,idSE);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public void ShowSErequest(ComboBox ccb, int idPatient)
+        {
+            ccb.DataSource = dao_SpecialistExaminationRequest.ShowSErequest(idPatient);
+        }
     }
 }

@@ -37,6 +37,14 @@ namespace DataLayer
             db.SaveChanges();
         }
 
+        public void Delete(int idPatient, int idSE)
+        {
+            //SpecialistExaminationRequest specialistExaminationRequest = db.
+            var list = db.SpecialistExaminationRequests.Where(r => r.PatientID == idPatient && r.SpecialExaminationID == idSE);
+            db.SpecialistExaminationRequests.RemoveRange(list);
+            db.SaveChanges();
+        }
+
         public dynamic ShowSErequest(int idPatient)
         {
             var list = from serequest in db.Set<SpecialistExaminationRequest>()
