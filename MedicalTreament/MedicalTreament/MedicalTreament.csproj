@@ -303,6 +303,9 @@
     <EmbeddedResource Include="FormGP\FormGP_Prescription_EditPill.resx">
       <DependentUpon>FormGP_Prescription_EditPill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGP\FormGP_Profile.resx">
+      <DependentUpon>FormGP_Profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSpecialist\FormSpecialist_Diagnosis.resx">
       <DependentUpon>FormSpecialist_Diagnosis.cs</DependentUpon>
     </EmbeddedResource>

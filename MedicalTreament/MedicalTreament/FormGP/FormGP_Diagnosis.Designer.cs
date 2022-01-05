@@ -48,7 +48,7 @@ namespace MedicalTreament
             this.label_name = new System.Windows.Forms.Label();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDiagnoseResult = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gridview_requestlist = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_requestlist)).BeginInit();
@@ -307,34 +307,34 @@ namespace MedicalTreament
             this.gunaLabel3.TabIndex = 44;
             this.gunaLabel3.Text = "Diagnose result:\r\n";
             // 
-            // guna2TextBox2
+            // txtDiagnoseResult
             // 
-            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtDiagnoseResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(185, 578);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(648, 99);
-            this.guna2TextBox2.TabIndex = 5;
+            this.txtDiagnoseResult.BorderColor = System.Drawing.Color.DimGray;
+            this.txtDiagnoseResult.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiagnoseResult.DefaultText = "";
+            this.txtDiagnoseResult.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDiagnoseResult.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDiagnoseResult.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiagnoseResult.DisabledState.Parent = this.txtDiagnoseResult;
+            this.txtDiagnoseResult.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiagnoseResult.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiagnoseResult.FocusedState.Parent = this.txtDiagnoseResult;
+            this.txtDiagnoseResult.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.txtDiagnoseResult.ForeColor = System.Drawing.Color.Black;
+            this.txtDiagnoseResult.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiagnoseResult.HoverState.Parent = this.txtDiagnoseResult;
+            this.txtDiagnoseResult.Location = new System.Drawing.Point(185, 578);
+            this.txtDiagnoseResult.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiagnoseResult.Multiline = true;
+            this.txtDiagnoseResult.Name = "txtDiagnoseResult";
+            this.txtDiagnoseResult.PasswordChar = '\0';
+            this.txtDiagnoseResult.PlaceholderText = "";
+            this.txtDiagnoseResult.SelectedText = "";
+            this.txtDiagnoseResult.ShadowDecoration.Parent = this.txtDiagnoseResult;
+            this.txtDiagnoseResult.Size = new System.Drawing.Size(648, 99);
+            this.txtDiagnoseResult.TabIndex = 5;
             // 
             // label2
             // 
@@ -426,7 +426,7 @@ namespace MedicalTreament
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gridview_requestlist);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.txtDiagnoseResult);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.comboBoxSEname);
             this.Controls.Add(this.guna2Button1);
@@ -467,7 +467,7 @@ namespace MedicalTreament
         private System.Windows.Forms.Label label_name;
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiagnoseResult;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DataGridView gridview_requestlist;
     }

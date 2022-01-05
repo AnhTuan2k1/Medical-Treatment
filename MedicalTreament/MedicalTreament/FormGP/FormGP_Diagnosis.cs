@@ -20,6 +20,8 @@ namespace MedicalTreament
         BUS_SpecialistExamination bUS_SpecialistExamination;
         BUS_SpecialistExaminationRequest bUS_SErequest;
         BUS_ExaminationForm bus_ExForm;
+        BUS_DiagnoseResult bus_DiagnoseResult;
+
         string SEname;
         int idGP;
         public FormGP_Diagnosis(int id)
@@ -29,6 +31,7 @@ namespace MedicalTreament
             bUS_SErequest = new BUS_SpecialistExaminationRequest();
             bus_Patient = new BUS_Patient();
             bus_ExForm = new BUS_ExaminationForm();
+            bus_DiagnoseResult = new BUS_DiagnoseResult();
             this.idGP = id;
         }
 
@@ -62,11 +65,29 @@ namespace MedicalTreament
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
+            
             int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
             //string reason = bus_ExForm.GetReason(idPatient);
             //txtDirection.Text
-            FormGP_Prescription formGP_Prescription = new FormGP_Prescription(idGP,idPatient);
-            formGP_Prescription.Show();
+
+            int idEx = bus_ExForm.GetId(idPatient);
+            //MessageBox.Show(idEx.ToString());
+            if ((txtDiagnoseResult.Text == "") || (txtDirection.Text == ""))
+            {
+                MessageBox.Show("Fill up empty space!");
+            }
+            else
+            {
+                if(bus_DiagnoseResult.Add(txtDiagnoseResult.Text,txtDirection.Text,idEx,idPatient,idGP))
+                {
+                    txtDiagnoseResult.Text = "";
+                    txtDirection.Text = "";
+                    FormGP_Prescription formGP_Prescription = new FormGP_Prescription(idGP, idPatient);
+                    formGP_Prescription.Show();
+                }   
+            }
+
+        
 
         }
 
