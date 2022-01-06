@@ -78,7 +78,7 @@ namespace DataLayer
 
         public int GetID(string a)
         {
-            SpecialistExamination se = db.SpecialistExaminations.Where(s => s.Name == a).Single();
+            SpecialistExamination se = db.SpecialistExaminations.Where(s => s.Name == a).FirstOrDefault();
             return se.SpecialExaminationID;
         }
     }
