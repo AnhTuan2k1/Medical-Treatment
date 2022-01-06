@@ -17,6 +17,7 @@ namespace Model
         public Nullable<int> Quantity { get; set; }
         public int InvoiceID { get; set; }
         public int SpecialExaminationID { get; set; }
+        public int ID { get; set; }
     
         public virtual Invoice Invoice { get; set; }
         public virtual SpecialistExamination SpecialistExamination { get; set; }

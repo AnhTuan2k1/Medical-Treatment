@@ -48,6 +48,19 @@ namespace DataLayer
 
         }
 
+        public int GetQuantity(int drugID)
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.DrugID == drugID
+                       && drug.ExprirationDate > DateTime.Now
+                       select new
+                       {
+                           drug.Quantity
+                       };
+
+            return (int)list.ToList()[0].Quantity;
+        }
+
         public void Edit(int id, string name, string producer, DateTime exprirationDate,
             string unit, decimal price, int quantity, string type)
         {
@@ -126,6 +139,27 @@ namespace DataLayer
                 default:
                     return list.ToList();
             }
+        }
+
+        public object GetSellableDrugs(string search = "")
+        {
+            var list = from drug in db.Set<Drug>()
+                       where drug.Name.Contains(search)
+                       && drug.ExprirationDate > DateTime.Now
+                       && drug.Quantity > 0
+                       select new
+                       {
+                           drug.DrugID,
+                           drug.Name,
+                           drug.Type,
+                           drug.ExprirationDate,
+                           drug.Unit,
+                           Price = (int)drug.Price,
+                           drug.Quantity
+                          
+                       };
+
+            return list.ToList();
         }
 
         public int GetLength()

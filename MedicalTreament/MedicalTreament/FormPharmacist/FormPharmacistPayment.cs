@@ -17,14 +17,26 @@ namespace MedicalTreament
         Guna2Button btn;
         BUS_Patient bus_patient;
         BUS_ExaminationForm bus_examform;
+        BUS_GPdrugDetail bus_GPdrugdetail;
+        BUS_Prescription bus_Prescription;
+        BUS_ExaminationForm bus_ExForm;
         int parmacistID;
         string patientID;
+        private BUS_Drug bus_drug;
+
+        public int quantity { get; set; }
+        public int drugID { get; set; }
+
         public FormPharmacistPayment(Guna2Button btn, int parmacistID, string patientID = "")
         {
             InitializeComponent();
             this.btn = btn;
             bus_patient = new BUS_Patient();
             bus_examform = new BUS_ExaminationForm();
+            bus_GPdrugdetail = new BUS_GPdrugDetail();
+            bus_Prescription = new BUS_Prescription();
+            bus_ExForm = new BUS_ExaminationForm();
+            bus_drug = new BUS_Drug();
             this.parmacistID = parmacistID;
             this.patientID = patientID;
         }
@@ -41,24 +53,20 @@ namespace MedicalTreament
         {
             if (CheckInput())
             {
-               
+                int patientID = Convert.ToInt32(ComboBoxPatientID.Text);
+                string name = ComboBoxPatientName.Text;
+                string phone = txtPhone.Text;
+                new FormPharmacist_Bill(dgvDrugSold, name, phone, patientID, parmacistID).ShowDialog();
             }
-            new FormPharmacist_Bill().ShowDialog();
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSelectAll_Click(object sender, EventArgs e)
-        {
-
+            foreach (DataGridViewRow row in dgvDrugSold.SelectedRows)
+            {
+                dgvDrugSold.Rows.RemoveAt(row.Index);
+            }
         }
 
         private void FormPharmacistPayment_Load(object sender, EventArgs e)
@@ -67,6 +75,8 @@ namespace MedicalTreament
             ComboBoxPatientName.DisplayMember = "Name";
             bus_examform.ShowUnPayPatients(ComboBoxPatientID);
             ComboBoxPatientID.DisplayMember = "PatientID";
+            ShowDrugs();
+
 
             ClearPatientInformation();
             if(patientID != "") LoadPatientInfor(patientID);
@@ -87,7 +97,6 @@ namespace MedicalTreament
                         else ComboBoxPatientName_SelectedIndexChanged(new object(), new EventArgs());
                     }
                     ComboBoxPatientID.SelectedIndex = i;
-
                 }
             }
         }
@@ -98,6 +107,7 @@ namespace MedicalTreament
             ComboBoxPatientName.Text = "";
             txtDateOfBirth.Text = "";
             txtPhone.Text = "";
+            dgvDoctorDrugs.DataSource = null;
         }
 
         private void ComboBoxPatientName_SelectedIndexChanged(object sender, EventArgs e)
@@ -110,6 +120,11 @@ namespace MedicalTreament
 
             ComboBoxPatientName.ValueMember = "Phone";
             txtPhone.Text = ComboBoxPatientName.SelectedValue.ToString();
+
+            ComboBoxPatientName.ValueMember = "PatientID";
+            int prescription = bus_Prescription.GetPrescriptionID(int.Parse(ComboBoxPatientName.SelectedValue.ToString()));
+            if (prescription != -1) bus_GPdrugdetail.ShowDrugs(dgvDoctorDrugs, prescription);
+            else dgvDoctorDrugs.DataSource = null;
         }
 
         private void ComboBoxPatientID_SelectedIndexChanged(object sender, EventArgs e)
@@ -117,11 +132,16 @@ namespace MedicalTreament
             ComboBoxPatientID.ValueMember = "Name";
             ComboBoxPatientName.Text = ComboBoxPatientID.SelectedValue.ToString();
 
-            ComboBoxPatientName.ValueMember = "DateOfBirth";
-            txtDateOfBirth.Text = ((DateTime)ComboBoxPatientName.SelectedValue).ToString("MMM dd, yyyy");
+            ComboBoxPatientID.ValueMember = "DateOfBirth";
+            txtDateOfBirth.Text = ((DateTime)ComboBoxPatientID.SelectedValue).ToString("MMM dd, yyyy");
 
-            ComboBoxPatientName.ValueMember = "Phone";
-            txtPhone.Text = ComboBoxPatientName.SelectedValue.ToString();
+            ComboBoxPatientID.ValueMember = "Phone";
+            txtPhone.Text = ComboBoxPatientID.SelectedValue.ToString();
+
+            ComboBoxPatientID.ValueMember = "PatientID";
+            int prescription = bus_Prescription.GetPrescriptionID(int.Parse(ComboBoxPatientID.SelectedValue.ToString()));
+            if (prescription != -1) bus_GPdrugdetail.ShowDrugs(dgvDoctorDrugs, prescription);
+            else dgvDoctorDrugs.DataSource = null;
         }
 
         private bool CheckInput()
@@ -155,6 +175,94 @@ namespace MedicalTreament
             }
 
             return true;
+        }
+
+        private void ShowDrugs(string search = "")
+        {
+            bus_drug.ShowSellableDrugs(dgvStock, search);
+
+            dgvStock.Columns["Unit"].Visible = false;
+            dgvStock.Columns["Price"].Visible = false;
+            dgvStock.Columns["ExprirationDate"].Visible = false;
+            dgvStock.Columns["DrugID"].Visible = false;
+        }
+
+        private void dgvDoctorDrugs_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvDoctorDrugs.SelectedRows.Count > 0)
+                ShowDrugs(dgvDoctorDrugs.SelectedRows[0].Cells["NameDrug"].Value.ToString());
+        }
+
+        private void txtSearch_MouseLeave(object sender, EventArgs e)
+        {
+            ShowDrugs(txtSearch.Text);
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ShowDrugs(txtSearch.Text);
+        }
+
+        private void dgvStock_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (dgvStock.SelectedRows.Count == 0) return;
+            string name = dgvStock.SelectedRows[0].Cells["Name"].Value.ToString();
+            string unit;
+
+            string exprirationDate;
+            string price;
+            drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
+            quantity = 0;
+
+            if (new FormPharmacistAddDrug(this, name, drugID).ShowDialog() == DialogResult.OK)
+            {
+               
+                for (int i = 0; i < dgvStock.Rows.Count; i++)
+                {
+                    if(dgvStock.Rows[i].Cells["DrugID"].Value.ToString() == drugID.ToString())
+                    {
+                        name = dgvStock.Rows[i].Cells["Name"].Value.ToString();
+                        unit = dgvStock.Rows[i].Cells["Unit"].Value.ToString();
+                        exprirationDate = dgvStock.Rows[i].Cells["ExprirationDate"].Value.ToString();
+                        price = dgvStock.Rows[i].Cells["Price"].Value.ToString();
+
+                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString(), price);
+                    }
+                }
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (dgvStock.SelectedRows.Count == 0) return;
+            string name = dgvStock.SelectedRows[0].Cells["Name"].Value.ToString();
+            string unit;
+
+            string exprirationDate;
+            string price;
+            drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
+            quantity = 0;
+
+            if (new FormPharmacistAddDrug(this, name, drugID).ShowDialog() == DialogResult.OK)
+            {
+                for (int i = 0; i < dgvStock.Rows.Count; i++)
+                {
+                    if (dgvStock.Rows[i].Cells["DrugID"].Value.ToString() == drugID.ToString())
+                    {
+                        name = dgvStock.Rows[i].Cells["Name"].Value.ToString();
+                        unit = dgvStock.Rows[i].Cells["Unit"].Value.ToString();
+                        exprirationDate = dgvStock.Rows[i].Cells["ExprirationDate"].Value.ToString();
+                        price = dgvStock.Rows[i].Cells["Price"].Value.ToString();
+
+                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString(), price);
+                    }
+                }
+            }
+        }
+
+        private void ComboBoxPatientName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

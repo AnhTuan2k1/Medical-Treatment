@@ -82,10 +82,38 @@ namespace BusinessLayer
             }
             
         }
+
+        public bool SetPaid(int patientID)
+        {
+            try
+            {
+                daoExaminationForm.SetPaid(patientID);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
+        }
+
         public string GetReason(int PatientID)
         {
             string reason = daoExaminationForm.GetReason(PatientID);
             return reason;
+        }
+
+        public int GetFee(int patientID)
+        {
+            try
+            {
+                
+                return daoExaminationForm.GetFee(patientID);
+            }
+            catch (Exception)
+            {
+                return 10000;
+            }
         }
 
         public int GetId(int idPatient)

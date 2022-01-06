@@ -61,7 +61,8 @@ namespace DataLayer
                            patient.HealthInsuarance,
                            patient.Phone,
                            patient.Gender,
-                           form.State
+                           form.State,
+                           form.ExaminationFormID
                        };
 
             return list.ToList();
@@ -86,6 +87,30 @@ namespace DataLayer
                        };
 
             return list.ToList();
+        }
+
+        public void SetPaid(int patientID)
+        {
+            ExaminationForm form = db.ExaminationForms.Where(e => 
+                e.PatientID == patientID 
+                && !e.State.ToLower().Contains("paid")
+                ).Single();
+
+            form.State = "paid";
+            db.SaveChanges();
+        }
+
+        public int GetFee(int patientID)
+        {
+            var list = from examination in db.Set<ExaminationForm>()
+                       where examination.Date.Day == DateTime.Now.Day
+                       && examination.Date.Month == DateTime.Now.Month
+                       && examination.PatientID == patientID
+                       select new { examination.Price };
+
+            if (list.Count() == 0) return 15000;
+            else return (int)list.ToList()[0].Price;
+
         }
 
         public int GetId(int idPatient)

@@ -42,6 +42,19 @@ namespace BusinessLayer
             dgv.DataSource = daoDrug.GetDrug(nameDrug, option);
         }
 
+        public int GetQuantity(int drugID)
+        {
+            try
+            {
+                return daoDrug.GetQuantity(drugID);
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+           
+        }
+
         public void ShowExpiredDrugs(DataGridView dgv)
         {
             dgv.DataSource = daoDrug.GetExpiredDrugs();
@@ -114,6 +127,16 @@ namespace BusinessLayer
         public int ShowLength()
         {
             return daoDrug.GetLength();
+        }
+
+        public void ShowSellableDrugs(DataGridView dgvStock, string search = "")
+        {
+            dgvStock.DataSource = daoDrug.GetSellableDrugs(search);
+        }
+
+        public void ShowSellableDrugs(ComboBox combo, string search = "")
+        {
+            combo.DataSource = daoDrug.GetSellableDrugs(search);
         }
     }
 }

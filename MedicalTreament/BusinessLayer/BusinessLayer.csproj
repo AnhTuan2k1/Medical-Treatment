@@ -49,8 +49,10 @@
     <Compile Include="BUS_Account.cs" />
     <Compile Include="BUS_DiagnoseResult.cs" />
     <Compile Include="BUS_Drug.cs" />
+    <Compile Include="BUS_DrugInvoiceDetail.cs" />
     <Compile Include="BUS_Employee.cs" />
     <Compile Include="BUS_ExaminationForm.cs" />
+    <Compile Include="BUS_ExaminationInvoiceDetail.cs" />
     <Compile Include="BUS_GPdrugDetail.cs" />
     <Compile Include="BUS_Invoice.cs" />
     <Compile Include="BUS_Patient.cs" />

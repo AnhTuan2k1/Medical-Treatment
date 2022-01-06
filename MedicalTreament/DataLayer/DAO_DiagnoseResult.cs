@@ -40,5 +40,21 @@ namespace DataLayer
             db.DiagnoseResults.Add(dr);
             db.SaveChanges();
         }
+
+        public string GetResult(int patientID)
+        {
+            var list = from result in db.Set<DiagnoseResult>()
+
+                       where result.PatientID.Equals(patientID)
+                       && result.Date.Day == DateTime.Now.Day
+                       && result.Date.Month == DateTime.Now.Month
+                       && result.Date.Year == DateTime.Now.Year
+                       select new
+                       {
+                           result.Result
+                       };
+
+            return list.ToList()[0].Result;
+        }
     }
 }

@@ -28,8 +28,10 @@ namespace Model
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<DiagnoseResult> DiagnoseResults { get; set; }
         public virtual DbSet<Drug> Drugs { get; set; }
+        public virtual DbSet<DrugInvoiceDetail> DrugInvoiceDetails { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<ExaminationForm> ExaminationForms { get; set; }
+        public virtual DbSet<ExaminationInvoiceDetail> ExaminationInvoiceDetails { get; set; }
         public virtual DbSet<GPdrugDetail> GPdrugDetails { get; set; }
         public virtual DbSet<Invoice> Invoices { get; set; }
         public virtual DbSet<Patient> Patients { get; set; }
@@ -39,7 +41,5 @@ namespace Model
         public virtual DbSet<SpecialistExaminationRequest> SpecialistExaminationRequests { get; set; }
         public virtual DbSet<SpecialistExaminationResult> SpecialistExaminationResults { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<DrugInvoiceDetail> DrugInvoiceDetails { get; set; }
-        public virtual DbSet<ExaminationInvoiceDetail> ExaminationInvoiceDetails { get; set; }
     }
 }

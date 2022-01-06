@@ -60,6 +60,25 @@ namespace BusinessLayer
         {
             return daoInvoice.GetMar(year);
         }
+
+        public void Add(decimal total, int patientID, int pharmacistID)
+        {
+            daoInvoice.Add(total, patientID, pharmacistID);
+        }
+
+        public int GetID(int patientID)
+        {
+            try
+            {
+                return daoInvoice.GetID(patientID);
+            }
+            catch (Exception)
+            {
+
+                return -1;
+            }
+        }
+
         public decimal ShowApr(int year)
         {
             return daoInvoice.GetApr(year);

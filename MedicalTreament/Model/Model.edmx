@@ -41,16 +41,14 @@
           <Property Name="ExprirationDate" Type="smalldatetime" Nullable="false" />
           <Property Name="ImportDate" Type="smalldatetime" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'MedicalTreatment.dbo.DrugInvoiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="DrugInvoiceDetail">
           <Key>
-            <PropertyRef Name="InvoiceID" />
-            <PropertyRef Name="DrugID" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="Quantity" Type="int" />
           <Property Name="InvoiceID" Type="int" Nullable="false" />
           <Property Name="DrugID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -75,16 +73,14 @@ warning 6002: The table/view 'MedicalTreatment.dbo.DrugInvoiceDetail' does not h
           <Property Name="SecretaryID" Type="int" Nullable="false" />
           <Property Name="Price" Type="money" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="ExaminationInvoiceDetail">
           <Key>
-            <PropertyRef Name="InvoiceID" />
-            <PropertyRef Name="SpecialExaminationID" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="Quantity" Type="int" />
           <Property Name="InvoiceID" Type="int" Nullable="false" />
           <Property Name="SpecialExaminationID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="GPdrugDetail">
           <Key>
@@ -472,8 +468,10 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DiagnoseResult" EntityType="Self.DiagnoseResult" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Drug" EntityType="Self.Drug" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DrugInvoiceDetail" EntityType="Self.DrugInvoiceDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ExaminationForm" EntityType="Self.ExaminationForm" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExaminationInvoiceDetail" EntityType="Self.ExaminationInvoiceDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GPdrugDetail" EntityType="Self.GPdrugDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
@@ -483,20 +481,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <EntitySet Name="SpecialistExaminationRequest" EntityType="Self.SpecialistExaminationRequest" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SpecialistExaminationResult" EntityType="Self.SpecialistExaminationResult" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="DrugInvoiceDetail" EntityType="Self.DrugInvoiceDetail" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [DrugInvoiceDetail].[Quantity] AS [Quantity], 
-    [DrugInvoiceDetail].[InvoiceID] AS [InvoiceID], 
-    [DrugInvoiceDetail].[DrugID] AS [DrugID]
-    FROM [dbo].[DrugInvoiceDetail] AS [DrugInvoiceDetail]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="ExaminationInvoiceDetail" EntityType="Self.ExaminationInvoiceDetail" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ExaminationInvoiceDetail].[Quantity] AS [Quantity], 
-    [ExaminationInvoiceDetail].[InvoiceID] AS [InvoiceID], 
-    [ExaminationInvoiceDetail].[SpecialExaminationID] AS [SpecialExaminationID]
-    FROM [dbo].[ExaminationInvoiceDetail] AS [ExaminationInvoiceDetail]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK__Account__Employe__01142BA1" Association="Self.FK__Account__Employe__01142BA1">
             <End Role="Employee" EntitySet="Employee" />
             <End Role="Account" EntitySet="Account" />
@@ -602,8 +586,10 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <EntitySet Name="Accounts" EntityType="MedicalTreatmentModel.Account" />
           <EntitySet Name="DiagnoseResults" EntityType="MedicalTreatmentModel.DiagnoseResult" />
           <EntitySet Name="Drugs" EntityType="MedicalTreatmentModel.Drug" />
+          <EntitySet Name="DrugInvoiceDetails" EntityType="MedicalTreatmentModel.DrugInvoiceDetail" />
           <EntitySet Name="Employees" EntityType="MedicalTreatmentModel.Employee" />
           <EntitySet Name="ExaminationForms" EntityType="MedicalTreatmentModel.ExaminationForm" />
+          <EntitySet Name="ExaminationInvoiceDetails" EntityType="MedicalTreatmentModel.ExaminationInvoiceDetail" />
           <EntitySet Name="GPdrugDetails" EntityType="MedicalTreatmentModel.GPdrugDetail" />
           <EntitySet Name="Invoices" EntityType="MedicalTreatmentModel.Invoice" />
           <EntitySet Name="Patients" EntityType="MedicalTreatmentModel.Patient" />
@@ -613,8 +599,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <EntitySet Name="SpecialistExaminationRequests" EntityType="MedicalTreatmentModel.SpecialistExaminationRequest" />
           <EntitySet Name="SpecialistExaminationResults" EntityType="MedicalTreatmentModel.SpecialistExaminationResult" />
           <EntitySet Name="sysdiagrams" EntityType="MedicalTreatmentModel.sysdiagram" />
-          <EntitySet Name="DrugInvoiceDetails" EntityType="MedicalTreatmentModel.DrugInvoiceDetail" />
-          <EntitySet Name="ExaminationInvoiceDetails" EntityType="MedicalTreatmentModel.ExaminationInvoiceDetail" />
           <AssociationSet Name="FK__Account__Employe__01142BA1" Association="MedicalTreatmentModel.FK__Account__Employe__01142BA1">
             <End Role="Employee" EntitySet="Employees" />
             <End Role="Account" EntitySet="Accounts" />
@@ -633,6 +617,10 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           </AssociationSet>
           <AssociationSet Name="FK__DrugInvoi__DrugI__68487DD7" Association="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7">
             <End Role="Drug" EntitySet="Drugs" />
+            <End Role="DrugInvoiceDetail" EntitySet="DrugInvoiceDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DrugInvoi__Invoi__6754599E" Association="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E">
+            <End Role="Invoice" EntitySet="Invoices" />
             <End Role="DrugInvoiceDetail" EntitySet="DrugInvoiceDetails" />
           </AssociationSet>
           <AssociationSet Name="FK__Examinati__Secre__45F365D3" Association="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3">
@@ -667,6 +655,14 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
             <End Role="Patient" EntitySet="Patients" />
             <End Role="ExaminationForm" EntitySet="ExaminationForms" />
           </AssociationSet>
+          <AssociationSet Name="FK__Examinati__Invoi__6477ECF3" Association="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3">
+            <End Role="Invoice" EntitySet="Invoices" />
+            <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Examinati__Speci__656C112C" Association="MedicalTreatmentModel.FK__Examinati__Speci__656C112C">
+            <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
+            <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
+          </AssociationSet>
           <AssociationSet Name="FK__GPdrugDet__Patie__5DCAEF64" Association="MedicalTreatmentModel.FK__GPdrugDet__Patie__5DCAEF64">
             <End Role="Patient" EntitySet="Patients" />
             <End Role="GPdrugDetail" EntitySet="GPdrugDetails" />
@@ -674,14 +670,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <AssociationSet Name="FK__GPdrugDet__Presc__5CD6CB2B" Association="MedicalTreatmentModel.FK__GPdrugDet__Presc__5CD6CB2B">
             <End Role="Prescription" EntitySet="Prescriptions" />
             <End Role="GPdrugDetail" EntitySet="GPdrugDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK__DrugInvoi__Invoi__6754599E" Association="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E">
-            <End Role="Invoice" EntitySet="Invoices" />
-            <End Role="DrugInvoiceDetail" EntitySet="DrugInvoiceDetails" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Examinati__Invoi__6477ECF3" Association="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3">
-            <End Role="Invoice" EntitySet="Invoices" />
-            <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
           </AssociationSet>
           <AssociationSet Name="FK__Invoice__Patient__619B8048" Association="MedicalTreatmentModel.FK__Invoice__Patient__619B8048">
             <End Role="Patient" EntitySet="Patients" />
@@ -698,10 +686,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <AssociationSet Name="FK__Specialis__Patie__5070F446" Association="MedicalTreatmentModel.FK__Specialis__Patie__5070F446">
             <End Role="Patient" EntitySet="Patients" />
             <End Role="SpecialistExaminationResult" EntitySet="SpecialistExaminationResults" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Examinati__Speci__656C112C" Association="MedicalTreatmentModel.FK__Examinati__Speci__656C112C">
-            <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
-            <End Role="ExaminationInvoiceDetail" EntitySet="ExaminationInvoiceDetails" />
           </AssociationSet>
           <AssociationSet Name="FK__Specialis__Speci__4AB81AF0" Association="MedicalTreatmentModel.FK__Specialis__Speci__4AB81AF0">
             <End Role="SpecialistExamination" EntitySet="SpecialistExaminations" />
@@ -753,6 +737,17 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <Property Name="ImportDate" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="DrugInvoiceDetails" Relationship="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7" FromRole="Drug" ToRole="DrugInvoiceDetail" />
         </EntityType>
+        <EntityType Name="DrugInvoiceDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+          <Property Name="DrugID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Drug" Relationship="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7" FromRole="DrugInvoiceDetail" ToRole="Drug" />
+          <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E" FromRole="DrugInvoiceDetail" ToRole="Invoice" />
+        </EntityType>
         <EntityType Name="Employee">
           <Key>
             <PropertyRef Name="EmployeeID" />
@@ -788,6 +783,17 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Examinati__Secre__45F365D3" FromRole="ExaminationForm" ToRole="Employee" />
           <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Examinati__Patie__44FF419A" FromRole="ExaminationForm" ToRole="Patient" />
         </EntityType>
+        <EntityType Name="ExaminationInvoiceDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
+          <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3" FromRole="ExaminationInvoiceDetail" ToRole="Invoice" />
+          <NavigationProperty Name="SpecialistExamination" Relationship="MedicalTreatmentModel.FK__Examinati__Speci__656C112C" FromRole="ExaminationInvoiceDetail" ToRole="SpecialistExamination" />
+        </EntityType>
         <EntityType Name="GPdrugDetail">
           <Key>
             <PropertyRef Name="GPdrugID" />
@@ -811,8 +817,8 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="PatientID" Type="Int32" Nullable="false" />
           <Property Name="PharmacistID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Invoice__Pharmac__628FA481" FromRole="Invoice" ToRole="Employee" />
           <NavigationProperty Name="DrugInvoiceDetails" Relationship="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E" FromRole="Invoice" ToRole="DrugInvoiceDetail" />
+          <NavigationProperty Name="Employee" Relationship="MedicalTreatmentModel.FK__Invoice__Pharmac__628FA481" FromRole="Invoice" ToRole="Employee" />
           <NavigationProperty Name="ExaminationInvoiceDetails" Relationship="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3" FromRole="Invoice" ToRole="ExaminationInvoiceDetail" />
           <NavigationProperty Name="Patient" Relationship="MedicalTreatmentModel.FK__Invoice__Patient__619B8048" FromRole="Invoice" ToRole="Patient" />
         </EntityType>
@@ -909,28 +915,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityType Name="DrugInvoiceDetail">
-          <Key>
-            <PropertyRef Name="InvoiceID" />
-            <PropertyRef Name="DrugID" />
-          </Key>
-          <Property Name="Quantity" Type="Int32" />
-          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
-          <Property Name="DrugID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Drug" Relationship="MedicalTreatmentModel.FK__DrugInvoi__DrugI__68487DD7" FromRole="DrugInvoiceDetail" ToRole="Drug" />
-          <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__DrugInvoi__Invoi__6754599E" FromRole="DrugInvoiceDetail" ToRole="Invoice" />
-        </EntityType>
-        <EntityType Name="ExaminationInvoiceDetail">
-          <Key>
-            <PropertyRef Name="InvoiceID" />
-            <PropertyRef Name="SpecialExaminationID" />
-          </Key>
-          <Property Name="Quantity" Type="Int32" />
-          <Property Name="InvoiceID" Type="Int32" Nullable="false" />
-          <Property Name="SpecialExaminationID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Invoice" Relationship="MedicalTreatmentModel.FK__Examinati__Invoi__6477ECF3" FromRole="ExaminationInvoiceDetail" ToRole="Invoice" />
-          <NavigationProperty Name="SpecialistExamination" Relationship="MedicalTreatmentModel.FK__Examinati__Speci__656C112C" FromRole="ExaminationInvoiceDetail" ToRole="SpecialistExamination" />
-        </EntityType>
         <Association Name="FK__Account__Employe__01142BA1">
           <End Type="MedicalTreatmentModel.Employee" Role="Employee" Multiplicity="1" />
           <End Type="MedicalTreatmentModel.Account" Role="Account" Multiplicity="*" />
@@ -988,6 +972,18 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
             </Principal>
             <Dependent Role="DrugInvoiceDetail">
               <PropertyRef Name="DrugID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DrugInvoi__Invoi__6754599E">
+          <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
+          <End Type="MedicalTreatmentModel.DrugInvoiceDetail" Role="DrugInvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Invoice">
+              <PropertyRef Name="InvoiceID" />
+            </Principal>
+            <Dependent Role="DrugInvoiceDetail">
+              <PropertyRef Name="InvoiceID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1087,6 +1083,30 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK__Examinati__Invoi__6477ECF3">
+          <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
+          <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Invoice">
+              <PropertyRef Name="InvoiceID" />
+            </Principal>
+            <Dependent Role="ExaminationInvoiceDetail">
+              <PropertyRef Name="InvoiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Examinati__Speci__656C112C">
+          <End Type="MedicalTreatmentModel.SpecialistExamination" Role="SpecialistExamination" Multiplicity="1" />
+          <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SpecialistExamination">
+              <PropertyRef Name="SpecialExaminationID" />
+            </Principal>
+            <Dependent Role="ExaminationInvoiceDetail">
+              <PropertyRef Name="SpecialExaminationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__GPdrugDet__Patie__5DCAEF64">
           <End Type="MedicalTreatmentModel.Patient" Role="Patient" Multiplicity="1" />
           <End Type="MedicalTreatmentModel.GPdrugDetail" Role="GPdrugDetail" Multiplicity="*" />
@@ -1108,30 +1128,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
             </Principal>
             <Dependent Role="GPdrugDetail">
               <PropertyRef Name="PrescriptionID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__DrugInvoi__Invoi__6754599E">
-          <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
-          <End Type="MedicalTreatmentModel.DrugInvoiceDetail" Role="DrugInvoiceDetail" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Invoice">
-              <PropertyRef Name="InvoiceID" />
-            </Principal>
-            <Dependent Role="DrugInvoiceDetail">
-              <PropertyRef Name="InvoiceID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Examinati__Invoi__6477ECF3">
-          <End Type="MedicalTreatmentModel.Invoice" Role="Invoice" Multiplicity="1" />
-          <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Invoice">
-              <PropertyRef Name="InvoiceID" />
-            </Principal>
-            <Dependent Role="ExaminationInvoiceDetail">
-              <PropertyRef Name="InvoiceID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1180,18 +1176,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
             </Principal>
             <Dependent Role="SpecialistExaminationResult">
               <PropertyRef Name="PatientID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Examinati__Speci__656C112C">
-          <End Type="MedicalTreatmentModel.SpecialistExamination" Role="SpecialistExamination" Multiplicity="1" />
-          <End Type="MedicalTreatmentModel.ExaminationInvoiceDetail" Role="ExaminationInvoiceDetail" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SpecialistExamination">
-              <PropertyRef Name="SpecialExaminationID" />
-            </Principal>
-            <Dependent Role="ExaminationInvoiceDetail">
-              <PropertyRef Name="SpecialExaminationID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1264,6 +1248,16 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="DrugInvoiceDetails">
+            <EntityTypeMapping TypeName="MedicalTreatmentModel.DrugInvoiceDetail">
+              <MappingFragment StoreEntitySet="DrugInvoiceDetail">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DrugID" ColumnName="DrugID" />
+                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Employees">
             <EntityTypeMapping TypeName="MedicalTreatmentModel.Employee">
               <MappingFragment StoreEntitySet="Employee">
@@ -1286,6 +1280,16 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="Ordinal" ColumnName="Ordinal" />
                 <ScalarProperty Name="ExaminationFormID" ColumnName="ExaminationFormID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExaminationInvoiceDetails">
+            <EntityTypeMapping TypeName="MedicalTreatmentModel.ExaminationInvoiceDetail">
+              <MappingFragment StoreEntitySet="ExaminationInvoiceDetail">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
+                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1389,24 +1393,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
                 <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
                 <ScalarProperty Name="name" ColumnName="name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="DrugInvoiceDetails">
-            <EntityTypeMapping TypeName="MedicalTreatmentModel.DrugInvoiceDetail">
-              <MappingFragment StoreEntitySet="DrugInvoiceDetail">
-                <ScalarProperty Name="DrugID" ColumnName="DrugID" />
-                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ExaminationInvoiceDetails">
-            <EntityTypeMapping TypeName="MedicalTreatmentModel.ExaminationInvoiceDetail">
-              <MappingFragment StoreEntitySet="ExaminationInvoiceDetail">
-                <ScalarProperty Name="SpecialExaminationID" ColumnName="SpecialExaminationID" />
-                <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
