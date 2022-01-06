@@ -47,6 +47,7 @@ namespace MedicalTreament
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
@@ -57,6 +58,7 @@ namespace MedicalTreament
             bus_form.SetPaid(patientID);
             SaveDrugDetail(invoiceID);
             SaveExamDetail(invoiceID);
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
@@ -87,6 +89,7 @@ namespace MedicalTreament
         private void btnPayPrint_Click(object sender, EventArgs e)
         {
             btnPay_Click(sender, e);
+            this.DialogResult = DialogResult.OK;
             Graphics g = guna2Panel1.CreateGraphics();
             bmp = new Bitmap(guna2Panel1.Size.Width, guna2Panel1.Size.Height, g);
             Graphics mg = Graphics.FromImage(bmp);

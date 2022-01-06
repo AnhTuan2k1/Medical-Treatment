@@ -85,7 +85,7 @@ namespace MedicalTreament
             btn.FillColor = Color.FromArgb(116, 185, 255);
             btn.ForeColor = Color.White;
 
-            //change Form                     
+            //change Form
             ((Form)PanelContainer.Controls[0]).Close();
             form.Dock = DockStyle.Fill;
             form.TopLevel = false;
