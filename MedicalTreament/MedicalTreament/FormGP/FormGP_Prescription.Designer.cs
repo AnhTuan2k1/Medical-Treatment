@@ -64,7 +64,7 @@ namespace MedicalTreament
             this.gridview_pill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gridview_pill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridview_pill.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gridview_pill.BackgroundColor = System.Drawing.Color.White;
             this.gridview_pill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_pill.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_pill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -107,7 +107,7 @@ namespace MedicalTreament
             this.gridview_pill.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.gridview_pill.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gridview_pill.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gridview_pill.ThemeStyle.BackColor = System.Drawing.Color.LightGray;
+            this.gridview_pill.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gridview_pill.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_pill.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gridview_pill.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -137,7 +137,7 @@ namespace MedicalTreament
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview_prescription.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridview_prescription.BackgroundColor = System.Drawing.Color.LightGray;
+            this.gridview_prescription.BackgroundColor = System.Drawing.Color.White;
             this.gridview_prescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_prescription.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_prescription.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -183,7 +183,7 @@ namespace MedicalTreament
             this.gridview_prescription.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.gridview_prescription.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gridview_prescription.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gridview_prescription.ThemeStyle.BackColor = System.Drawing.Color.LightGray;
+            this.gridview_prescription.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.gridview_prescription.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_prescription.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gridview_prescription.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -230,12 +230,14 @@ namespace MedicalTreament
             // btn_CreatePrescription
             // 
             this.btn_CreatePrescription.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_CreatePrescription.BorderRadius = 20;
             this.btn_CreatePrescription.CheckedState.Parent = this.btn_CreatePrescription;
             this.btn_CreatePrescription.CustomImages.Parent = this.btn_CreatePrescription;
-            this.btn_CreatePrescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_CreatePrescription.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn_CreatePrescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CreatePrescription.ForeColor = System.Drawing.Color.White;
             this.btn_CreatePrescription.HoverState.Parent = this.btn_CreatePrescription;
-            this.btn_CreatePrescription.Location = new System.Drawing.Point(670, 689);
+            this.btn_CreatePrescription.Location = new System.Drawing.Point(671, 699);
             this.btn_CreatePrescription.Name = "btn_CreatePrescription";
             this.btn_CreatePrescription.ShadowDecoration.Parent = this.btn_CreatePrescription;
             this.btn_CreatePrescription.Size = new System.Drawing.Size(180, 45);
@@ -375,6 +377,7 @@ namespace MedicalTreament
             this.Controls.Add(this.gridview_prescription);
             this.Controls.Add(this.gridview_pill);
             this.Controls.Add(this.gppatienttextbox_search);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGP_Prescription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGP_Prescription";

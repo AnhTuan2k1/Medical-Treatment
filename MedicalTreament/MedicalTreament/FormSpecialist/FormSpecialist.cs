@@ -93,16 +93,40 @@ namespace MedicalTreament
         private void spbtn_patient_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormSpecialist_Patient(),sender, specialistID);
+            spbtn_diagnosis.FillColor = Color.White;
+            spbtn_diagnosis.ForeColor = Color.Black;
+            guna2Button1.FillColor = Color.White;
+            guna2Button1.ForeColor = Color.Black;
+            spbtn_patient.FillColor = Color.White;
+            spbtn_patient.ForeColor = Color.Black;
+            guna2Button3.FillColor = Color.DarkTurquoise;
+            guna2Button3.ForeColor = Color.White;
         }
 
         private void spbtn_diagnosis_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormSpecialist_Diagnosis(specialistID), sender, specialistID);
+            spbtn_diagnosis.FillColor = Color.DarkTurquoise;
+            spbtn_diagnosis.ForeColor = Color.White;
+            guna2Button1.FillColor = Color.White;
+            guna2Button1.ForeColor = Color.Black;
+            spbtn_patient.FillColor = Color.White;
+            spbtn_patient.ForeColor = Color.Black;
+            guna2Button3.FillColor = Color.White;
+            guna2Button3.ForeColor = Color.Black;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormSpecialist_Price(specialistID), sender, specialistID);
+            spbtn_diagnosis.FillColor = Color.White;
+            spbtn_diagnosis.ForeColor = Color.Black;
+            guna2Button1.FillColor = Color.DarkTurquoise;
+            guna2Button1.ForeColor = Color.White;
+            spbtn_patient.FillColor = Color.White;
+            spbtn_patient.ForeColor = Color.Black;
+            guna2Button3.FillColor = Color.White;
+            guna2Button3.ForeColor = Color.Black;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

@@ -171,6 +171,7 @@ namespace MedicalTreament
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.gridSpecialistExamination);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSpecialist_Price";
             this.Text = "FormSpecialist_Price";
             this.Load += new System.EventHandler(this.FormSpecialist_Price_Load);

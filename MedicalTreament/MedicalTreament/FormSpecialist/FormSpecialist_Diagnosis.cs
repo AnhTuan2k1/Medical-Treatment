@@ -67,8 +67,7 @@ namespace MedicalTreament
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
-            int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
-            int idSE = bus_SE.GetID(comboboxSEname.Text);
+            
 
             if (txtConclusion.Text=="" || txtResult.Text=="")
             {
@@ -76,7 +75,9 @@ namespace MedicalTreament
             }
             else
             {
-                if(bus_SEresult.Add(txtResult.Text,txtConclusion.Text,idSE,idPatient,idSP))
+                int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
+                int idSE = bus_SE.GetID(comboboxSEname.Text);
+                if (bus_SEresult.Add(txtResult.Text,txtConclusion.Text,idSE,idPatient,idSP))
                 {
                     txtConclusion.Text = "";
                     txtResult.Text = "";
