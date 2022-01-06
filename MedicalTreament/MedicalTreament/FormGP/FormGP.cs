@@ -85,6 +85,12 @@ namespace MedicalTreament
         private void gpbtn_patient_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormGP_Patient(gpID), sender);
+            gpbtn_patient.FillColor = Color.DarkTurquoise;
+            gpbtn_patient.ForeColor = Color.White;
+            gpbtn_diagnosis.FillColor = Color.White;
+            gpbtn_diagnosis.ForeColor = Color.Black;
+            gpbtn_Logout.FillColor = Color.White;
+            gpbtn_Logout.ForeColor = Color.Black;
         }
 
         private void btn_closeform_Click(object sender, EventArgs e)
@@ -106,6 +112,12 @@ namespace MedicalTreament
         private void gpbtn_diagnosis_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormGP_Diagnosis(gpID), sender);
+            gpbtn_patient.FillColor = Color.White;
+            gpbtn_patient.ForeColor = Color.Black;
+            gpbtn_diagnosis.FillColor = Color.DarkTurquoise;
+            gpbtn_diagnosis.ForeColor = Color.White;
+            gpbtn_Logout.FillColor = Color.White;
+            gpbtn_Logout.ForeColor = Color.Black;
         }
 
         private void gpbtn_Logout_Click(object sender, EventArgs e)

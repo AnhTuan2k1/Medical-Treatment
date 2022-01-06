@@ -78,7 +78,7 @@ namespace MedicalTreament
             this.gridview_patient.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridview_patient.EnableHeadersVisualStyles = false;
             this.gridview_patient.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridview_patient.Location = new System.Drawing.Point(13, 73);
+            this.gridview_patient.Location = new System.Drawing.Point(13, 64);
             this.gridview_patient.Name = "gridview_patient";
             this.gridview_patient.RowHeadersVisible = false;
             this.gridview_patient.RowHeadersWidth = 51;
@@ -90,7 +90,7 @@ namespace MedicalTreament
             this.gridview_patient.RowTemplate.Height = 25;
             this.gridview_patient.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridview_patient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_patient.Size = new System.Drawing.Size(838, 462);
+            this.gridview_patient.Size = new System.Drawing.Size(888, 594);
             this.gridview_patient.TabIndex = 5;
             this.gridview_patient.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_patient.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -147,7 +147,7 @@ namespace MedicalTreament
             this.gppatienttextbox_search.PlaceholderText = "Search patient by name";
             this.gppatienttextbox_search.SelectedText = "";
             this.gppatienttextbox_search.ShadowDecoration.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.Size = new System.Drawing.Size(283, 44);
+            this.gppatienttextbox_search.Size = new System.Drawing.Size(887, 44);
             this.gppatienttextbox_search.TabIndex = 4;
             this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
             this.gppatienttextbox_search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gppatienttextbox_search_KeyPress);
@@ -156,9 +156,10 @@ namespace MedicalTreament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 627);
+            this.ClientSize = new System.Drawing.Size(913, 670);
             this.Controls.Add(this.gridview_patient);
             this.Controls.Add(this.gppatienttextbox_search);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGP_Patient";
             this.Text = "FormGP_Patient";
             this.Load += new System.EventHandler(this.FormGP_Patient_Load);

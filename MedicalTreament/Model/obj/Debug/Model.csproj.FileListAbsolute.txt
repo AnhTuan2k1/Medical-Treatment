@@ -22,3 +22,15 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.dll
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.pdb
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.dll.config
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.dll
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\Model.pdb
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.dll
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.xml
+D:\Medical-Treatment\MedicalTreament\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.dll
+D:\Medical-Treatment\MedicalTreament\Model\obj\Debug\Model.pdb

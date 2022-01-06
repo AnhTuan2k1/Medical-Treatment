@@ -151,8 +151,6 @@ D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\DataLayer.exe
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Model.dll
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\BusinessLayer.pdb
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\BusinessLayer.exe.config
-D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\EntityFramework.xml
-D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\EntityFramework.SqlServer.xml
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\DataLayer.pdb
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\DataLayer.exe.config
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\bin\Debug\Model.pdb
@@ -168,3 +166,6 @@ C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\Medic
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.EditEmployee.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistAddDrug.resources
 C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP_Profile.resources
+D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormGP_Profile.resources
+D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.PayEmployee.resources
+D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistAddDrug.resources

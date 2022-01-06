@@ -120,5 +120,20 @@ namespace BusinessLayer
             string name = daoEmployee.GetEmployeeName(specialistID);
             return name;
         }
+        public bool PayEmployee(decimal value, int employeeid)
+        {
+
+            try
+            {
+                daoEmployee.PayEmployee(value, employeeid);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+
+        }
     }
 }
