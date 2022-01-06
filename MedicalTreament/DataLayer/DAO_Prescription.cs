@@ -40,7 +40,7 @@ namespace DataLayer
 
         public int GetPrescriptionID(int idGP, int idPatient)
         {
-            Prescription prescription = db.Prescriptions.Where(p => p.GPID == idGP && p.PatientID == idPatient).Single();
+            Prescription prescription = db.Prescriptions.Where(p => p.GPID == idGP && p.PatientID == idPatient).FirstOrDefault();
             return prescription.PrescriptionID;
         }
 

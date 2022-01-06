@@ -55,7 +55,7 @@ namespace DataLayer
 
         public int GetPatientIDByName(string name)
         {
-            Patient patient = db.Patients.Where(p => p.Name == name).Single();
+            Patient patient = db.Patients.Where(p => p.Name == name).FirstOrDefault();
             return patient.PatientID;
         }
 

@@ -29,7 +29,6 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Diagnosis));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -42,7 +41,6 @@ namespace MedicalTreament
             this.txtReason = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ComboBoxPatientName = new System.Windows.Forms.ComboBox();
-            this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.label_reason = new System.Windows.Forms.Label();
             this.label_date = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
@@ -210,36 +208,6 @@ namespace MedicalTreament
             this.ComboBoxPatientName.Size = new System.Drawing.Size(311, 31);
             this.ComboBoxPatientName.TabIndex = 1;
             this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
-            // 
-            // gppatienttextbox_search
-            // 
-            this.gppatienttextbox_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gppatienttextbox_search.AutoRoundedCorners = true;
-            this.gppatienttextbox_search.BorderColor = System.Drawing.Color.Transparent;
-            this.gppatienttextbox_search.BorderRadius = 21;
-            this.gppatienttextbox_search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gppatienttextbox_search.DefaultText = "";
-            this.gppatienttextbox_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gppatienttextbox_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gppatienttextbox_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gppatienttextbox_search.DisabledState.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gppatienttextbox_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gppatienttextbox_search.FocusedState.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gppatienttextbox_search.HoverState.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.IconLeft = ((System.Drawing.Image)(resources.GetObject("gppatienttextbox_search.IconLeft")));
-            this.gppatienttextbox_search.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.gppatienttextbox_search.Location = new System.Drawing.Point(550, 38);
-            this.gppatienttextbox_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gppatienttextbox_search.Name = "gppatienttextbox_search";
-            this.gppatienttextbox_search.PasswordChar = '\0';
-            this.gppatienttextbox_search.PlaceholderText = "Search....";
-            this.gppatienttextbox_search.SelectedText = "";
-            this.gppatienttextbox_search.ShadowDecoration.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.Size = new System.Drawing.Size(322, 44);
-            this.gppatienttextbox_search.TabIndex = 34;
-            this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // label_reason
             // 
@@ -455,7 +423,6 @@ namespace MedicalTreament
             this.Controls.Add(this.txtReason);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ComboBoxPatientName);
-            this.Controls.Add(this.gppatienttextbox_search);
             this.Controls.Add(this.label_reason);
             this.Controls.Add(this.label_date);
             this.Controls.Add(this.label_name);
@@ -482,7 +449,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2TextBox txtReason;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox ComboBoxPatientName;
-        private Guna.UI2.WinForms.Guna2TextBox gppatienttextbox_search;
         private System.Windows.Forms.Label label_reason;
         private System.Windows.Forms.Label label_date;
         private System.Windows.Forms.Label label_name;
