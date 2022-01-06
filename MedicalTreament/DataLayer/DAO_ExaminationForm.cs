@@ -161,6 +161,12 @@ namespace DataLayer
             db.SaveChanges();
 
         }
+        public void SetState(int idPatient, string text)
+        {
+            ExaminationForm form = db.ExaminationForms.Find(idPatient);
+            form.State = text;
+            db.SaveChanges();
+        }
 
     }
 }

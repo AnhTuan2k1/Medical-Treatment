@@ -170,3 +170,4 @@ D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.F
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.PayEmployee.resources
 D:\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.FormPharmacistAddDrug.resources
 D:\subjects\Object-Oriented Software Development Methodology\project\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.PayEmployee.resources
+C:\Users\Xuan Thai\Downloads\Github Repo\Medical-Treatment\MedicalTreament\MedicalTreament\obj\Debug\MedicalTreament.AdminForm.PayEmployee.resources

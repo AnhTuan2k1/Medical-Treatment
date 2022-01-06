@@ -29,9 +29,9 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Diagnosis));
             this.txtDirection = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -325,32 +325,33 @@ namespace MedicalTreament
             this.gridview_requestlist.AllowUserToOrderColumns = true;
             this.gridview_requestlist.AllowUserToResizeColumns = false;
             this.gridview_requestlist.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridview_requestlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview_requestlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridview_requestlist.BackgroundColor = System.Drawing.Color.White;
+            this.gridview_requestlist.BackgroundColor = System.Drawing.Color.Silver;
+            this.gridview_requestlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_requestlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_requestlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridview_requestlist.ColumnHeadersHeight = 30;
             this.gridview_requestlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridview_requestlist.EnableHeadersVisualStyles = false;
             this.gridview_requestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_requestlist.Location = new System.Drawing.Point(221, 301);
@@ -371,7 +372,7 @@ namespace MedicalTreament
             this.gridview_requestlist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.gridview_requestlist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gridview_requestlist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gridview_requestlist.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gridview_requestlist.ThemeStyle.BackColor = System.Drawing.Color.Silver;
             this.gridview_requestlist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_requestlist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gridview_requestlist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -555,7 +556,7 @@ namespace MedicalTreament
             this.ComboBoxPatientName.FocusedColor = System.Drawing.Color.Empty;
             this.ComboBoxPatientName.FocusedState.Parent = this.ComboBoxPatientName;
             this.ComboBoxPatientName.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxPatientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxPatientName.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxPatientName.FormattingEnabled = true;
             this.ComboBoxPatientName.HoverState.Parent = this.ComboBoxPatientName;
             this.ComboBoxPatientName.ItemHeight = 30;
@@ -565,6 +566,7 @@ namespace MedicalTreament
             this.ComboBoxPatientName.ShadowDecoration.Parent = this.ComboBoxPatientName;
             this.ComboBoxPatientName.Size = new System.Drawing.Size(515, 36);
             this.ComboBoxPatientName.TabIndex = 62;
+            this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
             // 
             // comboBoxSEname
             // 
@@ -575,7 +577,7 @@ namespace MedicalTreament
             this.comboBoxSEname.FocusedColor = System.Drawing.Color.Empty;
             this.comboBoxSEname.FocusedState.Parent = this.comboBoxSEname;
             this.comboBoxSEname.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBoxSEname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxSEname.ForeColor = System.Drawing.Color.Black;
             this.comboBoxSEname.FormattingEnabled = true;
             this.comboBoxSEname.HoverState.Parent = this.comboBoxSEname;
             this.comboBoxSEname.ItemHeight = 30;

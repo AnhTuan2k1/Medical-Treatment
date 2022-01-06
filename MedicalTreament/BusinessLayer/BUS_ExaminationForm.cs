@@ -121,5 +121,10 @@ namespace BusinessLayer
             int id = daoExaminationForm.GetId(idPatient);
             return id;
         }
+
+        public void SetState(int idPatient, string text)
+        {
+            daoExaminationForm.SetState(idPatient, text);
+        }
     }
 }

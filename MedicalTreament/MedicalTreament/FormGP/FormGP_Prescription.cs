@@ -18,6 +18,7 @@ namespace MedicalTreament
         BUS_Prescription bus_Prescription;
         BUS_GPdrugDetail bus_GPdrugDetail;
         BUS_Drug bus_Drug;
+        BUS_ExaminationForm bus_exf;
         String currentDay = DateTime.Now.ToShortDateString();
 
         public FormGP_Prescription(int idGP, int idPatient)
@@ -29,6 +30,7 @@ namespace MedicalTreament
             bus_Prescription = new BUS_Prescription();
             bus_Drug = new BUS_Drug();
             bus_GPdrugDetail = new BUS_GPdrugDetail();
+            bus_exf = new BUS_ExaminationForm();
         }
 
 
@@ -56,7 +58,7 @@ namespace MedicalTreament
         {
             if (gridview_pill.SelectedRows.Count < 0)
             {
-
+                return;
             }
             else
             {
@@ -132,7 +134,7 @@ namespace MedicalTreament
                         int prescriptionID = bus_Prescription.GetPrescriptionID(idGP, idPatient);
                         if (bus_GPdrugDetail.Adddrugdetail(drugName, drugQuantity, prescriptionID, idPatient, idGP))
                         {
-                            
+                            bus_exf.SetState(idPatient, "inpharmacist");
                         }
                     }
 
@@ -145,6 +147,16 @@ namespace MedicalTreament
                     }    
                    
                 }
+            }
+        }
+
+
+
+        private void gppatienttextbox_search_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                bus_Drug.ShowSeachDrug(gridview_pill, gppatienttextbox_search.Text);
             }
         }
     }
