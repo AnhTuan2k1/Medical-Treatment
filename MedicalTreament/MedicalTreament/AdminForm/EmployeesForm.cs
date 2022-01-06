@@ -132,6 +132,13 @@ namespace MedicalTreament.AdminForm
         {
             ShowEmployee();
         }
+
+        private void btPay_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dtgvEmployee.SelectedRows[0];
+            PayEmployee payEmployee = new PayEmployee(dtgvEmployee, row);
+            payEmployee.Show();
+        }
     }
 }   
     

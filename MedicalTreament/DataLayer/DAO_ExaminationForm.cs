@@ -115,7 +115,7 @@ namespace DataLayer
 
         public int GetId(int idPatient)
         {
-            ExaminationForm exForm = db.ExaminationForms.Where(e => e.PatientID == idPatient).Single();
+            ExaminationForm exForm = db.ExaminationForms.Where(e => e.PatientID == idPatient).FirstOrDefault();
             return exForm.ExaminationFormID;
         }
 
@@ -140,7 +140,7 @@ namespace DataLayer
 
         public string GetReason(int patientID)
         {
-            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID).Single();
+            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID).FirstOrDefault();
             return examinationForm.Reason;
         }
 

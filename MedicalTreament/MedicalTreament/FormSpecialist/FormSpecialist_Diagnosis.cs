@@ -35,14 +35,21 @@ namespace MedicalTreament
         {
             bus_Patient.ShowPatients_SP(comboboxPatient);
             comboboxPatient.DisplayMember = "Name";
+            if(comboboxPatient.Text=="")
+            {
 
-            int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
+            }
+            else
+            {
+                int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
 
-            bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
-            comboboxSEname.DisplayMember = "Name";
+                bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
+                comboboxSEname.DisplayMember = "Name";
+
+
+                bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
+            }
             
-            
-            bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
             // comboboxPatient.Text
         }
 
@@ -50,6 +57,10 @@ namespace MedicalTreament
         {
             comboboxPatient.ValueMember = "Name";
             int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.SelectedValue.ToString());
+
+            //comboboxPatient.ValueMember = "Phone";
+            //txtPhone.Text = comboboxPatient.SelectedValue.ToString();
+
             bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
             bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
         }

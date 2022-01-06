@@ -39,6 +39,25 @@ namespace DataLayer
 
             return list.ToList();
         }
+
+        public decimal? GetEmployeeSalary(int id)
+        {
+            Employee employee = db.Employees.Where(e => e.EmployeeID == id).Single();
+            return employee.Salary;
+        }
+
+        public string GetEmployeeEmail(int id)
+        {
+            Employee employee = db.Employees.Where(e => e.EmployeeID == id).Single();
+            return employee.Email;
+        }
+
+        public string GetEmployeePosition(int id)
+        {
+            Employee employee = db.Employees.Where(e => e.EmployeeID == id).Single();
+            return employee.Position;
+        }
+
         public void AddGP(string name, string phone, DateTime birth, string gender = "",
        string address = "", string healthInsurance = "", string nation = "", string workplace = "")
         {
@@ -96,6 +115,13 @@ namespace DataLayer
 
             return list.ToList();
         }
+
+        public string GetEmployeeName(int specialistID)
+        {
+            Employee employee = db.Employees.Where(e => e.EmployeeID == specialistID).Single();
+            return employee.Name;
+        }
+
         public dynamic GetSalaryOver()
         {
             var list = from employee in db.Set<Employee>()
@@ -177,6 +203,18 @@ namespace DataLayer
         {
             Employee employee = db.Employees.Find(employeeid);
             db.Employees.Remove(employee);
+            db.SaveChanges();
+        }
+        public void PayEmployee(decimal value, int employeeid)
+        {
+            PaySalary paysalary = new PaySalary()
+            {
+                Date = DateTime.Now,
+                Value = value,
+                EmployeeID = employeeid
+            };
+
+            db.PaySalaries.Add(paysalary);
             db.SaveChanges();
         }
     }

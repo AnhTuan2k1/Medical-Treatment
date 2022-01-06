@@ -36,8 +36,6 @@ D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\DataLayer.pdb
 D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.dll
 D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.pdb
 D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\Model.dll.config
-D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.xml
-D:\Medical-Treatment\MedicalTreament\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
 D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.Properties.Resources.resources
 D:\Medical-Treatment\MedicalTreament\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache

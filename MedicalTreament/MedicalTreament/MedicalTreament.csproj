@@ -103,6 +103,12 @@
     <Compile Include="AdminForm\NewEmployees.Designer.cs">
       <DependentUpon>NewEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminForm\PayEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\PayEmployee.Designer.cs">
+      <DependentUpon>PayEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm\RevenueForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     <EmbeddedResource Include="AdminForm\NewEmployees.resx">
       <DependentUpon>NewEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\PayEmployee.resx">
+      <DependentUpon>PayEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\RevenueForm.resx">
       <DependentUpon>RevenueForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,7 +320,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacist\FormPharmacistAddDrug.resx">
       <DependentUpon>FormPharmacistAddDrug.cs</DependentUpon>
-	  </EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGP\FormGP_Profile.resx">
       <DependentUpon>FormGP_Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -503,6 +512,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,7 +48,6 @@ namespace MedicalTreament
             this.gppatienttextbox_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_edit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtInstruction = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_pill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_prescription)).BeginInit();
             this.SuspendLayout();
@@ -309,7 +308,7 @@ namespace MedicalTreament
             this.gppatienttextbox_search.PlaceholderText = "Search....";
             this.gppatienttextbox_search.SelectedText = "";
             this.gppatienttextbox_search.ShadowDecoration.Parent = this.gppatienttextbox_search;
-            this.gppatienttextbox_search.Size = new System.Drawing.Size(283, 44);
+            this.gppatienttextbox_search.Size = new System.Drawing.Size(684, 44);
             this.gppatienttextbox_search.TabIndex = 5;
             this.gppatienttextbox_search.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -351,35 +350,22 @@ namespace MedicalTreament
             this.txtInstruction.ForeColor = System.Drawing.Color.Black;
             this.txtInstruction.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtInstruction.HoverState.Parent = this.txtInstruction;
-            this.txtInstruction.Location = new System.Drawing.Point(121, 589);
+            this.txtInstruction.Location = new System.Drawing.Point(13, 589);
             this.txtInstruction.Margin = new System.Windows.Forms.Padding(4);
             this.txtInstruction.Multiline = true;
             this.txtInstruction.Name = "txtInstruction";
             this.txtInstruction.PasswordChar = '\0';
-            this.txtInstruction.PlaceholderText = "";
+            this.txtInstruction.PlaceholderText = "Pill Instruction Here....";
             this.txtInstruction.SelectedText = "";
             this.txtInstruction.ShadowDecoration.Parent = this.txtInstruction;
-            this.txtInstruction.Size = new System.Drawing.Size(729, 93);
+            this.txtInstruction.Size = new System.Drawing.Size(837, 93);
             this.txtInstruction.TabIndex = 14;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 590);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(102, 20);
-            this.gunaLabel1.TabIndex = 15;
-            this.gunaLabel1.Text = "Pill Instruction";
             // 
             // FormGP_Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 767);
-            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txtInstruction);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_CreatePrescription);
@@ -414,6 +400,5 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Button btn_CreatePrescription;
         private Guna.UI2.WinForms.Guna2CircleButton btn_edit;
         private Guna.UI2.WinForms.Guna2TextBox txtInstruction;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

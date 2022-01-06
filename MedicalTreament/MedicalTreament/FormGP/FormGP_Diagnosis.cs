@@ -55,12 +55,19 @@ namespace MedicalTreament
        
             //
             label_date.Text = "Date: "+DateTime.Now.ToShortDateString();
+            if(ComboBoxPatientName.Text=="")
+            {
 
-            int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
-            bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+            }
+            else
+            {
+                int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
+                bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
 
-            string reason = bus_ExForm.GetReason(idPatient);
-            txtReason.Text = reason;
+                string reason = bus_ExForm.GetReason(idPatient);
+                txtReason.Text = reason;
+            }
+            
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
@@ -154,5 +161,7 @@ namespace MedicalTreament
                 bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
             }
         }
+
+
     }
 }

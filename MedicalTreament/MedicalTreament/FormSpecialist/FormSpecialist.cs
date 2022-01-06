@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MedicalTreament
 {
     public partial class FormSpecialist : Form
     {
+        BUS_Employee bus_emp;
         private Form activeForm;
         private Guna.UI2.WinForms.Guna2Button currtentButton;
         int specialistID;
@@ -22,6 +24,7 @@ namespace MedicalTreament
             btn_closeform.Visible = false;
             this.specialistID = id;
             this.parent = parent;
+            bus_emp = new BUS_Employee();
         }
 
         private void ActiveButton(object btnSender)
@@ -106,6 +109,17 @@ namespace MedicalTreament
         {
             this.Close();
             this.parent.Show();
+        }
+
+        private void FormSpecialist_Load(object sender, EventArgs e)
+        {
+            gunaLabel1.Text = "Dr. " + bus_emp.GetEmployeeName(specialistID);
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            FormGP_Profile profileForm = new FormGP_Profile(specialistID);
+            profileForm.Show();
         }
     }
 }

@@ -48,11 +48,11 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Bauhaus 93", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.gunaLabel1.Location = new System.Drawing.Point(152, 182);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(150, 49);
+            this.gunaLabel1.Size = new System.Drawing.Size(172, 51);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "LOG IN";
             // 
@@ -86,7 +86,7 @@
             this.btLogin.Name = "btLogin";
             this.btLogin.ShadowDecoration.Parent = this.btLogin;
             this.btLogin.Size = new System.Drawing.Size(324, 45);
-            this.btLogin.TabIndex = 6;
+            this.btLogin.TabIndex = 4;
             this.btLogin.Text = "LOG IN";
             this.btLogin.Click += new System.EventHandler(this.guna2Button1_Click);
             this.btLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btLogin_KeyDown);
@@ -94,12 +94,12 @@
             // lbClear
             // 
             this.lbClear.AutoSize = true;
-            this.lbClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbClear.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbClear.Location = new System.Drawing.Point(351, 461);
+            this.lbClear.Location = new System.Drawing.Point(335, 455);
             this.lbClear.Name = "lbClear";
-            this.lbClear.Size = new System.Drawing.Size(54, 20);
-            this.lbClear.TabIndex = 7;
+            this.lbClear.Size = new System.Drawing.Size(59, 24);
+            this.lbClear.TabIndex = 3;
             this.lbClear.Text = "Clear";
             this.lbClear.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
@@ -128,7 +128,7 @@
             this.txbUsername.SelectedText = "";
             this.txbUsername.ShadowDecoration.Parent = this.txbUsername;
             this.txbUsername.Size = new System.Drawing.Size(285, 30);
-            this.txbUsername.TabIndex = 8;
+            this.txbUsername.TabIndex = 1;
             // 
             // txbPassword
             // 
@@ -155,17 +155,17 @@
             this.txbPassword.SelectedText = "";
             this.txbPassword.ShadowDecoration.Parent = this.txbPassword;
             this.txbPassword.Size = new System.Drawing.Size(285, 30);
-            this.txbPassword.TabIndex = 9;
+            this.txbPassword.TabIndex = 2;
             // 
             // lbExit
             // 
             this.lbExit.AutoSize = true;
-            this.lbExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbExit.Location = new System.Drawing.Point(205, 563);
+            this.lbExit.Location = new System.Drawing.Point(192, 554);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(49, 20);
-            this.lbExit.TabIndex = 10;
+            this.lbExit.Size = new System.Drawing.Size(61, 25);
+            this.lbExit.TabIndex = 5;
             this.lbExit.Text = "EXIT";
             this.lbExit.Click += new System.EventHandler(this.gunaLabel3_Click);
             // 
