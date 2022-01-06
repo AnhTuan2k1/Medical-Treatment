@@ -54,6 +54,7 @@ namespace MedicalTreament
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -67,7 +68,7 @@ namespace MedicalTreament
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel1.Location = new System.Drawing.Point(46, 24);
+            this.gunaLabel1.Location = new System.Drawing.Point(46, 62);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(68, 28);
             this.gunaLabel1.TabIndex = 0;
@@ -78,7 +79,7 @@ namespace MedicalTreament
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel2.Location = new System.Drawing.Point(46, 61);
+            this.gunaLabel2.Location = new System.Drawing.Point(46, 99);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(86, 28);
             this.gunaLabel2.TabIndex = 1;
@@ -89,7 +90,7 @@ namespace MedicalTreament
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel3.Location = new System.Drawing.Point(46, 135);
+            this.gunaLabel3.Location = new System.Drawing.Point(46, 173);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(63, 28);
             this.gunaLabel3.TabIndex = 3;
@@ -100,7 +101,7 @@ namespace MedicalTreament
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel4.Location = new System.Drawing.Point(46, 98);
+            this.gunaLabel4.Location = new System.Drawing.Point(46, 136);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(69, 28);
             this.gunaLabel4.TabIndex = 2;
@@ -110,7 +111,7 @@ namespace MedicalTreament
             // 
             this.lbpos.AutoSize = true;
             this.lbpos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbpos.Location = new System.Drawing.Point(165, 61);
+            this.lbpos.Location = new System.Drawing.Point(165, 99);
             this.lbpos.Name = "lbpos";
             this.lbpos.Size = new System.Drawing.Size(103, 28);
             this.lbpos.TabIndex = 7;
@@ -120,7 +121,7 @@ namespace MedicalTreament
             // 
             this.lbname.AutoSize = true;
             this.lbname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbname.Location = new System.Drawing.Point(165, 24);
+            this.lbname.Location = new System.Drawing.Point(165, 62);
             this.lbname.Name = "lbname";
             this.lbname.Size = new System.Drawing.Size(103, 28);
             this.lbname.TabIndex = 6;
@@ -131,7 +132,7 @@ namespace MedicalTreament
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel7.Location = new System.Drawing.Point(46, 209);
+            this.gunaLabel7.Location = new System.Drawing.Point(46, 247);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(97, 28);
             this.gunaLabel7.TabIndex = 5;
@@ -142,7 +143,7 @@ namespace MedicalTreament
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.gunaLabel8.Location = new System.Drawing.Point(46, 172);
+            this.gunaLabel8.Location = new System.Drawing.Point(46, 210);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(103, 28);
             this.gunaLabel8.TabIndex = 4;
@@ -152,7 +153,7 @@ namespace MedicalTreament
             // 
             this.lbmail.AutoSize = true;
             this.lbmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbmail.Location = new System.Drawing.Point(165, 135);
+            this.lbmail.Location = new System.Drawing.Point(165, 173);
             this.lbmail.Name = "lbmail";
             this.lbmail.Size = new System.Drawing.Size(103, 28);
             this.lbmail.TabIndex = 9;
@@ -162,7 +163,7 @@ namespace MedicalTreament
             // 
             this.lbsala.AutoSize = true;
             this.lbsala.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbsala.Location = new System.Drawing.Point(165, 98);
+            this.lbsala.Location = new System.Drawing.Point(165, 136);
             this.lbsala.Name = "lbsala";
             this.lbsala.Size = new System.Drawing.Size(103, 28);
             this.lbsala.TabIndex = 8;
@@ -172,7 +173,7 @@ namespace MedicalTreament
             // 
             this.lbpass.AutoSize = true;
             this.lbpass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbpass.Location = new System.Drawing.Point(165, 209);
+            this.lbpass.Location = new System.Drawing.Point(165, 247);
             this.lbpass.Name = "lbpass";
             this.lbpass.Size = new System.Drawing.Size(103, 28);
             this.lbpass.TabIndex = 11;
@@ -182,7 +183,7 @@ namespace MedicalTreament
             // 
             this.lbuser.AutoSize = true;
             this.lbuser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbuser.Location = new System.Drawing.Point(165, 172);
+            this.lbuser.Location = new System.Drawing.Point(165, 210);
             this.lbuser.Name = "lbuser";
             this.lbuser.Size = new System.Drawing.Size(103, 28);
             this.lbuser.TabIndex = 10;
@@ -191,7 +192,7 @@ namespace MedicalTreament
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 62);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(28, 28);
@@ -202,7 +203,7 @@ namespace MedicalTreament
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 61);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(12, 99);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(28, 28);
@@ -213,7 +214,7 @@ namespace MedicalTreament
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(12, 98);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(12, 136);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(28, 28);
@@ -224,7 +225,7 @@ namespace MedicalTreament
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.Location = new System.Drawing.Point(12, 135);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(12, 173);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(28, 28);
@@ -235,7 +236,7 @@ namespace MedicalTreament
             // guna2PictureBox5
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 172);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 210);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(28, 28);
@@ -246,7 +247,7 @@ namespace MedicalTreament
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 215);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 253);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(28, 28);
@@ -257,7 +258,7 @@ namespace MedicalTreament
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel2.Location = new System.Drawing.Point(170, 55);
+            this.guna2Panel2.Location = new System.Drawing.Point(170, 93);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(200, 3);
@@ -266,7 +267,7 @@ namespace MedicalTreament
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel1.Location = new System.Drawing.Point(170, 92);
+            this.guna2Panel1.Location = new System.Drawing.Point(170, 130);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(200, 3);
@@ -275,7 +276,7 @@ namespace MedicalTreament
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel3.Location = new System.Drawing.Point(170, 129);
+            this.guna2Panel3.Location = new System.Drawing.Point(170, 167);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(200, 3);
@@ -284,7 +285,7 @@ namespace MedicalTreament
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel4.Location = new System.Drawing.Point(170, 166);
+            this.guna2Panel4.Location = new System.Drawing.Point(170, 204);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(200, 3);
@@ -293,7 +294,7 @@ namespace MedicalTreament
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel5.Location = new System.Drawing.Point(171, 203);
+            this.guna2Panel5.Location = new System.Drawing.Point(171, 241);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(200, 3);
@@ -302,18 +303,34 @@ namespace MedicalTreament
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel6.Location = new System.Drawing.Point(171, 240);
+            this.guna2Panel6.Location = new System.Drawing.Point(171, 278);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(200, 3);
             this.guna2Panel6.TabIndex = 26;
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.BorderRadius = 20;
+            this.guna2ControlBox2.BorderThickness = 1;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(331, 12);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(40, 40);
+            this.guna2ControlBox2.TabIndex = 27;
+            // 
             // FormGP_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(383, 264);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(383, 311);
+            this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2Panel6);
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel4);
@@ -379,5 +396,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }

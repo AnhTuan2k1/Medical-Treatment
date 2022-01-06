@@ -14,11 +14,12 @@ namespace MedicalTreament
     public partial class FormSpecialist_Diagnosis : Form
     {
 
-        private Form form;
+        //private Form form;
         BUS_Patient bus_Patient;
         BUS_SpecialistExaminationRequest bus_SErequest;
         BUS_SpecialistExaminationResult bus_SEresult;
         BUS_SpecialistExamination bus_SE;
+        BUS_ExaminationForm bus_exf;
         int idSP;
 
         public FormSpecialist_Diagnosis(int id)
@@ -28,6 +29,7 @@ namespace MedicalTreament
             bus_SErequest = new BUS_SpecialistExaminationRequest();
             bus_SEresult = new BUS_SpecialistExaminationResult();
             bus_SE = new BUS_SpecialistExamination();
+            bus_exf = new BUS_ExaminationForm();
             this.idSP = id;
         }
 
@@ -45,8 +47,6 @@ namespace MedicalTreament
 
                 bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
                 comboboxSEname.DisplayMember = "Name";
-
-
                 bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
             }
             
@@ -60,9 +60,15 @@ namespace MedicalTreament
 
             //comboboxPatient.ValueMember = "Phone";
             //txtPhone.Text = comboboxPatient.SelectedValue.ToString();
-
+      
             bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
             bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
+            if (gridrequestlist.Rows.Count < 1)
+            {
+                bus_exf.SetState(idPatient, "inGP");
+                bus_Patient.ShowPatients_SP(comboboxPatient);
+                comboboxPatient.DisplayMember = "Name";
+            }
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
@@ -77,11 +83,21 @@ namespace MedicalTreament
             {
                 int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
                 int idSE = bus_SE.GetID(comboboxSEname.Text);
+                if (gridrequestlist.Rows.Count <=1)
+                {
+                    bus_exf.SetState(idPatient, "inGP");
+                    bus_Patient.ShowPatients_SP(comboboxPatient);
+                    comboboxPatient.DisplayMember = "Name";
+                }
+
+           
                 if (bus_SEresult.Add(txtResult.Text,txtConclusion.Text,idSE,idPatient,idSP))
                 {
                     txtConclusion.Text = "";
                     txtResult.Text = "";
                     MessageBox.Show("Succesful!!!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
+                    bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
                 }
             }
         }

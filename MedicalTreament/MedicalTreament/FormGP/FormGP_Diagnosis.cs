@@ -14,8 +14,8 @@ namespace MedicalTreament
 
     public partial class FormGP_Diagnosis : Form
     {
-        private Form activeForm;
-        private Guna.UI2.WinForms.Guna2Button currtentButton;
+       // private Form activeForm;
+        //private Guna.UI2.WinForms.Guna2Button currtentButton;
         BUS_Patient bus_Patient;
         BUS_SpecialistExamination bUS_SpecialistExamination;
         BUS_SpecialistExaminationRequest bUS_SErequest;
@@ -42,7 +42,7 @@ namespace MedicalTreament
 
         private void FormGP_Diagnosis_Load(object sender, EventArgs e)
         {
-            
+
 
 
             bus_Patient.ShowPatients_GP(ComboBoxPatientName);
@@ -52,10 +52,10 @@ namespace MedicalTreament
             ComboBoxPatientName.DisplayMember = "Name";
             //
 
-       
+
             //
-            label_date.Text = "Date: "+DateTime.Now.ToShortDateString();
-            if(ComboBoxPatientName.Text=="")
+            label_date.Text = "Date: " + DateTime.Now.ToShortDateString();
+            if (ComboBoxPatientName.Text == "" || txtPhone.Text=="")
             {
 
             }
@@ -73,19 +73,17 @@ namespace MedicalTreament
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
             
-            int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
-            //string reason = bus_ExForm.GetReason(idPatient);
-            //txtDirection.Text
+         
 
-            int idEx = bus_ExForm.GetId(idPatient);
-            //MessageBox.Show(idEx.ToString());
             if ((txtDiagnoseResult.Text == "") || (txtDirection.Text == ""))
             {
                 MessageBox.Show("Fill up empty space!");
             }
             else
             {
-                if(bus_DiagnoseResult.Add(txtDiagnoseResult.Text,txtDirection.Text,idEx,idPatient,idGP))
+                int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
+                int idEx = bus_ExForm.GetId(idPatient);
+                if (bus_DiagnoseResult.Add(txtDiagnoseResult.Text,txtDirection.Text,idEx,idPatient,idGP))
                 {
                     txtDiagnoseResult.Text = "";
                     txtDirection.Text = "";
@@ -116,52 +114,66 @@ namespace MedicalTreament
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string a = comboBoxSEname.Text;
-
-            int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
-            int idSE = bUS_SpecialistExamination.GetID(a);
             
 
 
-
-            
-            Boolean found = false;
-            foreach (DataGridViewRow row in gridview_requestlist.Rows)
+            if (ComboBoxPatientName.Text == "" || txtPhone.Text == "" || comboBoxSEname.Text == "")
             {
-                
-                if (row.Cells[0].Value == a)
+                return;
+            }
+            else
+            {
+                string a = comboBoxSEname.Text;
+
+                int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
+                int idSE = bUS_SpecialistExamination.GetID(a);
+                Boolean found = false;
+                foreach (DataGridViewRow row in gridview_requestlist.Rows)
                 {
+
+                    if (row.Cells[0].Value == a)
+                    {
                         MessageBox.Show("Already Added", "Notification");
                         found = true;
                         break;
-                }
+                    }
                     //else
                     //{
                     //    gridview_requestlist.Rows.Add(a);
-                       
+
                     //}
                 }
-            if (!found)
-            {
-                if(bUS_SErequest.Add(idSE, idPatient, idGP))
+                if (!found)
                 {
-                    //MessageBox.Show(gridview_requestlist.DataSource.ToString());
-                    bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                    if (bUS_SErequest.Add(idSE, idPatient, idGP))
+                    {
+                        //MessageBox.Show(gridview_requestlist.DataSource.ToString());
+                        bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                        bus_ExForm.SetState(idPatient, "inSP");
+                    }
                 }
             }
+
+            
+           
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
-            int idSE = bUS_SpecialistExamination.GetID(comboBoxSEname.Text);
-
-            if (bUS_SErequest.Delete(idPatient,idSE))
+            if (ComboBoxPatientName.Text == "" || txtPhone.Text == "" || comboBoxSEname.Text == "")
             {
-                bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                return;
+            }
+            else
+            {
+                int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
+                int idSE = bUS_SpecialistExamination.GetID(comboBoxSEname.Text);
+
+                if (bUS_SErequest.Delete(idPatient, idSE))
+                {
+                    bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                }
             }
         }
-
-
     }
 }

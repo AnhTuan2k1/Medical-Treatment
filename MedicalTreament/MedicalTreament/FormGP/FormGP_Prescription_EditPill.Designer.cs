@@ -50,7 +50,7 @@ namespace MedicalTreament
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -63,7 +63,7 @@ namespace MedicalTreament
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.BackColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.BorderRadius = 20;
             this.guna2ControlBox2.BorderThickness = 1;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -78,7 +78,7 @@ namespace MedicalTreament
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.BorderRadius = 20;
             this.guna2ControlBox1.BorderThickness = 1;
             this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
@@ -111,6 +111,7 @@ namespace MedicalTreament
             this.textbox_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textbox_amount.DisabledState.Parent = this.textbox_amount;
             this.textbox_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textbox_amount.FillColor = System.Drawing.Color.WhiteSmoke;
             this.textbox_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textbox_amount.FocusedState.Parent = this.textbox_amount;
             this.textbox_amount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -229,7 +230,7 @@ namespace MedicalTreament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(414, 272);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
