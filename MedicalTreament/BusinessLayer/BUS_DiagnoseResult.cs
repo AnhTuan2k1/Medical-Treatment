@@ -28,5 +28,18 @@ namespace BusinessLayer
                 return false;
             }
         }
+
+        public string GetResult(int patientID)
+        {
+            try
+            {
+                return daoDiagnoseResult.GetResult(patientID);
+
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
     }
 }

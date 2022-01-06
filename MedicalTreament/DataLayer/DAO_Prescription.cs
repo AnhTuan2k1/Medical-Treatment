@@ -55,5 +55,17 @@ namespace DataLayer
 
             return prescription.PrescriptionID;
         }
+
+        public string GetDirection(int patientID)
+        {
+            Prescription prescription = db.Prescriptions.Where(p =>
+           p.Date.Day == DateTime.Now.Day
+           && p.Date.Month == DateTime.Now.Month
+           && p.Date.Year == DateTime.Now.Year
+           && p.PatientID == patientID)
+               .Single();
+
+            return prescription.DoctorDirection;
+        }
     }
 }

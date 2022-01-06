@@ -50,5 +50,17 @@ namespace BusinessLayer
             }
            
         }
+
+        public string GetDirection(int patientID)
+        {
+            try
+            {
+                return dao_Prescription.GetDirection(patientID);
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
     }
 }

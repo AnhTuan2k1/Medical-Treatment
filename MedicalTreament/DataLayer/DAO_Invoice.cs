@@ -67,6 +67,36 @@ namespace DataLayer
             }
             return total;
         }
+
+        public void Add(decimal total, int patientID, int pharmacistID)
+        {
+
+            Invoice invoice = new Invoice()
+            {
+                Date = DateTime.Now,
+                TotalPrice = total,
+                PatientID = patientID,
+                PharmacistID = pharmacistID
+            };
+
+            db.Invoices.Add(invoice);
+            db.SaveChanges();
+        }
+
+        public int GetID(int patientID)
+        {
+            var list = from invoice in db.Set<Invoice>()
+                       where invoice.PatientID == patientID
+                       && invoice.Date.Day == DateTime.Now.Day
+                       && invoice.Date.Month == DateTime.Now.Month
+                       select new
+                       {
+                           invoice.InvoiceID
+                       };
+
+            return list.ToList()[0].InvoiceID;
+        }
+
         public decimal GetTotalIncomeByYear(int year)
         {
             var list = from invoice in db.Set<Invoice>()

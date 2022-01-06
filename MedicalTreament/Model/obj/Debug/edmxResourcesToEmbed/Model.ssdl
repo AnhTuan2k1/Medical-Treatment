@@ -36,16 +36,14 @@
     <Property Name="ExprirationDate" Type="smalldatetime" Nullable="false" />
     <Property Name="ImportDate" Type="smalldatetime" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'MedicalTreatment.dbo.DrugInvoiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="DrugInvoiceDetail">
     <Key>
-      <PropertyRef Name="InvoiceID" />
-      <PropertyRef Name="DrugID" />
+      <PropertyRef Name="ID" />
     </Key>
     <Property Name="Quantity" Type="int" />
     <Property Name="InvoiceID" Type="int" Nullable="false" />
     <Property Name="DrugID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="Employee">
     <Key>
@@ -70,16 +68,14 @@ warning 6002: The table/view 'MedicalTreatment.dbo.DrugInvoiceDetail' does not h
     <Property Name="SecretaryID" Type="int" Nullable="false" />
     <Property Name="Price" Type="money" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="ExaminationInvoiceDetail">
     <Key>
-      <PropertyRef Name="InvoiceID" />
-      <PropertyRef Name="SpecialExaminationID" />
+      <PropertyRef Name="ID" />
     </Key>
     <Property Name="Quantity" Type="int" />
     <Property Name="InvoiceID" Type="int" Nullable="false" />
     <Property Name="SpecialExaminationID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="GPdrugDetail">
     <Key>
@@ -467,8 +463,10 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
     <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DiagnoseResult" EntityType="Self.DiagnoseResult" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Drug" EntityType="Self.Drug" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DrugInvoiceDetail" EntityType="Self.DrugInvoiceDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ExaminationForm" EntityType="Self.ExaminationForm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExaminationInvoiceDetail" EntityType="Self.ExaminationInvoiceDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GPdrugDetail" EntityType="Self.GPdrugDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
@@ -478,20 +476,6 @@ warning 6002: The table/view 'MedicalTreatment.dbo.ExaminationInvoiceDetail' doe
     <EntitySet Name="SpecialistExaminationRequest" EntityType="Self.SpecialistExaminationRequest" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SpecialistExaminationResult" EntityType="Self.SpecialistExaminationResult" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="DrugInvoiceDetail" EntityType="Self.DrugInvoiceDetail" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [DrugInvoiceDetail].[Quantity] AS [Quantity], 
-    [DrugInvoiceDetail].[InvoiceID] AS [InvoiceID], 
-    [DrugInvoiceDetail].[DrugID] AS [DrugID]
-    FROM [dbo].[DrugInvoiceDetail] AS [DrugInvoiceDetail]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="ExaminationInvoiceDetail" EntityType="Self.ExaminationInvoiceDetail" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [ExaminationInvoiceDetail].[Quantity] AS [Quantity], 
-    [ExaminationInvoiceDetail].[InvoiceID] AS [InvoiceID], 
-    [ExaminationInvoiceDetail].[SpecialExaminationID] AS [SpecialExaminationID]
-    FROM [dbo].[ExaminationInvoiceDetail] AS [ExaminationInvoiceDetail]</DefiningQuery>
-    </EntitySet>
     <AssociationSet Name="FK__Account__Employe__01142BA1" Association="Self.FK__Account__Employe__01142BA1">
       <End Role="Employee" EntitySet="Employee" />
       <End Role="Account" EntitySet="Account" />

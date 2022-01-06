@@ -53,14 +53,7 @@ namespace MedicalTreament
             this.dgvDoctorDrugs = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvDrugSold = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.DrugName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExprirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DrugID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.ComboBoxPatientID = new System.Windows.Forms.ComboBox();
-            this.ComboBoxPatientName = new System.Windows.Forms.ComboBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.txtDateOfBirth = new Guna.UI2.WinForms.Guna2TextBox();
@@ -68,7 +61,15 @@ namespace MedicalTreament
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ComboBoxPatientID = new System.Windows.Forms.ComboBox();
+            this.ComboBoxPatientName = new System.Windows.Forms.ComboBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.DrugName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExprirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DrugID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -397,7 +398,8 @@ namespace MedicalTreament
             this.Unit,
             this.Quantity,
             this.ExprirationDate,
-            this.DrugID});
+            this.DrugID,
+            this.UnitPrice});
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -450,42 +452,6 @@ namespace MedicalTreament
             this.dgvDrugSold.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dgvDrugSold.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // DrugName
-            // 
-            this.DrugName.HeaderText = "DrugName";
-            this.DrugName.MinimumWidth = 6;
-            this.DrugName.Name = "DrugName";
-            this.DrugName.ReadOnly = true;
-            // 
-            // Unit
-            // 
-            this.Unit.HeaderText = "Unit";
-            this.Unit.MinimumWidth = 4;
-            this.Unit.Name = "Unit";
-            this.Unit.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // ExprirationDate
-            // 
-            this.ExprirationDate.HeaderText = "ExprirationDate";
-            this.ExprirationDate.MinimumWidth = 6;
-            this.ExprirationDate.Name = "ExprirationDate";
-            this.ExprirationDate.ReadOnly = true;
-            // 
-            // DrugID
-            // 
-            this.DrugID.HeaderText = "DrugID";
-            this.DrugID.MinimumWidth = 6;
-            this.DrugID.Name = "DrugID";
-            this.DrugID.ReadOnly = true;
-            this.DrugID.Visible = false;
-            // 
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -505,26 +471,6 @@ namespace MedicalTreament
             this.btnDelete.TabIndex = 19;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // ComboBoxPatientID
-            // 
-            this.ComboBoxPatientID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxPatientID.FormattingEnabled = true;
-            this.ComboBoxPatientID.Location = new System.Drawing.Point(179, 79);
-            this.ComboBoxPatientID.Name = "ComboBoxPatientID";
-            this.ComboBoxPatientID.Size = new System.Drawing.Size(311, 31);
-            this.ComboBoxPatientID.TabIndex = 23;
-            this.ComboBoxPatientID.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientID_SelectedIndexChanged);
-            // 
-            // ComboBoxPatientName
-            // 
-            this.ComboBoxPatientName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxPatientName.FormattingEnabled = true;
-            this.ComboBoxPatientName.Location = new System.Drawing.Point(179, 37);
-            this.ComboBoxPatientName.Name = "ComboBoxPatientName";
-            this.ComboBoxPatientName.Size = new System.Drawing.Size(311, 31);
-            this.ComboBoxPatientName.TabIndex = 22;
-            this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
             // 
             // txtPhone
             // 
@@ -546,6 +492,7 @@ namespace MedicalTreament
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "Enter Phone Number to Find Patient";
+            this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
             this.txtPhone.ShadowDecoration.Parent = this.txtPhone;
             this.txtPhone.Size = new System.Drawing.Size(311, 35);
@@ -640,6 +587,28 @@ namespace MedicalTreament
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Patient Information";
             // 
+            // ComboBoxPatientID
+            // 
+            this.ComboBoxPatientID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxPatientID.FormattingEnabled = true;
+            this.ComboBoxPatientID.Location = new System.Drawing.Point(179, 79);
+            this.ComboBoxPatientID.Name = "ComboBoxPatientID";
+            this.ComboBoxPatientID.Size = new System.Drawing.Size(311, 31);
+            this.ComboBoxPatientID.TabIndex = 23;
+            this.ComboBoxPatientID.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientID_SelectedIndexChanged);
+            this.ComboBoxPatientID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComboBoxPatientName_KeyPress);
+            // 
+            // ComboBoxPatientName
+            // 
+            this.ComboBoxPatientName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxPatientName.FormattingEnabled = true;
+            this.ComboBoxPatientName.Location = new System.Drawing.Point(179, 37);
+            this.ComboBoxPatientName.Name = "ComboBoxPatientName";
+            this.ComboBoxPatientName.Size = new System.Drawing.Size(311, 31);
+            this.ComboBoxPatientName.TabIndex = 22;
+            this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
+            this.ComboBoxPatientName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComboBoxPatientName_KeyPress);
+            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -659,6 +628,50 @@ namespace MedicalTreament
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // DrugName
+            // 
+            this.DrugName.HeaderText = "DrugName";
+            this.DrugName.MinimumWidth = 6;
+            this.DrugName.Name = "DrugName";
+            this.DrugName.ReadOnly = true;
+            // 
+            // Unit
+            // 
+            this.Unit.HeaderText = "Unit";
+            this.Unit.MinimumWidth = 4;
+            this.Unit.Name = "Unit";
+            this.Unit.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // ExprirationDate
+            // 
+            this.ExprirationDate.HeaderText = "ExprirationDate";
+            this.ExprirationDate.MinimumWidth = 6;
+            this.ExprirationDate.Name = "ExprirationDate";
+            this.ExprirationDate.ReadOnly = true;
+            // 
+            // DrugID
+            // 
+            this.DrugID.HeaderText = "DrugID";
+            this.DrugID.MinimumWidth = 6;
+            this.DrugID.Name = "DrugID";
+            this.DrugID.ReadOnly = true;
+            this.DrugID.Visible = false;
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.HeaderText = "UnitPrice";
+            this.UnitPrice.MinimumWidth = 6;
+            this.UnitPrice.Name = "UnitPrice";
+            this.UnitPrice.ReadOnly = true;
+            this.UnitPrice.Visible = false;
             // 
             // FormPharmacistPayment
             // 
@@ -707,8 +720,6 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private System.Windows.Forms.ComboBox ComboBoxPatientID;
-        private System.Windows.Forms.ComboBox ComboBoxPatientName;
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private Guna.UI2.WinForms.Guna2TextBox txtDateOfBirth;
@@ -725,10 +736,13 @@ namespace MedicalTreament
         private System.Windows.Forms.GroupBox groupBox3;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDrugSold;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private System.Windows.Forms.ComboBox ComboBoxPatientID;
+        private System.Windows.Forms.ComboBox ComboBoxPatientName;
         private System.Windows.Forms.DataGridViewTextBoxColumn DrugName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExprirationDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn DrugID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
     }
 }

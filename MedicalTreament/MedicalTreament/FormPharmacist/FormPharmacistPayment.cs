@@ -19,9 +19,11 @@ namespace MedicalTreament
         BUS_ExaminationForm bus_examform;
         BUS_GPdrugDetail bus_GPdrugdetail;
         BUS_Prescription bus_Prescription;
+        BUS_ExaminationForm bus_ExForm;
         int parmacistID;
         string patientID;
         private BUS_Drug bus_drug;
+
         public int quantity { get; set; }
         public int drugID { get; set; }
 
@@ -33,6 +35,7 @@ namespace MedicalTreament
             bus_examform = new BUS_ExaminationForm();
             bus_GPdrugdetail = new BUS_GPdrugDetail();
             bus_Prescription = new BUS_Prescription();
+            bus_ExForm = new BUS_ExaminationForm();
             bus_drug = new BUS_Drug();
             this.parmacistID = parmacistID;
             this.patientID = patientID;
@@ -50,9 +53,12 @@ namespace MedicalTreament
         {
             if (CheckInput())
             {
-               
+                int patientID = Convert.ToInt32(ComboBoxPatientID.Text);
+                string name = ComboBoxPatientName.Text;
+                string phone = txtPhone.Text;
+                new FormPharmacist_Bill(dgvDrugSold, name, phone, patientID, parmacistID).ShowDialog();
             }
-            new FormPharmacist_Bill().ShowDialog();
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -204,6 +210,7 @@ namespace MedicalTreament
             string unit;
 
             string exprirationDate;
+            string price;
             drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
             quantity = 0;
 
@@ -217,8 +224,9 @@ namespace MedicalTreament
                         name = dgvStock.Rows[i].Cells["Name"].Value.ToString();
                         unit = dgvStock.Rows[i].Cells["Unit"].Value.ToString();
                         exprirationDate = dgvStock.Rows[i].Cells["ExprirationDate"].Value.ToString();
+                        price = dgvStock.Rows[i].Cells["Price"].Value.ToString();
 
-                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString());
+                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString(), price);
                     }
                 }
             }
@@ -231,12 +239,12 @@ namespace MedicalTreament
             string unit;
 
             string exprirationDate;
+            string price;
             drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
             quantity = 0;
 
             if (new FormPharmacistAddDrug(this, name, drugID).ShowDialog() == DialogResult.OK)
             {
-
                 for (int i = 0; i < dgvStock.Rows.Count; i++)
                 {
                     if (dgvStock.Rows[i].Cells["DrugID"].Value.ToString() == drugID.ToString())
@@ -244,11 +252,17 @@ namespace MedicalTreament
                         name = dgvStock.Rows[i].Cells["Name"].Value.ToString();
                         unit = dgvStock.Rows[i].Cells["Unit"].Value.ToString();
                         exprirationDate = dgvStock.Rows[i].Cells["ExprirationDate"].Value.ToString();
+                        price = dgvStock.Rows[i].Cells["Price"].Value.ToString();
 
-                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString());
+                        dgvDrugSold.Rows.Add(name, unit, quantity, exprirationDate, drugID.ToString(), price);
                     }
                 }
             }
+        }
+
+        private void ComboBoxPatientName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }
