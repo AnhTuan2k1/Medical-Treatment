@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BusinessLayer
 {
@@ -26,6 +27,18 @@ namespace BusinessLayer
             catch (Exception)
             {
                 return false;
+                throw;
+            }
+        }
+
+        public void Show(DataGridView dgv, int patientID)
+        {
+            try
+            {
+                dgv.DataSource = daoSEresult.Get(patientID);
+            }
+            catch (Exception)
+            {
                 throw;
             }
         }

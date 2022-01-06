@@ -42,5 +42,26 @@ namespace DataLayer
             db.SaveChanges();
 
         }
+
+        public dynamic Get(int idPatient)
+        {
+            var list = from result in db.Set<SpecialistExaminationResult>()
+                       join see in db.Set<SpecialistExamination>()
+                       on result.SpecialExaminationID equals see.SpecialExaminationID
+
+                       where result.PatientID.Equals(idPatient)
+                       && result.Date.Day == DateTime.Now.Day
+                       && result.Date.Month == DateTime.Now.Month
+                       select new
+                       {
+                           see.Name,
+                           Price = (int)see.Price,
+                           see.SpecialExaminationID
+                       };
+
+            int x = list.ToList().Count;
+
+            return list.ToList();
+        }
     }
 }

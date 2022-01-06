@@ -147,12 +147,18 @@ create table ExaminationInvoiceDetail
 	SpecialExaminationID int not null foreign key references SpecialistExamination(SpecialExaminationID)
 )
 
+--chay dong nay
+--ALTER TABLE ExaminationInvoiceDetail ADD ID int identity primary key
+
 create table DrugInvoiceDetail
 (
 	Quantity int,
 	InvoiceID int not null foreign key references Invoice(InvoiceID),
 	DrugID int not null foreign key references Drug(DrugID)
 )
+
+--chay dong nay
+--ALTER TABLE DrugInvoiceDetail ADD ID int identity primary key
 
 -- datatime format: dd/mm/yyyy     vd: '15/12/2021'
 

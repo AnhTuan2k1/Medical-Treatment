@@ -36,5 +36,31 @@ namespace BusinessLayer
             int id = dao_Prescription.GetPrescriptionID(idGP, idPatient);
             return id;
         }
+
+        public int GetPrescriptionID(int idPatient)
+        {
+            try
+            {
+                int id = dao_Prescription.GetPrescriptionID(idPatient);
+                return id;
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+           
+        }
+
+        public string GetDirection(int patientID)
+        {
+            try
+            {
+                return dao_Prescription.GetDirection(patientID);
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
     }
 }
