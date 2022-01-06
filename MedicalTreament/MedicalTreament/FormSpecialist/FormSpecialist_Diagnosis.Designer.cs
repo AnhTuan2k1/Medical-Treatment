@@ -76,13 +76,13 @@ namespace MedicalTreament
             this.gridrequestlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridrequestlist.EnableHeadersVisualStyles = false;
             this.gridrequestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridrequestlist.Location = new System.Drawing.Point(143, 102);
+            this.gridrequestlist.Location = new System.Drawing.Point(143, 112);
             this.gridrequestlist.Name = "gridrequestlist";
             this.gridrequestlist.RowHeadersVisible = false;
             this.gridrequestlist.RowHeadersWidth = 51;
             this.gridrequestlist.RowTemplate.Height = 24;
             this.gridrequestlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridrequestlist.Size = new System.Drawing.Size(629, 181);
+            this.gridrequestlist.Size = new System.Drawing.Size(629, 184);
             this.gridrequestlist.TabIndex = 21;
             this.gridrequestlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridrequestlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -110,20 +110,20 @@ namespace MedicalTreament
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(35, 102);
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(12, 112);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(88, 20);
+            this.gunaLabel4.Size = new System.Drawing.Size(111, 25);
             this.gunaLabel4.TabIndex = 20;
             this.gunaLabel4.Text = "Request list:";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(62, 58);
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(49, 42);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(57, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(74, 25);
             this.gunaLabel3.TabIndex = 19;
             this.gunaLabel3.Text = "Patient:";
             // 
@@ -132,14 +132,18 @@ namespace MedicalTreament
             this.guna2CircleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.FillColor = System.Drawing.Color.Turquoise;
             this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Location = new System.Drawing.Point(683, 914);
+            this.guna2CircleButton2.Image = global::MedicalTreament.Properties.Resources.double_right_48;
+            this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
+            this.guna2CircleButton2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(702, 916);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(89, 84);
+            this.guna2CircleButton2.Size = new System.Drawing.Size(68, 70);
             this.guna2CircleButton2.TabIndex = 18;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
@@ -175,6 +179,7 @@ namespace MedicalTreament
             // comboboxPatient
             // 
             this.comboboxPatient.BackColor = System.Drawing.Color.Transparent;
+            this.comboboxPatient.BorderColor = System.Drawing.Color.DimGray;
             this.comboboxPatient.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboboxPatient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxPatient.FocusedColor = System.Drawing.Color.Empty;
@@ -188,10 +193,10 @@ namespace MedicalTreament
             "Sieu AM",
             "Noi soi"});
             this.comboboxPatient.ItemsAppearance.Parent = this.comboboxPatient;
-            this.comboboxPatient.Location = new System.Drawing.Point(143, 42);
+            this.comboboxPatient.Location = new System.Drawing.Point(143, 31);
             this.comboboxPatient.Name = "comboboxPatient";
             this.comboboxPatient.ShadowDecoration.Parent = this.comboboxPatient;
-            this.comboboxPatient.Size = new System.Drawing.Size(286, 36);
+            this.comboboxPatient.Size = new System.Drawing.Size(312, 36);
             this.comboboxPatient.TabIndex = 13;
             this.comboboxPatient.SelectedIndexChanged += new System.EventHandler(this.comboboxPatient_SelectedIndexChanged);
             // 
@@ -229,10 +234,10 @@ namespace MedicalTreament
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(22, 685);
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(9, 685);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(84, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(110, 25);
             this.gunaLabel2.TabIndex = 15;
             this.gunaLabel2.Text = "Conclusion:";
             // 
@@ -241,16 +246,17 @@ namespace MedicalTreament
             this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(54, 430);
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(53, 430);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(52, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(66, 25);
             this.gunaLabel1.TabIndex = 14;
             this.gunaLabel1.Text = "Result:";
             // 
             // comboboxSEname
             // 
             this.comboboxSEname.BackColor = System.Drawing.Color.Transparent;
+            this.comboboxSEname.BorderColor = System.Drawing.Color.DimGray;
             this.comboboxSEname.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboboxSEname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxSEname.FocusedColor = System.Drawing.Color.Empty;
@@ -267,16 +273,16 @@ namespace MedicalTreament
             this.comboboxSEname.Location = new System.Drawing.Point(143, 344);
             this.comboboxSEname.Name = "comboboxSEname";
             this.comboboxSEname.ShadowDecoration.Parent = this.comboboxSEname;
-            this.comboboxSEname.Size = new System.Drawing.Size(286, 36);
+            this.comboboxSEname.Size = new System.Drawing.Size(312, 36);
             this.comboboxSEname.TabIndex = 22;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(49, 349);
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Location = new System.Drawing.Point(20, 345);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(81, 20);
+            this.gunaLabel5.Size = new System.Drawing.Size(103, 25);
             this.gunaLabel5.TabIndex = 23;
             this.gunaLabel5.Text = "Examinate:";
             // 

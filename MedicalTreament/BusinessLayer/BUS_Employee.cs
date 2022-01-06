@@ -33,6 +33,25 @@ namespace BusinessLayer
         {
             dgv.DataSource = daoEmployee.GetSalaryOver();
         }
+
+        public decimal? GetEmployeeSalary(int id)
+        {
+            decimal? name = daoEmployee.GetEmployeeSalary(id);
+            return name;
+        }
+
+        public string GetEmployeeEmail(int id)
+        {
+            string email = daoEmployee.GetEmployeeEmail(id);
+            return email;
+        }
+
+        public string GetEmployeePosition(int id)
+        {
+            string position = daoEmployee.GetEmployeePosition(id);
+            return position;
+        }
+
         public void ShowSalryUnder(DataGridView dgv)
         {
             dgv.DataSource = daoEmployee.GetSalaryUnder();
@@ -96,5 +115,10 @@ namespace BusinessLayer
             }
         }
 
+        public string GetEmployeeName(int specialistID)
+        {
+            string name = daoEmployee.GetEmployeeName(specialistID);
+            return name;
+        }
     }
 }

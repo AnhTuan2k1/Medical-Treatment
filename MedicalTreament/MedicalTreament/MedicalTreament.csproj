@@ -311,7 +311,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacist\FormPharmacistAddDrug.resx">
       <DependentUpon>FormPharmacistAddDrug.cs</DependentUpon>
-	  </EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGP\FormGP_Profile.resx">
       <DependentUpon>FormGP_Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -503,6 +503,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

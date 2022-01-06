@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace MedicalTreament
     public partial class FormGP : Form
     {
         private Form activeForm;
+        BUS_Employee bus_emp;
         private Guna.UI2.WinForms.Guna2Button currtentButton;
         int gpID;
         Form parent;
@@ -22,6 +24,7 @@ namespace MedicalTreament
             btn_closeform.Visible = false;
             this.gpID = id;
             this.parent = parent;
+            bus_emp = new BUS_Employee();
         }
 
 
@@ -76,7 +79,7 @@ namespace MedicalTreament
 
         private void FormGP_Load(object sender, EventArgs e)
         {
-        
+            gunaLabel1.Text ="Dr. " + bus_emp.GetEmployeeName(gpID);
         }
 
         private void gpbtn_patient_Click(object sender, EventArgs e)
@@ -113,7 +116,7 @@ namespace MedicalTreament
 
         private void gpbtn_account_Click(object sender, EventArgs e)
         {
-            FormGP_Profile profileForm = new FormGP_Profile();
+            FormGP_Profile profileForm = new FormGP_Profile(gpID);
             profileForm.Show();
         }
     }

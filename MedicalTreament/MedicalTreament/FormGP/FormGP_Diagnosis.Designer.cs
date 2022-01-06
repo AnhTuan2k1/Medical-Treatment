@@ -30,9 +30,9 @@ namespace MedicalTreament
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Diagnosis));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtDirection = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -89,10 +89,10 @@ namespace MedicalTreament
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.gunaLabel2.Location = new System.Drawing.Point(37, 726);
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(84, 726);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(77, 25);
             this.gunaLabel2.TabIndex = 5;
             this.gunaLabel2.Text = "Dặn dò:";
             // 
@@ -150,11 +150,11 @@ namespace MedicalTreament
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 311);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(58, 307);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label4.Size = new System.Drawing.Size(92, 30);
+            this.label4.Size = new System.Drawing.Size(103, 35);
             this.label4.TabIndex = 39;
             this.label4.Text = "Examinate:";
             // 
@@ -189,11 +189,12 @@ namespace MedicalTreament
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 144);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 145);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label1.Size = new System.Drawing.Size(138, 33);
+            this.label1.Size = new System.Drawing.Size(70, 35);
             this.label1.TabIndex = 37;
             this.label1.Text = "Phone:";
             // 
@@ -242,11 +243,12 @@ namespace MedicalTreament
             // 
             // label_reason
             // 
-            this.label_reason.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_reason.Location = new System.Drawing.Point(37, 185);
+            this.label_reason.AutoSize = true;
+            this.label_reason.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_reason.Location = new System.Drawing.Point(12, 197);
             this.label_reason.Name = "label_reason";
             this.label_reason.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label_reason.Size = new System.Drawing.Size(138, 33);
+            this.label_reason.Size = new System.Drawing.Size(149, 35);
             this.label_reason.TabIndex = 33;
             this.label_reason.Text = "Reason to come:";
             // 
@@ -261,11 +263,12 @@ namespace MedicalTreament
             // 
             // label_name
             // 
-            this.label_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_name.Location = new System.Drawing.Point(37, 105);
+            this.label_name.AutoSize = true;
+            this.label_name.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name.Location = new System.Drawing.Point(84, 103);
             this.label_name.Name = "label_name";
             this.label_name.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label_name.Size = new System.Drawing.Size(138, 33);
+            this.label_name.Size = new System.Drawing.Size(66, 35);
             this.label_name.TabIndex = 31;
             this.label_name.Text = "Name:";
             // 
@@ -301,10 +304,10 @@ namespace MedicalTreament
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.gunaLabel3.Location = new System.Drawing.Point(37, 578);
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(14, 578);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(132, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(147, 25);
             this.gunaLabel3.TabIndex = 44;
             this.gunaLabel3.Text = "Diagnose result:\r\n";
             // 
@@ -340,11 +343,11 @@ namespace MedicalTreament
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 362);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(46, 362);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label2.Size = new System.Drawing.Size(109, 30);
+            this.label2.Size = new System.Drawing.Size(115, 35);
             this.label2.TabIndex = 46;
             this.label2.Text = "Request List:";
             // 
@@ -355,8 +358,8 @@ namespace MedicalTreament
             this.gridview_requestlist.AllowUserToOrderColumns = true;
             this.gridview_requestlist.AllowUserToResizeColumns = false;
             this.gridview_requestlist.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridview_requestlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview_requestlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -364,24 +367,24 @@ namespace MedicalTreament
             this.gridview_requestlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_requestlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_requestlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridview_requestlist.ColumnHeadersHeight = 30;
             this.gridview_requestlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridview_requestlist.EnableHeadersVisualStyles = false;
             this.gridview_requestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_requestlist.Location = new System.Drawing.Point(185, 362);
