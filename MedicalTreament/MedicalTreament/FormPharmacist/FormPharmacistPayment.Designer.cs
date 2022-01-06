@@ -53,6 +53,12 @@ namespace MedicalTreament
             this.dgvDoctorDrugs = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvDrugSold = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DrugName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExprirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DrugID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
@@ -64,12 +70,6 @@ namespace MedicalTreament
             this.ComboBoxPatientID = new System.Windows.Forms.ComboBox();
             this.ComboBoxPatientName = new System.Windows.Forms.ComboBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.DrugName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExprirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DrugID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -153,6 +153,7 @@ namespace MedicalTreament
             this.groupBox4.Controls.Add(this.txtSearch);
             this.groupBox4.Controls.Add(this.dgvStock);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(469, 326);
@@ -452,6 +453,50 @@ namespace MedicalTreament
             this.dgvDrugSold.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dgvDrugSold.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // DrugName
+            // 
+            this.DrugName.HeaderText = "DrugName";
+            this.DrugName.MinimumWidth = 6;
+            this.DrugName.Name = "DrugName";
+            this.DrugName.ReadOnly = true;
+            // 
+            // Unit
+            // 
+            this.Unit.HeaderText = "Unit";
+            this.Unit.MinimumWidth = 4;
+            this.Unit.Name = "Unit";
+            this.Unit.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // ExprirationDate
+            // 
+            this.ExprirationDate.HeaderText = "ExprirationDate";
+            this.ExprirationDate.MinimumWidth = 6;
+            this.ExprirationDate.Name = "ExprirationDate";
+            this.ExprirationDate.ReadOnly = true;
+            // 
+            // DrugID
+            // 
+            this.DrugID.HeaderText = "DrugID";
+            this.DrugID.MinimumWidth = 6;
+            this.DrugID.Name = "DrugID";
+            this.DrugID.ReadOnly = true;
+            this.DrugID.Visible = false;
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.HeaderText = "UnitPrice";
+            this.UnitPrice.MinimumWidth = 6;
+            this.UnitPrice.Name = "UnitPrice";
+            this.UnitPrice.ReadOnly = true;
+            this.UnitPrice.Visible = false;
+            // 
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -628,50 +673,6 @@ namespace MedicalTreament
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // DrugName
-            // 
-            this.DrugName.HeaderText = "DrugName";
-            this.DrugName.MinimumWidth = 6;
-            this.DrugName.Name = "DrugName";
-            this.DrugName.ReadOnly = true;
-            // 
-            // Unit
-            // 
-            this.Unit.HeaderText = "Unit";
-            this.Unit.MinimumWidth = 4;
-            this.Unit.Name = "Unit";
-            this.Unit.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // ExprirationDate
-            // 
-            this.ExprirationDate.HeaderText = "ExprirationDate";
-            this.ExprirationDate.MinimumWidth = 6;
-            this.ExprirationDate.Name = "ExprirationDate";
-            this.ExprirationDate.ReadOnly = true;
-            // 
-            // DrugID
-            // 
-            this.DrugID.HeaderText = "DrugID";
-            this.DrugID.MinimumWidth = 6;
-            this.DrugID.Name = "DrugID";
-            this.DrugID.ReadOnly = true;
-            this.DrugID.Visible = false;
-            // 
-            // UnitPrice
-            // 
-            this.UnitPrice.HeaderText = "UnitPrice";
-            this.UnitPrice.MinimumWidth = 6;
-            this.UnitPrice.Name = "UnitPrice";
-            this.UnitPrice.ReadOnly = true;
-            this.UnitPrice.Visible = false;
             // 
             // FormPharmacistPayment
             // 
