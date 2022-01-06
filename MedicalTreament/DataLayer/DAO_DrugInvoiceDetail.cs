@@ -36,7 +36,17 @@ namespace DataLayer
 
             db.DrugInvoiceDetails.Add(drugdetail);
             db.SaveChanges();
+            updateDrug(quantity, drugID);
         }
+
+        public void updateDrug(int quantity, int drugID)
+        {
+            Drug drug = db.Drugs.Find(drugID);
+            drug.Quantity -= quantity;
+
+            db.SaveChanges();
+        }
+
     }
 
 

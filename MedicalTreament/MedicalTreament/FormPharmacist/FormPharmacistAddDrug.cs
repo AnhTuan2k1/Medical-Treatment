@@ -17,7 +17,7 @@ namespace MedicalTreament
         int drugID;
         BUS_Drug bus_drug;
 
-        public FormPharmacistAddDrug(FormPharmacistPayment parent, string name, int drugID)
+        public FormPharmacistAddDrug(FormPharmacistPayment parent, int index, int drugID)
         {
             InitializeComponent();
             bus_drug = new BUS_Drug();
@@ -25,7 +25,8 @@ namespace MedicalTreament
             this.drugID = drugID;
             bus_drug.ShowSellableDrugs(comboName);
             comboName.DisplayMember = "Name";
-            comboName.Text = name;
+            //comboName.SelectedIndex = index;
+            Loaddrug(drugID.ToString());
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -64,7 +65,26 @@ namespace MedicalTreament
         private void comboName_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboName.ValueMember = "DrugID";
-            drugID = Convert.ToInt32(comboName.SelectedValue.ToString());
+            drugID = Convert.ToInt32(comboName.SelectedValue.ToString());      
+        }
+
+        private void Loaddrug(string drugID)
+        {
+            for (int i = 0; i < comboName.Items.Count; i++)
+            {
+                string x = comboName.Items[i].ToString();
+                x = x.Split(',')[0].Split('=')[1].Trim();
+                if (x == drugID)
+                {
+                    if (i == 0)
+                    {
+                        if (comboName.Items.Count > 1)
+                            comboName.SelectedIndex = 1;
+                        else comboName_SelectedIndexChanged(new object(), new EventArgs());
+                    }
+                    comboName.SelectedIndex = i;
+                }
+            }
         }
     }
 }

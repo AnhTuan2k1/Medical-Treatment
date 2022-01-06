@@ -56,7 +56,11 @@ namespace MedicalTreament
                 int patientID = Convert.ToInt32(ComboBoxPatientID.Text);
                 string name = ComboBoxPatientName.Text;
                 string phone = txtPhone.Text;
-                new FormPharmacist_Bill(dgvDrugSold, name, phone, patientID, parmacistID).ShowDialog();
+                if(new FormPharmacist_Bill(dgvDrugSold, name, phone, patientID, parmacistID).ShowDialog()
+                    == DialogResult.OK)
+                {
+                    ClearPatientInformation();
+                }
             }
             
         }
@@ -112,6 +116,9 @@ namespace MedicalTreament
 
         private void ComboBoxPatientName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBoxPatientName.ValueMember = "Name";
+            ComboBoxPatientName.Text = ComboBoxPatientName.SelectedValue.ToString();
+
             ComboBoxPatientName.ValueMember = "PatientID";
             ComboBoxPatientID.Text = ComboBoxPatientName.SelectedValue.ToString();
 
@@ -214,7 +221,7 @@ namespace MedicalTreament
             drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
             quantity = 0;
 
-            if (new FormPharmacistAddDrug(this, name, drugID).ShowDialog() == DialogResult.OK)
+            if (new FormPharmacistAddDrug(this, dgvStock.SelectedRows[0].Index, drugID).ShowDialog() == DialogResult.OK)
             {
                
                 for (int i = 0; i < dgvStock.Rows.Count; i++)
@@ -243,7 +250,7 @@ namespace MedicalTreament
             drugID = Convert.ToInt32(dgvStock.SelectedRows[0].Cells["DrugID"].Value.ToString());
             quantity = 0;
 
-            if (new FormPharmacistAddDrug(this, name, drugID).ShowDialog() == DialogResult.OK)
+            if (new FormPharmacistAddDrug(this, dgvStock.SelectedRows[0].Index, drugID).ShowDialog() == DialogResult.OK)
             {
                 for (int i = 0; i < dgvStock.Rows.Count; i++)
                 {
