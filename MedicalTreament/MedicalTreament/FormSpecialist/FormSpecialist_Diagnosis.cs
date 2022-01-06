@@ -50,6 +50,10 @@ namespace MedicalTreament
         {
             comboboxPatient.ValueMember = "Name";
             int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.SelectedValue.ToString());
+
+            //comboboxPatient.ValueMember = "Phone";
+            //txtPhone.Text = comboboxPatient.SelectedValue.ToString();
+
             bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
             bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
         }
