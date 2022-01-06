@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesForm));
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
@@ -46,6 +46,9 @@
             this.dtgvEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btDelete = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.btPay = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btRefreshEmployee = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btEdit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -53,7 +56,6 @@
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btRefreshEmployee = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -202,30 +204,30 @@
             this.dtgvEmployee.AllowUserToDeleteRows = false;
             this.dtgvEmployee.AllowUserToResizeColumns = false;
             this.dtgvEmployee.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvEmployee.BackgroundColor = System.Drawing.Color.White;
             this.dtgvEmployee.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvEmployee.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvEmployee.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvEmployee.ColumnHeadersHeight = 27;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvEmployee.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvEmployee.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvEmployee.EnableHeadersVisualStyles = false;
             this.dtgvEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvEmployee.Location = new System.Drawing.Point(12, 220);
@@ -280,23 +282,69 @@
             // 
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel8.Location = new System.Drawing.Point(536, 152);
+            this.gunaLabel8.Location = new System.Drawing.Point(558, 152);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(188, 32);
             this.gunaLabel8.TabIndex = 34;
             this.gunaLabel8.Text = "Edit Employees";
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(298, 152);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(184, 32);
+            this.gunaLabel1.TabIndex = 47;
+            this.gunaLabel1.Text = "Pay Employees";
+            // 
+            // btPay
+            // 
+            this.btPay.CheckedState.Parent = this.btPay;
+            this.btPay.CustomImages.Parent = this.btPay;
+            this.btPay.FillColor = System.Drawing.Color.Fuchsia;
+            this.btPay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btPay.ForeColor = System.Drawing.Color.White;
+            this.btPay.HoverState.Parent = this.btPay;
+            this.btPay.Image = ((System.Drawing.Image)(resources.GetObject("btPay.Image")));
+            this.btPay.ImageSize = new System.Drawing.Size(30, 30);
+            this.btPay.Location = new System.Drawing.Point(492, 140);
+            this.btPay.Name = "btPay";
+            this.btPay.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btPay.ShadowDecoration.Parent = this.btPay;
+            this.btPay.Size = new System.Drawing.Size(60, 60);
+            this.btPay.TabIndex = 46;
+            this.btPay.Click += new System.EventHandler(this.btPay_Click);
+            // 
+            // btRefreshEmployee
+            // 
+            this.btRefreshEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btRefreshEmployee.CheckedState.Parent = this.btRefreshEmployee;
+            this.btRefreshEmployee.CustomImages.Parent = this.btRefreshEmployee;
+            this.btRefreshEmployee.FillColor = System.Drawing.Color.White;
+            this.btRefreshEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btRefreshEmployee.ForeColor = System.Drawing.Color.White;
+            this.btRefreshEmployee.HoverState.Parent = this.btRefreshEmployee;
+            this.btRefreshEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btRefreshEmployee.Image")));
+            this.btRefreshEmployee.Location = new System.Drawing.Point(12, 184);
+            this.btRefreshEmployee.Name = "btRefreshEmployee";
+            this.btRefreshEmployee.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btRefreshEmployee.ShadowDecoration.Parent = this.btRefreshEmployee;
+            this.btRefreshEmployee.Size = new System.Drawing.Size(30, 30);
+            this.btRefreshEmployee.TabIndex = 45;
+            this.btRefreshEmployee.Click += new System.EventHandler(this.btRefreshEmployee_Click);
+            // 
             // btEdit
             // 
             this.btEdit.CheckedState.Parent = this.btEdit;
             this.btEdit.CustomImages.Parent = this.btEdit;
-            this.btEdit.FillColor = System.Drawing.Color.Fuchsia;
+            this.btEdit.FillColor = System.Drawing.Color.Tomato;
             this.btEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btEdit.ForeColor = System.Drawing.Color.White;
             this.btEdit.HoverState.Parent = this.btEdit;
             this.btEdit.Image = ((System.Drawing.Image)(resources.GetObject("btEdit.Image")));
             this.btEdit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btEdit.Location = new System.Drawing.Point(730, 140);
+            this.btEdit.Location = new System.Drawing.Point(752, 140);
             this.btEdit.Name = "btEdit";
             this.btEdit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btEdit.ShadowDecoration.Parent = this.btEdit;
@@ -396,29 +444,13 @@
             this.guna2PictureBox5.TabIndex = 11;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // btRefreshEmployee
-            // 
-            this.btRefreshEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btRefreshEmployee.CheckedState.Parent = this.btRefreshEmployee;
-            this.btRefreshEmployee.CustomImages.Parent = this.btRefreshEmployee;
-            this.btRefreshEmployee.FillColor = System.Drawing.Color.White;
-            this.btRefreshEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btRefreshEmployee.ForeColor = System.Drawing.Color.White;
-            this.btRefreshEmployee.HoverState.Parent = this.btRefreshEmployee;
-            this.btRefreshEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btRefreshEmployee.Image")));
-            this.btRefreshEmployee.Location = new System.Drawing.Point(12, 184);
-            this.btRefreshEmployee.Name = "btRefreshEmployee";
-            this.btRefreshEmployee.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btRefreshEmployee.ShadowDecoration.Parent = this.btRefreshEmployee;
-            this.btRefreshEmployee.Size = new System.Drawing.Size(30, 30);
-            this.btRefreshEmployee.TabIndex = 45;
-            this.btRefreshEmployee.Click += new System.EventHandler(this.btRefreshEmployee_Click);
-            // 
             // EmployeesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 742);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.btPay);
             this.Controls.Add(this.btRefreshEmployee);
             this.Controls.Add(this.gunaLabel8);
             this.Controls.Add(this.btEdit);
@@ -479,5 +511,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton btEdit;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI2.WinForms.Guna2CircleButton btRefreshEmployee;
+        private Guna.UI2.WinForms.Guna2CircleButton btPay;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

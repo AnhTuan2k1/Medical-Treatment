@@ -205,5 +205,17 @@ namespace DataLayer
             db.Employees.Remove(employee);
             db.SaveChanges();
         }
+        public void PayEmployee(decimal value, int employeeid)
+        {
+            PaySalary paysalary = new PaySalary()
+            {
+                Date = DateTime.Now,
+                Value = value,
+                EmployeeID = employeeid
+            };
+
+            db.PaySalaries.Add(paysalary);
+            db.SaveChanges();
+        }
     }
 }
