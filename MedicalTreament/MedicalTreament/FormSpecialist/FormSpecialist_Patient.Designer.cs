@@ -43,10 +43,10 @@ namespace MedicalTreament
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.gridview_sp_patient = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,7 +74,7 @@ namespace MedicalTreament
             this.btn_sp_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_sp_pass.CheckedState.Parent = this.btn_sp_pass;
             this.btn_sp_pass.CustomImages.Parent = this.btn_sp_pass;
-            this.btn_sp_pass.FillColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn_sp_pass.FillColor = System.Drawing.Color.MediumSpringGreen;
             this.btn_sp_pass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_sp_pass.ForeColor = System.Drawing.Color.White;
             this.btn_sp_pass.HoverState.Parent = this.btn_sp_pass;
@@ -256,23 +256,6 @@ namespace MedicalTreament
             this.gridview_sp_patient.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_sp_patient.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 21;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.PowderBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(12, 6);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(236, 45);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "Examination List";
-            // 
             // Column1
             // 
             this.Column1.FillWeight = 40F;
@@ -296,6 +279,22 @@ namespace MedicalTreament
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(3, 6);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(857, 45);
+            this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Text = "Examination List";
+            // 
             // FormSpecialist_Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,6 +303,7 @@ namespace MedicalTreament
             this.ClientSize = new System.Drawing.Size(863, 627);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSpecialist_Patient";
             this.Text = "FormSpecialist_Patient";
             this.Load += new System.EventHandler(this.FormSpecialist_Patient_Load);

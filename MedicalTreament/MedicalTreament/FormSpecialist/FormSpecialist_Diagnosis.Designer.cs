@@ -32,6 +32,7 @@ namespace MedicalTreament
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpecialist_Diagnosis));
             this.gridrequestlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -43,7 +44,22 @@ namespace MedicalTreament
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.comboboxSEname = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridrequestlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // gridrequestlist
@@ -54,7 +70,6 @@ namespace MedicalTreament
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridrequestlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridrequestlist.BackgroundColor = System.Drawing.Color.White;
-            this.gridrequestlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridrequestlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridrequestlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -76,13 +91,13 @@ namespace MedicalTreament
             this.gridrequestlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridrequestlist.EnableHeadersVisualStyles = false;
             this.gridrequestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridrequestlist.Location = new System.Drawing.Point(143, 112);
+            this.gridrequestlist.Location = new System.Drawing.Point(190, 133);
             this.gridrequestlist.Name = "gridrequestlist";
             this.gridrequestlist.RowHeadersVisible = false;
             this.gridrequestlist.RowHeadersWidth = 51;
             this.gridrequestlist.RowTemplate.Height = 24;
             this.gridrequestlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridrequestlist.Size = new System.Drawing.Size(629, 184);
+            this.gridrequestlist.Size = new System.Drawing.Size(565, 184);
             this.gridrequestlist.TabIndex = 21;
             this.gridrequestlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridrequestlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -110,20 +125,20 @@ namespace MedicalTreament
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(12, 112);
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(66, 133);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(111, 25);
+            this.gunaLabel4.Size = new System.Drawing.Size(118, 25);
             this.gunaLabel4.TabIndex = 20;
             this.gunaLabel4.Text = "Request list:";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(49, 42);
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(66, 32);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(74, 25);
+            this.gunaLabel3.Size = new System.Drawing.Size(80, 25);
             this.gunaLabel3.TabIndex = 19;
             this.gunaLabel3.Text = "Patient:";
             // 
@@ -139,11 +154,11 @@ namespace MedicalTreament
             this.guna2CircleButton2.Image = global::MedicalTreament.Properties.Resources.double_right_48;
             this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(702, 916);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(660, 31);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(68, 70);
+            this.guna2CircleButton2.Size = new System.Drawing.Size(96, 96);
             this.guna2CircleButton2.TabIndex = 18;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
@@ -165,15 +180,16 @@ namespace MedicalTreament
             this.txtConclusion.ForeColor = System.Drawing.Color.Black;
             this.txtConclusion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtConclusion.HoverState.Parent = this.txtConclusion;
-            this.txtConclusion.Location = new System.Drawing.Point(143, 685);
+            this.txtConclusion.Location = new System.Drawing.Point(190, 558);
             this.txtConclusion.Margin = new System.Windows.Forms.Padding(4);
             this.txtConclusion.Multiline = true;
             this.txtConclusion.Name = "txtConclusion";
             this.txtConclusion.PasswordChar = '\0';
-            this.txtConclusion.PlaceholderText = "";
+            this.txtConclusion.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtConclusion.PlaceholderText = "Text here...";
             this.txtConclusion.SelectedText = "";
             this.txtConclusion.ShadowDecoration.Parent = this.txtConclusion;
-            this.txtConclusion.Size = new System.Drawing.Size(629, 210);
+            this.txtConclusion.Size = new System.Drawing.Size(566, 210);
             this.txtConclusion.TabIndex = 17;
             // 
             // comboboxPatient
@@ -193,10 +209,10 @@ namespace MedicalTreament
             "Sieu AM",
             "Noi soi"});
             this.comboboxPatient.ItemsAppearance.Parent = this.comboboxPatient;
-            this.comboboxPatient.Location = new System.Drawing.Point(143, 31);
+            this.comboboxPatient.Location = new System.Drawing.Point(191, 32);
             this.comboboxPatient.Name = "comboboxPatient";
             this.comboboxPatient.ShadowDecoration.Parent = this.comboboxPatient;
-            this.comboboxPatient.Size = new System.Drawing.Size(312, 36);
+            this.comboboxPatient.Size = new System.Drawing.Size(454, 36);
             this.comboboxPatient.TabIndex = 13;
             this.comboboxPatient.SelectedIndexChanged += new System.EventHandler(this.comboboxPatient_SelectedIndexChanged);
             // 
@@ -218,15 +234,16 @@ namespace MedicalTreament
             this.txtResult.ForeColor = System.Drawing.Color.Black;
             this.txtResult.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtResult.HoverState.Parent = this.txtResult;
-            this.txtResult.Location = new System.Drawing.Point(143, 430);
+            this.txtResult.Location = new System.Drawing.Point(190, 333);
             this.txtResult.Margin = new System.Windows.Forms.Padding(4);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.PasswordChar = '\0';
-            this.txtResult.PlaceholderText = "";
+            this.txtResult.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtResult.PlaceholderText = "Text here...";
             this.txtResult.SelectedText = "";
             this.txtResult.ShadowDecoration.Parent = this.txtResult;
-            this.txtResult.Size = new System.Drawing.Size(629, 208);
+            this.txtResult.Size = new System.Drawing.Size(565, 208);
             this.txtResult.TabIndex = 16;
             // 
             // gunaLabel2
@@ -234,10 +251,10 @@ namespace MedicalTreament
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(9, 685);
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(66, 558);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(110, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(116, 25);
             this.gunaLabel2.TabIndex = 15;
             this.gunaLabel2.Text = "Conclusion:";
             // 
@@ -246,10 +263,10 @@ namespace MedicalTreament
             this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(53, 430);
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(66, 333);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(66, 25);
+            this.gunaLabel1.Size = new System.Drawing.Size(71, 25);
             this.gunaLabel1.TabIndex = 14;
             this.gunaLabel1.Text = "Result:";
             // 
@@ -270,27 +287,138 @@ namespace MedicalTreament
             "Sieu AM",
             "Noi soi"});
             this.comboboxSEname.ItemsAppearance.Parent = this.comboboxSEname;
-            this.comboboxSEname.Location = new System.Drawing.Point(143, 344);
+            this.comboboxSEname.Location = new System.Drawing.Point(191, 83);
             this.comboboxSEname.Name = "comboboxSEname";
             this.comboboxSEname.ShadowDecoration.Parent = this.comboboxSEname;
-            this.comboboxSEname.Size = new System.Drawing.Size(312, 36);
+            this.comboboxSEname.Size = new System.Drawing.Size(454, 36);
             this.comboboxSEname.TabIndex = 22;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(20, 345);
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Location = new System.Drawing.Point(66, 83);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(103, 25);
+            this.gunaLabel5.Size = new System.Drawing.Size(109, 25);
             this.gunaLabel5.TabIndex = 23;
             this.gunaLabel5.Text = "Examinate:";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel1.Location = new System.Drawing.Point(191, 74);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(454, 3);
+            this.guna2Panel1.TabIndex = 49;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel2.Location = new System.Drawing.Point(191, 125);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(454, 3);
+            this.guna2Panel2.TabIndex = 50;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel3.Location = new System.Drawing.Point(190, 323);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(565, 3);
+            this.guna2Panel3.TabIndex = 51;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel4.Location = new System.Drawing.Point(191, 548);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(565, 3);
+            this.guna2Panel4.TabIndex = 52;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel5.Location = new System.Drawing.Point(191, 775);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(565, 3);
+            this.guna2Panel5.TabIndex = 53;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Location = new System.Drawing.Point(24, 31);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 56;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Location = new System.Drawing.Point(24, 82);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 57;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.Location = new System.Drawing.Point(24, 133);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 58;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.Location = new System.Drawing.Point(24, 333);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
+            this.guna2PictureBox4.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 59;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.Location = new System.Drawing.Point(24, 558);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
+            this.guna2PictureBox5.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 60;
+            this.guna2PictureBox5.TabStop = false;
             // 
             // FormSpecialist_Diagnosis
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 1021);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 793);
+            this.Controls.Add(this.guna2PictureBox5);
+            this.Controls.Add(this.guna2PictureBox4);
+            this.Controls.Add(this.guna2PictureBox3);
+            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.guna2Panel5);
+            this.Controls.Add(this.guna2Panel4);
+            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.comboboxSEname);
             this.Controls.Add(this.gridrequestlist);
@@ -302,10 +430,16 @@ namespace MedicalTreament
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSpecialist_Diagnosis";
             this.Text = "FormSpecialist_Diagnosis";
             this.Load += new System.EventHandler(this.FormSpecialist_Diagnosis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridrequestlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,5 +458,15 @@ namespace MedicalTreament
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2ComboBox comboboxSEname;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
     }
 }
