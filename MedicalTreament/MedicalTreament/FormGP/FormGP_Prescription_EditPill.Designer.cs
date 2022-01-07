@@ -34,7 +34,6 @@ namespace MedicalTreament
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label_name = new Guna.UI.WinForms.GunaLabel();
-            this.textbox_amount = new Guna.UI2.WinForms.Guna2TextBox();
             this.label_ttamount = new System.Windows.Forms.Label();
             this.label_ttname = new System.Windows.Forms.Label();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -43,6 +42,7 @@ namespace MedicalTreament
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.comboAmount = new System.Windows.Forms.ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -100,33 +100,6 @@ namespace MedicalTreament
             this.label_name.Size = new System.Drawing.Size(96, 23);
             this.label_name.TabIndex = 13;
             this.label_name.Text = "gunaLabel1";
-            // 
-            // textbox_amount
-            // 
-            this.textbox_amount.BorderThickness = 0;
-            this.textbox_amount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textbox_amount.DefaultText = "";
-            this.textbox_amount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textbox_amount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textbox_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textbox_amount.DisabledState.Parent = this.textbox_amount;
-            this.textbox_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textbox_amount.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.textbox_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textbox_amount.FocusedState.Parent = this.textbox_amount;
-            this.textbox_amount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_amount.ForeColor = System.Drawing.Color.Black;
-            this.textbox_amount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textbox_amount.HoverState.Parent = this.textbox_amount;
-            this.textbox_amount.Location = new System.Drawing.Point(141, 141);
-            this.textbox_amount.Margin = new System.Windows.Forms.Padding(4);
-            this.textbox_amount.Name = "textbox_amount";
-            this.textbox_amount.PasswordChar = '\0';
-            this.textbox_amount.PlaceholderText = "Text here...";
-            this.textbox_amount.SelectedText = "";
-            this.textbox_amount.ShadowDecoration.Parent = this.textbox_amount;
-            this.textbox_amount.Size = new System.Drawing.Size(244, 35);
-            this.textbox_amount.TabIndex = 1;
             // 
             // label_ttamount
             // 
@@ -226,12 +199,42 @@ namespace MedicalTreament
             this.guna2Panel3.Size = new System.Drawing.Size(244, 3);
             this.guna2Panel3.TabIndex = 17;
             // 
+            // comboAmount
+            // 
+            this.comboAmount.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.comboAmount.FormattingEnabled = true;
+            this.comboAmount.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "12",
+            "15",
+            "24",
+            "28",
+            "30",
+            "60",
+            "120",
+            "150"});
+            this.comboAmount.Location = new System.Drawing.Point(141, 146);
+            this.comboAmount.Name = "comboAmount";
+            this.comboAmount.Size = new System.Drawing.Size(244, 31);
+            this.comboAmount.TabIndex = 18;
+            this.comboAmount.Text = "1";
+            // 
             // FormGP_Prescription_EditPill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(414, 272);
+            this.Controls.Add(this.comboAmount);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PictureBox2);
@@ -239,7 +242,6 @@ namespace MedicalTreament
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.label_name);
-            this.Controls.Add(this.textbox_amount);
             this.Controls.Add(this.label_ttamount);
             this.Controls.Add(this.label_ttname);
             this.Controls.Add(this.guna2Panel1);
@@ -263,12 +265,12 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         public Guna.UI.WinForms.GunaLabel label_name;
-        public Guna.UI2.WinForms.Guna2TextBox textbox_amount;
         private System.Windows.Forms.Label label_ttamount;
         private System.Windows.Forms.Label label_ttname;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        public System.Windows.Forms.ComboBox comboAmount;
     }
 }

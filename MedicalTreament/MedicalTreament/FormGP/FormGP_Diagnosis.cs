@@ -150,6 +150,8 @@ namespace MedicalTreament
                         //MessageBox.Show(gridview_requestlist.DataSource.ToString());
                         bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
                         bus_ExForm.SetState(idPatient, "inSP");
+
+
                     }
                 }
             }
@@ -172,6 +174,7 @@ namespace MedicalTreament
                 if (bUS_SErequest.Delete(idPatient, idSE))
                 {
                     bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                    MessageBox.Show("Remove request successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
