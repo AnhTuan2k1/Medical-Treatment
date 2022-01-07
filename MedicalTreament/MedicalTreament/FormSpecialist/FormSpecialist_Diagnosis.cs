@@ -81,6 +81,9 @@ namespace MedicalTreament
             }
             else
             {
+
+               
+
                 int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
                 int idSE = bus_SE.GetID(comboboxSEname.Text);
                 if (gridrequestlist.Rows.Count <=1)
@@ -99,6 +102,7 @@ namespace MedicalTreament
                     bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
                     bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
                 }
+               
             }
         }
     }

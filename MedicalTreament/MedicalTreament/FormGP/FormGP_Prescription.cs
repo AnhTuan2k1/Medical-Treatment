@@ -111,7 +111,7 @@ namespace MedicalTreament
             {
                 FormGP_Prescription_EditPill form_edit = new FormGP_Prescription_EditPill(gridview_prescription);
                 form_edit.label_name.Text = this.gridview_prescription.CurrentRow.Cells[0].Value.ToString();
-                form_edit.textbox_amount.Text = this.gridview_prescription.CurrentRow.Cells[1].Value.ToString();
+                form_edit.comboAmount.Text = this.gridview_prescription.CurrentRow.Cells[1].Value.ToString();
                 form_edit.Show();
             } 
         }

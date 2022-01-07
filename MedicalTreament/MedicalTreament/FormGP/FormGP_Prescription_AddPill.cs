@@ -28,13 +28,13 @@ public partial class FormGP_Prescription_AddPill : Form
 
     private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            if (textbox_amount.Text == "" || txt_name.Text == "")
+            if (comboAmount.Text == "" || txt_name.Text == "")
             {
                 MessageBox.Show("Empty!");
             }
             else
             {
-                CheckDecimal(textbox_amount.Text);
+                CheckDecimal(comboAmount.Text);
                 
             }
         }
@@ -50,14 +50,14 @@ public partial class FormGP_Prescription_AddPill : Form
             decimal b;
             if (Decimal.TryParse(a, out b))
             {
-                this.FGPP.Rows.Add(new object[] { txt_name.Text, textbox_amount.Text });
+                this.FGPP.Rows.Add(new object[] { txt_name.Text, comboAmount.Text });
 
                 this.Close();
             }
             else
             {
                 MessageBox.Show("Wrong number!");
-                textbox_amount.Text = "";
+                
             }
         }
 
