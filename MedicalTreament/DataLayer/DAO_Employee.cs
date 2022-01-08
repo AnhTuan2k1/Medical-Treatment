@@ -86,7 +86,7 @@ namespace DataLayer
                            employee.EmployeeID,
                            employee.Name,
                            employee.Position,
-                           employee.Salary,
+                           Salary = (int)employee.Salary,
                            employee.Email
                        };
 

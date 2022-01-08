@@ -21,7 +21,7 @@ namespace MedicalTreament
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            CheckDecimal(textbox_amount.Text);
+            CheckDecimal(comboAmount.Text);
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
@@ -34,14 +34,13 @@ namespace MedicalTreament
             decimal b;
             if (Decimal.TryParse(a, out b))
             {
-                this.dgv.CurrentRow.Cells[1].Value = textbox_amount.Text;
+                this.dgv.CurrentRow.Cells[1].Value = comboAmount.Text;
 
                 this.Close();
             }
             else
             {
                 MessageBox.Show("Wrong number!");
-                textbox_amount.Text = "";
             }
         }
     }

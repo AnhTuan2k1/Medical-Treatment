@@ -32,7 +32,7 @@ namespace DataLayer
                        {
                            invoice.InvoiceID,
                            invoice.Date,
-                           invoice.TotalPrice
+                           TotalPrice = (int)invoice.TotalPrice
                        };
 
             return list.ToList();
@@ -48,7 +48,7 @@ namespace DataLayer
                            invoice.PatientID,
                            patient.Name,
                            invoice.Date,
-                           invoice.TotalPrice
+                           TotalPrice = (int)invoice.TotalPrice
                        };
 
             return list.ToList();
@@ -151,7 +151,7 @@ namespace DataLayer
                        {
                            paysalary.PaySalaryID,
                            paysalary.Date,
-                           paysalary.Value
+                           Value = (int)paysalary.Value
                        };
 
             return list.ToList();
@@ -165,7 +165,7 @@ namespace DataLayer
                            drug.DrugID,
                            drug.ImportDate,
                            drug.Quantity,
-                           drug.Price
+                           Price = (int)drug.Price
                        };
 
             return list.ToList();

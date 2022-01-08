@@ -104,7 +104,7 @@ namespace DataLayer
         {
             var list = from form in db.Set<ExaminationForm>()
                        join patient in db.Set<Patient>()
-                       on form.PatientID equals patient.PatientID where form.State.Equals("inGP")
+                       on form.PatientID equals patient.PatientID where form.State.Equals("inGP") || form.State.Equals("inSP")
                        select new 
                        {
                            //PatientID = form.PatientID, 
@@ -128,6 +128,8 @@ namespace DataLayer
             var list = from patient in db.Set<Patient>()
                        join request in db.Set<SpecialistExaminationRequest>()
                        on patient.PatientID equals request.PatientID
+                       join exf in db.Set<ExaminationForm>()
+                       on patient.PatientID equals exf.PatientID where exf.State.Equals("inSP")
                        group patient by patient.Name into g
                        select new
                        {

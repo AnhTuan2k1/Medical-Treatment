@@ -47,7 +47,7 @@ namespace DataLayer
 
         public dynamic ShowSErequest(int idPatient)
         {
-            var list = from serequest in db.Set<SpecialistExaminationRequest>()
+            var list1 = from serequest in db.Set<SpecialistExaminationRequest>()
                        join see in db.Set<SpecialistExamination>()
                        on serequest.SpecialExaminationID equals see.SpecialExaminationID
                        where serequest.PatientID.Equals(idPatient)
@@ -55,6 +55,15 @@ namespace DataLayer
                        {
                            see.Name
                        };
+            var list2 = from seresult in db.Set<SpecialistExaminationResult>()
+                        join se in db.Set<SpecialistExamination>()
+                        on seresult.SpecialExaminationID equals se.SpecialExaminationID
+                        where seresult.PatientID.Equals(idPatient)
+                        select new
+                        {
+                            se.Name
+                        };
+            var list = list1.Except(list2);
 
             return list.ToList();
         }
