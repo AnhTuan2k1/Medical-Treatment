@@ -23,11 +23,12 @@ namespace MedicalTreament
         int parmacistID;
         string patientID;
         private BUS_Drug bus_drug;
+        FormPharmacist parent;
 
         public int quantity { get; set; }
         public int drugID { get; set; }
 
-        public FormPharmacistPayment(Guna2Button btn, int parmacistID, string patientID = "")
+        public FormPharmacistPayment(FormPharmacist parent, Guna2Button btn, int parmacistID, string patientID = "")
         {
             InitializeComponent();
             this.btn = btn;
@@ -39,6 +40,7 @@ namespace MedicalTreament
             bus_drug = new BUS_Drug();
             this.parmacistID = parmacistID;
             this.patientID = patientID;
+            this.parent = parent;
         }
 
         private void FormPharmacistPayment_FormClosed(object sender, FormClosedEventArgs e)
@@ -51,6 +53,7 @@ namespace MedicalTreament
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
+            if (!CheckDrugSold()) return;
             if (CheckInput())
             {
                 int patientID = Convert.ToInt32(ComboBoxPatientID.Text);
@@ -59,11 +62,13 @@ namespace MedicalTreament
                 if(new FormPharmacist_Bill(dgvDrugSold, name, phone, patientID, parmacistID).ShowDialog()
                     == DialogResult.OK)
                 {
-                    ClearPatientInformation();
+                    parent.OpenPayment();
+                    MessageBox.Show("Patient has paid successfully!");
                 }
             }
             
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -265,6 +270,39 @@ namespace MedicalTreament
                     }
                 }
             }
+        }
+
+        private bool CheckDrugSold()
+        {
+            string id = "";
+            int quantity = 0;
+            for (int i = 0; i < dgvDrugSold.Rows.Count - 2; i++)
+            {
+                id = dgvDrugSold.Rows[i].Cells[4].Value.ToString();
+                quantity = int.Parse(dgvDrugSold.Rows[i].Cells[2].Value.ToString());
+
+                for (int j = i + 1; j < dgvDrugSold.Rows.Count - 1; j++)
+                {
+                    if (dgvDrugSold.Rows[j].Cells[4].Value.ToString() == id)
+                        quantity += int.Parse(dgvDrugSold.Rows[j].Cells[2].Value.ToString());
+                }
+
+                for (int k = 0; k < dgvStock.Rows.Count; k++)
+                {
+                    if(dgvStock.Rows[i].Cells["DrugID"].Value.ToString() == id)
+                    {
+                        int num = int.Parse(dgvStock.Rows[k].Cells["Quantity"].Value.ToString());
+                        if (quantity > num)
+                        {
+                            string name = dgvStock.Rows[k].Cells["Name"].Value.ToString();
+                            MessageBox.Show(name + " isn't enought. Max is" + num);
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            return true;
         }
 
         private void ComboBoxPatientName_KeyPress(object sender, KeyPressEventArgs e)

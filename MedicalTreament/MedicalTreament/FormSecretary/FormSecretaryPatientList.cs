@@ -113,5 +113,10 @@ namespace MedicalTreament
             bus_patient.ShowPatients(dgvPatients);
         }
 
+        private void dgvPatients_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvPatients.SelectedRows.Count == 0) return;
+            container.OpenReception(dgvPatients.SelectedRows[0].Cells["PatientID"].Value.ToString());
+        }
     }
 }

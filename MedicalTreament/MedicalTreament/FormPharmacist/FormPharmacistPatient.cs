@@ -34,15 +34,34 @@ namespace MedicalTreament
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (dgv.SelectedRows[0].Cells["PatientID"].Value.ToString().ToLower() != "inpharmacist")
+                {
+                    DialogResult result = MessageBox.Show
+                         ("Patient has not finished examination. Do you want to move this patient to payment? ",
+                         "warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                        container.OpenPayment(dgv.SelectedRows[0].Cells["PatientID"].Value.ToString());
+                }
+           
+            }
+            catch (Exception)
+            {
 
+            }
+            
         }
 
         private void FormPharmacistPatient_Load(object sender, EventArgs e)
         {
             bus_exam.ShowUnPayPatients(dgv);
             dgv.Columns["HealthInsuarance"].Width = (int)(dgv.Width * 0.22);
+            dgv.Columns["PatientID"].Width = (int)(dgv.Width * 0.08);
+            dgv.Columns["Name"].Width = (int)(dgv.Width * 0.15);
 
             dgv.Columns["DateOfBirth"].Visible = false;
+            dgv.Columns["ExaminationFormID"].Visible = false;
             labelNumberPatient.Text = dgv.RowCount.ToString();
         }
 

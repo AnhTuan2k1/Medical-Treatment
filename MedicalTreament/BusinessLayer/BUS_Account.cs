@@ -30,7 +30,7 @@ namespace BusinessLayer
             }
             catch (Exception ee)
             {
-                MessageBox.Show(ee.Message/* + "\nCan't find account"*/);
+                MessageBox.Show(ee.Message + "\n(Wrong username or password)");
                 return false;
             }
             
