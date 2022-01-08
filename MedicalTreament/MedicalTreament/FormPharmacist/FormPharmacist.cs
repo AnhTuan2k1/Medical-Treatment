@@ -53,7 +53,7 @@ namespace MedicalTreament
                     break;
 
                 case "btnPayment":
-                    form = new FormPharmacistPayment(btn, parmacistID);
+                    form = new FormPharmacistPayment(this, btn, parmacistID);
                     btn.Image = Properties.Resources.baseline_paid_white_24dp;
                     break;
                 case "btnLogout":
@@ -69,9 +69,9 @@ namespace MedicalTreament
 
         }
 
-        public void OpenPayment(string patientID)
+        public void OpenPayment(string patientID = "")
         {
-            Form form = new FormPharmacistPayment(btnPayment, parmacistID, patientID);
+            Form form = new FormPharmacistPayment(this, btnPayment, parmacistID, patientID);
             btnPayment.Image = Properties.Resources.baseline_paid_white_24dp;
 
             btn_click_change(form, btnPayment);

@@ -134,6 +134,7 @@ namespace MedicalTreament
             this.dgvPatients.ThemeStyle.RowsStyle.Height = 36;
             this.dgvPatients.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.dgvPatients.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvPatients.DoubleClick += new System.EventHandler(this.dgvPatients_DoubleClick);
             // 
             // ContextMenuStrip
             // 
@@ -152,27 +153,27 @@ namespace MedicalTreament
             this.ContextMenuStrip.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ContextMenuStrip.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.ContextMenuStrip.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.ContextMenuStrip.Size = new System.Drawing.Size(179, 76);
+            this.ContextMenuStrip.Size = new System.Drawing.Size(254, 76);
             // 
             // editPatientToolStripMenuItem
             // 
             this.editPatientToolStripMenuItem.Name = "editPatientToolStripMenuItem";
-            this.editPatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
+            this.editPatientToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.editPatientToolStripMenuItem.Text = "Edit Patient";
             this.editPatientToolStripMenuItem.Click += new System.EventHandler(this.editPatientToolStripMenuItem_Click);
             // 
             // deletePatientToolStripMenuItem
             // 
             this.deletePatientToolStripMenuItem.Name = "deletePatientToolStripMenuItem";
-            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
+            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.deletePatientToolStripMenuItem.Text = "Delete Patient";
             this.deletePatientToolStripMenuItem.Click += new System.EventHandler(this.deletePatientToolStripMenuItem_Click);
             // 
             // receptionPatientToolStripMenuItem
             // 
             this.receptionPatientToolStripMenuItem.Name = "receptionPatientToolStripMenuItem";
-            this.receptionPatientToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
-            this.receptionPatientToolStripMenuItem.Text = "Receive Patient";
+            this.receptionPatientToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.receptionPatientToolStripMenuItem.Text = "Move Patient to Reception";
             this.receptionPatientToolStripMenuItem.Click += new System.EventHandler(this.receptionPatientToolStripMenuItem_Click);
             // 
             // btn_New
