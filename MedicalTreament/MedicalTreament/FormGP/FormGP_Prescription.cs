@@ -126,7 +126,8 @@ namespace MedicalTreament
             {
                 if (bus_Prescription.AddPrescription(txtInstruction.Text, idPatient, idGP))
                 {
-                 
+
+                    bus_exf.SetState(idPatient, "inpharmacist");
                     foreach (DataGridViewRow row in gridview_prescription.Rows)
                     {
                         string drugName = row.Cells[0].Value.ToString();
@@ -134,7 +135,7 @@ namespace MedicalTreament
                         int prescriptionID = bus_Prescription.GetPrescriptionID(idGP, idPatient);
                         if (bus_GPdrugDetail.Adddrugdetail(drugName, drugQuantity, prescriptionID, idPatient, idGP))
                         {
-                            bus_exf.SetState(idPatient, "inpharmacist");
+                            
                         }
                     }
 

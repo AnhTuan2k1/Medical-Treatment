@@ -73,8 +73,6 @@ namespace MedicalTreament
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
             
-         
-
             if ((txtDiagnoseResult.Text == "") || (txtDirection.Text == ""))
             {
                 MessageBox.Show("Fill up empty space!");
@@ -109,6 +107,13 @@ namespace MedicalTreament
             ComboBoxPatientName.ValueMember = "Name";
             int idPatient = bus_Patient.GetPatientIDByName(ComboBoxPatientName.SelectedValue.ToString());
             bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+            bus_Patient.ShowPatients_GP(ComboBoxPatientName);
+            ComboBoxPatientName.DisplayMember = "Name";
+            if (ComboBoxPatientName.Text=="")
+            {
+                txtReason.Text = "";
+                txtPhone.Text = "";
+            }
 
         }
 
