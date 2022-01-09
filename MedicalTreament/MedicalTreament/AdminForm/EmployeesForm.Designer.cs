@@ -34,8 +34,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesForm));
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.lbEmployees = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -56,6 +54,7 @@
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -81,26 +80,6 @@
             this.gunaLabel18.Size = new System.Drawing.Size(157, 38);
             this.gunaLabel18.TabIndex = 13;
             this.gunaLabel18.Text = "Employees";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(1003, 26);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(72, 20);
-            this.gunaLabel2.TabIndex = 15;
-            this.gunaLabel2.Text = "TraTac02";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(1003, 47);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(53, 20);
-            this.gunaLabel3.TabIndex = 16;
-            this.gunaLabel3.Text = "Admin";
             // 
             // lbEmployees
             // 
@@ -444,11 +423,22 @@
             this.guna2PictureBox5.TabIndex = 11;
             this.guna2PictureBox5.TabStop = false;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(1003, 30);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(56, 20);
+            this.gunaLabel3.TabIndex = 48;
+            this.gunaLabel3.Text = "Admin";
+            // 
             // EmployeesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 742);
+            this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btPay);
             this.Controls.Add(this.btRefreshEmployee);
@@ -467,8 +457,6 @@
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.lbEmployees);
-            this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.gunaLabel18);
             this.Controls.Add(this.guna2Panel10);
@@ -493,8 +481,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI.WinForms.GunaLabel gunaLabel18;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel lbEmployees;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
@@ -513,5 +499,6 @@
         private Guna.UI2.WinForms.Guna2CircleButton btRefreshEmployee;
         private Guna.UI2.WinForms.Guna2CircleButton btPay;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
     }
 }
