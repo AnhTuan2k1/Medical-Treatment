@@ -163,7 +163,7 @@ namespace DataLayer
         }
         public void SetState(int idPatient, string text)
         {
-            ExaminationForm form = db.ExaminationForms.Find(idPatient);
+            ExaminationForm form = db.ExaminationForms.Where(e => e.PatientID == idPatient).FirstOrDefault();
             form.State = text;
             db.SaveChanges();
         }
