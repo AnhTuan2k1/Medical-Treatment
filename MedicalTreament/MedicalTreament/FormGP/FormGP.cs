@@ -58,7 +58,7 @@ namespace MedicalTreament
         }
 
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
         
         if (activeForm != null)
@@ -74,6 +74,7 @@ namespace MedicalTreament
             this.panelMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            
         }
 
 

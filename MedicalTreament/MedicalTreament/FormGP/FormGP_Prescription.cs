@@ -20,8 +20,8 @@ namespace MedicalTreament
         BUS_Drug bus_Drug;
         BUS_ExaminationForm bus_exf;
         String currentDay = DateTime.Now.ToShortDateString();
-
-        public FormGP_Prescription(int idGP, int idPatient)
+        FormGP_Diagnosis ParentForm;
+        public FormGP_Prescription( FormGP_Diagnosis ParentForm,int idGP, int idPatient)
         {
             InitializeComponent();
             bus_Drug = new BUS_Drug();
@@ -31,6 +31,7 @@ namespace MedicalTreament
             bus_Drug = new BUS_Drug();
             bus_GPdrugDetail = new BUS_GPdrugDetail();
             bus_exf = new BUS_ExaminationForm();
+            this.ParentForm = ParentForm;
         }
 
 
@@ -144,9 +145,25 @@ namespace MedicalTreament
                     {
                         txtInstruction.Text = "";
                         gridview_prescription.Rows.Clear();
+                        ParentForm.DialogResult = DialogResult.OK;
+                       
+
+                        ParentForm.gridview_requestlist.DataSource = null;
+                        ParentForm.gridview_resultlist.DataSource = null;
+                    
+                        ParentForm.txtPhone.Text = "";
+                        ParentForm.txtReason.Text = "";
+                        ParentForm.txtDiagnoseResult.Text = "";
+                        ParentForm.txtDirection.Text = "";
+
+                        ParentForm.ComboBoxPatientName.Text = "";
+                        ParentForm.bus_Patient.ShowPatients_GP(ParentForm.ComboBoxPatientName);
                         this.Close();
-                    }    
-                   
+
+                        //ParentForm.bUS_SErequest.ShowSEresult(ParentForm.gridview_resultlist, idPatient);
+
+                    }
+
                 }
             }
         }
