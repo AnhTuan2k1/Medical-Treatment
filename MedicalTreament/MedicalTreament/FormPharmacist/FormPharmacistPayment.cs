@@ -276,6 +276,7 @@ namespace MedicalTreament
         {
             string id = "";
             int quantity = 0;
+            ShowDrugs();
             for (int i = 0; i < dgvDrugSold.Rows.Count - 2; i++)
             {
                 id = dgvDrugSold.Rows[i].Cells[4].Value.ToString();

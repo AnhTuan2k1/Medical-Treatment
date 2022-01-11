@@ -36,7 +36,7 @@ namespace MedicalTreament
         {
             try
             {
-                if (dgv.SelectedRows[0].Cells["PatientID"].Value.ToString().ToLower() != "inpharmacist")
+                if (dgv.SelectedRows[0].Cells["State"].Value.ToString().ToLower() != "inpharmacist")
                 {
                     DialogResult result = MessageBox.Show
                          ("Patient has not finished examination. Do you want to move this patient to payment? ",
@@ -44,7 +44,8 @@ namespace MedicalTreament
                     if (result == DialogResult.Yes)
                         container.OpenPayment(dgv.SelectedRows[0].Cells["PatientID"].Value.ToString());
                 }
-           
+                else container.OpenPayment(dgv.SelectedRows[0].Cells["PatientID"].Value.ToString());
+
             }
             catch (Exception)
             {

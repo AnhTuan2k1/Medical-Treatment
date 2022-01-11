@@ -52,8 +52,9 @@ namespace DataLayer
             && p.Date.Year == DateTime.Now.Year
             && p.PatientID == idPatient)
                 .FirstOrDefault();
-
-            return prescription.PrescriptionID;
+            if (prescription != null)
+                return prescription.PrescriptionID;
+            else return -1;
         }
 
         public string GetDirection(int patientID)
@@ -64,8 +65,9 @@ namespace DataLayer
            && p.Date.Year == DateTime.Now.Year
            && p.PatientID == patientID)
                .Single();
-
-            return prescription.DoctorDirection;
+            if (prescription != null)
+                return prescription.DoctorDirection;
+            else return "";
         }
     }
 }
