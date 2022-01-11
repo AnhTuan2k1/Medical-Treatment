@@ -99,7 +99,7 @@ namespace MedicalTreament
             this.gridrequestlist.RowTemplate.Height = 24;
             this.gridrequestlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridrequestlist.Size = new System.Drawing.Size(565, 184);
-            this.gridrequestlist.TabIndex = 21;
+            this.gridrequestlist.TabIndex = 3;
             this.gridrequestlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridrequestlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gridrequestlist.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -160,7 +160,7 @@ namespace MedicalTreament
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Size = new System.Drawing.Size(118, 96);
-            this.guna2CircleButton2.TabIndex = 18;
+            this.guna2CircleButton2.TabIndex = 6;
             this.guna2CircleButton2.Text = "Add Reuslt";
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
@@ -192,7 +192,7 @@ namespace MedicalTreament
             this.txtConclusion.SelectedText = "";
             this.txtConclusion.ShadowDecoration.Parent = this.txtConclusion;
             this.txtConclusion.Size = new System.Drawing.Size(566, 210);
-            this.txtConclusion.TabIndex = 17;
+            this.txtConclusion.TabIndex = 5;
             // 
             // comboboxPatient
             // 
@@ -215,7 +215,7 @@ namespace MedicalTreament
             this.comboboxPatient.Name = "comboboxPatient";
             this.comboboxPatient.ShadowDecoration.Parent = this.comboboxPatient;
             this.comboboxPatient.Size = new System.Drawing.Size(454, 36);
-            this.comboboxPatient.TabIndex = 13;
+            this.comboboxPatient.TabIndex = 1;
             this.comboboxPatient.SelectedIndexChanged += new System.EventHandler(this.comboboxPatient_SelectedIndexChanged);
             // 
             // txtResult
@@ -246,7 +246,7 @@ namespace MedicalTreament
             this.txtResult.SelectedText = "";
             this.txtResult.ShadowDecoration.Parent = this.txtResult;
             this.txtResult.Size = new System.Drawing.Size(565, 208);
-            this.txtResult.TabIndex = 16;
+            this.txtResult.TabIndex = 4;
             // 
             // gunaLabel2
             // 
@@ -293,7 +293,7 @@ namespace MedicalTreament
             this.comboboxSEname.Name = "comboboxSEname";
             this.comboboxSEname.ShadowDecoration.Parent = this.comboboxSEname;
             this.comboboxSEname.Size = new System.Drawing.Size(454, 36);
-            this.comboboxSEname.TabIndex = 22;
+            this.comboboxSEname.TabIndex = 2;
             // 
             // gunaLabel5
             // 

@@ -102,7 +102,7 @@ namespace MedicalTreament
             this.txtDirection.ForeColor = System.Drawing.Color.Black;
             this.txtDirection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDirection.HoverState.Parent = this.txtDirection;
-            this.txtDirection.Location = new System.Drawing.Point(222, 657);
+            this.txtDirection.Location = new System.Drawing.Point(223, 822);
             this.txtDirection.Margin = new System.Windows.Forms.Padding(4);
             this.txtDirection.Multiline = true;
             this.txtDirection.Name = "txtDirection";
@@ -110,8 +110,8 @@ namespace MedicalTreament
             this.txtDirection.PlaceholderText = "Text here...";
             this.txtDirection.SelectedText = "";
             this.txtDirection.ShadowDecoration.Parent = this.txtDirection;
-            this.txtDirection.Size = new System.Drawing.Size(652, 72);
-            this.txtDirection.TabIndex = 6;
+            this.txtDirection.Size = new System.Drawing.Size(652, 147);
+            this.txtDirection.TabIndex = 8;
             // 
             // gunaLabel2
             // 
@@ -119,7 +119,7 @@ namespace MedicalTreament
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(64, 668);
+            this.gunaLabel2.Location = new System.Drawing.Point(65, 833);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(115, 25);
             this.gunaLabel2.TabIndex = 5;
@@ -143,7 +143,7 @@ namespace MedicalTreament
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Size = new System.Drawing.Size(131, 97);
-            this.guna2CircleButton2.TabIndex = 6;
+            this.guna2CircleButton2.TabIndex = 9;
             this.guna2CircleButton2.Text = "Prescription";
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
@@ -280,7 +280,7 @@ namespace MedicalTreament
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(59, 578);
+            this.gunaLabel3.Location = new System.Drawing.Point(59, 685);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(155, 25);
             this.gunaLabel3.TabIndex = 44;
@@ -304,7 +304,7 @@ namespace MedicalTreament
             this.txtDiagnoseResult.ForeColor = System.Drawing.Color.Black;
             this.txtDiagnoseResult.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiagnoseResult.HoverState.Parent = this.txtDiagnoseResult;
-            this.txtDiagnoseResult.Location = new System.Drawing.Point(222, 567);
+            this.txtDiagnoseResult.Location = new System.Drawing.Point(222, 674);
             this.txtDiagnoseResult.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnoseResult.Multiline = true;
             this.txtDiagnoseResult.Name = "txtDiagnoseResult";
@@ -312,8 +312,8 @@ namespace MedicalTreament
             this.txtDiagnoseResult.PlaceholderText = "Text here...";
             this.txtDiagnoseResult.SelectedText = "";
             this.txtDiagnoseResult.ShadowDecoration.Parent = this.txtDiagnoseResult;
-            this.txtDiagnoseResult.Size = new System.Drawing.Size(652, 73);
-            this.txtDiagnoseResult.TabIndex = 5;
+            this.txtDiagnoseResult.Size = new System.Drawing.Size(652, 131);
+            this.txtDiagnoseResult.TabIndex = 7;
             // 
             // label2
             // 
@@ -372,7 +372,7 @@ namespace MedicalTreament
             this.gridview_requestlist.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridview_requestlist.RowTemplate.Height = 24;
             this.gridview_requestlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_requestlist.Size = new System.Drawing.Size(652, 112);
+            this.gridview_requestlist.Size = new System.Drawing.Size(652, 182);
             this.gridview_requestlist.TabIndex = 5;
             this.gridview_requestlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_requestlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -458,7 +458,7 @@ namespace MedicalTreament
             this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel5.Location = new System.Drawing.Point(222, 420);
+            this.guna2Panel5.Location = new System.Drawing.Point(221, 490);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(652, 3);
@@ -469,7 +469,7 @@ namespace MedicalTreament
             this.guna2Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel6.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel6.Location = new System.Drawing.Point(223, 647);
+            this.guna2Panel6.Location = new System.Drawing.Point(221, 812);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(652, 3);
@@ -480,7 +480,7 @@ namespace MedicalTreament
             this.guna2Panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel7.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel7.Location = new System.Drawing.Point(223, 736);
+            this.guna2Panel7.Location = new System.Drawing.Point(221, 976);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
             this.guna2Panel7.Size = new System.Drawing.Size(652, 3);
@@ -544,7 +544,7 @@ namespace MedicalTreament
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(22, 567);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(17, 674);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(36, 36);
@@ -555,7 +555,7 @@ namespace MedicalTreament
             // guna2PictureBox7
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(22, 657);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(24, 822);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
             this.guna2PictureBox7.Size = new System.Drawing.Size(36, 36);
@@ -581,7 +581,7 @@ namespace MedicalTreament
             this.ComboBoxPatientName.Name = "ComboBoxPatientName";
             this.ComboBoxPatientName.ShadowDecoration.Parent = this.ComboBoxPatientName;
             this.ComboBoxPatientName.Size = new System.Drawing.Size(515, 36);
-            this.ComboBoxPatientName.TabIndex = 62;
+            this.ComboBoxPatientName.TabIndex = 1;
             this.ComboBoxPatientName.SelectedIndexChanged += new System.EventHandler(this.ComboBoxPatientName_SelectedIndexChanged);
             // 
             // comboBoxSEname
@@ -602,7 +602,7 @@ namespace MedicalTreament
             this.comboBoxSEname.Name = "comboBoxSEname";
             this.comboBoxSEname.ShadowDecoration.Parent = this.comboBoxSEname;
             this.comboBoxSEname.Size = new System.Drawing.Size(375, 36);
-            this.comboBoxSEname.TabIndex = 63;
+            this.comboBoxSEname.TabIndex = 4;
             // 
             // gridview_resultlist
             // 
@@ -640,7 +640,7 @@ namespace MedicalTreament
             this.gridview_resultlist.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridview_resultlist.EnableHeadersVisualStyles = false;
             this.gridview_resultlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridview_resultlist.Location = new System.Drawing.Point(221, 429);
+            this.gridview_resultlist.Location = new System.Drawing.Point(221, 499);
             this.gridview_resultlist.MultiSelect = false;
             this.gridview_resultlist.Name = "gridview_resultlist";
             this.gridview_resultlist.ReadOnly = true;
@@ -650,8 +650,8 @@ namespace MedicalTreament
             this.gridview_resultlist.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridview_resultlist.RowTemplate.Height = 24;
             this.gridview_resultlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_resultlist.Size = new System.Drawing.Size(652, 122);
-            this.gridview_resultlist.TabIndex = 64;
+            this.gridview_resultlist.Size = new System.Drawing.Size(652, 159);
+            this.gridview_resultlist.TabIndex = 6;
             this.gridview_resultlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -678,7 +678,7 @@ namespace MedicalTreament
             // guna2PictureBox8
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.Location = new System.Drawing.Point(22, 429);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(22, 499);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
             this.guna2PictureBox8.Size = new System.Drawing.Size(36, 36);
@@ -690,19 +690,19 @@ namespace MedicalTreament
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 429);
+            this.label3.Location = new System.Drawing.Point(64, 499);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.label3.Size = new System.Drawing.Size(96, 35);
+            this.label3.Size = new System.Drawing.Size(101, 35);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Result list";
+            this.label3.Text = "Result list:";
             // 
             // guna2Panel8
             // 
             this.guna2Panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel8.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel8.Location = new System.Drawing.Point(221, 557);
+            this.guna2Panel8.Location = new System.Drawing.Point(221, 664);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
             this.guna2Panel8.Size = new System.Drawing.Size(652, 3);
@@ -713,7 +713,7 @@ namespace MedicalTreament
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(890, 768);
+            this.ClientSize = new System.Drawing.Size(890, 1031);
             this.Controls.Add(this.guna2Panel8);
             this.Controls.Add(this.guna2PictureBox8);
             this.Controls.Add(this.label3);
