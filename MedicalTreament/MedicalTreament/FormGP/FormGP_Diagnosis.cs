@@ -16,11 +16,11 @@ namespace MedicalTreament
     {
        // private Form activeForm;
         //private Guna.UI2.WinForms.Guna2Button currtentButton;
-        BUS_Patient bus_Patient;
-        BUS_SpecialistExamination bUS_SpecialistExamination;
-        BUS_SpecialistExaminationRequest bUS_SErequest;
-        BUS_ExaminationForm bus_ExForm;
-        BUS_DiagnoseResult bus_DiagnoseResult;
+        public BUS_Patient bus_Patient;
+        public BUS_SpecialistExamination bUS_SpecialistExamination;
+        public BUS_SpecialistExaminationRequest bUS_SErequest;
+        public BUS_ExaminationForm bus_ExForm;
+        public BUS_DiagnoseResult bus_DiagnoseResult;
 
         string SEname;
         int idGP;
@@ -63,6 +63,7 @@ namespace MedicalTreament
             {
                 int idPatient = bus_Patient.GetPatientID(ComboBoxPatientName.Text, txtPhone.Text);
                 bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
+                bUS_SErequest.ShowSEresult(gridview_resultlist, idPatient);
 
                 string reason = bus_ExForm.GetReason(idPatient);
                 txtReason.Text = reason;
@@ -72,10 +73,14 @@ namespace MedicalTreament
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
-            
-            if ((txtDiagnoseResult.Text == "") || (txtDirection.Text == ""))
+           
+            if ((txtDiagnoseResult.Text == "") || (txtDirection.Text == "") /*|| (gridview_requestlist.Rows.Count == 0 && gridview_resultlist.Rows.Count >=1*/)
             {
                 MessageBox.Show("Fill up empty space!");
+            }
+            else if (gridview_requestlist.Rows.Count >=1)
+            {
+                MessageBox.Show("Patient hasn't done all examination request yet!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -85,10 +90,12 @@ namespace MedicalTreament
                 {
                     txtDiagnoseResult.Text = "";
                     txtDirection.Text = "";
-                    FormGP_Prescription formGP_Prescription = new FormGP_Prescription(idGP, idPatient);
+                    FormGP_Prescription formGP_Prescription = new FormGP_Prescription(this,idGP, idPatient);
                     formGP_Prescription.Show();
                 }   
             }
+
+            
 
         
 
@@ -107,13 +114,14 @@ namespace MedicalTreament
             ComboBoxPatientName.ValueMember = "Name";
             int idPatient = bus_Patient.GetPatientIDByName(ComboBoxPatientName.SelectedValue.ToString());
             bUS_SErequest.ShowSErequest(gridview_requestlist, idPatient);
-            bus_Patient.ShowPatients_GP(ComboBoxPatientName);
-            ComboBoxPatientName.DisplayMember = "Name";
-            if (ComboBoxPatientName.Text=="")
-            {
-                txtReason.Text = "";
-                txtPhone.Text = "";
-            }
+            bUS_SErequest.ShowSEresult(gridview_resultlist, idPatient);
+            //bus_Patient.ShowPatients_GP(ComboBoxPatientName);
+            //ComboBoxPatientName.DisplayMember = "Name";
+            //if (ComboBoxPatientName.Text=="")
+            //{
+            //    txtReason.Text = "";
+            //    txtPhone.Text = "";
+            //}
 
         }
 
@@ -183,5 +191,7 @@ namespace MedicalTreament
                 }
             }
         }
+
+
     }
 }

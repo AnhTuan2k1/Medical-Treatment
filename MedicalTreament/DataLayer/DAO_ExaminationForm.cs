@@ -140,7 +140,9 @@ namespace DataLayer
 
         public string GetReason(int patientID)
         {
-            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID).FirstOrDefault();
+            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID &&
+            e.Date.Day == DateTime.Now.Day &&
+            e.Date.Month == DateTime.Now.Month).FirstOrDefault();
             return examinationForm.Reason;
         }
 
@@ -163,7 +165,9 @@ namespace DataLayer
         }
         public void SetState(int idPatient, string text)
         {
-            ExaminationForm form = db.ExaminationForms.Where(e => e.PatientID == idPatient).FirstOrDefault();
+            ExaminationForm form = db.ExaminationForms.Where(e => e.PatientID == idPatient &&
+            e.Date.Day == DateTime.Now.Day&&
+            e.Date.Month == DateTime.Now.Month ).FirstOrDefault();
             form.State = text;
             db.SaveChanges();
         }

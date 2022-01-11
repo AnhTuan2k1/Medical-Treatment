@@ -53,5 +53,10 @@ namespace BusinessLayer
         {
             ccb.DataSource = dao_SpecialistExaminationRequest.ShowSErequest(idPatient);
         }
+
+        public void ShowSEresult(DataGridView dgv, int idPatient)
+        {
+            dgv.DataSource = dao_SpecialistExaminationRequest.ShowSEresult(idPatient);
+        }
     }
 }
