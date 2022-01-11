@@ -68,6 +68,9 @@ namespace MedicalTreament
                 bus_exf.SetState(idPatient, "inGP");
                 bus_Patient.ShowPatients_SP(comboboxPatient);
                 comboboxPatient.DisplayMember = "Name";
+                bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
+                bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
+  
             }
         }
 
@@ -86,12 +89,7 @@ namespace MedicalTreament
 
                 int idPatient = bus_Patient.GetPatientIDByName(comboboxPatient.Text);
                 int idSE = bus_SE.GetID(comboboxSEname.Text);
-                if (gridrequestlist.Rows.Count <=1)
-                {
-                    bus_exf.SetState(idPatient, "inGP");
-                    bus_Patient.ShowPatients_SP(comboboxPatient);
-                    comboboxPatient.DisplayMember = "Name";
-                }
+                
 
            
                 if (bus_SEresult.Add(txtResult.Text,txtConclusion.Text,idSE,idPatient,idSP))
@@ -99,10 +97,20 @@ namespace MedicalTreament
                     txtConclusion.Text = "";
                     txtResult.Text = "";
                     MessageBox.Show("Examinate succesfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    bus_Patient.ShowPatients_SP(comboboxPatient);
+                    comboboxPatient.DisplayMember = "Name";
                     bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
                     bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
                 }
-               
+                if (gridrequestlist.Rows.Count < 1)
+                {
+                    bus_exf.SetState(idPatient, "inGP");
+                    bus_Patient.ShowPatients_SP(comboboxPatient);
+                    comboboxPatient.DisplayMember = "Name";
+                    bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
+                    bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
+                }
+
             }
         }
     }
