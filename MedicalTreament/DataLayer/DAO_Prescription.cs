@@ -46,11 +46,11 @@ namespace DataLayer
 
         public int GetPrescriptionID(int idPatient)
         {
-            Prescription prescription = db.Prescriptions.Where(p => 
-            p.Date.Day == DateTime.Now.Day
-            && p.Date.Month == DateTime.Now.Month
-            && p.Date.Year == DateTime.Now.Year
-            && p.PatientID == idPatient)
+            Prescription prescription = db.Prescriptions.Where(p => p.PatientID == idPatient)
+            //p.Date.Day == DateTime.Now.Day
+            //&& p.Date.Month == DateTime.Now.Month
+            //&& p.Date.Year == DateTime.Now.Year
+            //&& p.PatientID == idPatient)
                 .FirstOrDefault();
 
             return prescription.PrescriptionID;
