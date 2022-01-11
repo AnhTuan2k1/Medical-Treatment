@@ -50,7 +50,9 @@ namespace DataLayer
             var list1 = from serequest in db.Set<SpecialistExaminationRequest>()
                        join see in db.Set<SpecialistExamination>()
                        on serequest.SpecialExaminationID equals see.SpecialExaminationID
-                       where serequest.PatientID.Equals(idPatient)
+                       where serequest.PatientID.Equals(idPatient) 
+                       && serequest.Date.Day == DateTime.Now.Day
+                       && serequest.Date.Month ==DateTime.Now.Month
                        select new
                        {
                            see.Name
@@ -59,6 +61,8 @@ namespace DataLayer
                         join se in db.Set<SpecialistExamination>()
                         on seresult.SpecialExaminationID equals se.SpecialExaminationID
                         where seresult.PatientID.Equals(idPatient)
+                        && seresult.Date.Day == DateTime.Now.Day
+                        && seresult.Date.Month == DateTime.Now.Month
                         select new
                         {
                             se.Name,
@@ -75,6 +79,8 @@ namespace DataLayer
                         join se in db.Set<SpecialistExamination>()
                         on seresult.SpecialExaminationID equals se.SpecialExaminationID
                         where seresult.PatientID.Equals(idPatient)
+                        && seresult.Date.Day == DateTime.Now.Day
+                        && seresult.Date.Month == DateTime.Now.Month
                         select new
                         {
                             se.Name,
