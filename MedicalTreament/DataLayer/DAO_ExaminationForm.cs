@@ -140,9 +140,10 @@ namespace DataLayer
 
         public string GetReason(int patientID)
         {
-            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID &&
-            e.Date.Day == DateTime.Now.Day &&
-            e.Date.Month == DateTime.Now.Month).FirstOrDefault();
+            ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID
+            && e.Date.Day == DateTime.Now.Day &&
+            e.Date.Month == DateTime.Now.Month
+            ).FirstOrDefault();
             return examinationForm.Reason;
         }
 
