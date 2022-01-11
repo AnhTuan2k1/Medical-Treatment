@@ -107,9 +107,20 @@ namespace MedicalTreament
                     bus_exf.SetState(idPatient, "inGP");
                     bus_Patient.ShowPatients_SP(comboboxPatient);
                     comboboxPatient.DisplayMember = "Name";
-                    int idPatient2 = bus_Patient.GetPatientIDByName(comboboxPatient.SelectedValue.ToString());
-                    bus_SErequest.ShowSErequest(gridrequestlist, idPatient2);
-                    bus_SErequest.ShowSErequest(comboboxSEname, idPatient2);
+                    if(comboboxPatient.Text=="")
+                    {
+                        txtConclusion.Text = "";
+                        txtResult.Text = "";
+                        comboboxSEname.Text = "";
+                    }
+                    else
+                    {
+                        int idPatient2 = bus_Patient.GetPatientIDByName(comboboxPatient.SelectedValue.ToString());
+                        bus_SErequest.ShowSErequest(gridrequestlist, idPatient2);
+                        bus_SErequest.ShowSErequest(comboboxSEname, idPatient2);
+                        //MessageBox.Show("=======");
+                    }
+                    
                 }
 
             }
