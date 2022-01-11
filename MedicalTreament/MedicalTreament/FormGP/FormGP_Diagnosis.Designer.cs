@@ -29,10 +29,13 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Diagnosis));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtDirection = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -65,6 +68,10 @@ namespace MedicalTreament
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ComboBoxPatientName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboBoxSEname = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gridview_resultlist = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridview_requestlist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -73,6 +80,8 @@ namespace MedicalTreament
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview_resultlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDirection
@@ -93,7 +102,7 @@ namespace MedicalTreament
             this.txtDirection.ForeColor = System.Drawing.Color.Black;
             this.txtDirection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDirection.HoverState.Parent = this.txtDirection;
-            this.txtDirection.Location = new System.Drawing.Point(221, 605);
+            this.txtDirection.Location = new System.Drawing.Point(222, 657);
             this.txtDirection.Margin = new System.Windows.Forms.Padding(4);
             this.txtDirection.Multiline = true;
             this.txtDirection.Name = "txtDirection";
@@ -101,7 +110,7 @@ namespace MedicalTreament
             this.txtDirection.PlaceholderText = "Text here...";
             this.txtDirection.SelectedText = "";
             this.txtDirection.ShadowDecoration.Parent = this.txtDirection;
-            this.txtDirection.Size = new System.Drawing.Size(652, 142);
+            this.txtDirection.Size = new System.Drawing.Size(652, 72);
             this.txtDirection.TabIndex = 6;
             // 
             // gunaLabel2
@@ -110,7 +119,7 @@ namespace MedicalTreament
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(63, 616);
+            this.gunaLabel2.Location = new System.Drawing.Point(64, 668);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(115, 25);
             this.gunaLabel2.TabIndex = 5;
@@ -271,7 +280,7 @@ namespace MedicalTreament
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(58, 500);
+            this.gunaLabel3.Location = new System.Drawing.Point(59, 578);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(155, 25);
             this.gunaLabel3.TabIndex = 44;
@@ -295,7 +304,7 @@ namespace MedicalTreament
             this.txtDiagnoseResult.ForeColor = System.Drawing.Color.Black;
             this.txtDiagnoseResult.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiagnoseResult.HoverState.Parent = this.txtDiagnoseResult;
-            this.txtDiagnoseResult.Location = new System.Drawing.Point(221, 489);
+            this.txtDiagnoseResult.Location = new System.Drawing.Point(222, 567);
             this.txtDiagnoseResult.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnoseResult.Multiline = true;
             this.txtDiagnoseResult.Name = "txtDiagnoseResult";
@@ -303,14 +312,14 @@ namespace MedicalTreament
             this.txtDiagnoseResult.PlaceholderText = "Text here...";
             this.txtDiagnoseResult.SelectedText = "";
             this.txtDiagnoseResult.ShadowDecoration.Parent = this.txtDiagnoseResult;
-            this.txtDiagnoseResult.Size = new System.Drawing.Size(652, 99);
+            this.txtDiagnoseResult.Size = new System.Drawing.Size(652, 73);
             this.txtDiagnoseResult.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 301);
+            this.label2.Location = new System.Drawing.Point(64, 302);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.label2.Size = new System.Drawing.Size(123, 35);
@@ -324,8 +333,8 @@ namespace MedicalTreament
             this.gridview_requestlist.AllowUserToOrderColumns = true;
             this.gridview_requestlist.AllowUserToResizeColumns = false;
             this.gridview_requestlist.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridview_requestlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview_requestlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -333,27 +342,27 @@ namespace MedicalTreament
             this.gridview_requestlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_requestlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_requestlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridview_requestlist.ColumnHeadersHeight = 30;
             this.gridview_requestlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridview_requestlist.EnableHeadersVisualStyles = false;
             this.gridview_requestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridview_requestlist.Location = new System.Drawing.Point(221, 301);
+            this.gridview_requestlist.Location = new System.Drawing.Point(222, 302);
             this.gridview_requestlist.MultiSelect = false;
             this.gridview_requestlist.Name = "gridview_requestlist";
             this.gridview_requestlist.ReadOnly = true;
@@ -363,7 +372,7 @@ namespace MedicalTreament
             this.gridview_requestlist.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridview_requestlist.RowTemplate.Height = 24;
             this.gridview_requestlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridview_requestlist.Size = new System.Drawing.Size(652, 172);
+            this.gridview_requestlist.Size = new System.Drawing.Size(652, 112);
             this.gridview_requestlist.TabIndex = 5;
             this.gridview_requestlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.gridview_requestlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -449,7 +458,7 @@ namespace MedicalTreament
             this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel5.Location = new System.Drawing.Point(221, 479);
+            this.guna2Panel5.Location = new System.Drawing.Point(222, 420);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(652, 3);
@@ -460,7 +469,7 @@ namespace MedicalTreament
             this.guna2Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel6.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel6.Location = new System.Drawing.Point(222, 595);
+            this.guna2Panel6.Location = new System.Drawing.Point(223, 647);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(652, 3);
@@ -471,7 +480,7 @@ namespace MedicalTreament
             this.guna2Panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel7.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel7.Location = new System.Drawing.Point(221, 754);
+            this.guna2Panel7.Location = new System.Drawing.Point(223, 736);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
             this.guna2Panel7.Size = new System.Drawing.Size(652, 3);
@@ -524,7 +533,7 @@ namespace MedicalTreament
             // guna2PictureBox5
             // 
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(21, 301);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(22, 302);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(36, 36);
@@ -535,7 +544,7 @@ namespace MedicalTreament
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(21, 489);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(22, 567);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
             this.guna2PictureBox6.Size = new System.Drawing.Size(36, 36);
@@ -546,7 +555,7 @@ namespace MedicalTreament
             // guna2PictureBox7
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(21, 605);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(22, 657);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
             this.guna2PictureBox7.Size = new System.Drawing.Size(36, 36);
@@ -595,12 +604,120 @@ namespace MedicalTreament
             this.comboBoxSEname.Size = new System.Drawing.Size(375, 36);
             this.comboBoxSEname.TabIndex = 63;
             // 
+            // gridview_resultlist
+            // 
+            this.gridview_resultlist.AllowUserToAddRows = false;
+            this.gridview_resultlist.AllowUserToDeleteRows = false;
+            this.gridview_resultlist.AllowUserToOrderColumns = true;
+            this.gridview_resultlist.AllowUserToResizeColumns = false;
+            this.gridview_resultlist.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gridview_resultlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridview_resultlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridview_resultlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridview_resultlist.BackgroundColor = System.Drawing.Color.Silver;
+            this.gridview_resultlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridview_resultlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridview_resultlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridview_resultlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.gridview_resultlist.ColumnHeadersHeight = 30;
+            this.gridview_resultlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridview_resultlist.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gridview_resultlist.EnableHeadersVisualStyles = false;
+            this.gridview_resultlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridview_resultlist.Location = new System.Drawing.Point(221, 429);
+            this.gridview_resultlist.MultiSelect = false;
+            this.gridview_resultlist.Name = "gridview_resultlist";
+            this.gridview_resultlist.ReadOnly = true;
+            this.gridview_resultlist.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridview_resultlist.RowHeadersVisible = false;
+            this.gridview_resultlist.RowHeadersWidth = 51;
+            this.gridview_resultlist.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridview_resultlist.RowTemplate.Height = 24;
+            this.gridview_resultlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridview_resultlist.Size = new System.Drawing.Size(652, 122);
+            this.gridview_resultlist.TabIndex = 64;
+            this.gridview_resultlist.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gridview_resultlist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gridview_resultlist.ThemeStyle.BackColor = System.Drawing.Color.Silver;
+            this.gridview_resultlist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gridview_resultlist.ThemeStyle.HeaderStyle.Height = 30;
+            this.gridview_resultlist.ThemeStyle.ReadOnly = true;
+            this.gridview_resultlist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridview_resultlist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridview_resultlist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridview_resultlist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridview_resultlist.ThemeStyle.RowsStyle.Height = 24;
+            this.gridview_resultlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridview_resultlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
+            this.guna2PictureBox8.Location = new System.Drawing.Point(22, 429);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
+            this.guna2PictureBox8.Size = new System.Drawing.Size(36, 36);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox8.TabIndex = 66;
+            this.guna2PictureBox8.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(64, 429);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.label3.Size = new System.Drawing.Size(96, 35);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Result list";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel8.BackColor = System.Drawing.Color.Black;
+            this.guna2Panel8.Location = new System.Drawing.Point(221, 557);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            this.guna2Panel8.Size = new System.Drawing.Size(652, 3);
+            this.guna2Panel8.TabIndex = 67;
+            // 
             // FormGP_Diagnosis
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(890, 770);
+            this.ClientSize = new System.Drawing.Size(890, 768);
+            this.Controls.Add(this.guna2Panel8);
+            this.Controls.Add(this.guna2PictureBox8);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.gridview_resultlist);
             this.Controls.Add(this.comboBoxSEname);
             this.Controls.Add(this.ComboBoxPatientName);
             this.Controls.Add(this.guna2PictureBox7);
@@ -645,27 +762,24 @@ namespace MedicalTreament
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview_resultlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox txtDirection;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtReason;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_reason;
         private System.Windows.Forms.Label label_date;
         private System.Windows.Forms.Label label_name;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox txtDiagnoseResult;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2DataGridView gridview_requestlist;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
@@ -681,7 +795,16 @@ namespace MedicalTreament
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxPatientName;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxSEname;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
+        public Guna.UI2.WinForms.Guna2TextBox txtReason;
+        public Guna.UI2.WinForms.Guna2TextBox txtPhone;
+        public Guna.UI2.WinForms.Guna2DataGridView gridview_requestlist;
+        public Guna.UI2.WinForms.Guna2ComboBox ComboBoxPatientName;
+        public Guna.UI2.WinForms.Guna2DataGridView gridview_resultlist;
+        public Guna.UI2.WinForms.Guna2TextBox txtDirection;
+        public Guna.UI2.WinForms.Guna2TextBox txtDiagnoseResult;
     }
 }

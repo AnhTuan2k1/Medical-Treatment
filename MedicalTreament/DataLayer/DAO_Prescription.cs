@@ -51,7 +51,7 @@ namespace DataLayer
             && p.Date.Month == DateTime.Now.Month
             && p.Date.Year == DateTime.Now.Year
             && p.PatientID == idPatient)
-                .Single();
+                .FirstOrDefault();
 
             return prescription.PrescriptionID;
         }

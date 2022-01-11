@@ -61,11 +61,27 @@ namespace DataLayer
                         where seresult.PatientID.Equals(idPatient)
                         select new
                         {
-                            se.Name
+                            se.Name,
+                       
                         };
             var list = list1.Except(list2);
 
             return list.ToList();
+        }
+
+        public object ShowSEresult(int idPatient)
+        {
+            var list2 = from seresult in db.Set<SpecialistExaminationResult>()
+                        join se in db.Set<SpecialistExamination>()
+                        on seresult.SpecialExaminationID equals se.SpecialExaminationID
+                        where seresult.PatientID.Equals(idPatient)
+                        select new
+                        {
+                            se.Name,
+                            seresult.Conclusion,
+                            seresult.Result
+                        };
+            return list2.ToList();
         }
     }
 }
