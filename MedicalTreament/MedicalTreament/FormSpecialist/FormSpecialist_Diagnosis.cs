@@ -98,7 +98,7 @@ namespace MedicalTreament
                 {
                     txtConclusion.Text = "";
                     txtResult.Text = "";
-                    MessageBox.Show("Succesful!!!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Examinate succesfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     bus_SErequest.ShowSErequest(gridrequestlist, idPatient);
                     bus_SErequest.ShowSErequest(comboboxSEname, idPatient);
                 }

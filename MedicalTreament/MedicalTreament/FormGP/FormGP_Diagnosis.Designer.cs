@@ -29,9 +29,9 @@ namespace MedicalTreament
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGP_Diagnosis));
             this.txtDirection = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -122,19 +122,20 @@ namespace MedicalTreament
             this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.FillColor = System.Drawing.Color.Aquamarine;
-            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.guna2CircleButton2.ForeColor = System.Drawing.Color.Black;
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = global::MedicalTreament.Properties.Resources.double_right_48;
             this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(777, 50);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(743, 50);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(97, 97);
+            this.guna2CircleButton2.Size = new System.Drawing.Size(131, 97);
             this.guna2CircleButton2.TabIndex = 6;
+            this.guna2CircleButton2.Text = "Prescription";
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // guna2Button1
@@ -152,7 +153,7 @@ namespace MedicalTreament
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(131, 43);
             this.guna2Button1.TabIndex = 40;
-            this.guna2Button1.Text = "Request";
+            this.guna2Button1.Text = "(+) Request";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label4
@@ -241,8 +242,6 @@ namespace MedicalTreament
             // 
             // txtPhone
             // 
-            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.txtPhone.BorderColor = System.Drawing.Color.DimGray;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -325,8 +324,8 @@ namespace MedicalTreament
             this.gridview_requestlist.AllowUserToOrderColumns = true;
             this.gridview_requestlist.AllowUserToResizeColumns = false;
             this.gridview_requestlist.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.gridview_requestlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridview_requestlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridview_requestlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -334,24 +333,24 @@ namespace MedicalTreament
             this.gridview_requestlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridview_requestlist.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridview_requestlist.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridview_requestlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridview_requestlist.ColumnHeadersHeight = 30;
             this.gridview_requestlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridview_requestlist.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridview_requestlist.EnableHeadersVisualStyles = false;
             this.gridview_requestlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridview_requestlist.Location = new System.Drawing.Point(221, 301);
@@ -404,7 +403,7 @@ namespace MedicalTreament
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(131, 45);
             this.guna2Button2.TabIndex = 47;
-            this.guna2Button2.Text = "Remove";
+            this.guna2Button2.Text = "(-) Request";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Panel1
@@ -427,6 +426,8 @@ namespace MedicalTreament
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel3.BackColor = System.Drawing.Color.Black;
             this.guna2Panel3.Location = new System.Drawing.Point(221, 242);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -445,6 +446,8 @@ namespace MedicalTreament
             // 
             // guna2Panel5
             // 
+            this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Black;
             this.guna2Panel5.Location = new System.Drawing.Point(221, 479);
             this.guna2Panel5.Name = "guna2Panel5";
@@ -454,6 +457,8 @@ namespace MedicalTreament
             // 
             // guna2Panel6
             // 
+            this.guna2Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel6.BackColor = System.Drawing.Color.Black;
             this.guna2Panel6.Location = new System.Drawing.Point(222, 595);
             this.guna2Panel6.Name = "guna2Panel6";
@@ -463,6 +468,8 @@ namespace MedicalTreament
             // 
             // guna2Panel7
             // 
+            this.guna2Panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel7.BackColor = System.Drawing.Color.Black;
             this.guna2Panel7.Location = new System.Drawing.Point(221, 754);
             this.guna2Panel7.Name = "guna2Panel7";
