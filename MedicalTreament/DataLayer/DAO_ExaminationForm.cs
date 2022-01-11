@@ -143,7 +143,9 @@ namespace DataLayer
             ExaminationForm examinationForm = db.ExaminationForms.Where(e => e.PatientID == patientID &&
             e.Date.Day == DateTime.Now.Day &&
             e.Date.Month == DateTime.Now.Month).FirstOrDefault();
-            return examinationForm.Reason;
+            if (examinationForm != null)
+                return examinationForm.Reason;
+            else return"";
         }
 
         public void Add(int ordinal, int patientID, int secretaryID, decimal price, string reason = "")
@@ -168,8 +170,11 @@ namespace DataLayer
             ExaminationForm form = db.ExaminationForms.Where(e => e.PatientID == idPatient &&
             e.Date.Day == DateTime.Now.Day&&
             e.Date.Month == DateTime.Now.Month ).FirstOrDefault();
-            form.State = text;
-            db.SaveChanges();
+            if(form!=null)
+            {
+                form.State = text;
+                db.SaveChanges();
+            }    
         }
 
     }
