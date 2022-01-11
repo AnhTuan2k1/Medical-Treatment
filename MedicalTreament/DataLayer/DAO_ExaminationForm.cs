@@ -28,7 +28,7 @@ namespace DataLayer
         public int CountExFormToday()
         {
             var list = from examination in db.Set<ExaminationForm>()
-                       where examination.Date.Day == DateTime.Now.Day 
+                       where examination.Date.Day == DateTime.Now.Day
                        && examination.Date.Month == DateTime.Now.Month
 
                        select new { examination };
@@ -95,8 +95,8 @@ namespace DataLayer
 
         public void SetPaid(int patientID)
         {
-            ExaminationForm form = db.ExaminationForms.Where(e => 
-                e.PatientID == patientID 
+            ExaminationForm form = db.ExaminationForms.Where(e =>
+                e.PatientID == patientID
                 && !e.State.ToLower().Contains("paid")
                 ).Single();
 
@@ -178,7 +178,7 @@ namespace DataLayer
             {
                 form.State = text;
                 db.SaveChanges();
-            }    
+            }
         }
 
     }
