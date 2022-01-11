@@ -54,6 +54,8 @@ namespace DataLayer
                        join patient in db.Set<Patient>()
                        on form.PatientID equals patient.PatientID
                        where !form.State.ToLower().Contains("paid")
+                       && form.Date.Day == DateTime.Now.Day
+                       && form.Date.Month == DateTime.Now.Month
                        select new {
                            patient.PatientID,
                            patient.Name,
@@ -75,6 +77,8 @@ namespace DataLayer
                        on form.PatientID equals patient.PatientID
                        where !form.State.ToLower().Contains("paid")
                        && patient.Name.Contains(namePatient)
+                       && form.Date.Day == DateTime.Now.Day
+                       && form.Date.Month == DateTime.Now.Month
                        select new
                        {
                            patient.PatientID,
